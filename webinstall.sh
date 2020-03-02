@@ -28,6 +28,7 @@ sudo snap install meshlab
 sudo snap install micro --classic
 sudo snap install pycharm-community --classic
 sudo snap install discord
+sudo snap install kdenlive
 ##############################
 # Install line pip3          #
 ##############################
