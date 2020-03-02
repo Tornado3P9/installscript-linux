@@ -1,2 +1,2 @@
-# linux-afterinstall-script
+# installscript-linux
 just that
