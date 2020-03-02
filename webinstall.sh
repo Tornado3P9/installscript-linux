@@ -37,4 +37,8 @@ read -p "Do you want to install Texlive and Texmaker? [Y/n]: " yn
 if [ "$yn" != "n" ]; then
   sudo apt install texlive-full texmaker
 fi
+read -p "Do you want to copy old alias? [Y/n]: " yn2
+if [ "$yn2" != "n" ]; then
+  cat alias.txt >> ~/.bashrc
+fi
 exit 0
