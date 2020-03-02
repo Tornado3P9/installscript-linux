@@ -27,6 +27,7 @@ sudo snap install inkscape
 sudo snap install meshlab
 sudo snap install micro --classic
 sudo snap install pycharm-community --classic
+sudo snap install discord
 ##############################
 # Install line pip3          #
 ##############################
