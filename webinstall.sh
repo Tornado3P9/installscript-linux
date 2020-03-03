@@ -25,12 +25,17 @@ sudo snap install fast inkscape meshlab discord kdenlive
 sudo snap install heroku --classic
 sudo snap install micro --classic
 sudo snap install pycharm-community --classic
+#sudo snap install code --classic
+#sudo snap install blender --classic
 ##############################
 # Install line pip3          #
 ##############################
 #python3 -m pip install --user --upgrade pip
 pip3 install --user virtualenv selenium pytest requests flask youtube-dl
-#Do you want to install Texlive and Texmaker?
+##############################
+# Install additional items   #
+##############################
+# Do you want to install Texlive and Texmaker?
 read -p "Do you want to install Texlive and Texmaker? [Y/n]: " yn
 if [ "$yn" != "n" ]; then
   sudo apt install texlive-full texmaker
@@ -39,7 +44,7 @@ read -p "Do you want to copy old alias? [Y/n]: " yn2
 if [ "$yn2" != "n" ]; then
   cat alias.txt >> ~/.bashrc
 fi
-#Automaticly enter 'yes' when asked:
+# Automaticly enter 'yes' when asked:
 #for i in program1 program2 program3; do
 #  apt-get install $i -y
 #done
