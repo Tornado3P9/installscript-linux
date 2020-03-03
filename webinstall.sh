@@ -21,14 +21,10 @@ sudo apt install sqlite3 nodejs npm gaupol mediainfo mediainfo-gui nethogs wires
 ##############################
 sudo snap install android-studio --classic
 sudo snap install eclipse --classic
-sudo snap install fast
+sudo snap install fast inkscape meshlab discord kdenlive
 sudo snap install heroku --classic
-sudo snap install inkscape
-sudo snap install meshlab
 sudo snap install micro --classic
 sudo snap install pycharm-community --classic
-sudo snap install discord
-sudo snap install kdenlive
 ##############################
 # Install line pip3          #
 ##############################
@@ -43,4 +39,8 @@ read -p "Do you want to copy old alias? [Y/n]: " yn2
 if [ "$yn2" != "n" ]; then
   cat alias.txt >> ~/.bashrc
 fi
+#Automaticly enter 'yes' when asked:
+#for i in program1 program2 program3; do
+#  apt-get install $i -y
+#done
 exit 0
