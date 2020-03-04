@@ -4,7 +4,7 @@ alias beenden='shutdown -h now'
 alias neustart='reboot'
 #alias ase='acpi -b && sensors'
 alias ase='sensors'
-#virtual environments workflow: cd project
+#virtual environments workflow: mkdir my-python-venv && cd my-python-venv && virtualenv venv
 alias ae='deactivate &> /dev/null; source ./venv/bin/activate'
 alias de='deactivate'
 #run command to view all currently runnig snap service: systemctl list-unit-files | grep snap
