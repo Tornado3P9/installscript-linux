@@ -21,7 +21,7 @@ sudo apt install sqlite3 nodejs npm gaupol mediainfo mediainfo-gui nethogs wires
 ##############################
 sudo snap install android-studio --classic
 sudo snap install eclipse --classic
-sudo snap install fast inkscape meshlab discord kdenlive
+sudo snap install fast inkscape krita meshlab discord kdenlive
 sudo snap install heroku --classic
 sudo snap install micro --classic
 sudo snap install pycharm-community --classic
