@@ -44,8 +44,16 @@ read -p "Do you want to copy old alias? [Y/n]: " yn2
 if [ "$yn2" != "n" ]; then
   cat alias.txt >> ~/.bashrc
 fi
-# Automaticly enter 'yes' when asked:
+### Automaticly enter 'yes' when asked:
 #for i in program1 program2 program3; do
 #  apt-get install $i -y
 #done
+#
+### INSTALLATION VON EXTERNEN PROGRAMMEN, BEISPIEL:
+#Ordner erstellen: mkdir ~/Programs
+#Debian packages nach Programs kopieren: cp ~/Downloads/*.deb ~/Programs && cd Programs
+#Debians installieren: sudo apt install ./*.deb
+#                oder: sudo dpkg -i *.deb
+### Install/Extract blender:
+#tar -xvf ~/Downloads/blender*.tar.xz -C ~/Programs
 exit 0
