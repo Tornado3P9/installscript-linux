@@ -51,9 +51,9 @@ fi
 #
 ### INSTALLATION VON EXTERNEN PROGRAMMEN, BEISPIEL:
 #Ordner erstellen: mkdir ~/Programs
-#Debian packages nach Programs kopieren: cp ~/Downloads/*.deb ~/Programs && cd Programs
+#Debian packages nach Programs kopieren: cp ~/Downloads/*.deb ~/Programs && cd ~/Programs
 #Debians installieren: sudo apt install ./*.deb
 #                oder: sudo dpkg -i *.deb
-### Install/Extract blender:
+### Install/Extract blender and copy to Programs folder:
 #tar -xvf ~/Downloads/blender*.tar.xz -C ~/Programs
 exit 0
