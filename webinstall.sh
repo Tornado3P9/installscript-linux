@@ -56,4 +56,5 @@ fi
 #                oder: sudo dpkg -i *.deb
 ### Install/Extract blender and copy to Programs folder:
 #tar -xvf ~/Downloads/blender*.tar.xz -C ~/Programs
+### Und installiere VSE_Transform_Tools fuer blender: https://github.com/doakey3/VSE_Transform_Tools
 exit 0
