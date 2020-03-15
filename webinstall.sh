@@ -15,7 +15,7 @@ sudo add-apt-repository ppa:stebbins/handbrake-releases
 sudo apt update
 sudo apt upgrade
 sudo apt install git snapd gparted synaptic xubuntu-restricted-extras vlc python3-pip mpv jq gimp xsane pdfshuffler pinta audacity bless htop mypaint sysinfo hardinfo acpi libreoffice libreoffice-l10n-de libreoffice-help-de
-sudo apt install sqlite3 nodejs npm gaupol mediainfo mediainfo-gui nethogs wireshark guvcview lxsplit libimage-exiftool-perl perl-doc steam kazam vpnc xsensors handbrake-gtk hugin
+sudo apt install sqlite3 nodejs npm gaupol mediainfo mediainfo-gui nethogs wireshark guvcview lxsplit libimage-exiftool-perl perl-doc steam kazam vpnc xsensors handbrake-gtk hugin gifsicle imagemagick imagemagick-doc
 ##############################
 # Install line snap          #
 ##############################
@@ -56,5 +56,6 @@ fi
 #                oder: sudo dpkg -i *.deb
 ### Install/Extract blender and copy to Programs folder:
 #tar -xvf ~/Downloads/blender*.tar.xz -C ~/Programs
-### Und installiere VSE_Transform_Tools fuer blender: https://github.com/doakey3/VSE_Transform_Tools
+#Und installiere VSE_Transform_Tools fuer blender: https://github.com/doakey3/VSE_Transform_Tools
+#Und GIF-Import: https://github.com/doakey3/Bligify
 exit 0
