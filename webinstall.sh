@@ -68,11 +68,16 @@ mkdir ~/Programs
 #Super+W       -> Webbrowser
 #Super+F       -> Dateibrowser(Home Folder)
 #Strg+Esc      -> Menu
-#Strg+Alt+Esc  -> Kill Window
+#Strg+Alt+Esc  -> xkill = Kill Window under X
 #Super+L       -> Bildschirm sperren
 #
 ### Konsolentools herunterladen:
 # cd ~/Programs && git clone https://github.com/Tornado3P9/Konsolentools
+#
+### Shortcut Collection herunterladen, nach ~/Programs entpacken und zip-Archiv loeschen:
+wget https://www.dropbox.com/sh/svkokavmhty8xi3/AADawdnN94IPQqoE7obCAOLNa?dl=0 -O gezipptesArchiv.zip
+unzip gezipptesArchiv.zip -d ~/Programs/
+rm gezipptesArchiv.zip
 #
 ### Bildschirm Hintergrund:
 # https://www.pexels.com/
