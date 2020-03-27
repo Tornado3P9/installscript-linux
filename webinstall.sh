@@ -73,4 +73,13 @@ mkdir ~/Programs
 #
 ### Konsolentools herunterladen:
 # cd ~/Programs && git clone https://github.com/Tornado3P9/Konsolentools
+#
+### Bildschirm Hintergrund:
+# https://www.pexels.com/
+# https://www.pexels.com/photo/black-and-white-mountain-over-yellow-white-and-blue-sky-46253/
+#
+### Microsoft Office Alternative, die auf allen Betriebssystemen laufen!:
+# Wer nicht mit Libreoffice zufrieden ist...(ich bins und fuer grosse Arbeiten benutzt man sowieso LateX/Texmaker...),
+# der kann FreeOffice von Softmaker benutzen. Das ist eine exakte Kopie von MicrosoftOffice, wenn nicht sogar besser.
+# Oder WPS_Office aus China...ebenfalls eine Kopie von MSOffice.
 exit 0
