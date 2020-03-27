@@ -19,6 +19,7 @@ sudo apt install sqlite3 nodejs npm gaupol mediainfo mediainfo-gui nethogs wires
 ##############################
 # Install line snap          #
 ##############################
+# https://snapcraft.io/store hier suchen, ob snap das gewuenschte Programm ueberhaupt hat.
 sudo snap install android-studio --classic
 sudo snap install eclipse --classic
 sudo snap install fast inkscape krita meshlab discord kdenlive
@@ -27,6 +28,7 @@ sudo snap install micro --classic
 sudo snap install pycharm-community --classic
 #sudo snap install code --classic
 #sudo snap install blender --classic
+#sudo snap install skype --classic
 ##############################
 # Install line pip3          #
 ##############################
@@ -50,7 +52,9 @@ fi
 #done
 #
 ### INSTALLATION VON EXTERNEN PROGRAMMEN, BEISPIEL:
-#Ordner erstellen: mkdir ~/Programs
+#Externe Programme herunterladen: z.B. MicrosoftTeams, Blender, Sublime-Text,...
+#Ordner erstellen:
+mkdir ~/Programs
 #Debian packages nach Programs kopieren: cp ~/Downloads/*.deb ~/Programs && cd ~/Programs
 #Debians installieren: sudo apt install ./*.deb
 #                oder: sudo dpkg -i *.deb
@@ -58,4 +62,15 @@ fi
 #tar -xvf ~/Downloads/blender*.tar.xz -C ~/Programs
 #Und installiere VSE_Transform_Tools fuer blender: https://github.com/doakey3/VSE_Transform_Tools
 #Und GIF-Import: https://github.com/doakey3/Bligify
+#
+### TASTENKUERZEL FUER LIEBLINGSPROGRAMME ERSTELLEN:
+#Strg+Alt+Entf -> xfce4-taskmanager
+#Super+W       -> Webbrowser
+#Super+F       -> Dateibrowser(Home Folder)
+#Strg+Esc      -> Menu
+#Strg+Alt+Esc  -> Kill Window
+#Super+L       -> Bildschirm sperren
+#
+### Konsolentools herunterladen:
+# cd ~/Programs && git clone https://github.com/Tornado3P9/Konsolentools
 exit 0
