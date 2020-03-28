@@ -26,6 +26,7 @@ sudo snap install fast inkscape krita meshlab discord kdenlive
 sudo snap install heroku --classic
 sudo snap install micro --classic
 sudo snap install pycharm-community --classic
+sudo snap install pick-colour-picker #https://kryogenix.org/code/pick/
 #sudo snap install code --classic
 #sudo snap install blender --classic
 #sudo snap install skype --classic
