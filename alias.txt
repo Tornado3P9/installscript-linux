@@ -21,5 +21,3 @@ alias mlocatestop='sudo chmod -x /etc/cron.daily/mlocate'
 alias mlocatestart='sudo chmod +x /etc/cron.daily/mlocate'
 #Youtube
 alias youtubevid='~/Programs/mpvvideo.sh'
-#ImageMagick
-alias magick='~Programs/magick'

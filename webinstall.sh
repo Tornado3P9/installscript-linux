@@ -53,7 +53,7 @@ fi
 #done
 #
 ### INSTALLATION VON EXTERNEN PROGRAMMEN, BEISPIEL:
-#Externe Programme herunterladen: z.B. MicrosoftTeams, Blender, Sublime-Text, magick https://imagemagick.org/script/download.php,...
+#Externe Programme herunterladen: z.B. MicrosoftTeams, Blender, Sublime-Text, VSCode, magick https://imagemagick.org/script/download.php,...
 #Ordner erstellen:
 mkdir ~/Programs
 #Debian packages nach Programs kopieren: cp ~/Downloads/*.deb ~/Programs && cd ~/Programs
