@@ -56,21 +56,24 @@ fi
 #Externe Programme herunterladen: z.B. MicrosoftTeams, Blender, Sublime-Text, VSCode, magick https://imagemagick.org/script/download.php,...
 #Ordner erstellen:
 mkdir ~/Programs
-#Debian packages nach Programs kopieren: cp ~/Downloads/*.deb ~/Programs && cd ~/Programs
+#Debian packages nach Programs kopieren und(&&) in diesen Ordner wechseln:
+# cp ~/Downloads/*.deb ~/Programs && cd ~/Programs
 #Debians installieren: sudo apt install ./*.deb
 #                oder: sudo dpkg -i *.deb
+#
 ### Install/Extract blender and copy to Programs folder:
-#tar -xvf ~/Downloads/blender*.tar.xz -C ~/Programs
+# tar -xvf ~/Downloads/blender*.tar.xz -C ~/Programs
 #Und installiere VSE_Transform_Tools fuer blender: https://github.com/doakey3/VSE_Transform_Tools
 #Und GIF-Import: https://github.com/doakey3/Bligify
 #
 ### TASTENKUERZEL FUER LIEBLINGSPROGRAMME ERSTELLEN:
-#Strg+Alt+Entf -> xfce4-taskmanager
+#Strg+Alt+Entf -> xfce4-session-logout
 #Super+W       -> Webbrowser
 #Super+F       -> Dateibrowser(Home Folder)
 #Strg+Esc      -> Menu
 #Strg+Alt+Esc  -> xkill = Kill Window under X
 #Super+L       -> Bildschirm sperren
+#Umschalt+Strg+Esc -> xfce4-taskmanager
 #
 ### Konsolentools herunterladen:
 # cd ~/Programs && git clone https://github.com/Tornado3P9/Konsolentools
@@ -84,7 +87,7 @@ rm gezipptesArchiv.zip
 # https://www.pexels.com/
 # https://www.pexels.com/photo/black-and-white-mountain-over-yellow-white-and-blue-sky-46253/
 #
-### Microsoft Office Alternative, die auf allen Betriebssystemen laufen!:
+### Microsoft Office Alternativen, die auf allen Betriebssystemen laufen!:
 # Wer nicht mit Libreoffice zufrieden ist...(ich bins und fuer grosse Arbeiten benutzt man sowieso LateX/Texmaker...),
 # der kann FreeOffice von Softmaker benutzen. Das ist eine exakte Kopie von MicrosoftOffice, wenn nicht sogar besser.
 # Oder WPS_Office aus China...ebenfalls eine Kopie von MSOffice.
