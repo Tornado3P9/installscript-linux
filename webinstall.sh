@@ -15,7 +15,7 @@ sudo add-apt-repository ppa:stebbins/handbrake-releases
 sudo apt update
 sudo apt upgrade
 sudo apt install git snapd gparted synaptic xubuntu-restricted-extras vlc python3-pip mpv jq gimp xsane pdfshuffler pinta audacity bless htop mypaint sysinfo hardinfo acpi libreoffice libreoffice-l10n-de libreoffice-help-de
-sudo apt install sqlite3 nodejs npm gaupol mediainfo mediainfo-gui nethogs wireshark guvcview lxsplit libimage-exiftool-perl perl-doc steam kazam vpnc xsensors handbrake-gtk hugin gifsicle wget tree
+sudo apt install sqlite3 nodejs npm gaupol mediainfo mediainfo-gui nethogs wireshark guvcview lxsplit libimage-exiftool-perl perl-doc steam kazam vpnc xsensors handbrake-gtk hugin gifsicle wget tree ufw gufw
 ##############################
 # Install line snap          #
 ##############################
@@ -46,6 +46,13 @@ fi
 read -p "Do you want to copy old alias? [Y/n]: " yn2
 if [ "$yn2" != "n" ]; then
   cat alias.txt >> ~/.bashrc
+fi
+### Check Firewall Status https://wiki.ubuntuusers.de/ufw/:
+ufw status
+read -p "Do you want to activate firewall? [Y/n]: " yn3
+if [ "$yn3" != "n" ]; then
+  ufw enable
+# ufw disable
 fi
 ### Automaticly enter 'yes' when asked:
 #for i in program1 program2 program3; do
