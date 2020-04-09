@@ -22,7 +22,7 @@ sudo apt install sqlite3 nodejs npm gaupol mediainfo mediainfo-gui nethogs wires
 # https://snapcraft.io/store hier suchen, ob snap das gewuenschte Programm ueberhaupt hat.
 sudo snap install android-studio --classic
 sudo snap install eclipse --classic
-sudo snap install fast inkscape krita meshlab discord kdenlive
+sudo snap install fast inkscape krita meshlab discord zoom-client kdenlive
 sudo snap install heroku --classic
 sudo snap install micro --classic
 sudo snap install pycharm-community --classic
@@ -53,7 +53,7 @@ fi
 #done
 #
 ### INSTALLATION VON EXTERNEN PROGRAMMEN, BEISPIEL:
-#Externe Programme herunterladen: z.B. MicrosoftTeams, Blender, Sublime-Text, VSCode, magick https://imagemagick.org/script/download.php,...
+#Externe Programme herunterladen: z.B. MicrosoftTeams, Blender, Sublime-Text, VSCode, WebStorm IDE, magick https://imagemagick.org/script/download.php,...
 #Ordner erstellen:
 mkdir ~/Programs
 #Debian packages nach Programs kopieren und(&&) in diesen Ordner wechseln:
