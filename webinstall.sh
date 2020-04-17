@@ -8,25 +8,26 @@
 ##############################
 # Adding PPAs                #
 ##############################
-sudo add-apt-repository ppa:stebbins/handbrake-releases
+add-apt-repository ppa:stebbins/handbrake-releases
+add-apt-repository ppa:cteehayder/ffmulticonverter
 ##############################
 # Install line apt           #
 ##############################
-sudo apt update
-sudo apt upgrade
-sudo apt install git snapd gparted synaptic xubuntu-restricted-extras vlc python3-pip mpv jq gimp xsane pdfshuffler pinta audacity bless htop mypaint sysinfo hardinfo acpi libreoffice libreoffice-l10n-de libreoffice-help-de
-sudo apt install sqlite3 nodejs npm gaupol mediainfo mediainfo-gui nethogs wireshark guvcview lxsplit libimage-exiftool-perl perl-doc steam kazam vpnc xsensors handbrake-gtk hugin gifsicle wget tree ufw gufw
+apt update
+apt upgrade
+apt install git snapd gparted synaptic xubuntu-restricted-extras vlc python3-pip mpv jq gimp xsane pdfshuffler pinta audacity bless htop mypaint sysinfo hardinfo acpi libreoffice libreoffice-l10n-de libreoffice-help-de
+apt install sqlite3 nodejs npm gaupol mediainfo mediainfo-gui nethogs wireshark guvcview lxsplit libimage-exiftool-perl perl-doc steam kazam vpnc xsensors handbrake-gtk hugin gifsicle wget tree ufw gufw ffmulticonverter
 ##############################
 # Install line snap          #
 ##############################
 # https://snapcraft.io/store hier suchen, ob snap das gewuenschte Programm ueberhaupt hat.
-sudo snap install android-studio --classic
-sudo snap install eclipse --classic
-sudo snap install fast inkscape krita meshlab discord zoom-client kdenlive
-sudo snap install heroku --classic
-sudo snap install micro --classic
-sudo snap install pycharm-community --classic
-sudo snap install pick-colour-picker #https://kryogenix.org/code/pick/
+snap install android-studio --classic
+snap install eclipse --classic
+snap install fast inkscape krita meshlab discord zoom-client kdenlive
+snap install heroku --classic
+snap install micro --classic
+snap install pycharm-community --classic
+snap install pick-colour-picker #https://kryogenix.org/code/pick/
 #sudo snap install code --classic
 #sudo snap install blender --classic
 #sudo snap install skype --classic
@@ -41,7 +42,7 @@ pip3 install --user virtualenv selenium pytest requests flask youtube-dl
 # Do you want to install Texlive and Texmaker?
 read -p "Do you want to install Texlive and Texmaker? [Y/n]: " yn
 if [ "$yn" != "n" ]; then
-  sudo apt install texlive-full texmaker
+  apt install texlive-full texmaker
 fi
 read -p "Do you want to copy old alias? [Y/n]: " yn2
 if [ "$yn2" != "n" ]; then
@@ -60,7 +61,7 @@ fi
 #done
 #
 ### INSTALLATION VON EXTERNEN PROGRAMMEN, BEISPIEL:
-#Externe Programme herunterladen: z.B. MicrosoftTeams, Blender, Sublime-Text, VSCode, WebStorm IDE, magick https://imagemagick.org/script/download.php,...
+#Externe Programme herunterladen: z.B. MicrosoftTeams, Blender, Sublime-Text, VSCode, WebStorm IDE, magick https://imagemagick.org/script/download.php, ffmulticonverter https://sites.google.com/site/ffmulticonverter/download,...
 #Ordner erstellen:
 mkdir ~/Programs
 #Debian packages nach Programs kopieren und(&&) in diesen Ordner wechseln:
