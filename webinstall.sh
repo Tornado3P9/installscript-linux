@@ -99,4 +99,12 @@ rm gezipptesArchiv.zip
 # Wer nicht mit Libreoffice zufrieden ist...(ich bins und fuer grosse Arbeiten benutzt man sowieso LateX/Texmaker...),
 # der kann FreeOffice von Softmaker benutzen. Das ist eine exakte Kopie von MicrosoftOffice, wenn nicht sogar besser.
 # Oder WPS_Office aus China...ebenfalls eine Kopie von MSOffice.
+#
+### Photoshop Alternativen:
+# Gimp (Fotomanipulation) https://www.gimp.org/
+# Krita (Viele unterschiedliche Farbcodes, daher gut fuer Druckaufgaben) https://krita.org/
+# Photopea (Onlinetool, gute Kompatibilitaet zu Photoshops Textobjekten) https://www.photopea.com/
+# Inkscape (Vektorgrafiken) https://inkscape.org/
+# MyPaint (Professionelles Maltool fuer Arbeit am Digital Drawing Tablet) http://mypaint.org/
+# Blender2.8 (Professionelles 2D-Maltool fuer Arbeit am Digital Drawing Tablet) https://www.blender.org/
 exit 0
