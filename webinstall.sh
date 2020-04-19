@@ -23,11 +23,11 @@ apt install sqlite3 nodejs npm gaupol mediainfo mediainfo-gui nethogs wireshark 
 # https://snapcraft.io/store hier suchen, ob snap das gewuenschte Programm ueberhaupt hat.
 snap install android-studio --classic
 snap install eclipse --classic
-snap install fast inkscape krita meshlab discord zoom-client kdenlive
+snap install fast inkscape krita meshlab discord zoom-client kdenlive pick-colour-picker
 snap install heroku --classic
 snap install micro --classic
 snap install pycharm-community --classic
-snap install pick-colour-picker #https://kryogenix.org/code/pick/
+#pick-colour-picker https://kryogenix.org/code/pick/
 #sudo snap install code --classic
 #sudo snap install blender --classic
 #sudo snap install skype --classic
@@ -74,15 +74,6 @@ mkdir ~/Programs
 #Und installiere VSE_Transform_Tools fuer blender: https://github.com/doakey3/VSE_Transform_Tools
 #Und GIF-Import: https://github.com/doakey3/Bligify
 #
-### TASTENKUERZEL FUER LIEBLINGSPROGRAMME ERSTELLEN:
-#Strg+Alt+Entf -> xfce4-session-logout
-#Super+W       -> Webbrowser
-#Super+F       -> Dateibrowser(Home Folder)
-#Strg+Esc      -> Menu
-#Strg+Alt+Esc  -> xkill = Kill Window under X
-#Super+L       -> Bildschirm sperren
-#Umschalt+Strg+Esc -> xfce4-taskmanager
-#
 ### Konsolentools herunterladen:
 # cd ~/Programs && git clone https://github.com/Tornado3P9/Konsolentools
 #
@@ -94,6 +85,15 @@ rm gezipptesArchiv.zip
 ### xfce4-settings-manager (Alt+F2 -> xfce4-)
 xfce4-settings-manager
 # -> Fenstereinstellungen der Fensterverwaltung -> Zugreifbarkeit -> Taste zum nehmen und verschieben der Fenster: None
+#
+### TASTENKUERZEL FUER LIEBLINGSPROGRAMME ERSTELLEN: xfce4-settings-manager -> Tastatur -> Tastenkuerzel
+#Strg+Alt+Entf -> xfce4-session-logout
+#Super+W       -> Webbrowser
+#Super+F       -> Dateibrowser(Home Folder)
+#Strg+Esc      -> Menu
+#Strg+Alt+Esc  -> xkill = Kill Window under X
+#Super+L       -> Bildschirm sperren
+#Umschalt+Strg+Esc -> xfce4-taskmanager
 #
 ### Bildschirm Hintergrund:
 # https://www.pexels.com/
