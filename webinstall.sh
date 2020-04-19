@@ -91,6 +91,10 @@ wget https://www.dropbox.com/sh/svkokavmhty8xi3/AADawdnN94IPQqoE7obCAOLNa?dl=0 -
 unzip gezipptesArchiv.zip -d ~/Programs/
 rm gezipptesArchiv.zip
 #
+### xfce4-settings-manager (Alt+F2 -> xfce4-)
+xfce4-settings-manager
+# -> Fenstereinstellungen der Fensterverwaltung -> Zugreifbarkeit -> Taste zum nehmen und verschieben der Fenster: None
+#
 ### Bildschirm Hintergrund:
 # https://www.pexels.com/
 # https://www.pexels.com/photo/black-and-white-mountain-over-yellow-white-and-blue-sky-46253/
