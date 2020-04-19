@@ -61,7 +61,11 @@ fi
 #done
 #
 ### INSTALLATION VON EXTERNEN PROGRAMMEN, BEISPIEL:
-#Externe Programme herunterladen: z.B. MicrosoftTeams, Blender, Sublime-Text, VSCode, WebStorm IDE, magick https://imagemagick.org/script/download.php, ffmulticonverter https://sites.google.com/site/ffmulticonverter/download,...
+#Externe Programme herunterladen:
+#z.B. MicrosoftTeams, Blender, Sublime-Text, VSCode, JetBrains WebStorm/Rider/PyCharm IDE, UnityHub,
+#     magick https://imagemagick.org/script/download.php, ffmulticonverter https://sites.google.com/site/ffmulticonverter/download,...
+#     mono https://www.mono-project.com/download/stable/
+#
 #Ordner erstellen:
 mkdir ~/Programs
 #Debian packages nach Programs kopieren und(&&) in diesen Ordner wechseln:
