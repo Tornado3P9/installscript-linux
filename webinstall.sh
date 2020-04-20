@@ -16,7 +16,7 @@ add-apt-repository ppa:cteehayder/ffmulticonverter
 apt update
 apt upgrade
 apt install git snapd gparted synaptic xubuntu-restricted-extras vlc python3-pip mpv jq gimp xsane pdfshuffler pinta audacity bless htop mypaint sysinfo hardinfo acpi libreoffice libreoffice-l10n-de libreoffice-help-de
-apt install sqlite3 nodejs npm gaupol mediainfo mediainfo-gui nethogs wireshark guvcview lxsplit libimage-exiftool-perl perl-doc steam kazam vpnc xsensors handbrake-gtk hugin gifsicle wget tree ufw gufw ffmulticonverter
+apt install sqlite3 nodejs npm gaupol mediainfo mediainfo-gui nethogs wireshark guvcview lxsplit libimage-exiftool-perl perl-doc steam kazam vpnc xsensors handbrake-gtk hugin gifsicle wget tree ufw gufw ffmulticonverter arp-scan nmap zenmap
 ##############################
 # Install line snap          #
 ##############################
@@ -27,7 +27,7 @@ snap install fast inkscape krita meshlab discord zoom-client kdenlive pick-colou
 snap install heroku --classic
 snap install micro --classic
 snap install pycharm-community --classic
-#pick-colour-picker https://kryogenix.org/code/pick/
+# pick-colour-picker https://kryogenix.org/code/pick/
 #sudo snap install code --classic
 #sudo snap install blender --classic
 #sudo snap install skype --classic
