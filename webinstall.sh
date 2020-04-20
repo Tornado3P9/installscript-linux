@@ -87,8 +87,9 @@ unzip gezipptesArchiv.zip -d ~/Programs/
 rm gezipptesArchiv.zip
 #
 ### xfce4-settings-manager (Alt+F2 -> xfce4-)
+echo "xfce4-settings-manager -> Fenstereinstellungen der Fensterverwaltung -> Zugreifbarkeit -> Taste zum nehmen und verschieben der Fenster: None"
+read -p "EnterTaste:"
 xfce4-settings-manager
-# -> Fenstereinstellungen der Fensterverwaltung -> Zugreifbarkeit -> Taste zum nehmen und verschieben der Fenster: None
 #
 ### TASTENKUERZEL FUER LIEBLINGSPROGRAMME ERSTELLEN: xfce4-settings-manager -> Tastatur -> Tastenkuerzel
 #Strg+Alt+Entf -> xfce4-session-logout
