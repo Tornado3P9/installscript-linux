@@ -63,7 +63,8 @@ fi
 ### INSTALLATION VON EXTERNEN PROGRAMMEN, BEISPIEL:
 #Externe Programme herunterladen:
 #z.B. MicrosoftTeams, Blender, Sublime-Text, VSCode, JetBrains WebStorm/Rider/PyCharm IDE, UnityHub,
-#     magick https://imagemagick.org/script/download.php, ffmulticonverter https://sites.google.com/site/ffmulticonverter/download,...
+#     magick https://imagemagick.org/script/download.php,
+#     ffmulticonverter https://sites.google.com/site/ffmulticonverter/download,
 #     mono https://www.mono-project.com/download/stable/
 #
 #Ordner erstellen:
@@ -75,8 +76,9 @@ mkdir ~/Programs
 #
 ### Install/Extract blender and copy to Programs folder:
 # tar -xvf ~/Downloads/blender*.tar.xz -C ~/Programs
-#Und installiere VSE_Transform_Tools fuer blender: https://github.com/doakey3/VSE_Transform_Tools
+#Und installiere VSE_Transform_Tools fuer Videobearbeitung: https://github.com/doakey3/VSE_Transform_Tools
 #Und GIF-Import: https://github.com/doakey3/Bligify
+#Und CAD_Tool: https://github.com/Laurent26/techdraw
 #
 ### Konsolentools herunterladen:
 # cd ~/Programs && git clone https://github.com/Tornado3P9/Konsolentools
