@@ -79,6 +79,7 @@ mkdir ~/Programs
 #Und installiere VSE_Transform_Tools fuer Videobearbeitung: https://github.com/doakey3/VSE_Transform_Tools
 #Und GIF-Import: https://github.com/doakey3/Bligify
 #Und CAD_Tool: https://github.com/Laurent26/techdraw
+#Und JMesh_Hard_Surface_Tools: https://github.com/jayanam/jmesh-tools
 #
 ### Konsolentools herunterladen:
 # cd ~/Programs && git clone https://github.com/Tornado3P9/Konsolentools
