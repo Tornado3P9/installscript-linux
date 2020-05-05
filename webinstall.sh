@@ -60,6 +60,9 @@ fi
 #  apt-get install $i -y
 #done
 #
+### Additional Themes:
+apt install arc-theme moka-icon-theme numix-icon-theme numix-gtk-theme lightdm-gtk-greeter-settings
+#
 ### INSTALLATION VON EXTERNEN PROGRAMMEN, BEISPIEL:
 #Externe Programme herunterladen:
 #z.B. MicrosoftTeams, Blender, Sublime-Text, VSCode, JetBrains WebStorm/Rider/PyCharm IDE, UnityHub,
