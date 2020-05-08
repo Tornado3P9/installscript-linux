@@ -16,14 +16,14 @@ add-apt-repository ppa:bashtop-monitor/bashtop
 ##############################
 apt update
 apt upgrade
-apt install git snapd gparted synaptic xubuntu-restricted-extras python3-pip mpv jq gimp xsane pdfshuffler pinta audacity bless htop sysinfo hardinfo acpi libreoffice libreoffice-l10n-de libreoffice-help-de
-apt install sqlite3 nodejs npm gaupol mediainfo mediainfo-gui guvcview lxsplit libimage-exiftool-perl perl-doc steam kazam vpnc xsensors handbrake-gtk hugin gifsicle wget tree ufw gufw tlp powertop xbacklight arp-scan nmap zenmap nethogs bashtop wireshark ffmulticonverter
+apt install git snapd gparted synaptic xubuntu-restricted-extras python3-pip mpv jq ffmpeg gimp xsane pdfshuffler pinta audacity bless htop sysinfo hardinfo acpi libreoffice libreoffice-l10n-de libreoffice-help-de ffmulticonverter
+apt install sqlite3 nodejs npm gaupol mediainfo mediainfo-gui guvcview lxsplit libimage-exiftool-perl perl-doc steam kazam vpnc xsensors handbrake-gtk hugin gifsicle wget tree ufw gufw tlp powertop xbacklight arp-scan nmap zenmap nethogs bashtop wireshark
 #apt install mypaint vlc
 ##############################
 # Install line snap          #
 ##############################
 # https://snapcraft.io/store hier suchen, ob snap das gewuenschte Programm ueberhaupt hat.
-snap install fast discord pick-colour-picker
+snap install fast discord
 snap install heroku --classic
 snap install micro --classic
 #snap install pycharm-community --classic
@@ -71,6 +71,7 @@ mkdir ~/Programs
 # ffmulticonverter https://sites.google.com/site/ffmulticonverter/download,
 # mono https://www.mono-project.com/download/stable/
 # zoom-client https://zoom.us/download
+# gcolor2_colorpicker http://mirrors.edge.kernel.org/ubuntu/pool/universe/g/gcolor2/
 # Appimages z.B.:
 # krita https://krita.org/,
 # inkscape https://inkscape.org/,
