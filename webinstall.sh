@@ -10,13 +10,14 @@
 ##############################
 add-apt-repository ppa:stebbins/handbrake-releases
 add-apt-repository ppa:cteehayder/ffmulticonverter
+add-apt-repository ppa:bashtop-monitor/bashtop
 ##############################
 # Install line apt           #
 ##############################
 apt update
 apt upgrade
 apt install git snapd gparted synaptic xubuntu-restricted-extras python3-pip mpv jq gimp xsane pdfshuffler pinta audacity bless htop sysinfo hardinfo acpi libreoffice libreoffice-l10n-de libreoffice-help-de
-apt install sqlite3 nodejs npm gaupol mediainfo mediainfo-gui nethogs wireshark guvcview lxsplit libimage-exiftool-perl perl-doc steam kazam vpnc xsensors handbrake-gtk hugin gifsicle wget tree ufw gufw ffmulticonverter arp-scan nmap zenmap
+apt install sqlite3 nodejs npm gaupol mediainfo mediainfo-gui guvcview lxsplit libimage-exiftool-perl perl-doc steam kazam vpnc xsensors handbrake-gtk hugin gifsicle wget tree ufw gufw tlp powertop xbacklight arp-scan nmap zenmap nethogs bashtop wireshark ffmulticonverter
 #apt install mypaint vlc
 ##############################
 # Install line snap          #
@@ -25,7 +26,6 @@ apt install sqlite3 nodejs npm gaupol mediainfo mediainfo-gui nethogs wireshark 
 snap install fast discord pick-colour-picker
 snap install heroku --classic
 snap install micro --classic
-# pick-colour-picker https://kryogenix.org/code/pick/
 #snap install pycharm-community --classic
 #snap install android-studio --classic
 #snap install eclipse --classic
