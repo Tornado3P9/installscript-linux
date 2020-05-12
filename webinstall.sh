@@ -16,16 +16,16 @@ add-apt-repository ppa:bashtop-monitor/bashtop
 ##############################
 apt update
 apt upgrade
-apt install git snapd gparted synaptic xubuntu-restricted-extras python3-pip mpv jq ffmpeg gimp xsane pdfshuffler pinta audacity bless htop sysinfo hardinfo acpi libreoffice libreoffice-l10n-de libreoffice-help-de ffmulticonverter
-apt install sqlite3 nodejs npm gaupol mediainfo mediainfo-gui guvcview lxsplit libimage-exiftool-perl perl-doc steam kazam vpnc xsensors handbrake-gtk hugin gifsicle wget tree ufw gufw tlp powertop xbacklight arp-scan nmap zenmap nethogs bashtop wireshark
-#apt install mypaint vlc
+apt install git snapd gparted synaptic xubuntu-restricted-extras python3-pip mpv jq ffmpeg gimp xsane simple-scan pdfshuffler pinta audacity bless htop sysinfo hardinfo acpi libreoffice libreoffice-l10n-de libreoffice-help-de ffmulticonverter
+apt install sqlite3 nodejs npm gaupol mediainfo mediainfo-gui guvcview lxsplit libimage-exiftool-perl perl-doc steam kazam vpnc xsensors handbrake-gtk hugin gifsicle wget tree ufw gufw arp-scan nmap zenmap nethogs bashtop wireshark
+#apt install mypaint vlc tlp powertop xbacklight
 ##############################
 # Install line snap          #
 ##############################
 # https://snapcraft.io/store hier suchen, ob snap das gewuenschte Programm ueberhaupt hat.
 snap install fast discord
 snap install heroku --classic
-snap install micro --classic
+#snap install micro --classic
 #snap install pycharm-community --classic
 #snap install android-studio --classic
 #snap install eclipse --classic
@@ -33,6 +33,11 @@ snap install micro --classic
 #snap install blender --classic
 #snap install skype --classic
 #snap install inkscape krita meshlab zoom-client kdenlive
+##############################
+# Install line Flathub       #
+##############################
+#sudo apt install flatpak
+# https://flathub.org hier suchen, ob flathub das gewuenschte Programm ueberhaupt hat.
 ##############################
 # Install line pip3          #
 ##############################
@@ -72,6 +77,7 @@ mkdir ~/Programs
 # mono https://www.mono-project.com/download/stable/
 # zoom-client https://zoom.us/download
 # gcolor2_colorpicker http://mirrors.edge.kernel.org/ubuntu/pool/universe/g/gcolor2/
+# celluloid https://celluloid-player.github.io/
 # Appimages z.B.:
 # krita https://krita.org/,
 # inkscape https://inkscape.org/,
@@ -143,4 +149,7 @@ python3 -m venv ./venv
 #for i in program1 program2 program3; do
 #  apt-get install $i -y
 #done
+#
+### install better compatibility with "the better distro kernel" (optional)
+#https://liquorix.net/
 exit 0
