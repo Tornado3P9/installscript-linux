@@ -17,13 +17,13 @@ add-apt-repository ppa:bashtop-monitor/bashtop
 apt update
 apt upgrade
 apt install git snapd gparted synaptic xubuntu-restricted-extras python3-pip mpv jq ffmpeg gimp xsane simple-scan pdfshuffler pinta audacity bless htop sysinfo hardinfo acpi libreoffice libreoffice-l10n-de libreoffice-help-de ffmulticonverter
-apt install sqlite3 nodejs npm gaupol mediainfo mediainfo-gui guvcview lxsplit libimage-exiftool-perl perl-doc steam kazam vpnc xsensors handbrake-gtk hugin gifsicle wget tree ufw gufw arp-scan nmap zenmap nethogs bashtop wireshark
+apt install sqlite3 nodejs npm gaupol mediainfo mediainfo-gui guvcview lxsplit libimage-exiftool-perl perl-doc steam kazam vpnc xsensors handbrake-gtk hugin gifsicle wget tree ufw gufw arp-scan nmap zenmap nethogs bashtop wireshark speedtest-cli
 #apt install mypaint vlc tlp powertop xbacklight
 ##############################
 # Install line snap          #
 ##############################
 # https://snapcraft.io/store hier suchen, ob snap das gewuenschte Programm ueberhaupt hat.
-snap install fast discord
+snap install discord
 snap install heroku --classic
 #snap install micro --classic
 #snap install pycharm-community --classic
@@ -32,7 +32,7 @@ snap install heroku --classic
 #snap install code --classic
 #snap install blender --classic
 #snap install skype --classic
-#snap install inkscape krita meshlab zoom-client kdenlive
+#snap install inkscape krita meshlab zoom-client kdenlive fast
 ##############################
 # Install line Flathub       #
 ##############################
