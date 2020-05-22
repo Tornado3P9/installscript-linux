@@ -17,7 +17,7 @@ add-apt-repository ppa:bashtop-monitor/bashtop
 apt update
 apt upgrade
 apt install git snapd gparted synaptic xubuntu-restricted-extras python3-pip mpv jq ffmpeg gimp xsane simple-scan pdfshuffler pinta audacity bless htop sysinfo hardinfo acpi libreoffice libreoffice-l10n-de libreoffice-help-de ffmulticonverter
-apt install sqlite3 nodejs npm gaupol mediainfo mediainfo-gui guvcview lxsplit libimage-exiftool-perl perl-doc steam kazam vpnc xsensors handbrake-gtk hugin gifsicle wget tree ufw gufw arp-scan nmap zenmap nethogs bashtop wireshark speedtest-cli
+apt install sqlite3 nodejs npm gaupol mediainfo mediainfo-gui guvcview lxsplit libimage-exiftool-perl perl-doc steam kazam vpnc xsensors handbrake-gtk hugin gifsicle wget tree ufw gufw arp-scan nmap zenmap nethogs bashtop wireshark speedtest-cli traceroute mtr
 #apt install mypaint vlc tlp powertop xbacklight
 ##############################
 # Install line snap          #
