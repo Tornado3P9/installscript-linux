@@ -20,8 +20,9 @@ apt upgrade
 apt install git snapd gparted synaptic xubuntu-restricted-extras python3-pip mpv jq ffmpeg gimp xsane simple-scan pdfshuffler pinta \
             audacity audio-recorder bless htop sysinfo hardinfo acpi libreoffice libreoffice-l10n-de libreoffice-help-de ffmulticonverter \
             sqlite3 nodejs npm gaupol mediainfo mediainfo-gui guvcview lxsplit libimage-exiftool-perl perl-doc steam kazam vpnc xsensors \
-            handbrake-gtk hugin gifsicle wget tree ufw gufw arp-scan nmap zenmap nethogs bashtop wireshark speedtest-cli traceroute mtr
-#apt install mypaint vlc tlp powertop xbacklight
+            handbrake-gtk hugin gifsicle wget tree ufw gufw arp-scan nmap zenmap nethogs bashtop wireshark speedtest-cli traceroute mtr \
+            neofetch
+#apt install mypaint vlc tlp powertop xbacklight screenfetch
 ##############################
 # Install line snap          #
 ##############################
