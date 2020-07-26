@@ -9,26 +9,25 @@
 # Adding PPAs                #
 ##############################
 add-apt-repository ppa:stebbins/handbrake-releases
-add-apt-repository ppa:cteehayder/ffmulticonverter
-add-apt-repository ppa:bashtop-monitor/bashtop
-apt-add-repository ppa:audio-recorder/ppa
+#add-apt-repository ppa:cteehayder/ffmulticonverter
+#add-apt-repository ppa:bashtop-monitor/bashtop
+#apt-add-repository ppa:audio-recorder/ppa
 ##############################
 # Install line apt           #
 ##############################
-apt update
-apt upgrade
-apt install git snapd gparted synaptic xubuntu-restricted-extras python3-pip mpv jq ffmpeg gimp xsane simple-scan pdfshuffler pinta \
-            audacity audio-recorder bless htop sysinfo hardinfo acpi libreoffice libreoffice-l10n-de libreoffice-help-de ffmulticonverter \
-            sqlite3 nodejs npm gaupol mediainfo mediainfo-gui guvcview lxsplit libimage-exiftool-perl perl-doc steam kazam vpnc xsensors \
-            handbrake-gtk hugin gifsicle wget tree ufw gufw arp-scan nmap zenmap nethogs bashtop wireshark speedtest-cli traceroute mtr \
-            neofetch
-#apt install mypaint vlc tlp powertop xbacklight screenfetch
+sudo apt update
+sudo apt upgrade
+sudo apt install git snapd gparted synaptic xubuntu-restricted-extras python3-pip mpv jq ffmpeg gimp xsane simple-scan pdfshuffler pinta \
+            audacity bless htop sysinfo hardinfo acpi libreoffice libreoffice-l10n-de libreoffice-help-de neofetch usb-creator-gtk \
+            sqlite3 nodejs npm gaupol mediainfo mediainfo-gui guvcview lxsplit libimage-exiftool-perl perl-doc steam kazam xsensors \
+            handbrake-gtk hugin gifsicle wget tree ufw gufw arp-scan nmap zenmap nethogs wireshark speedtest-cli traceroute mtr
+#apt install mypaint vlc tlp powertop bashtop xbacklight screenfetch audio-recorder ffmulticonverter free vpnc
 ##############################
 # Install line snap          #
 ##############################
 # https://snapcraft.io/store hier suchen, ob snap das gewuenschte Programm ueberhaupt hat.
-snap install discord
-snap install heroku --classic
+sudo snap install discord
+sudo snap install heroku --classic
 #snap install micro --classic
 #snap install pycharm-community --classic
 #snap install android-studio --classic
@@ -53,22 +52,22 @@ pip3 install --user virtualenv selenium pytest requests flask youtube-dl
 # 1. Do you want to install Texlive and Texmaker?
 read -p "Do you want to install Texlive and Texmaker? [Y/n]: " yn
 if [ "$yn" != "n" ]; then
-  apt install texlive-full texmaker
+  sudo apt install texlive-full texmaker
 fi
 read -p "Do you want to copy old alias? [Y/n]: " yn2
 if [ "$yn2" != "n" ]; then
   cat alias.txt >> ~/.bashrc
 fi
 ### 2. Check Firewall Status https://wiki.ubuntuusers.de/ufw/:
-ufw status
+sudo ufw status
 read -p "Do you want to activate firewall? [Y/n]: " yn3
 if [ "$yn3" != "n" ]; then
-  ufw enable
-# ufw disable
+  sudo ufw enable
+# sudo ufw disable
 fi
 #
 ### 3. Additional Themes:
-apt install arc-theme moka-icon-theme numix-icon-theme numix-gtk-theme lightdm-gtk-greeter-settings
+sudo apt install arc-theme moka-icon-theme numix-icon-theme numix-gtk-theme lightdm-gtk-greeter-settings
 #
 ### 4. Ordner Fuer Externe Programme Erstellen:
 mkdir ~/Programs

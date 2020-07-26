@@ -1,23 +1,27 @@
 # some more aliases
 alias nHistory='history -c && history -w'
 alias beenden='shutdown -h now'
-alias neustart='reboot'
+#
 #alias ase='acpi -b && sensors'
 alias ase='sensors'
+#
 #virtual environments workflow: mkdir my-python-venv && cd my-python-venv && virtualenv venv
 alias ae='deactivate &> /dev/null; source ./venv/bin/activate'
 alias de='deactivate'
+#
 #run command to view all currently runnig snap service: systemctl list-unit-files | grep snap
 alias snapstop='sudo systemctl stop snapd.service'
 alias snapmask='sudo systemctl mask snapd.service'
 alias snapunmask='sudo systemctl unmask snapd.service'
 alias snapstart='sudo systemctl start snapd.service'
+#
 #mlcocate
-alias mlocatestop='sudo chmod -x /etc/cron.daily/mlocate'
+#alias mlocatestop='sudo chmod -x /etc/cron.daily/mlocate'
 #sudo cp /etc/cron.daily/mlocate /etc/cron.daily/mlocate
 #sudo cp /etc/cron.daily/mlocate /etc/cron.hourly/mlocate
 #sudo cp /etc/cron.daily/mlocate /etc/cron.weekly/mlocate
 #sudo cp /etc/cron.daily/mlocate /etc/cron.monthly/mlocate
 alias mlocatestart='sudo chmod +x /etc/cron.daily/mlocate'
+#
 #Youtube
-alias media='~/Programs/mpvvideo.sh'
+#alias media='~/Programs/mpvvideo.sh'
