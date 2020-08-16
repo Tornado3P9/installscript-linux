@@ -22,6 +22,4 @@ alias snapstart='sudo systemctl start snapd.service'
 #sudo cp /etc/cron.daily/mlocate /etc/cron.weekly/mlocate
 #sudo cp /etc/cron.daily/mlocate /etc/cron.monthly/mlocate
 alias mlocatestart='sudo chmod +x /etc/cron.daily/mlocate'
-#
-#Youtube
-#alias media='~/Programs/mpvvideo.sh'
+

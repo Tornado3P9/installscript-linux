@@ -1,5 +1,5 @@
 #!/bin/bash
-# Xubuntu 18.04
+# Xubuntu 20.04
 #
 ##############################
 # Command Line Variables     #
@@ -17,11 +17,12 @@ add-apt-repository ppa:stebbins/handbrake-releases
 ##############################
 sudo apt update
 sudo apt upgrade
-sudo apt install git snapd gparted synaptic xubuntu-restricted-extras python3-pip mpv jq ffmpeg gimp xsane simple-scan pdfshuffler pinta \
-            audacity bless htop sysinfo hardinfo acpi libreoffice libreoffice-l10n-de libreoffice-help-de neofetch usb-creator-gtk \
-            sqlite3 nodejs npm gaupol mediainfo mediainfo-gui guvcview lxsplit libimage-exiftool-perl perl-doc steam kazam xsensors \
-            handbrake-gtk hugin gifsicle wget tree ufw gufw arp-scan nmap zenmap nethogs wireshark speedtest-cli traceroute mtr
-#apt install mypaint vlc tlp powertop bashtop xbacklight screenfetch audio-recorder ffmulticonverter free vpnc
+sudo apt install git snapd gparted synaptic python3-pip mpv jq ffmpeg gimp xsane simple-scan pdfshuffler pinta audacity bless htop hardinfo acpi \
+                 libreoffice libreoffice-l10n-de libreoffice-help-de neofetch usb-creator-gtk sqlite3 nodejs npm gaupol mediainfo mediainfo-gui \
+                 guvcview lxsplit libimage-exiftool-perl perl-doc steam kazam xsensors handbrake-gtk hugin gifsicle wget tree ufw gufw arp-scan \
+                 nmap nethogs wireshark speedtest-cli traceroute mtr kleopatra
+#sudo apt install libavcodec-extra ttf-mscorefonts-installer unrar rar gstreamer1.0-libav gstreamer1.0-plugins-ugly gstreamer1.0-vaapi
+#apt install mypaint vlc tlp powertop bashtop xbacklight screenfetch audio-recorder ffmulticonverter free vpnc sysinfo ubuntu-restricted-extras zenmap
 ##############################
 # Install line snap          #
 ##############################
@@ -45,26 +46,26 @@ sudo snap install heroku --classic
 # Install line pip3          #
 ##############################
 #python3 -m pip install --user --upgrade pip
-pip3 install --user virtualenv selenium pytest requests flask youtube-dl
+#pip3 install --user virtualenv selenium pytest requests flask youtube-dl
 ##############################
 # Install additional items   #
 ##############################
-# 1. Do you want to install Texlive and Texmaker?
-read -p "Do you want to install Texlive and Texmaker? [Y/n]: " yn
-if [ "$yn" != "n" ]; then
-  sudo apt install texlive-full texmaker
-fi
-read -p "Do you want to copy old alias? [Y/n]: " yn2
-if [ "$yn2" != "n" ]; then
-  cat alias.txt >> ~/.bashrc
-fi
+### 1. Do you want to install Texlive and Texmaker?
+#read -p "Do you want to install Texlive and Texmaker? [Y/n]: " yn
+#if [ "$yn" != "n" ]; then
+#  sudo apt install texlive-full texmaker
+#fi
+#read -p "Do you want to copy old alias? [Y/n]: " yn2
+#if [ "$yn2" != "n" ]; then
+#  cat alias.txt >> ~/.bashrc
+#fi
 ### 2. Check Firewall Status https://wiki.ubuntuusers.de/ufw/:
-sudo ufw status
-read -p "Do you want to activate firewall? [Y/n]: " yn3
-if [ "$yn3" != "n" ]; then
-  sudo ufw enable
-# sudo ufw disable
-fi
+#sudo ufw status
+#read -p "Do you want to activate firewall? [Y/n]: " yn3
+#if [ "$yn3" != "n" ]; then
+#  sudo ufw enable
+## sudo ufw disable
+#fi
 #
 ### 3. Additional Themes:
 sudo apt install arc-theme moka-icon-theme numix-icon-theme numix-gtk-theme lightdm-gtk-greeter-settings
@@ -108,17 +109,21 @@ mkdir ~/Programs
 ### 6. Konsolentools herunterladen:
 # cd ~/Programs && git clone https://github.com/Tornado3P9/Konsolentools
 #
-### 7. Shortcut Collection herunterladen, nach ~/Programs entpacken und zip-Archiv loeschen:
+### 7. Virtuelle Python Environment erstellen, siehe in alias.txt unter 'virtual environments workflow'
+#mkdir ~/my-python-venv && cd ~/my-python-venv
+#python3 -m venv ./venv
+#
+### 8. Shortcut Collection herunterladen, nach ~/Programs entpacken und zip-Archiv loeschen:
 wget https://www.dropbox.com/sh/svkokavmhty8xi3/AADawdnN94IPQqoE7obCAOLNa?dl=0 -O gezipptesArchiv.zip
 unzip gezipptesArchiv.zip -d ~/Programs/
 rm gezipptesArchiv.zip
 #
-### 8. xfce4-settings-manager (Alt+F2 -> xfce4-)
+### 9. xfce4-settings-manager (Alt+F2 -> xfce4-)
 echo "xfce4-settings-manager -> Fenstereinstellungen der Fensterverwaltung -> Zugreifbarkeit -> Taste zum nehmen und verschieben der Fenster: None"
 read -p "EnterTaste:"
 xfce4-settings-manager
 #
-### 9. TASTENKUERZEL FUER LIEBLINGSPROGRAMME ERSTELLEN: xfce4-settings-manager -> Tastatur -> Tastenkuerzel
+### 10. TASTENKUERZEL FUER LIEBLINGSPROGRAMME ERSTELLEN: xfce4-settings-manager -> Tastatur -> Tastenkuerzel
 #Strg+Alt+Entf -> xfce4-session-logout
 #Super+W       -> Webbrowser
 #Super+F       -> Dateibrowser(Home Folder)
@@ -126,10 +131,6 @@ xfce4-settings-manager
 #Strg+Alt+Esc  -> xkill = Kill Window under X
 #Super+L       -> Bildschirm sperren
 #Umschalt+Strg+Esc -> xfce4-taskmanager
-#
-### 10. Virtuelle Python Environment erstellen, siehe in alias.txt unter 'virtual environments workflow'
-mkdir ~/my-python-venv && cd ~/my-python-venv
-python3 -m venv ./venv
 #
 ### 11. Bildschirm Hintergrund:
 # https://www.pexels.com/
