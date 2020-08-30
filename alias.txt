@@ -2,8 +2,8 @@
 alias nHistory='history -c && history -w'
 alias beenden='shutdown -h now'
 #
-#alias ase='acpi -b && sensors'
-alias ase='sensors'
+alias ase='acpi -b && sensors'
+#alias ase='sensors'
 #
 #virtual environments workflow: mkdir my-python-venv && cd my-python-venv && virtualenv venv
 alias ae='deactivate &> /dev/null; source ./venv/bin/activate'
@@ -21,5 +21,6 @@ alias snapstart='sudo systemctl start snapd.service'
 #sudo cp /etc/cron.daily/mlocate /etc/cron.hourly/mlocate
 #sudo cp /etc/cron.daily/mlocate /etc/cron.weekly/mlocate
 #sudo cp /etc/cron.daily/mlocate /etc/cron.monthly/mlocate
-alias mlocatestart='sudo chmod +x /etc/cron.daily/mlocate'
-
+#alias mlocatestart='sudo chmod +x /etc/cron.daily/mlocate'
+#
+alias m4a2mp3='for f in *.m4a; do ffmpeg -i "$f" -acodec libmp3lame -ab 256k "${f%.m4a}.mp3"; done'

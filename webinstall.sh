@@ -21,7 +21,7 @@ sudo apt install git snapd gparted synaptic python3-pip mpv jq ffmpeg gimp xsane
                  libreoffice libreoffice-l10n-de libreoffice-help-de neofetch usb-creator-gtk sqlite3 nodejs npm gaupol mediainfo mediainfo-gui \
                  guvcview lxsplit libimage-exiftool-perl perl-doc steam kazam xsensors handbrake-gtk hugin gifsicle wget tree ufw gufw arp-scan \
                  nmap nethogs wireshark speedtest-cli traceroute mtr kleopatra
-#sudo apt install libavcodec-extra ttf-mscorefonts-installer unrar rar gstreamer1.0-libav gstreamer1.0-plugins-ugly gstreamer1.0-vaapi
+sudo apt install libavcodec-extra ttf-mscorefonts-installer unrar rar gstreamer1.0-libav gstreamer1.0-plugins-ugly gstreamer1.0-vaapi
 #apt install mypaint vlc tlp powertop bashtop xbacklight screenfetch audio-recorder ffmulticonverter free vpnc sysinfo ubuntu-restricted-extras zenmap
 ##############################
 # Install line snap          #
@@ -60,18 +60,18 @@ sudo snap install heroku --classic
 #  cat alias.txt >> ~/.bashrc
 #fi
 ### 2. Check Firewall Status https://wiki.ubuntuusers.de/ufw/:
-#sudo ufw status
-#read -p "Do you want to activate firewall? [Y/n]: " yn3
-#if [ "$yn3" != "n" ]; then
-#  sudo ufw enable
+sudo ufw status
+read -p "Do you want to activate firewall? [Y/n]: " yn3
+if [ "$yn3" != "n" ]; then
+  sudo ufw enable
 ## sudo ufw disable
-#fi
+fi
 #
 ### 3. Additional Themes:
 sudo apt install arc-theme moka-icon-theme numix-icon-theme numix-gtk-theme lightdm-gtk-greeter-settings
 #
 ### 4. Ordner Fuer Externe Programme Erstellen:
-mkdir ~/Programs
+sudo mkdir ~/Programs
 #
 ### 5. Installation Von Externen Programmen:
 #A: Programme Herunterladen, z.B.:
@@ -114,14 +114,13 @@ mkdir ~/Programs
 #python3 -m venv ./venv
 #
 ### 8. Shortcut Collection herunterladen, nach ~/Programs entpacken und zip-Archiv loeschen:
-wget https://www.dropbox.com/sh/svkokavmhty8xi3/AADawdnN94IPQqoE7obCAOLNa?dl=0 -O gezipptesArchiv.zip
-unzip gezipptesArchiv.zip -d ~/Programs/
-rm gezipptesArchiv.zip
+wget https://www.dropbox.com/sh/svkokavmhty8xi3/AADawdnN94IPQqoE7obCAOLNa?dl=0 -O gezipptesArchiv.zip && unzip gezipptesArchiv.zip -d ~/Programs/
+#rm gezipptesArchiv.zip
 #
 ### 9. xfce4-settings-manager (Alt+F2 -> xfce4-)
-echo "xfce4-settings-manager -> Fenstereinstellungen der Fensterverwaltung -> Zugreifbarkeit -> Taste zum nehmen und verschieben der Fenster: None"
-read -p "EnterTaste:"
-xfce4-settings-manager
+#echo "xfce4-settings-manager -> Fenstereinstellungen der Fensterverwaltung -> Zugreifbarkeit -> Taste zum nehmen und verschieben der Fenster: None"
+#read -p "EnterTaste:"
+#xfce4-settings-manager
 #
 ### 10. TASTENKUERZEL FUER LIEBLINGSPROGRAMME ERSTELLEN: xfce4-settings-manager -> Tastatur -> Tastenkuerzel
 #Strg+Alt+Entf -> xfce4-session-logout
