@@ -24,3 +24,4 @@ alias snapstart='sudo systemctl start snapd.service'
 #alias mlocatestart='sudo chmod +x /etc/cron.daily/mlocate'
 #
 alias m4a2mp3='for f in *.m4a; do ffmpeg -i "$f" -acodec libmp3lame -ab 256k "${f%.m4a}.mp3"; done'
+alias youtube='mpv --profile=youtube-video --no-resume-playback'
