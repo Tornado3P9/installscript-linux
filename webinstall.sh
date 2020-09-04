@@ -1,8 +1,10 @@
 #!/bin/bash
 # Xubuntu 20.04
-#
 ##############################
-# Command Line Variables     #
+# First Steps!!              #
+#----------------------------#
+# chmod +x webinstall.sh     #
+# ./webinstall.sh            #
 ##############################
 #
 ##############################
@@ -71,7 +73,7 @@ fi
 sudo apt install arc-theme moka-icon-theme numix-icon-theme numix-gtk-theme lightdm-gtk-greeter-settings
 #
 ### 4. Ordner Fuer Externe Programme Erstellen:
-sudo mkdir ~/Programs
+mkdir ~/Programs
 #
 ### 5. Installation Von Externen Programmen:
 #A: Programme Herunterladen, z.B.:
@@ -114,8 +116,9 @@ sudo mkdir ~/Programs
 #python3 -m venv ./venv
 #
 ### 8. Shortcut Collection herunterladen, nach ~/Programs entpacken und zip-Archiv loeschen:
-wget https://www.dropbox.com/sh/svkokavmhty8xi3/AADawdnN94IPQqoE7obCAOLNa?dl=0 -O gezipptesArchiv.zip && unzip gezipptesArchiv.zip -d ~/Programs/
-#rm gezipptesArchiv.zip
+wget https://www.dropbox.com/sh/svkokavmhty8xi3/AADawdnN94IPQqoE7obCAOLNa?dl=0 -O gezipptesArchiv.zip
+unzip gezipptesArchiv.zip -d ~/Programs/
+rm gezipptesArchiv.zip
 #
 ### 9. xfce4-settings-manager (Alt+F2 -> xfce4-)
 #echo "xfce4-settings-manager -> Fenstereinstellungen der Fensterverwaltung -> Zugreifbarkeit -> Taste zum nehmen und verschieben der Fenster: None"
@@ -146,7 +149,7 @@ wget https://www.dropbox.com/sh/svkokavmhty8xi3/AADawdnN94IPQqoE7obCAOLNa?dl=0 -
 # Photopea (Onlinetool, gute Kompatibilitaet zu Photoshops Textobjekten) https://www.photopea.com/
 # Inkscape (Vektorgrafiken) https://inkscape.org/
 # MyPaint (Professionelles Maltool fuer Arbeit am Digital Drawing Tablet) http://mypaint.org/
-# Blender2.8 (Professionelles 2D-Maltool fuer Arbeit am Digital Drawing Tablet) https://www.blender.org/
+# Blender2.9 (Professionelles 2D-Maltool fuer Arbeit am Digital Drawing Tablet) https://www.blender.org/
 #
 ### Automaticly enter 'yes' when asked:
 #for i in program1 program2 program3; do
