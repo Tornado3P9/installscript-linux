@@ -24,7 +24,7 @@ sudo apt install git snapd gparted synaptic python3-pip mpv jq ffmpeg gimp xsane
                  guvcview lxsplit libimage-exiftool-perl perl-doc steam kazam xsensors handbrake-gtk hugin gifsicle wget tree ufw gufw arp-scan \
                  nmap nethogs wireshark speedtest-cli traceroute mtr kleopatra
 sudo apt install libavcodec-extra ttf-mscorefonts-installer unrar rar gstreamer1.0-libav gstreamer1.0-plugins-ugly gstreamer1.0-vaapi
-#apt install mypaint vlc tlp powertop bashtop xbacklight screenfetch audio-recorder ffmulticonverter free vpnc sysinfo ubuntu-restricted-extras zenmap
+#apt install curl mypaint vlc tlp powertop bashtop xbacklight screenfetch audio-recorder ffmulticonverter free vpnc sysinfo ubuntu-restricted-extras zenmap
 ##############################
 # Install line snap          #
 ##############################
@@ -47,8 +47,9 @@ sudo snap install heroku --classic
 ##############################
 # Install line pip3          #
 ##############################
-#python3 -m pip install --user --upgrade pip
-#pip3 install --user virtualenv selenium pytest requests flask youtube-dl
+#python3 -m pip install --upgrade pip
+#python3 -m pip install --upgrade Pillow
+#pip3 install --user venv selenium pytest requests flask Pillow youtube-dl
 ##############################
 # Install additional items   #
 ##############################
