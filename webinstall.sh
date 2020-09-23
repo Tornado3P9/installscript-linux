@@ -19,7 +19,7 @@ add-apt-repository ppa:stebbins/handbrake-releases
 ##############################
 sudo apt update
 sudo apt upgrade
-sudo apt install git snapd gparted synaptic python3-pip mpv jq ffmpeg gimp xsane simple-scan pdfshuffler pinta audacity bless htop hardinfo acpi \
+sudo apt install git gparted synaptic python3-pip mpv jq ffmpeg gimp xsane simple-scan pdfshuffler pinta audacity bless htop hardinfo acpi \
                  libreoffice libreoffice-l10n-de libreoffice-help-de neofetch usb-creator-gtk sqlite3 nodejs npm gaupol mediainfo mediainfo-gui \
                  guvcview lxsplit libimage-exiftool-perl perl-doc steam kazam xsensors handbrake-gtk hugin gifsicle wget tree ufw gufw arp-scan \
                  nmap nethogs wireshark speedtest-cli traceroute mtr kleopatra
@@ -28,8 +28,9 @@ sudo apt install libavcodec-extra ttf-mscorefonts-installer unrar rar gstreamer1
 ##############################
 # Install line snap          #
 ##############################
+#sudo apt install snapd
 # https://snapcraft.io/store hier suchen, ob snap das gewuenschte Programm ueberhaupt hat.
-sudo snap install discord
+#snap install discord
 #snap install heroku --classic
 #snap install micro --classic
 #snap install pycharm-community --classic
@@ -162,7 +163,7 @@ rm gezipptesArchiv.zip
 #https://liquorix.net/
 #
 ### Audio+Video Converter:
-# ffmpeg (complex converter tool for videos, movies, images, pdfs, ...) https://wiki.ubuntuusers.de/FFmpeg/
+# ffmpeg (complex converter tool for videos, movies, images, pdfs, ...) https://wiki.ubuntuusers.de/FFmpeg/ http://ffmpeg.org/ffmpeg.html
 # handbrake (Very Good! -> see above for PPA install) https://wiki.ubuntuusers.de/HandBrake/
 # winff (Grafic Interface for ffmpeg)
 # traGtor (Alternatively) http://mein-neues-blog.de/
