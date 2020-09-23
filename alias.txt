@@ -23,5 +23,9 @@ alias snapstart='sudo systemctl start snapd.service'
 #sudo cp /etc/cron.daily/mlocate /etc/cron.monthly/mlocate
 #alias mlocatestart='sudo chmod +x /etc/cron.daily/mlocate'
 #
+#convert audio
 alias m4a2mp3='for f in *.m4a; do ffmpeg -i "$f" -acodec libmp3lame -ab 256k "${f%.m4a}.mp3"; done'
+alias wav2mp3='for f in *.wav; do ffmpeg -i "$f" -acodec libmp3lame -ab 256k -ar 48000 "${f%.wav}.mp3"; done'
+alias mp32wav='for f in *.mp3; do ffmpeg -i "$f" "${f%.mp3}.wav"; done'
+alias m4a2wav='for f in *.m4a; do ffmpeg -i "$f" "${f%.m4a}.wav"; done'
 alias youtube='mpv --profile=youtube-video --no-resume-playback'

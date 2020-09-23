@@ -24,13 +24,13 @@ sudo apt install git snapd gparted synaptic python3-pip mpv jq ffmpeg gimp xsane
                  guvcview lxsplit libimage-exiftool-perl perl-doc steam kazam xsensors handbrake-gtk hugin gifsicle wget tree ufw gufw arp-scan \
                  nmap nethogs wireshark speedtest-cli traceroute mtr kleopatra
 sudo apt install libavcodec-extra ttf-mscorefonts-installer unrar rar gstreamer1.0-libav gstreamer1.0-plugins-ugly gstreamer1.0-vaapi
-#apt install curl mypaint vlc tlp powertop bashtop xbacklight screenfetch audio-recorder ffmulticonverter free vpnc sysinfo ubuntu-restricted-extras zenmap
+#sudo apt install curl mypaint vlc tlp powertop bashtop xbacklight screenfetch audio-recorder ffmulticonverter free vpnc sysinfo ubuntu-restricted-extras zenmap
 ##############################
 # Install line snap          #
 ##############################
 # https://snapcraft.io/store hier suchen, ob snap das gewuenschte Programm ueberhaupt hat.
 sudo snap install discord
-sudo snap install heroku --classic
+#snap install heroku --classic
 #snap install micro --classic
 #snap install pycharm-community --classic
 #snap install android-studio --classic
@@ -74,7 +74,8 @@ fi
 sudo apt install arc-theme moka-icon-theme numix-icon-theme numix-gtk-theme lightdm-gtk-greeter-settings
 #
 ### 4. Ordner Fuer Externe Programme Erstellen:
-mkdir ~/Programs
+#mkdir ~/Programs
+mkdir $HOME/Programs
 #
 ### 5. Installation Von Externen Programmen:
 #A: Programme Herunterladen, z.B.:
@@ -159,4 +160,11 @@ rm gezipptesArchiv.zip
 #
 ### install better compatibility with "the better distro kernel" (optional)
 #https://liquorix.net/
+#
+### Audio+Video Converter:
+# ffmpeg (complex converter tool for videos, movies, images, pdfs, ...) https://wiki.ubuntuusers.de/FFmpeg/
+# handbrake (Very Good! -> see above for PPA install) https://wiki.ubuntuusers.de/HandBrake/
+# winff (Grafic Interface for ffmpeg)
+# traGtor (Alternatively) http://mein-neues-blog.de/
+#
 exit 0
