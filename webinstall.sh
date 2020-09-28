@@ -11,6 +11,7 @@
 # Adding PPAs                #
 ##############################
 add-apt-repository ppa:stebbins/handbrake-releases
+#add-apt-repository ppa:ubuntuhandbook1/audacity
 #add-apt-repository ppa:cteehayder/ffmulticonverter
 #add-apt-repository ppa:bashtop-monitor/bashtop
 #apt-add-repository ppa:audio-recorder/ppa

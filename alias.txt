@@ -29,3 +29,4 @@ alias wav2mp3='for f in *.wav; do ffmpeg -i "$f" -acodec libmp3lame -ab 256k -ar
 alias mp32wav='for f in *.mp3; do ffmpeg -i "$f" "${f%.mp3}.wav"; done'
 alias m4a2wav='for f in *.m4a; do ffmpeg -i "$f" "${f%.m4a}.wav"; done'
 alias youtube='mpv --profile=youtube-video --no-resume-playback'
+alias restartaudio='pulseaudio -k && sudo alsa force-reload'
