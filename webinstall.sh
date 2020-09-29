@@ -145,6 +145,7 @@ rm gezipptesArchiv.zip
 ### Microsoft Office Alternativen, die auf allen Betriebssystemen laufen!:
 # Wer nicht mit Libreoffice zufrieden ist...(ich bins und fuer grosse Arbeiten benutzt man sowieso LateX/Texmaker...),
 # der kann FreeOffice von Softmaker benutzen. Das ist eine exakte Kopie von MicrosoftOffice, wenn nicht sogar besser.
+# OnlyOffice ist ebenfalls ein sehr gut aussehendes Paket und kompatibel mit MSOffice.
 # Oder WPS_Office aus China...ebenfalls eine Kopie von MSOffice.
 #
 ### Photoshop Alternativen:
