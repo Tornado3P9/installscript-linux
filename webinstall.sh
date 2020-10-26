@@ -53,6 +53,7 @@ sudo apt install libavcodec-extra ttf-mscorefonts-installer unrar rar gstreamer1
 #python3 -m pip install --upgrade pip
 #python3 -m pip install --upgrade Pillow
 #pip3 install --user venv selenium pytest requests flask Pillow youtube-dl
+#pip3 install -U bpytop
 ##############################
 # Install additional items   #
 ##############################
