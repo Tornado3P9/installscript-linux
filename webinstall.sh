@@ -10,7 +10,7 @@
 ##############################
 # Adding PPAs                #
 ##############################
-add-apt-repository ppa:stebbins/handbrake-releases
+sudo add-apt-repository ppa:stebbins/handbrake-releases
 #add-apt-repository ppa:kdenlive/kdenlive-stable
 #add-apt-repository ppa:ubuntuhandbook1/audacity
 #add-apt-repository ppa:cteehayder/ffmulticonverter
@@ -21,10 +21,7 @@ add-apt-repository ppa:stebbins/handbrake-releases
 ##############################
 sudo apt update
 sudo apt upgrade
-sudo apt install git gparted synaptic python3-pip mpv jq ffmpeg gimp xsane simple-scan pdfshuffler pinta audacity bless htop hardinfo acpi \
-                 libreoffice libreoffice-l10n-de libreoffice-help-de neofetch usb-creator-gtk sqlite3 nodejs npm gaupol mediainfo mediainfo-gui \
-                 guvcview lxsplit libimage-exiftool-perl perl-doc steam kazam xsensors handbrake-gtk hugin gifsicle wget tree ufw gufw arp-scan \
-                 nmap nethogs wireshark speedtest-cli traceroute mtr kleopatra
+sudo apt install git gparted synaptic python3-pip mpv jq ffmpeg gimp xsane simple-scan pdfshuffler pinta audacity htop hardinfo acpi libreoffice libreoffice-l10n-de libreoffice-help-de neofetch usb-creator-gtk sqlite3 nodejs npm gaupol mediainfo mediainfo-gui guvcview lxsplit libimage-exiftool-perl perl-doc steam kazam xsensors handbrake-gtk hugin gifsicle wget tree ufw gufw arp-scan nmap nethogs wireshark speedtest-cli traceroute mtr kleopatra jeex bless
 sudo apt install libavcodec-extra ttf-mscorefonts-installer unrar rar gstreamer1.0-libav gstreamer1.0-plugins-ugly gstreamer1.0-vaapi
 #sudo apt install curl mypaint vlc tlp powertop bashtop xbacklight screenfetch audio-recorder ffmulticonverter free vpnc sysinfo ubuntu-restricted-extras zenmap
 ##############################
@@ -122,9 +119,9 @@ mkdir $HOME/Programs
 #python3 -m venv ./venv
 #
 ### 8. Shortcut Collection herunterladen, nach ~/Programs entpacken und zip-Archiv loeschen:
-wget https://www.dropbox.com/sh/svkokavmhty8xi3/AADawdnN94IPQqoE7obCAOLNa?dl=0 -O gezipptesArchiv.zip
-unzip gezipptesArchiv.zip -d ~/Programs/
-rm gezipptesArchiv.zip
+#wget https://www.dropbox.com/sh/svkokavmhty8xi3/AADawdnN94IPQqoE7obCAOLNa?dl=0 -O gezipptesArchiv.zip
+#unzip gezipptesArchiv.zip -d ~/Programs/
+#rm gezipptesArchiv.zip
 #
 ### 9. xfce4-settings-manager (Alt+F2 -> xfce4-)
 #echo "xfce4-settings-manager -> Fenstereinstellungen der Fensterverwaltung -> Zugreifbarkeit -> Taste zum nehmen und verschieben der Fenster: None"
