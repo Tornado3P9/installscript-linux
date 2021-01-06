@@ -21,8 +21,10 @@ sudo add-apt-repository ppa:stebbins/handbrake-releases
 ##############################
 sudo apt update
 sudo apt upgrade
-sudo apt install git gparted synaptic python3-pip mpv jq ffmpeg gimp xsane simple-scan pdfshuffler pinta audacity htop hardinfo acpi libreoffice libreoffice-l10n-de libreoffice-help-de neofetch usb-creator-gtk sqlite3 nodejs npm gaupol mediainfo mediainfo-gui guvcview lxsplit libimage-exiftool-perl perl-doc steam kazam xsensors handbrake-gtk hugin gifsicle wget tree ufw gufw arp-scan nmap nethogs wireshark speedtest-cli traceroute mtr kleopatra jeex bless
+sudo apt install git gparted synaptic python3-pip mpv jq ffmpeg gimp xsane simple-scan pdfshuffler pinta audacity htop hardinfo acpi libreoffice libreoffice-l10n-de libreoffice-help-de neofetch usb-creator-gtk sqlite3 nodejs npm gaupol mediainfo mediainfo-gui guvcview lxsplit libimage-exiftool-perl perl-doc steam kazam xsensors hugin gifsicle wget tree ufw gufw arp-scan nmap nethogs wireshark speedtest-cli traceroute mtr kleopatra jeex bless
 sudo apt install libavcodec-extra ttf-mscorefonts-installer unrar rar gstreamer1.0-libav gstreamer1.0-plugins-ugly gstreamer1.0-vaapi
+# PPA:
+sudo apt install handbrake-gtk
 #sudo apt install curl mypaint vlc tlp powertop bashtop xbacklight screenfetch audio-recorder ffmulticonverter free vpnc sysinfo ubuntu-restricted-extras zenmap
 ##############################
 # Install line snap          #
@@ -169,4 +171,10 @@ mkdir $HOME/Programs
 # winff (Grafic Interface for ffmpeg)
 # traGtor (Alternatively) http://mein-neues-blog.de/
 #
+### Professionelle Videobearbeitung:
+# DaVinci Resolve
+# Kdenlive
+# Shotcut
+# Olive
+# Openshot (Simple)
 exit 0
