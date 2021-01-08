@@ -1,3 +1,7 @@
+# Change the command prompt to sth else:
+# PS1="\u@\H :" = username@domain:
+PS1="\e[0;32m\W\e[0m $ "
+#
 # some more aliases
 alias nHistory='rm -r ~/.cache/thumbnails/* && history -c && history -w'
 alias beenden='shutdown -h now'
