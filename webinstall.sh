@@ -21,7 +21,7 @@ sudo add-apt-repository ppa:stebbins/handbrake-releases
 ##############################
 sudo apt update
 sudo apt upgrade
-sudo apt install git gparted synaptic python3-pip mpv jq ffmpeg gimp xsane simple-scan pdfshuffler pinta audacity htop hardinfo acpi libreoffice libreoffice-l10n-de libreoffice-help-de neofetch usb-creator-gtk sqlite3 nodejs npm gaupol mediainfo mediainfo-gui guvcview lxsplit libimage-exiftool-perl perl-doc steam kazam xsensors hugin gifsicle wget tree ufw gufw arp-scan nmap nethogs wireshark speedtest-cli traceroute mtr kleopatra jeex bless
+sudo apt install git gparted synaptic python3-pip mpv jq ffmpeg gimp xsane simple-scan pdfshuffler pinta audacity htop hardinfo acpi libreoffice libreoffice-l10n-de libreoffice-help-de neofetch usb-creator-gtk sqlite3 nodejs npm gaupol mediainfo mediainfo-gui guvcview lxsplit libimage-exiftool-perl perl-doc steam kazam xsensors hugin gifsicle wget tree ufw gufw arp-scan nmap nethogs wireshark speedtest-cli traceroute mtr kleopatra jeex bless rename
 sudo apt install libavcodec-extra ttf-mscorefonts-installer unrar rar gstreamer1.0-libav gstreamer1.0-plugins-ugly gstreamer1.0-vaapi
 # PPA:
 sudo apt install handbrake-gtk
@@ -31,7 +31,6 @@ sudo apt install handbrake-gtk
 ##############################
 #sudo apt install snapd
 # https://snapcraft.io/store hier suchen, ob snap das gewuenschte Programm ueberhaupt hat.
-#snap install discord
 #snap install heroku --classic
 #snap install micro --classic
 #snap install pycharm-community --classic
@@ -40,7 +39,7 @@ sudo apt install handbrake-gtk
 #snap install code --classic
 #snap install blender --classic
 #snap install skype --classic
-#snap install inkscape krita meshlab zoom-client kdenlive fast
+#snap install inkscape krita meshlab zoom-client kdenlive discord fast
 ##############################
 # Install line Flathub       #
 ##############################
@@ -56,15 +55,12 @@ sudo apt install handbrake-gtk
 ##############################
 # Install additional items   #
 ##############################
-### 1. Do you want to install Texlive and Texmaker?
+### 1. Do you want to install Texlive and Texmaker? https://wiki.ubuntuusers.de/TeX_Live/
 #read -p "Do you want to install Texlive and Texmaker? [Y/n]: " yn
 #if [ "$yn" != "n" ]; then
-#  sudo apt install texlive-full texmaker
+#  sudo apt install texlive texlive-lang-german texlive-latex-extra texmaker
 #fi
-#read -p "Do you want to copy old alias? [Y/n]: " yn2
-#if [ "$yn2" != "n" ]; then
-#  cat alias.txt >> ~/.bashrc
-#fi
+#
 ### 2. Check Firewall Status https://wiki.ubuntuusers.de/ufw/:
 sudo ufw status
 read -p "Do you want to activate firewall? [Y/n]: " yn3
@@ -114,7 +110,7 @@ mkdir $HOME/Programs
 #Und JMesh_Hard_Surface_Tools: https://github.com/jayanam/jmesh-tools
 #
 ### 6. Konsolentools herunterladen:
-# cd ~/Programs && git clone https://github.com/Tornado3P9/Konsolentools
+#cd ~/Programs && git clone https://github.com/Tornado3P9/Konsolentools
 #
 ### 7. Virtuelle Python Environment erstellen, siehe in alias.txt unter 'virtual environments workflow'
 #mkdir ~/my-python-venv && cd ~/my-python-venv
@@ -142,6 +138,14 @@ mkdir $HOME/Programs
 ### 11. Bildschirm Hintergrund:
 # https://www.pexels.com/
 # https://www.pexels.com/photo/black-and-white-mountain-over-yellow-white-and-blue-sky-46253/
+#
+### 12. Add custom alias:
+#read -p "Do you want to copy old alias? [Y/n]: " yn2
+#if [ "$yn2" != "n" ]; then
+#  cat alias.txt >> ~/.bashrc
+#fi
+#
+### 13. Weiteres:
 #
 ### Microsoft Office Alternativen, die auf allen Betriebssystemen laufen!:
 # Wer nicht mit Libreoffice zufrieden ist...(ich bins und fuer grosse Arbeiten benutzt man sowieso LateX/Texmaker...),
@@ -174,7 +178,11 @@ mkdir $HOME/Programs
 ### Professionelle Videobearbeitung:
 # DaVinci Resolve
 # Kdenlive
+# Blender
 # Shotcut
 # Olive
 # Openshot (Simple)
+#
+#read -t 3
+read
 exit 0
