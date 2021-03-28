@@ -37,10 +37,6 @@ alias m4a2wav='for f in *.m4a; do ffmpeg -i "$f" "${f%.m4a}.wav"; done'
 alias flac2mp3='for f in *.flac; do ffmpeg -i "$f" -c:v copy -q:a 0 "${f%.flac}.mp3"; done'
 alias youtube='mpv --profile=youtube-video --no-resume-playback'
 #
-#play 6th line inside directory
-alias getline='ls -1 | sed -n '
-#Example: mpv "$(getline 6p)"
-#
 #search
 #alias lt='ls --human-readable --size -1 -S --classify'
 #
@@ -67,3 +63,9 @@ alias count='find . -type f | wc -l'
 #    # use your preferred ls command
 #        ls -F --color=auto
 #}
+#
+#play 6th line inside directory
+#Example: mpv "$(getline 6)"
+function getline() {
+  ls -1 | sed -n "$1 p"
+}
