@@ -183,6 +183,12 @@ mkdir $HOME/Programs
 # Olive
 # Openshot (Simple)
 #
+### Desktop Sketchpads / Draw directly on the Screen:
+# Ardesia for XFCE
+#sudo apt install ardesia
+# "Annotate" plugin in compiz for Gnome
+#sudo apt install compizconfig-settings-manager compiz-plugins compiz-plugins-extra
+#
 #read -t 3
 read
-exit 0
+printf "\n"
