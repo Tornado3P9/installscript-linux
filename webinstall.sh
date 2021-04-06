@@ -73,7 +73,8 @@ fi
 ### 3. Additional Themes:
 sudo apt install arc-theme moka-icon-theme numix-icon-theme numix-gtk-theme lightdm-gtk-greeter-settings
 #sudo apt install plank
-#If Plank (Panel/Dockleiste fuer Apps) is not available in the default repository, you can install it from ppa:ricotz/docky
+#If Plank (Panel/Dockleiste fuer Apps wie beim Mac) is not available in the default repository,
+#just install from ppa:ricotz/docky
 #
 ### 4. Ordner Fuer Externe Programme Erstellen:
 #mkdir ~/Programs
