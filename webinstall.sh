@@ -16,6 +16,7 @@ sudo add-apt-repository ppa:stebbins/handbrake-releases
 #add-apt-repository ppa:cteehayder/ffmulticonverter
 #add-apt-repository ppa:bashtop-monitor/bashtop
 #apt-add-repository ppa:audio-recorder/ppa
+#add-apt-repository ppa:ricotz/docky
 ##############################
 # Install line apt           #
 ##############################
@@ -71,6 +72,8 @@ fi
 #
 ### 3. Additional Themes:
 sudo apt install arc-theme moka-icon-theme numix-icon-theme numix-gtk-theme lightdm-gtk-greeter-settings
+#sudo apt install plank
+#If Plank (Panel/Dockleiste fuer Apps) is not available in the default repository, you can install it from ppa:ricotz/docky
 #
 ### 4. Ordner Fuer Externe Programme Erstellen:
 #mkdir ~/Programs
