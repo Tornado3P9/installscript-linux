@@ -139,7 +139,6 @@ mkdir $HOME/Programs
 #Alt+F2        -> xfrun4
 #Super+W       -> exo-open --launch WebBrowser
 #Super+F       -> exo-open --launch FileManager
-#Strg+Escape   -> xfce4-popup-whiskermenu
 #Print         -> xfce4-screenshooter -f
 #Shift+Print   -> xfce4-screenshooter -r
 #Alt+Print     -> xfce4-screenshooter -w
