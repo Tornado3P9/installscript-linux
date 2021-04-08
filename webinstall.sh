@@ -132,12 +132,20 @@ mkdir $HOME/Programs
 #
 ### 10. TASTENKUERZEL FUER LIEBLINGSPROGRAMME ERSTELLEN: xfce4-settings-manager -> Tastatur -> Tastenkuerzel
 #Strg+Alt+Entf -> xfce4-session-logout
-#Super+W       -> Webbrowser
-#Super+F       -> Dateibrowser(Home Folder)
-#Strg+Esc      -> Menu
 #Strg+Alt+Esc  -> xkill = Kill Window under X
-#Super+L       -> Bildschirm sperren
+#Super+L       -> xflock4 = Bildschirm sperren
 #Umschalt+Strg+Esc -> xfce4-taskmanager
+#--Defaults--
+#Alt+F2        -> xfrun4
+#Super+W       -> exo-open --launch WebBrowser
+#Super+F       -> exo-open --launch FileManager
+#Strg+Escape   -> xfce4-popup-whiskermenu
+#Print         -> xfce4-screenshooter -f
+#Shift+Print   -> xfce4-screenshooter -r
+#Alt+Print     -> xfce4-screenshooter -w
+#Super+F1      -> xfce4-find-cursor
+#Strg+Esc      -> xfce4-popup-whiskermenu (Standard Menu)
+#Alt+F1        -> xfce4-popup-applicationsmenu
 #
 ### 11. Bildschirm Hintergrund:
 # https://www.pexels.com/
