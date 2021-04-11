@@ -16,7 +16,6 @@ sudo add-apt-repository ppa:stebbins/handbrake-releases
 #add-apt-repository ppa:cteehayder/ffmulticonverter
 #add-apt-repository ppa:bashtop-monitor/bashtop
 #apt-add-repository ppa:audio-recorder/ppa
-#add-apt-repository ppa:ricotz/docky
 ##############################
 # Install line apt           #
 ##############################
@@ -149,6 +148,8 @@ mkdir $HOME/Programs
 ### 11. Bildschirm Hintergrund:
 # https://www.pexels.com/
 # https://www.pexels.com/photo/black-and-white-mountain-over-yellow-white-and-blue-sky-46253/
+# To search for background folder:
+#locate backdrops
 #
 ### 12. Add custom alias:
 #read -p "Do you want to copy old alias? [Y/n]: " yn2
