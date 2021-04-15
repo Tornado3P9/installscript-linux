@@ -201,6 +201,9 @@ mkdir $HOME/Programs
 # "Annotate" plugin in compiz for Gnome
 #sudo apt install compizconfig-settings-manager compiz-plugins compiz-plugins-extra
 #
+### Create and Edit EPUB Files on Linux With Sigil
+#sudo apt install sigil
+#
 #read -t 3
 read
 printf "\n"
