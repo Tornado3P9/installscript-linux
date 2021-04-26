@@ -195,9 +195,9 @@ mkdir $HOME/Programs
 # Olive
 # Openshot (Simple)
 #
-### Desktop Sketchpads / Draw directly on the Screen:
-# Ardesia for XFCE
-#sudo apt install ardesia
+### Desktop Sketchpads / Direkt auf dem Bildschrirm malen:
+# Gromit for most systems - https://wiki.ubuntuusers.de/Gromit/
+#sudo apt install gromit
 # "Annotate" plugin in compiz for Gnome
 #sudo apt install compizconfig-settings-manager compiz-plugins compiz-plugins-extra
 #
