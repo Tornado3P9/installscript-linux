@@ -15,7 +15,7 @@ sudo add-apt-repository ppa:stebbins/handbrake-releases
 #add-apt-repository ppa:ubuntuhandbook1/audacity
 #add-apt-repository ppa:cteehayder/ffmulticonverter
 #add-apt-repository ppa:bashtop-monitor/bashtop
-#apt-add-repository ppa:audio-recorder/ppa
+#add-apt-repository ppa:audio-recorder/ppa
 ##############################
 # Install line apt           #
 ##############################
@@ -125,9 +125,9 @@ mkdir $HOME/Programs
 #rm gezipptesArchiv.zip
 #
 ### 9. xfce4-settings-manager (Alt+F2 -> xfce4-)
-#echo "xfce4-settings-manager -> Fenstereinstellungen der Fensterverwaltung -> Zugreifbarkeit -> Taste zum nehmen und verschieben der Fenster: None"
-#read -p "EnterTaste:"
-#xfce4-settings-manager
+echo "xfce4-settings-manager -> Fenstereinstellungen der Fensterverwaltung -> Zugreifbarkeit -> Taste zum nehmen und verschieben der Fenster: None"
+read -p "EnterTaste:"
+xfce4-settings-manager
 #
 ### 10. TASTENKUERZEL FUER LIEBLINGSPROGRAMME ERSTELLEN: xfce4-settings-manager -> Tastatur -> Tastenkuerzel
 #Strg+Alt+Entf -> xfce4-session-logout
