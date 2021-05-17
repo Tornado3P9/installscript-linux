@@ -56,12 +56,14 @@ sudo apt install handbrake-gtk
 # Install additional items   #
 ##############################
 ### 1. Do you want to install Texlive and Texmaker? https://wiki.ubuntuusers.de/TeX_Live/
+printf "\n"
 read -p "Do you want to install Texlive and Texmaker? [Y/n]: " yn
 if [ "$yn" != "n" ]; then
   sudo apt install texlive texlive-lang-german texlive-lang-english texlive-latex-extra texmaker
 fi
 #
 ### 2. Check Firewall Status https://wiki.ubuntuusers.de/ufw/:
+printf "\n"
 sudo ufw status
 read -p "Do you want to activate firewall? [Y/n]: " yn3
 if [ "$yn3" != "n" ]; then
