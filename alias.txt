@@ -64,7 +64,7 @@ alias count='find . -type f | wc -l'
 #        ls -F --color=auto
 #}
 #
-#play 6th line inside directory (ls -1)
+#play 6th line inside directory (ls -1v)
 #Example: playline 6
 function playline() {
   local n1=$(ls -1v | sed -n "$1 p");
