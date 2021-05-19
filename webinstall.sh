@@ -202,6 +202,10 @@ xfce4-settings-manager
 #sudo apt install gromit
 # "Annotate" plugin in compiz for Gnome
 #sudo apt install compizconfig-settings-manager compiz-plugins compiz-plugins-extra
+
+### Grafic Tablet Zeichenprogramme:
+# Xournal++ (Professionelles kostenloses Programm für den Unterricht!) https://github.com/xournalpp/xournalpp
+# MyPaint (Professionelles Maltool fuer Arbeit am Digital Drawing Tablet) http://mypaint.org/
 #
 ### Create and Edit EPUB Files on Linux With Sigil
 #sudo apt install sigil
