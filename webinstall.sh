@@ -97,6 +97,7 @@ mkdir $HOME/Programs
 # Stellarium http://stellarium.org/,
 # Unity-Hub https://unity3d.com/get-unity/download,
 # Kdenlive https://kdenlive.org/en/download/
+# Obsidian https://obsidian.md/
 #
 #B: Debian packages nach Programs kopieren und(&&) in diesen Ordner wechseln:
 # cp ~/Downloads/*.deb ~/Programs && cd ~/Programs
@@ -128,7 +129,7 @@ mkdir $HOME/Programs
 #
 ### 9. xfce4-settings-manager (Alt+F2 -> xfce4-)
 echo "xfce4-settings-manager -> Fenstereinstellungen der Fensterverwaltung -> Zugreifbarkeit -> Taste zum nehmen und verschieben der Fenster: None"
-read -p "EnterTaste:"
+read -p "EnterTaste zum Fortfahren:"
 xfce4-settings-manager
 #
 ### 10. TASTENKUERZEL FUER LIEBLINGSPROGRAMME ERSTELLEN: xfce4-settings-manager -> Tastatur -> Tastenkuerzel
@@ -159,8 +160,11 @@ xfce4-settings-manager
 #  cat alias.txt >> ~/.bashrc
 #fi
 #
-### 13. Weiteres:
+### 13. Sicherheitslücke in Firefox schließen:
+# Firefox öffnen -> about:config in der URL-Zeile eingeben -> pdfjs.en eingeben -> pdfjs.enableScripting auf False stellen
 #
+### 14. Weiteres:
+###
 ### Microsoft Office Alternativen, die auf allen Betriebssystemen laufen!:
 # Wer nicht mit Libreoffice zufrieden ist...(ich bins und fuer grosse Arbeiten benutzt man sowieso LateX/Texmaker...),
 # der kann FreeOffice von Softmaker benutzen. Das ist eine exakte Kopie von MicrosoftOffice, wenn nicht sogar besser.
@@ -202,7 +206,7 @@ xfce4-settings-manager
 #sudo apt install gromit
 # "Annotate" plugin in compiz for Gnome
 #sudo apt install compizconfig-settings-manager compiz-plugins compiz-plugins-extra
-
+#
 ### Grafic Tablet Zeichenprogramme:
 # Xournal++ (Professionelles kostenloses Programm für den Unterricht!) https://github.com/xournalpp/xournalpp
 # MyPaint (Professionelles Maltool fuer Arbeit am Digital Drawing Tablet) http://mypaint.org/
