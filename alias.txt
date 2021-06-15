@@ -36,6 +36,7 @@ alias mp32wav='for f in *.mp3; do ffmpeg -i "$f" "${f%.mp3}.wav"; done'
 alias m4a2wav='for f in *.m4a; do ffmpeg -i "$f" "${f%.m4a}.wav"; done'
 alias flac2mp3='for f in *.flac; do ffmpeg -i "$f" -c:v copy -q:a 0 "${f%.flac}.mp3"; done'
 alias youtube='mpv --profile=youtube-video --no-resume-playback'
+#https://github.com/Tornado3P9/Konsolentools/blob/master/Youtube/config/mpv/mpv.conf  [youtube-video]
 #
 #search
 #alias lt='ls --human-readable --size -1 -S --classify'
