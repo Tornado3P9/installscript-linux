@@ -152,7 +152,8 @@ xfce4-settings-manager
 # https://www.pexels.com/
 # https://www.pexels.com/photo/black-and-white-mountain-over-yellow-white-and-blue-sky-46253/
 # To search for background folder:
-#locate backdrops
+locate backdrops
+# Or animate your background if a static one is too boring: https://youtu.be/pA-gzjyGHFc
 #
 ### 12. Add custom alias:
 #read -p "Do you want to copy old alias? [Y/n]: " yn2
