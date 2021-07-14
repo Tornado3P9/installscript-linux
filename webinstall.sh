@@ -158,7 +158,9 @@ locate backdrops
 ### 12. Add custom alias:
 #read -p "Do you want to copy old alias? [Y/n]: " yn2
 #if [ "$yn2" != "n" ]; then
-#  cat alias.txt >> ~/.bashrc
+#  cd ~
+#  touch .bash_aliases
+#  cat alias.txt > .bash_aliases
 #fi
 #
 ### 13. Sicherheitslücke in Firefox schließen:
