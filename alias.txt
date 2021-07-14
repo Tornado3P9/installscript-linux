@@ -9,7 +9,7 @@ alias restartaudio='pulseaudio -k && sudo alsa force-reload'
 alias nHistory='rm -r ~/.cache/thumbnails/* && history -c && history -w'
 alias beenden='shutdown -h now'
 alias renamehelp='echo rename \'\''s/#//\'\'' *.m4a'
-alias weckerhelp='echo sleep 5m && mpv sound.mp3 --no-video'
+alias weckerhelp='echo sleep 5m && mpv sound.mp3 --no-video --start=00:00:13'
 alias show='ristretto *'
 #
 #navigation

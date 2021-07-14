@@ -133,6 +133,7 @@ read -p "EnterTaste zum Fortfahren:"
 xfce4-settings-manager
 #
 ### 10. TASTENKUERZEL FUER LIEBLINGSPROGRAMME ERSTELLEN: xfce4-settings-manager -> Tastatur -> Tastenkuerzel
+### or by typing: xfce4-keyboard-settings
 #Strg+Alt+Entf -> xfce4-session-logout
 #Strg+Alt+Esc  -> xkill = Kill Window under X
 #Super+L       -> xflock4 = Bildschirm sperren
@@ -147,6 +148,8 @@ xfce4-settings-manager
 #Super+F1      -> xfce4-find-cursor
 #Strg+Esc      -> xfce4-popup-whiskermenu (Standard Menu)
 #Alt+F1        -> xfce4-popup-applicationsmenu
+### for setting other Keyboard-Shortcuts in your windows-manager:
+#xfwm4-settings
 #
 ### 11. Bildschirm Hintergrund:
 # https://www.pexels.com/
