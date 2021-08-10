@@ -52,6 +52,7 @@ sudo apt install handbrake-gtk
 #python3 -m pip install --upgrade Pillow
 #pip3 install --user venv selenium pytest requests flask Pillow youtube-dl
 #pip3 install -U bpytop
+#pip3 install pylint flake8 isort autopep8
 ##############################
 # Install additional items   #
 ##############################
