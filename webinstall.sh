@@ -52,7 +52,7 @@ sudo apt install handbrake-gtk
 #python3 -m pip install --upgrade Pillow
 #pip3 install --user venv selenium pytest requests flask Pillow youtube-dl
 #pip3 install -U bpytop
-#pip3 install pylint flake8 isort autopep8
+#pip3 install pylint flake8 isort autopep8 pandas
 ##############################
 # Install additional items   #
 ##############################
@@ -176,6 +176,12 @@ locate backdrops
 # der kann FreeOffice von Softmaker benutzen. Das ist eine exakte Kopie von MicrosoftOffice, wenn nicht sogar besser.
 # OnlyOffice ist ebenfalls ein sehr gut aussehendes Paket und kompatibel mit MSOffice.
 # Oder WPS_Office aus China...ebenfalls eine Kopie von MSOffice.
+#
+### Excel VBA:
+# Man kann Excel per Wine auf Linux installieren, empfehle ich aber nicht.
+# Libreoffice Calc hat ja bereits die selben Eigenschaften, wie Excel.
+# Trotzdem empfehle ich statt VBA lieber "Python Pandas" auf allen Betriebssystemen zu benutzen!
+# https://youtu.be/Lh6FLhgPxbc  https://youtu.be/F-gDgQ6kuuk
 #
 ### Photoshop Alternativen:
 # Gimp (Fotomanipulation) https://www.gimp.org/
