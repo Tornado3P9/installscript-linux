@@ -182,6 +182,8 @@ locate backdrops
 # Libreoffice Calc hat ja bereits die selben Eigenschaften, wie Excel.
 # Trotzdem empfehle ich statt VBA lieber "Python Pandas" auf allen Betriebssystemen zu benutzen!
 # https://youtu.be/Lh6FLhgPxbc  https://youtu.be/F-gDgQ6kuuk
+# https://pandas.pydata.org/pandas-docs/stable/getting_started/index.html#getting-started
+# https://plotly.com/python/
 #
 ### Photoshop Alternativen:
 # Gimp (Fotomanipulation) https://www.gimp.org/
