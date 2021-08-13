@@ -21,7 +21,7 @@ sudo add-apt-repository ppa:stebbins/handbrake-releases
 ##############################
 sudo apt update
 sudo apt upgrade
-sudo apt install git gparted synaptic python3-pip mpv jq ffmpeg gimp xsane simple-scan pdfshuffler pinta audacity htop hardinfo acpi libreoffice libreoffice-l10n-de libreoffice-help-de neofetch usb-creator-gtk sqlite3 nodejs npm gaupol mediainfo mediainfo-gui guvcview lxsplit libimage-exiftool-perl perl-doc steam kazam xsensors hugin gifsicle wget tree ufw gufw arp-scan nmap nethogs wireshark speedtest-cli traceroute mtr kleopatra jeex bless rename
+sudo apt install git gparted synaptic python3-pip python3-venv mpv jq ffmpeg gimp xsane simple-scan pdfshuffler pinta audacity htop hardinfo acpi libreoffice libreoffice-l10n-de libreoffice-help-de neofetch usb-creator-gtk sqlite3 nodejs npm gaupol mediainfo mediainfo-gui guvcview lxsplit libimage-exiftool-perl perl-doc steam kazam xsensors hugin gifsicle wget tree ufw gufw arp-scan nmap nethogs wireshark speedtest-cli traceroute mtr kleopatra jeex bless rename
 sudo apt install libavcodec-extra ttf-mscorefonts-installer unrar rar gstreamer1.0-libav gstreamer1.0-plugins-ugly gstreamer1.0-vaapi
 # PPA:
 sudo apt install handbrake-gtk
@@ -50,7 +50,7 @@ sudo apt install handbrake-gtk
 ##############################
 #python3 -m pip install --upgrade pip
 #python3 -m pip install --upgrade Pillow
-#pip3 install --user venv selenium pytest requests flask Pillow youtube-dl
+#pip3 install --user selenium pytest requests flask Pillow youtube-dl
 #pip3 install -U bpytop
 #pip3 install pylint flake8 isort autopep8 pandas
 ##############################
@@ -179,11 +179,11 @@ locate backdrops
 #
 ### Excel VBA:
 # Man kann Excel per Wine auf Linux installieren, empfehle ich aber nicht.
-# Libreoffice Calc hat ja bereits die selben Eigenschaften, wie Excel.
+# Libreoffice-Calc hat ja bereits die selben Eigenschaften wie Excel.
 # Trotzdem empfehle ich statt VBA lieber "Python Pandas" auf allen Betriebssystemen zu benutzen!
 # https://youtu.be/Lh6FLhgPxbc  https://youtu.be/F-gDgQ6kuuk
 # https://pandas.pydata.org/pandas-docs/stable/getting_started/index.html#getting-started
-# https://plotly.com/python/
+# https://plotly.com/python/plotly-express/
 #
 ### Photoshop Alternativen:
 # Gimp (Fotomanipulation) https://www.gimp.org/

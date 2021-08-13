@@ -21,8 +21,8 @@ alias Videos='cd ~/Videos'
 alias ase='acpi -b && sensors'
 #alias ase='sensors'
 #
-#virtual environments workflow: mkdir my-python-venv && cd my-python-venv && virtualenv venv
-alias ve='python3 -m venv ./venv'
+#virtual environments workflow: python3 -m venv my-project-env && source my-project-env/bin/activate
+alias ve='python3 -m venv venv'
 alias ae='deactivate &> /dev/null; source ./venv/bin/activate'
 alias de='deactivate'
 #
