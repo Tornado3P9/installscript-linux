@@ -50,7 +50,7 @@ sudo apt install handbrake-gtk
 ##############################
 #python3 -m pip install --upgrade pip
 #python3 -m pip install --upgrade Pillow
-#pip3 install --user selenium pytest requests flask Pillow youtube-dl
+#pip3 install --user selenium pytest requests Flask Pillow youtube-dl
 #pip3 install -U bpytop
 #pip3 install pylint flake8 isort autopep8 pandas
 ##############################
@@ -227,6 +227,9 @@ locate backdrops
 #
 ### Create and Edit EPUB Files on Linux With Sigil
 #sudo apt install sigil
+#
+### ArduinoIDE benoetigt unter Umstaenden noch folgende zwei Pakete:
+#sudo apt install python-is-python3 python3-serial
 #
 #read -t 3
 read
