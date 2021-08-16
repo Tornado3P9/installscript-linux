@@ -12,6 +12,9 @@ alias renamehelp='echo rename \'\''s/#//\'\'' *.m4a'
 alias weckerhelp='echo sleep 5m && mpv sound.mp3 --no-video --start=00:00:13 --loop'
 alias show='ristretto *'
 #
+#open in file manager
+alias open='thunar'
+#
 #navigation
 alias Documents='cd ~/Documents'
 alias Downloads='cd ~/Downloads'
@@ -27,10 +30,6 @@ alias ae='deactivate &> /dev/null; source ./venv/bin/activate'
 alias de='deactivate'
 #
 #run command to view all currently runnig snap service: systemctl list-unit-files | grep snap
-#alias snapstop='sudo systemctl stop snapd.service'
-#alias snapmask='sudo systemctl mask snapd.service'
-#alias snapunmask='sudo systemctl unmask snapd.service'
-#alias snapstart='sudo systemctl start snapd.service'
 #
 #mlcocate
 #alias mlocatestop='sudo chmod -x /etc/cron.daily/mlocate'
