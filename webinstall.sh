@@ -50,9 +50,9 @@ sudo apt install handbrake-gtk
 ##############################
 #python3 -m pip install --upgrade pip
 #python3 -m pip install --upgrade Pillow
-#pip3 install --user selenium pytest requests Flask Pillow youtube-dl
+#pip3 install --user selenium pytest requests Flask Pillow beautifulsoup4 youtube-dl
 #pip3 install -U bpytop
-#pip3 install pylint flake8 isort autopep8 pandas
+#pip3 install pylint flake8 isort autopep8 pandas seaborn bokeh
 ##############################
 # Install additional items   #
 ##############################
