@@ -77,6 +77,7 @@ sudo apt install arc-theme moka-icon-theme numix-icon-theme numix-gtk-theme ligh
 #sudo apt install plank
 #If Plank (Panel/Dockleiste fuer Apps wie beim Mac) is not available in the default repository,
 #just install from ppa:ricotz/docky
+#Strg+Right_Mouse_Button für dessen Einstellungsmenu https://wiki.ubuntuusers.de/Plank/
 #
 ### 4. Ordner Fuer Externe Programme Erstellen:
 #mkdir ~/Programs
