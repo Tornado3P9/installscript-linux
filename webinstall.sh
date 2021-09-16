@@ -153,6 +153,9 @@ xfce4-settings-manager
 ### for setting other Keyboard-Shortcuts in your windows-manager:
 #xfwm4-settings
 #
+### for displaying the date and time of the terminal history output type the following line into your terminal:
+echo "HISTTIMEFORMAT=\"%d/%m/%y %T  \"" >> .bashrc
+#
 ### 11. Bildschirm Hintergrund:
 # https://www.pexels.com/
 # https://www.pexels.com/photo/black-and-white-mountain-over-yellow-white-and-blue-sky-46253/
