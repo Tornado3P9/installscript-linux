@@ -3,12 +3,14 @@
 # New command prompt:
 #PS1="\u@\H :" = username@domain:
 #PS1="\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\[\033[00m\]:) \[\033[01;34m\]\w\[\033[00m\]\$ "
+PS1="\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\[\033[00m\]--> \[\033[01;34m\]\w\[\033[00m\]\$ "
 #
 # some more aliases
+alias update='sudo apt update && sudo apt upgrade -y'
 alias restartaudio='pulseaudio -k && sudo alsa force-reload'
 alias nHistory='rm -r ~/.cache/thumbnails/* && history -c && history -w'
 alias beenden='shutdown -h now'
-alias renamehelp='echo rename \'\''s/#//\'\'' *.m4a'
+alias renamehelp='echo rename \'\''s/#//\'\'' \*.m4a'
 alias weckerhelp='echo sleep 5m && mpv sound.mp3 --no-video --start=00:00:13 --loop'
 alias show='ristretto *'
 #
@@ -25,7 +27,7 @@ alias ase='acpi -b && sensors'
 #alias ase='sensors'
 #
 #virtual environments workflow: python3 -m venv my-project-env && source my-project-env/bin/activate
-alias ve='python3 -m venv venv'
+alias ve='python3 -m venv ./venv'
 alias ae='deactivate &> /dev/null; source ./venv/bin/activate'
 alias de='deactivate'
 #
