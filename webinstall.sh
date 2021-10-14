@@ -21,11 +21,12 @@ sudo add-apt-repository ppa:stebbins/handbrake-releases
 ##############################
 sudo apt update
 sudo apt upgrade
-sudo apt install git gparted synaptic python3-pip python3-venv mpv jq ffmpeg gimp xsane simple-scan pdfshuffler pinta audacity htop glances whowatch hardinfo acpi libreoffice libreoffice-l10n-de libreoffice-help-de neofetch usb-creator-gtk sqlite3 nodejs npm gaupol mediainfo mediainfo-gui guvcview lxsplit libimage-exiftool-perl perl-doc steam kazam xsensors hugin gifsicle wget tree ufw gufw arp-scan nmap nethogs wireshark speedtest-cli traceroute mtr kleopatra jeex bless rename
+sudo apt install git gparted synaptic mpv jq ffmpeg gimp xsane simple-scan pdfshuffler pinta audacity htop glances whowatch libreoffice libreoffice-l10n-de libreoffice-help-de neofetch usb-creator-gtk sqlite3 nodejs npm gaupol mediainfo mediainfo-gui guvcview lxsplit libimage-exiftool-perl perl-doc steam kazam xsensors hugin gifsicle wget tree ufw gufw arp-scan nmap nethogs wireshark speedtest-cli traceroute mtr kleopatra jeex bless rename
 sudo apt install libavcodec-extra ttf-mscorefonts-installer unrar rar gstreamer1.0-libav gstreamer1.0-plugins-ugly gstreamer1.0-vaapi
+#sudo apt install python3-pip python3-venv libopencv-dev python3-opencv
 # PPA:
 sudo apt install handbrake-gtk
-#sudo apt install curl mypaint vlc tlp powertop bashtop xbacklight screenfetch audio-recorder ffmulticonverter free vpnc sysinfo ubuntu-restricted-extras zenmap
+#sudo apt install curl mypaint vlc tlp powertop bashtop xbacklight screenfetch audio-recorder ffmulticonverter free vpnc sysinfo ubuntu-restricted-extras zenmap hardinfo acpi
 ##############################
 # Install line snap          #
 ##############################
@@ -53,6 +54,8 @@ sudo apt install handbrake-gtk
 #pip3 install --user selenium pytest requests Flask Pillow beautifulsoup4 youtube-dl
 #pip3 install -U bpytop
 #pip3 install pylint flake8 isort autopep8 pandas seaborn bokeh
+#pip3 install opencv-python
+## https://pypi.org/project/opencv-python/
 ##############################
 # Install additional items   #
 ##############################
@@ -234,6 +237,8 @@ locate backdrops
 #
 ### ArduinoIDE benoetigt unter Umstaenden noch folgende zwei Pakete:
 #sudo apt install python-is-python3 python3-serial
+#
+### VirtualBox - https://www.virtualbox.org/manual/  https://youtu.be/HLnA5UekwAI
 #
 #read -t 3
 read
