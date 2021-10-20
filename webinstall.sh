@@ -24,6 +24,7 @@ sudo apt upgrade
 sudo apt install git gparted synaptic mpv jq ffmpeg gimp xsane simple-scan pdfshuffler pinta audacity htop glances whowatch libreoffice libreoffice-l10n-de libreoffice-help-de neofetch usb-creator-gtk sqlite3 nodejs npm gaupol mediainfo mediainfo-gui guvcview lxsplit libimage-exiftool-perl perl-doc steam kazam xsensors hugin gifsicle wget tree ufw gufw arp-scan nmap nethogs wireshark speedtest-cli traceroute mtr kleopatra jeex bless rename
 sudo apt install libavcodec-extra ttf-mscorefonts-installer unrar rar gstreamer1.0-libav gstreamer1.0-plugins-ugly gstreamer1.0-vaapi
 #sudo apt install python3-pip python3-venv libopencv-dev python3-opencv
+#sudo apt install bmap-tools
 # PPA:
 sudo apt install handbrake-gtk
 #sudo apt install curl mypaint vlc tlp powertop bashtop xbacklight screenfetch audio-recorder ffmulticonverter free vpnc sysinfo ubuntu-restricted-extras zenmap hardinfo acpi
@@ -103,6 +104,7 @@ mkdir $HOME/Programs
 # Unity-Hub https://unity3d.com/get-unity/download,
 # Kdenlive https://kdenlive.org/en/download/
 # Obsidian https://obsidian.md/
+# BalenaEtcher https://www.balena.io/etcher/
 #
 #B: Debian packages nach Programs kopieren und(&&) in diesen Ordner wechseln:
 # cp ~/Downloads/*.deb ~/Programs && cd ~/Programs

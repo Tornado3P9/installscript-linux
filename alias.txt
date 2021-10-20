@@ -13,6 +13,7 @@ alias beenden='shutdown -h now'
 alias renamehelp='echo rename \'\''s/#//\'\'' \*.m4a'
 alias weckerhelp='echo sleep 5m && mpv sound.mp3 --no-video --start=00:00:13 --loop'
 alias show='ristretto *'
+alias aliases='cat ~/.bash_aliases'
 #
 #open in file manager
 alias open='thunar'
