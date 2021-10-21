@@ -24,7 +24,6 @@ sudo apt upgrade
 sudo apt install git gparted synaptic mpv jq ffmpeg gimp xsane simple-scan pdfshuffler pinta audacity htop glances whowatch libreoffice libreoffice-l10n-de libreoffice-help-de neofetch usb-creator-gtk sqlite3 nodejs npm gaupol mediainfo mediainfo-gui guvcview lxsplit libimage-exiftool-perl perl-doc steam kazam xsensors hugin gifsicle wget tree ufw gufw arp-scan nmap nethogs wireshark speedtest-cli traceroute mtr kleopatra jeex bless rename
 sudo apt install libavcodec-extra ttf-mscorefonts-installer unrar rar gstreamer1.0-libav gstreamer1.0-plugins-ugly gstreamer1.0-vaapi
 #sudo apt install python3-pip python3-venv libopencv-dev python3-opencv
-#sudo apt install bmap-tools
 # PPA:
 sudo apt install handbrake-gtk
 #sudo apt install curl mypaint vlc tlp powertop bashtop xbacklight screenfetch audio-recorder ffmulticonverter free vpnc sysinfo ubuntu-restricted-extras zenmap hardinfo acpi
@@ -94,6 +93,7 @@ mkdir $HOME/Programs
 # ffmulticonverter https://sites.google.com/site/ffmulticonverter/download,
 # mono https://www.mono-project.com/download/stable/
 # zoom-client https://zoom.us/download
+# Teams https://www.microsoft.com/en-us/microsoft-teams/download-app
 # gcolor2_colorpicker http://mirrors.edge.kernel.org/ubuntu/pool/universe/g/gcolor2/
 # celluloid https://celluloid-player.github.io/
 # Appimages z.B.:
@@ -105,6 +105,10 @@ mkdir $HOME/Programs
 # Kdenlive https://kdenlive.org/en/download/
 # Obsidian https://obsidian.md/
 # BalenaEtcher https://www.balena.io/etcher/
+#
+wget https://downloads.raspberrypi.org/imager/imager_latest_amd64.deb
+wget https://zoom.us/client/latest/zoom_amd64.deb
+wget https://mirrors.edge.kernel.org/ubuntu/pool/universe/g/gcolor2/gcolor2_0.4-2.1ubuntu1_amd64.deb
 #
 #B: Debian packages nach Programs kopieren und(&&) in diesen Ordner wechseln:
 # cp ~/Downloads/*.deb ~/Programs && cd ~/Programs
