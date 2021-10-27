@@ -12,8 +12,11 @@ alias nHistory='rm -r ~/.cache/thumbnails/* && history -c && history -w'
 alias beenden='shutdown -h now'
 alias renamehelp='echo rename \'\''s/#//\'\'' \*.m4a'
 alias weckerhelp='echo sleep 5m && mpv sound.mp3 --no-video --start=00:00:13 --loop'
-alias show='ristretto *'
 alias aliases='cat ~/.bash_aliases'
+alias c="clear"
+alias cl="clear;ls;pwd"
+alias root="sudo su"
+alias ports="netstat -tupan"
 #
 #open in file manager
 alias open='thunar'
@@ -24,23 +27,13 @@ alias Downloads='cd ~/Downloads'
 alias Music='cd ~/Music'
 alias Videos='cd ~/Videos'
 #
-alias ase='acpi -b && sensors'
-#alias ase='sensors'
+#alias ase='acpi -b && sensors'
+alias ase='sensors'
 #
 #virtual environments workflow: python3 -m venv my-project-env && source my-project-env/bin/activate
 alias ve='python3 -m venv ./venv'
 alias ae='deactivate &> /dev/null; source ./venv/bin/activate'
 alias de='deactivate'
-#
-#run command to view all currently runnig snap service: systemctl list-unit-files | grep snap
-#
-#mlcocate
-#alias mlocatestop='sudo chmod -x /etc/cron.daily/mlocate'
-#sudo cp /etc/cron.daily/mlocate /etc/cron.daily/mlocate
-#sudo cp /etc/cron.daily/mlocate /etc/cron.hourly/mlocate
-#sudo cp /etc/cron.daily/mlocate /etc/cron.weekly/mlocate
-#sudo cp /etc/cron.daily/mlocate /etc/cron.monthly/mlocate
-#alias mlocatestart='sudo chmod +x /etc/cron.daily/mlocate'
 #
 #convert audio
 alias m4a2mp3='for f in *.m4a; do ffmpeg -i "$f" -acodec libmp3lame -ab 256k "${f%.m4a}.mp3"; done'
