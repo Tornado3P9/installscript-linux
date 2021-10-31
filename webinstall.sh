@@ -111,7 +111,7 @@ wget https://zoom.us/client/latest/zoom_amd64.deb
 wget https://mirrors.edge.kernel.org/ubuntu/pool/universe/g/gcolor2/gcolor2_0.4-2.1ubuntu1_amd64.deb
 #
 #B: Debian packages nach Programs kopieren und(&&) in diesen Ordner wechseln:
-# cp ~/Downloads/*.deb ~/Programs && cd ~/Programs
+# mv ~/Downloads/*.deb ~/Programs/ && cd ~/Programs
 # installieren per: sudo apt install ./*.deb
 #             oder: sudo dpkg -i *.deb
 #
@@ -129,8 +129,8 @@ wget https://mirrors.edge.kernel.org/ubuntu/pool/universe/g/gcolor2/gcolor2_0.4-
 ### 6. Konsolentools herunterladen:
 #cd ~/Programs && git clone https://github.com/Tornado3P9/Konsolentools
 #
-### 7. Virtuelle Python Environment erstellen, siehe in alias.txt unter 'virtual environments workflow'
-#mkdir ~/my-python-venv && cd ~/my-python-venv
+### 7. Virtuelle Python Environment erstellen https://github.com/Tornado3P9/Konsolentools/blob/master/python3_virtualenv.txt
+#mkdir ~/my-python-venv && cd $_
 #python3 -m venv ./venv
 #
 ### 8. Shortcut Collection herunterladen, nach ~/Programs entpacken und zip-Archiv loeschen:
@@ -173,11 +173,10 @@ locate backdrops
 # Or animate your background if a static one is too boring: https://youtu.be/pA-gzjyGHFc
 #
 ### 12. Add custom alias:
-#read -p "Do you want to copy old alias? [Y/n]: " yn2
-#if [ "$yn2" != "n" ]; then
-#  touch ~/.bash_aliases
-#  cat alias.txt > ~/.bash_aliases
-#fi
+read -p "Do you want to copy premade aliases? [Y/n]: " yn2
+if [ "$yn2" != "n" ]; then
+  cp bash_aliases ~/.bash_aliases
+fi
 #
 ### 13. Sicherheitslücke in Firefox schließen:
 # Firefox öffnen -> about:config in der URL-Zeile eingeben -> pdfjs.en eingeben -> pdfjs.enableScripting auf False stellen

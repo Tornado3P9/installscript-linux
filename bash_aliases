@@ -1,22 +1,20 @@
 # Old command prompt:
 #PS1="\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ "
 # New command prompt:
-#PS1="\u@\H :" = username@domain:
-#PS1="\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\[\033[00m\]:) \[\033[01;34m\]\w\[\033[00m\]\$ "
 PS1="\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\[\033[00m\]--> \[\033[01;34m\]\w\[\033[00m\]\$ "
 #
 # some more aliases
 alias update='sudo apt update && sudo apt upgrade -y'
 alias restartaudio='pulseaudio -k && sudo alsa force-reload'
-alias nHistory='rm -r ~/.cache/thumbnails/* && history -c && history -w'
+alias nHistory='history -c && history -w'
 alias beenden='shutdown -h now'
 alias renamehelp='echo rename \'\''s/#//\'\'' \*.m4a'
 alias weckerhelp='echo sleep 5m && mpv sound.mp3 --no-video --start=00:00:13 --loop'
 alias aliases='cat ~/.bash_aliases'
-alias c="clear"
-alias cl="clear;ls;pwd"
-alias root="sudo su"
-alias ports="netstat -tupan"
+alias c='clear'
+alias cl='clear;ls;pwd'
+alias root='sudo su'
+alias ports='netstat -tupan'
 #
 #open in file manager
 alias open='thunar'
@@ -42,8 +40,6 @@ alias mp32wav='for f in *.mp3; do ffmpeg -i "$f" "${f%.mp3}.wav"; done'
 alias m4a2wav='for f in *.m4a; do ffmpeg -i "$f" "${f%.m4a}.wav"; done'
 alias flac2mp3='for f in *.flac; do ffmpeg -i "$f" -c:v copy -q:a 0 "${f%.flac}.mp3"; done'
 alias videosoundup='for f in *.mp4; do ffmpeg -i "$f" -filter:a "volume=30dB" -codec:a aac -b:a 74k -c:v copy "_${f}"; done'
-alias youtube='mpv --profile=youtube-video --no-resume-playback'
-#https://github.com/Tornado3P9/Konsolentools/blob/master/Youtube/config/mpv/mpv.conf  [youtube-video]
 #
 #search
 #alias lt='ls --human-readable --size -1 -S --classify'
@@ -59,18 +55,6 @@ alias left='ls -t -1'
 #
 #count files
 alias count='find . -type f | wc -l'
-#
-#cd and list files in one step
-#function cl() {
-#    DIR="$*";
-#    # if no DIR given, go home
-#    if [ $# -lt 1 ]; then
-#        DIR=$HOME;
-#    fi;
-#    builtin cd "${DIR}" && \
-#    # use your preferred ls command
-#        ls -F --color=auto
-#}
 #
 #play 6th line inside directory (ls -1v)
 #Example: playline 6
