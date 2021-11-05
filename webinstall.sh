@@ -3,7 +3,7 @@
 ##############################
 # Download and edit:         #
 #----------------------------#
-# curl -sS https://raw.githubusercontent.com/Tornado3P9/installscript-linux/master/webinstall.sh
+# curl -sS https://raw.githubusercontent.com/Tornado3P9/installscript-linux/master/webinstall.sh -o webinstall.sh
 # nano webinstall.sh         #
 # chmod +x webinstall.sh     #
 # ./webinstall.sh            #
@@ -266,7 +266,7 @@ fi
 #
 ### Create and Edit EPUB Files on Linux With Sigil
 #sudo apt install sigil
-
+#
 ### Create and Edit text-based Subtitles with Gaupol https://otsaloma.io/gaupol/
 #sudo apt install gaupol
 #
