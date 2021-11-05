@@ -28,8 +28,8 @@ sudo add-apt-repository ppa:stebbins/handbrake-releases
 # Install line apt           #
 ##############################
 sudo apt update
-sudo apt upgrade
-sudo apt install \
+sudo apt upgrade -y
+sudo apt install -y \
 git \
 gparted \
 synaptic \
@@ -40,7 +40,7 @@ htop glances whowatch arp-scan nmap nethogs wireshark speedtest-cli traceroute m
 libreoffice libreoffice-l10n-de libreoffice-help-de \
 sqlite3 nodejs npm \
 mediainfo mediainfo-gui \
-mpv ffmpeg vlc audacity gaupol \
+mpv ffmpeg vlc audacity \
 guvcview kazam \
 lxsplit \
 libimage-exiftool-perl perl-doc \
@@ -54,7 +54,7 @@ jeex bless jq rename tee \
 rpi-imager usb-creator-gtk \
 python3-pip python3-venv libopencv-dev python3-opencv
 # https://linuxhint.com/install-ubuntu-restricted-extras/
-# Show package content by typing: "apt show ubuntu-restricted-extras" or by installing the following line:
+# Show package content by typing: "apt show ubuntu-restricted-extras" or manually install via the following line:
 sudo apt install libavcodec-extra ttf-mscorefonts-installer unrar rar gstreamer1.0-libav gstreamer1.0-plugins-ugly gstreamer1.0-vaapi
 # PPA:
 sudo apt install handbrake-gtk
@@ -266,6 +266,9 @@ fi
 #
 ### Create and Edit EPUB Files on Linux With Sigil
 #sudo apt install sigil
+
+### Create and Edit text-based Subtitles with Gaupol https://otsaloma.io/gaupol/
+#sudo apt install gaupol
 #
 ### ArduinoIDE benoetigt unter Umstaenden noch folgende zwei Pakete:
 #sudo apt install python-is-python3 python3-serial
