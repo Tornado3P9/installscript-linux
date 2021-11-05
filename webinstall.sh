@@ -1,11 +1,18 @@
 #!/bin/bash
 # Xubuntu 20.04
 ##############################
-# First Steps!!              #
+# Download and edit:         #
 #----------------------------#
+# curl -sS https://raw.githubusercontent.com/Tornado3P9/installscript-linux/master/webinstall.sh
+# nano webinstall.sh         #
 # chmod +x webinstall.sh     #
 # ./webinstall.sh            #
 ##############################
+# Or directly install:       #
+#----------------------------#
+# curl -sS https://raw.githubusercontent.com/Tornado3P9/installscript-linux/master/webinstall.sh | sh
+##############################
+#
 #
 ##############################
 # Adding PPAs                #
@@ -16,17 +23,41 @@ sudo add-apt-repository ppa:stebbins/handbrake-releases
 #add-apt-repository ppa:cteehayder/ffmulticonverter
 #add-apt-repository ppa:bashtop-monitor/bashtop
 #add-apt-repository ppa:audio-recorder/ppa
+#add-apt-repository ppa:obsproject/obs-studio
 ##############################
 # Install line apt           #
 ##############################
 sudo apt update
 sudo apt upgrade
-sudo apt install git gparted synaptic mpv jq ffmpeg gimp xsane simple-scan pdfshuffler pinta audacity htop glances whowatch libreoffice libreoffice-l10n-de libreoffice-help-de neofetch usb-creator-gtk sqlite3 nodejs npm gaupol mediainfo mediainfo-gui guvcview lxsplit libimage-exiftool-perl perl-doc steam kazam xsensors hugin gifsicle wget tree ufw gufw arp-scan nmap nethogs wireshark speedtest-cli traceroute mtr kleopatra jeex bless rename
+sudo apt install \
+git \
+gparted \
+synaptic \
+xsane simple-scan \
+pdfshuffler \
+gimp pinta hugin gifsicle \
+htop glances whowatch arp-scan nmap nethogs wireshark speedtest-cli traceroute mtr neofetch \
+libreoffice libreoffice-l10n-de libreoffice-help-de \
+sqlite3 nodejs npm \
+mediainfo mediainfo-gui \
+mpv ffmpeg vlc audacity gaupol \
+guvcview kazam \
+lxsplit \
+libimage-exiftool-perl perl-doc \
+steam \
+xsensors \
+wget curl \
+tree \
+ufw gufw \
+kleopatra \
+jeex bless jq rename tee \
+rpi-imager usb-creator-gtk \
+python3-pip python3-venv libopencv-dev python3-opencv
+# https://linuxhint.com/install-ubuntu-restricted-extras/
+# Show package content by typing: "apt show ubuntu-restricted-extras" or by installing the following line:
 sudo apt install libavcodec-extra ttf-mscorefonts-installer unrar rar gstreamer1.0-libav gstreamer1.0-plugins-ugly gstreamer1.0-vaapi
-#sudo apt install python3-pip python3-venv libopencv-dev python3-opencv
 # PPA:
 sudo apt install handbrake-gtk
-#sudo apt install curl mypaint vlc tlp powertop bashtop xbacklight screenfetch audio-recorder ffmulticonverter free vpnc sysinfo ubuntu-restricted-extras zenmap hardinfo acpi
 ##############################
 # Install line snap          #
 ##############################
@@ -40,7 +71,7 @@ sudo apt install handbrake-gtk
 #snap install code --classic
 #snap install blender --classic
 #snap install skype --classic
-#snap install inkscape krita meshlab zoom-client kdenlive discord fast
+#snap install inkscape krita meshlab zoom-client kdenlive discord fast vlc obs-studio
 ##############################
 # Install line Flathub       #
 ##############################
@@ -77,50 +108,48 @@ fi
 #
 ### 3. Additional Themes:
 sudo apt install arc-theme moka-icon-theme numix-icon-theme numix-gtk-theme lightdm-gtk-greeter-settings
-#sudo apt install plank
-#If Plank (Panel/Dockleiste fuer Apps wie beim Mac) is not available in the default repository,
-#just install from ppa:ricotz/docky
+sudo apt install plank
+#If Plank (Panel/Dockleiste fuer Apps wie beim Mac) is not available in the default repository, just install from ppa:ricotz/docky
 #Strg+Right_Mouse_Button für dessen Einstellungsmenu https://wiki.ubuntuusers.de/Plank/
 #
 ### 4. Ordner Fuer Externe Programme Erstellen:
-#mkdir ~/Programs
 mkdir $HOME/Programs
 #
 ### 5. Installation Von Externen Programmen:
 #A: Programme Herunterladen, z.B.:
-# MicrosoftTeams, Blender, Sublime-Text, VSCode, JetBrains WebStorm/Rider/PyCharm IDE,
-# magick https://imagemagick.org/script/download.php,
-# ffmulticonverter https://sites.google.com/site/ffmulticonverter/download,
+# Sublime-Text, VSCode, Atom, JetBrains WebStorm/Rider/PyCharm IDE
+# Blender https://www.blender.org/download/
+# magick https://imagemagick.org/script/download.php
+# ffmulticonverter https://sites.google.com/site/ffmulticonverter/download
 # mono https://www.mono-project.com/download/stable/
 # zoom-client https://zoom.us/download
-# Teams https://www.microsoft.com/en-us/microsoft-teams/download-app
+# Microsoft Teams https://www.microsoft.com/en-us/microsoft-teams/download-app
 # gcolor2_colorpicker http://mirrors.edge.kernel.org/ubuntu/pool/universe/g/gcolor2/
-# celluloid https://celluloid-player.github.io/
+# PyCharm https://www.jetbrains.com/pycharm/download/#section=linux
+# OBS Studio https://obsproject.com/wiki/install-instructions#linux
 # Appimages z.B.:
-# krita https://krita.org/,
-# inkscape https://inkscape.org/,
-# MyPaint http://mypaint.org/,
-# Stellarium http://stellarium.org/,
-# Unity-Hub https://unity3d.com/get-unity/download,
+# krita https://krita.org/
+# inkscape https://inkscape.org/
+# MyPaint http://mypaint.org/
+# Stellarium http://stellarium.org/
+# Unity-Hub https://unity3d.com/get-unity/download
 # Kdenlive https://kdenlive.org/en/download/
 # Obsidian https://obsidian.md/
 # BalenaEtcher https://www.balena.io/etcher/
 #
-wget https://downloads.raspberrypi.org/imager/imager_latest_amd64.deb
-wget https://zoom.us/client/latest/zoom_amd64.deb
-wget https://mirrors.edge.kernel.org/ubuntu/pool/universe/g/gcolor2/gcolor2_0.4-2.1ubuntu1_amd64.deb
+wget -L https://zoom.us/client/latest/zoom_amd64.deb -O $HOME/Programs/zoom_amd64.deb
+wget -L https://mirrors.edge.kernel.org/ubuntu/pool/universe/g/gcolor2/gcolor2_0.4-2.1ubuntu1_amd64.deb -O $HOME/Programs/gcolor2_0.4-2.1ubuntu1_amd64.deb
 #
 #B: Debian packages nach Programs kopieren und(&&) in diesen Ordner wechseln:
 # mv ~/Downloads/*.deb ~/Programs/ && cd ~/Programs
 # installieren per: sudo apt install ./*.deb
-#             oder: sudo dpkg -i *.deb
 #
 #C: Move AppImages to ~/Programs and make executable
-# mv ~/Downloads/*.AppImage ~/Programs
+# mv ~/Downloads/*.AppImage ~/Programs/
 # chmod +x ~/Programs/*.AppImage
 #
 #D: Extract blender and copy to Programs folder:
-# tar -xvf ~/Downloads/blender*.tar.xz -C ~/Programs
+# tar -xvf ~/Downloads/blender*.tar.xz -C ~/Programs/
 #Und installiere VSE_Transform_Tools fuer Videobearbeitung: https://github.com/doakey3/VSE_Transform_Tools
 #Und GIF-Import: https://github.com/doakey3/Bligify
 #Und CAD_Tool: https://github.com/Laurent26/techdraw
@@ -139,9 +168,8 @@ wget https://mirrors.edge.kernel.org/ubuntu/pool/universe/g/gcolor2/gcolor2_0.4-
 #rm gezipptesArchiv.zip
 #
 ### 9. xfce4-settings-manager (Alt+F2 -> xfce4-)
-echo "xfce4-settings-manager -> Fenstereinstellungen der Fensterverwaltung -> Zugreifbarkeit -> Taste zum nehmen und verschieben der Fenster: None"
+echo -e "\nxfce4-settings-manager -> Fenstereinstellungen der Fensterverwaltung -> Zugreifbarkeit -> Taste zum nehmen und verschieben der Fenster: None"
 read -p "EnterTaste zum Fortfahren:"
-xfce4-settings-manager
 #
 ### 10. TASTENKUERZEL FUER LIEBLINGSPROGRAMME ERSTELLEN: xfce4-settings-manager -> Tastatur -> Tastenkuerzel
 ### or by typing: xfce4-keyboard-settings
@@ -163,19 +191,18 @@ xfce4-settings-manager
 #xfwm4-settings
 #
 ### for displaying the date and time of the terminal history output type the following line into your terminal:
-echo "HISTTIMEFORMAT=\"%d/%m/%y %T  \"" >> .bashrc
+echo "HISTTIMEFORMAT=\"%d/%m/%y %T  \"" >> ~/.bashrc
 #
 ### 11. Bildschirm Hintergrund:
 # https://www.pexels.com/
-# https://www.pexels.com/photo/black-and-white-mountain-over-yellow-white-and-blue-sky-46253/
 # To search for background folder:
-locate backdrops
+echo -e "\nShowing the file path to the desktop-background-image-directory:" && locate backdrops
 # Or animate your background if a static one is too boring: https://youtu.be/pA-gzjyGHFc
 #
 ### 12. Add custom alias:
 read -p "Do you want to copy premade aliases? [Y/n]: " yn2
 if [ "$yn2" != "n" ]; then
-  cp bash_aliases ~/.bash_aliases
+  curl -sS https://raw.githubusercontent.com/Tornado3P9/installscript-linux/master/bash_aliases | tee ~/.bash_aliases
 fi
 #
 ### 13. Sicherheitslücke in Firefox schließen:
@@ -246,5 +273,6 @@ fi
 ### VirtualBox - https://www.virtualbox.org/manual/  https://youtu.be/HLnA5UekwAI
 #
 #read -t 3
-read
+#read
+read -p "Process Finished. Press Enter to Exit:"
 printf "\n"
