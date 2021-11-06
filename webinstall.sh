@@ -1,18 +1,13 @@
 #!/bin/bash
 # Xubuntu 20.04
 ##############################
-# Download and edit:         #
+# Download, Edit and Execute #
 #----------------------------#
+# sudo apt install curl      #
 # curl -sS https://raw.githubusercontent.com/Tornado3P9/installscript-linux/master/webinstall.sh -o webinstall.sh
-# nano webinstall.sh         #
 # chmod +x webinstall.sh     #
 # ./webinstall.sh            #
 ##############################
-# Or directly install:       #
-#----------------------------#
-# curl -sS https://raw.githubusercontent.com/Tornado3P9/installscript-linux/master/webinstall.sh | sh
-##############################
-#
 #
 ##############################
 # Adding PPAs                #
@@ -27,12 +22,9 @@ sudo add-apt-repository ppa:stebbins/handbrake-releases
 ##############################
 # Install line apt           #
 ##############################
-sudo apt update
-sudo apt upgrade -y
-sudo apt install -y \
-git \
-gparted \
-synaptic \
+sudo apt update && sudo apt upgrade -y
+sudo apt install \
+git gparted synaptic \
 xsane simple-scan \
 pdfshuffler \
 gimp pinta hugin gifsicle \
@@ -40,8 +32,7 @@ htop glances whowatch arp-scan nmap nethogs wireshark speedtest-cli traceroute m
 libreoffice libreoffice-l10n-de libreoffice-help-de \
 sqlite3 nodejs npm \
 mediainfo mediainfo-gui \
-mpv ffmpeg vlc audacity \
-guvcview kazam \
+mpv ffmpeg vlc audacity guvcview kazam \
 lxsplit \
 libimage-exiftool-perl perl-doc \
 steam \
@@ -51,7 +42,7 @@ tree \
 ufw gufw \
 kleopatra \
 jeex bless jq rename tee \
-rpi-imager usb-creator-gtk \
+usb-creator-gtk \
 python3-pip python3-venv libopencv-dev python3-opencv
 # https://linuxhint.com/install-ubuntu-restricted-extras/
 # Show package content by typing: "apt show ubuntu-restricted-extras" or manually install via the following line:
@@ -97,14 +88,10 @@ if [ "$yn" != "n" ]; then
   sudo apt install texlive texlive-lang-german texlive-lang-english texlive-latex-extra texmaker
 fi
 #
-### 2. Check Firewall Status https://wiki.ubuntuusers.de/ufw/:
+### 2. Activate User-Friendly-Firewall Status https://wiki.ubuntuusers.de/ufw/:
 printf "\n"
+sudo ufw enable
 sudo ufw status
-read -p "Do you want to activate firewall? [Y/n]: " yn3
-if [ "$yn3" != "n" ]; then
-  sudo ufw enable
-## sudo ufw disable
-fi
 #
 ### 3. Additional Themes:
 sudo apt install arc-theme moka-icon-theme numix-icon-theme numix-gtk-theme lightdm-gtk-greeter-settings
@@ -139,12 +126,12 @@ mkdir $HOME/Programs
 #
 wget -L https://zoom.us/client/latest/zoom_amd64.deb -O $HOME/Programs/zoom_amd64.deb
 wget -L https://mirrors.edge.kernel.org/ubuntu/pool/universe/g/gcolor2/gcolor2_0.4-2.1ubuntu1_amd64.deb -O $HOME/Programs/gcolor2_0.4-2.1ubuntu1_amd64.deb
+wget -L https://downloads.raspberrypi.org/imager/imager_latest_amd64.deb -O $HOME/Programs/imager_latest_amd64.deb
 #
 #B: Debian packages nach Programs kopieren und(&&) in diesen Ordner wechseln:
-# mv ~/Downloads/*.deb ~/Programs/ && cd ~/Programs
-# installieren per: sudo apt install ./*.deb
+# cd ~/Programs && sudo apt install ./*.deb
 #
-#C: Move AppImages to ~/Programs and make executable
+#C: Move AppImages to ~/Programs and make executable (no installation needed)
 # mv ~/Downloads/*.AppImage ~/Programs/
 # chmod +x ~/Programs/*.AppImage
 #
@@ -173,9 +160,9 @@ read -p "EnterTaste zum Fortfahren:"
 #
 ### 10. TASTENKUERZEL FUER LIEBLINGSPROGRAMME ERSTELLEN: xfce4-settings-manager -> Tastatur -> Tastenkuerzel
 ### or by typing: xfce4-keyboard-settings
-#Strg+Alt+Entf -> xfce4-session-logout
-#Strg+Alt+Esc  -> xkill = Kill Window under X
-#Super+L       -> xflock4 = Bildschirm sperren
+#Strg+Alt+Entf     -> xfce4-session-logout
+#Strg+Alt+Esc      -> xkill = Kill Window under X
+#Super+L           -> xflock4 = Bildschirm sperren
 #Umschalt+Strg+Esc -> xfce4-taskmanager
 #--Defaults--
 #Alt+F2        -> xfrun4
