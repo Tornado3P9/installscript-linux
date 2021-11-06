@@ -41,7 +41,7 @@ wget curl \
 tree \
 ufw gufw \
 kleopatra \
-jeex bless jq rename tee \
+jeex bless jq rename tea \
 usb-creator-gtk \
 python3-pip python3-venv libopencv-dev python3-opencv
 # https://linuxhint.com/install-ubuntu-restricted-extras/
@@ -88,7 +88,7 @@ if [ "$yn" != "n" ]; then
   sudo apt install texlive texlive-lang-german texlive-lang-english texlive-latex-extra texmaker
 fi
 #
-### 2. Activate User-Friendly-Firewall Status https://wiki.ubuntuusers.de/ufw/:
+### 2. Activate User-Friendly-Firewall https://wiki.ubuntuusers.de/ufw/:
 printf "\n"
 sudo ufw enable
 sudo ufw status
