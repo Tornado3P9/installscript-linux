@@ -261,8 +261,13 @@ fi
 #sudo apt install python-is-python3 python3-serial
 #
 ### VirtualBox - https://www.virtualbox.org/manual/  https://www.virtualbox.org/wiki/Downloads  https://youtu.be/HLnA5UekwAI
+# It's better to manually download and install the programm from the main website as the version in the repositories
+# is sometimes an older one. But ofcourse the repository version will work just fine:
+#sudo apt install virtualbox
+#sudo apt install virtualbox—ext–pack
 #
-#read -t 3
-#read
+### Dia Diagram Editor http://dia-installer.de/
+#sudo apt install dia
+#
 read -p "Process Finished. Press Enter to Exit:"
 printf "\n"
