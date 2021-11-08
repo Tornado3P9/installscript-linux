@@ -260,7 +260,7 @@ fi
 ### ArduinoIDE benoetigt unter Umstaenden noch folgende zwei Pakete:
 #sudo apt install python-is-python3 python3-serial
 #
-### VirtualBox - https://www.virtualbox.org/manual/  https://youtu.be/HLnA5UekwAI
+### VirtualBox - https://www.virtualbox.org/manual/  https://www.virtualbox.org/wiki/Downloads  https://youtu.be/HLnA5UekwAI
 #
 #read -t 3
 #read
