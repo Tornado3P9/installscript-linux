@@ -4,7 +4,7 @@
 # Download, Edit and Execute #
 #----------------------------#
 # sudo apt install curl      #
-# curl -sS https://raw.githubusercontent.com/Tornado3P9/installscript-linux/master/webinstall.sh -o webinstall.sh
+# curl -sS https://raw.githubusercontent.com/Tornado3P9/installscript-linux/master/webinstall.sh -O
 # chmod +x webinstall.sh     #
 # ./webinstall.sh            #
 ##############################
