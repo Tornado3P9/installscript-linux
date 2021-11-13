@@ -114,6 +114,7 @@ mkdir $HOME/Programs
 # gcolor2_colorpicker http://mirrors.edge.kernel.org/ubuntu/pool/universe/g/gcolor2/
 # PyCharm https://www.jetbrains.com/pycharm/download/#section=linux
 # OBS Studio https://obsproject.com/wiki/install-instructions#linux
+# GeoGebra https://wiki.geogebra.org/en/Reference:GeoGebra_Installation#GeoGebra_Classic_5_for_Desktop
 # Appimages z.B.:
 # krita https://krita.org/
 # inkscape https://inkscape.org/
@@ -127,6 +128,7 @@ mkdir $HOME/Programs
 wget -L https://zoom.us/client/latest/zoom_amd64.deb -O $HOME/Programs/zoom_amd64.deb
 wget -L https://mirrors.edge.kernel.org/ubuntu/pool/universe/g/gcolor2/gcolor2_0.4-2.1ubuntu1_amd64.deb -O $HOME/Programs/gcolor2_0.4-2.1ubuntu1_amd64.deb
 wget -L https://downloads.raspberrypi.org/imager/imager_latest_amd64.deb -O $HOME/Programs/imager_latest_amd64.deb
+wget -L "https://www.geogebra.org/download/deb.php?arch=amd64" -O $HOME/Programs/geogebra5_amd64.deb
 #
 #B: Debian packages nach Programs kopieren und(&&) in diesen Ordner wechseln:
 # cd ~/Programs && sudo apt install ./*.deb
