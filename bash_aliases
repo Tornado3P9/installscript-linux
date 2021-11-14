@@ -70,11 +70,11 @@ ddimage () {
   # and only allow to write to drives which do not belong to the system!!
   if [[ $# -eq 2 && $1 =~ (\.img|\.iso)$ && ! $2 =~ (sda|sdb) ]]
   then
-    printf "dd if=$1 of=$2 bs=4M oflag=sync \n"
-    dd if=$1 of=$2 bs=4M oflag=sync
+    printf "sudo dd if=$1 of=$2 bs=4M oflag=sync \n"
+    sudo dd if=$1 of=$2 bs=4M oflag=sync
   else
     echo ddimage [name_of_the_image] [path_to_the_usb_drive]
-    echo Example: sudo ddimage debian.iso /dev/sdc
+    echo Example: ddimage debian.iso /dev/sdc
     echo -e "\nDisplay Images:"; ls *.iso *.img ; echo -e "\nDisplay drives:"; lsblk -p
   fi
 }
