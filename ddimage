@@ -1,0 +1,32 @@
+#!/bin/bash
+set -uo pipefail
+trap 's=$?; echo "$0: Error on line "$LINENO": $BASH_COMMAND"; exit $s' ERR
+IFS=$'\n\t'
+
+HELP () {
+  echo " "
+  echo ddimage [name_of_the_image] [path_to_the_usb_drive]
+  echo Example: sudo ddimage debian.iso /dev/sdc
+  printf "\nDisplay Images:\n"
+  ls -1v *.iso *.img
+  printf "\nDisplay Drives:\n"
+  lsblk -pd
+}
+
+# Ensure we are root
+if [[ $EUID -ne 0 ]]; then
+  echo "ddimage must be run as root" 1>&2
+  HELP
+  exit 1
+else
+  # check if number of parameter equals 2 and only allow images and ISOs
+  # and only allow to write to drives which do not belong to the system!!
+  # change (sda|sdb) to the drive names of your system.. (sda|nvme0|sde) or (sda) as an example..
+  if [[ $# -eq 2 && $1 =~ (\.img|\.iso)$ && ! $2 =~ (sda|sdb) ]]
+  then
+    printf "dd if=$1 of=$2 bs=4M status=progress oflag=sync \n"
+    dd if=$1 of=$2 bs=4M status=progress oflag=sync
+  else
+    HELP
+  fi
+fi

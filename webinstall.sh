@@ -271,5 +271,14 @@ fi
 ### Dia Diagram Editor http://dia-installer.de/
 #sudo apt install dia
 #
+### Create Packages with FPM https://fpm.readthedocs.io/en/latest/index.html
+#sudo apt install squashfs-tools
+#gem install fpm
+#
+### ddimage script to use dd more savely (for creating linux usb live stick)
+# curl -sS https://raw.githubusercontent.com/Tornado3P9/installscript-linux/master/ddimage -O
+# chmod +x ddimage
+# sudo mv ddimage /usr/bin/
+#
 read -p "Process Finished. Press Enter to Exit:"
 printf "\n"

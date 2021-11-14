@@ -12,7 +12,7 @@ alias renamehelp='echo rename \'\''s/#//\'\'' \*.m4a'
 alias weckerhelp='echo sleep 5m && mpv sound.mp3 --no-video --start=00:00:13 --loop'
 alias aliases='cat ~/.bash_aliases'
 alias c='clear'
-alias cl='clear;ls;pwd'
+alias cl='clear;ls'
 alias root='sudo su'
 alias ports='netstat -tupan'
 #
@@ -61,20 +61,4 @@ alias count='find . -type f | wc -l'
 function playline() {
   local n1=$(ls -1v | sed -n "$1 p");
   mpv "$n1";
-}
-#
-# Function for the dd command, so to not overwrite main hard drive by accident!
-# Just type ddimage to see instructions!
-ddimage () {
-  # check if number of parameter equals 2 and only allow images and ISOs
-  # and only allow to write to drives which do not belong to the system!!
-  if [[ $# -eq 2 && $1 =~ (\.img|\.iso)$ && ! $2 =~ (sda|sdb) ]]
-  then
-    printf "sudo dd if=$1 of=$2 bs=4M oflag=sync \n"
-    sudo dd if=$1 of=$2 bs=4M oflag=sync
-  else
-    echo ddimage [name_of_the_image] [path_to_the_usb_drive]
-    echo Example: ddimage debian.iso /dev/sdc
-    echo -e "\nDisplay Images:"; ls *.iso *.img ; echo -e "\nDisplay drives:"; lsblk -p
-  fi
 }
