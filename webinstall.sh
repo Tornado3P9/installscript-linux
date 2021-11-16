@@ -92,6 +92,7 @@ fi
 printf "\n"
 sudo ufw enable
 sudo ufw status
+sleep 1
 #
 ### 3. Additional Themes:
 sudo apt install arc-theme moka-icon-theme numix-icon-theme numix-gtk-theme lightdm-gtk-greeter-settings
@@ -130,7 +131,7 @@ wget -L https://mirrors.edge.kernel.org/ubuntu/pool/universe/g/gcolor2/gcolor2_0
 wget -L https://downloads.raspberrypi.org/imager/imager_latest_amd64.deb -O $HOME/Programs/imager_latest_amd64.deb
 wget -L "https://www.geogebra.org/download/deb.php?arch=amd64" -O $HOME/Programs/geogebra5_amd64.deb
 #
-#B: Debian packages nach Programs kopieren und(&&) in diesen Ordner wechseln:
+#B: Change directory to the Programs folder and(&&) install all the debian packages in one go:
 # cd ~/Programs && sudo apt install ./*.deb
 #
 #C: Move AppImages to ~/Programs and make executable (no installation needed)
@@ -185,10 +186,11 @@ echo "HISTTIMEFORMAT=\"%d/%m/%y %T  \"" >> ~/.bashrc
 ### 11. Bildschirm Hintergrund:
 # https://www.pexels.com/
 # To search for background folder:
-echo -e "\nShowing the file path to the desktop-background-image-directory:" && locate backdrops
+echo -e "\nShowing you the file path to the desktop-background-image-directory:" && locate backdrops
 # Or animate your background if a static one is too boring: https://youtu.be/pA-gzjyGHFc
 #
 ### 12. Add custom alias:
+echo ""
 read -p "Do you want to copy premade aliases? [Y/n]: " yn2
 if [ "$yn2" != "n" ]; then
   curl -sS https://raw.githubusercontent.com/Tornado3P9/installscript-linux/master/bash_aliases | tee ~/.bash_aliases
@@ -279,6 +281,7 @@ fi
 # curl -sS https://raw.githubusercontent.com/Tornado3P9/installscript-linux/master/ddimage -O
 # chmod +x ddimage
 # sudo mv ddimage /usr/bin/
+# ddimage
 #
 read -p "Process Finished. Press Enter to Exit:"
 printf "\n"
