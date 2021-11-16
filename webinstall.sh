@@ -268,7 +268,7 @@ fi
 #sudo apt install virtualbox
 #sudo apt install virtualbox—ext–pack
 #
-### Dia Diagram Editor http://dia-installer.de/
+### Dia Diagram Editor http://dia-installer.de/ https://www.osradar.com/some-programs-to-make-uml-diagrams-in-linux/
 #sudo apt install dia
 #
 ### Create Packages with FPM https://fpm.readthedocs.io/en/latest/index.html
