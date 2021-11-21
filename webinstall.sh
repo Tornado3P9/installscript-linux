@@ -293,5 +293,12 @@ fi
 # sudo mv ddimage /usr/bin/
 # ddimage
 #
+### go (go-golang) programming language
+# Newest Version: https://golang.org/doc/install
+# Delete via: "sudo rm -rf /usr/local/go" and also remember to delete the "export PATH=$PATH:/usr/local/go/bin" line
+# Repository Version (Golang version 1.13): sudo apt install golang-go
+# Delete via: sudo apt purge golang-go
+# Test installation: go version
+#
 read -p "Process Finished. Press Enter to Exit:"
 printf "\n"
