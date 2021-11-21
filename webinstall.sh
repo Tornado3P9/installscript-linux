@@ -94,6 +94,9 @@ sudo ufw enable
 sudo ufw status
 sleep 1
 #
+## Limit potential DoS Attack without root access
+#sudo echo "$USER  hard  nproc  2000" >> /etc/security/limits.conf
+#
 ### 3. Additional Themes:
 sudo apt install arc-theme moka-icon-theme numix-icon-theme numix-gtk-theme lightdm-gtk-greeter-settings
 sudo apt install plank
