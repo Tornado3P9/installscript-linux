@@ -16,6 +16,9 @@ alias cl='clear;ls'
 alias root='sudo su'
 alias ports='netstat -tupan'
 #
+#find the largest top 10 files and directories in human readable format
+alias showbiggest='du -hsx * | sort -rh | head -10'
+#
 #open in file manager
 alias open='thunar'
 #

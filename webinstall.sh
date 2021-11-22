@@ -28,7 +28,7 @@ git gparted synaptic \
 xsane simple-scan \
 pdfshuffler \
 gimp pinta hugin gifsicle \
-htop glances whowatch arp-scan nmap nethogs wireshark speedtest-cli traceroute mtr neofetch \
+htop glances whowatch arp-scan nmap nethogs wireshark speedtest-cli traceroute mtr neofetch net-tools\
 libreoffice libreoffice-l10n-de libreoffice-help-de \
 sqlite3 nodejs npm \
 mediainfo mediainfo-gui \
@@ -43,7 +43,8 @@ ufw gufw \
 kleopatra \
 jeex bless jq rename \
 usb-creator-gtk \
-python3-pip python3-venv libopencv-dev python3-opencv
+python3-pip python3-venv libopencv-dev python3-opencv \
+docker.io
 # https://linuxhint.com/install-ubuntu-restricted-extras/ (media codecs all install one-liner)
 # Show package content by typing: "apt show ubuntu-restricted-extras" or manually install via the following line:
 sudo apt install libavcodec-extra ttf-mscorefonts-installer unrar rar gstreamer1.0-libav gstreamer1.0-plugins-ugly gstreamer1.0-vaapi
@@ -231,7 +232,7 @@ fi
 # Photopea (Onlinetool, gute Kompatibilitaet zu Photoshops Textobjekten) https://www.photopea.com/
 # Inkscape (Vektorgrafiken) https://inkscape.org/
 # MyPaint (Professionelles Maltool fuer Arbeit am Digital Drawing Tablet) http://mypaint.org/
-# Blender2.9 (Professionelles 2D-Maltool fuer Arbeit am Digital Drawing Tablet) https://www.blender.org/
+# Blender2.9+ (Professionelles 2D-Maltool fuer Arbeit am Digital Drawing Tablet) https://www.blender.org/
 #
 ### Automaticly enter 'yes' when asked:
 #for i in program1 program2 program3; do
