@@ -12,7 +12,7 @@
 ##############################
 # Adding PPAs                #
 ##############################
-sudo add-apt-repository ppa:stebbins/handbrake-releases
+#add-apt-repository ppa:stebbins/handbrake-releases
 #add-apt-repository ppa:kdenlive/kdenlive-stable
 #add-apt-repository ppa:ubuntuhandbook1/audacity
 #add-apt-repository ppa:cteehayder/ffmulticonverter
@@ -48,8 +48,6 @@ docker.io
 # https://linuxhint.com/install-ubuntu-restricted-extras/ (media codecs all install one-liner)
 # Show package content by typing: "apt show ubuntu-restricted-extras" or manually install via the following line:
 sudo apt install libavcodec-extra ttf-mscorefonts-installer unrar rar gstreamer1.0-libav gstreamer1.0-plugins-ugly gstreamer1.0-vaapi
-# PPA:
-sudo apt install handbrake-gtk
 ##############################
 # Install line snap          #
 ##############################
@@ -67,8 +65,12 @@ sudo apt install handbrake-gtk
 ##############################
 # Install line Flathub       #
 ##############################
+#https://flatpak.org/setup/Ubuntu/
 #sudo apt install flatpak
 # https://flathub.org hier suchen, ob flathub das gewuenschte Programm ueberhaupt hat.
+#
+# https://flathub.org/apps/details/fr.handbrake.ghb
+#flatpak install flathub fr.handbrake.ghb
 ##############################
 # Install line pip3          #
 ##############################

@@ -17,7 +17,7 @@ alias root='sudo su'
 alias ports='netstat -tupan'
 #
 #find the largest top 10 files and directories in human readable format
-alias showbiggest='du -hsx * | sort -rh | head -10'
+alias dumax='du -hsx * | sort -rh | head -10'
 #
 #open in file manager
 alias open='thunar'
