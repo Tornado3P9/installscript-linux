@@ -47,7 +47,7 @@ python3-pip python3-venv libopencv-dev python3-opencv \
 docker.io
 # https://linuxhint.com/install-ubuntu-restricted-extras/ (media codecs all install one-liner)
 # Show package content by typing: "apt show ubuntu-restricted-extras" or manually install via the following line:
-sudo apt install libavcodec-extra ttf-mscorefonts-installer unrar rar gstreamer1.0-libav gstreamer1.0-plugins-ugly gstreamer1.0-vaapi
+sudo apt install libavcodec-extra ttf-mscorefonts-installer unrar rar gstreamer1.0-libav gstreamer1.0-plugins-ugly gstreamer1.0-vaapi xz-utils
 ##############################
 # Install line snap          #
 ##############################
@@ -194,7 +194,7 @@ read -p "EnterTaste zum Fortfahren:"
 #xfwm4-settings
 #
 ### for displaying the date and time of the terminal history output type the following line into your terminal:
-echo "HISTTIMEFORMAT=\"%d/%m/%y %T  \"" >> ~/.bashrc
+echo 'export HISTTIMEFORMAT="%F %T  "' >> ~/.bashrc
 #
 ### 11. Bildschirm Hintergrund:
 # https://www.pexels.com/
@@ -302,6 +302,9 @@ fi
 # Repository Version (Golang version 1.13): sudo apt install golang-go
 # Delete via: sudo apt purge golang-go
 # Test installation: go version
+#
+### Speeding up Ubuntu https://itsfoss.com/speed-up-ubuntu-1310/
+#
 #
 read -p "Process Finished. Press Enter to Exit:"
 printf "\n"
