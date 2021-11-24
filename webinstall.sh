@@ -305,6 +305,15 @@ fi
 #
 ### Speeding up Ubuntu https://itsfoss.com/speed-up-ubuntu-1310/
 #
+### Installing drivers on Ubuntu is not necessary as Ubuntu detects the Video Card automaticly and installs the driver. AMD drivers have already been integrated into the linux kernel..so nothing much to do there..
+#But for the case that you unchecked the checkbox (automaticly install proprietary software...) when installing the system then you can go to (Settings -> Additional Drivers) -> and klick on the line, where it says (proprietary, tested)
+#https://phoenixnap.com/kb/install-nvidia-drivers-ubuntu This will automaticly install the driver for you. If there are problems, just try an older version. If there are still problems, then your configuration might need some changes.
+#By the way..NVidea will install an additional configuration center (with a green Icon "NVIDEA X SERVER SETTINGS" in case you want to go look for it inside the Settings Menu) but you can just ignore it.
+#Only go there if you encounter any problems with the standard configuration. For example you could enable "Force Composition Pipeline" inside the "X SERVER DISPLAY CONFIGURATION" tab, "apply" and "Save To X Configuration File" if you encounter things like "screen tearing".
+#I myself never encountered any Problems with grafics cards, but just in case. https://launchpad.net/~graphics-drivers/+archive/ubuntu/ppa
+#
+### Grafical installers on Linux? Don't use them! Always choose the terminal or you could try "Synaptic Package Manager" to get used to package names in the beginning. (sudo apt install synaptic)
+#
 #
 read -p "Process Finished. Press Enter to Exit:"
 printf "\n"
