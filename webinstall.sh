@@ -137,6 +137,7 @@ mkdir $HOME/Programs
 # Kdenlive https://kdenlive.org/en/download/
 # Obsidian https://obsidian.md/
 # BalenaEtcher https://www.balena.io/etcher/
+# Virtual MIDI Piano Keyboard (VMPK) https://vmpk.sourceforge.io/
 #
 wget -L https://zoom.us/client/latest/zoom_amd64.deb -O $HOME/Programs/zoom_amd64.deb
 wget -L https://mirrors.edge.kernel.org/ubuntu/pool/universe/g/gcolor2/gcolor2_0.4-2.1ubuntu1_amd64.deb -O $HOME/Programs/gcolor2_0.4-2.1ubuntu1_amd64.deb
