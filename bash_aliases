@@ -6,7 +6,7 @@ PS1="\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]-->\[\
 #PS1="\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\[\033[00m\]\[\033[01;34m\]\w\[\033[00m\]\$ "
 #
 # some more aliases
-alias update='sudo apt update && sudo apt upgrade -y'
+alias update='sudo apt update && apt list --upgradeable && read -p "Press Enter To Continue Or STRG+C To Cancel:" && sudo apt upgrade -y'
 alias restartaudio='pulseaudio -k && sudo alsa force-reload'
 alias nHistory='history -c && history -w'
 alias beenden='shutdown -h now'

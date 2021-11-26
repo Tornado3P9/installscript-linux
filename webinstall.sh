@@ -10,29 +10,22 @@
 ##############################
 #
 ##############################
-# Adding PPAs                #
-##############################
-#add-apt-repository ppa:stebbins/handbrake-releases
-#add-apt-repository ppa:kdenlive/kdenlive-stable
-#add-apt-repository ppa:ubuntuhandbook1/audacity
-#add-apt-repository ppa:cteehayder/ffmulticonverter
-#add-apt-repository ppa:bashtop-monitor/bashtop
-#add-apt-repository ppa:audio-recorder/ppa
-#add-apt-repository ppa:obsproject/obs-studio
-##############################
 # Install line apt           #
 ##############################
+# Installing from the ubuntu repository is almost always the best option because these packages have been tested.
+# But ofcourse sometimes they are not the most recent up to date versions for your app.
+# If you don't like that, then download the app from it's official website or use Appimages, Snaps, Flatpaks, PPAs or compile the app from source code.
 sudo apt update && sudo apt upgrade -y
 sudo apt install \
 git gparted synaptic \
 xsane simple-scan \
 pdfshuffler \
 gimp pinta hugin gifsicle \
-htop glances whowatch arp-scan nmap nethogs wireshark speedtest-cli traceroute mtr neofetch net-tools\
+htop glances whowatch arp-scan nmap nethogs wireshark speedtest-cli traceroute mtr neofetch net-tools \
 libreoffice libreoffice-l10n-de libreoffice-help-de \
 sqlite3 nodejs npm \
 mediainfo mediainfo-gui \
-mpv ffmpeg vlc audacity guvcview kazam \
+mpv ffmpeg vlc audacity guvcview kazam handbrake \
 lxsplit \
 libimage-exiftool-perl perl-doc \
 steam \
@@ -51,8 +44,9 @@ sudo apt install libavcodec-extra ttf-mscorefonts-installer unrar rar gstreamer1
 ##############################
 # Install line snap          #
 ##############################
+# Managed by Canonical, the company from Ubuntu
 #sudo apt install snapd
-# https://snapcraft.io/store hier suchen, ob snap das gewuenschte Programm ueberhaupt hat.
+# https://snapcraft.io/store look here to see whether a snap version exists for your program.
 #snap install heroku --classic
 #snap install micro --classic
 #snap install pycharm-community --classic
@@ -67,10 +61,23 @@ sudo apt install libavcodec-extra ttf-mscorefonts-installer unrar rar gstreamer1
 ##############################
 #https://flatpak.org/setup/Ubuntu/
 #sudo apt install flatpak
-# https://flathub.org hier suchen, ob flathub das gewuenschte Programm ueberhaupt hat.
+# https://flathub.org look here to see whether a flatpak version exists for your program.
 #
 # https://flathub.org/apps/details/fr.handbrake.ghb
 #flatpak install flathub fr.handbrake.ghb
+##############################
+# Adding PPAs                #
+##############################
+# Most often non official packages. Always try the repository version or the official website first.
+#sudo add-apt-repository ppa:stebbins/handbrake-releases
+#sudo add-apt-repository ppa:kdenlive/kdenlive-stable
+#sudo add-apt-repository ppa:ubuntuhandbook1/audacity
+#sudo add-apt-repository ppa:cteehayder/ffmulticonverter
+#sudo add-apt-repository ppa:bashtop-monitor/bashtop
+#sudo add-apt-repository ppa:audio-recorder/ppa
+#sudo add-apt-repository ppa:obsproject/obs-studio
+#sudo apt update
+#sudo apt install audio-recorder
 ##############################
 # Install line pip3          #
 ##############################
@@ -93,9 +100,7 @@ fi
 #
 ### 2. Activate User-Friendly-Firewall https://wiki.ubuntuusers.de/ufw/:
 printf "\n"
-sudo ufw enable
-sudo ufw status
-sleep 1
+sudo ufw enable && sudo ufw status && sleep 1
 #
 ## Limit potential DoS Attack without root access
 #sudo echo "$USER  hard  nproc  2000" >> /etc/security/limits.conf
@@ -106,11 +111,11 @@ sudo apt install plank
 #If Plank (Panel/Dockleiste fuer Apps wie beim Mac) is not available in the default repository, just install from ppa:ricotz/docky
 #Strg+Right_Mouse_Button für dessen Einstellungsmenu https://wiki.ubuntuusers.de/Plank/
 #
-### 4. Ordner Fuer Externe Programme Erstellen:
+### 4. Create a folder for downloading extern Applications:
 mkdir $HOME/Programs
 #
-### 5. Installation Von Externen Programmen:
-#A: Programme Herunterladen, z.B.:
+### 5. Installation steps for extern Applications:
+#A: Downloade the installation file for the program that you want:
 # Sublime-Text, VSCode, Atom, JetBrains WebStorm/Rider/PyCharm IDE
 # Blender https://www.blender.org/download/
 # magick https://imagemagick.org/script/download.php
@@ -122,13 +127,13 @@ mkdir $HOME/Programs
 # PyCharm https://www.jetbrains.com/pycharm/download/#section=linux
 # OBS Studio https://obsproject.com/wiki/install-instructions#linux
 # GeoGebra https://wiki.geogebra.org/en/Reference:GeoGebra_Installation#GeoGebra_Classic_5_for_Desktop
-# Web Browsers z.B.:
+# Web Browsers:
 # Firefox (already preinstalled)
 # Chrome https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 # Vivaldi https://vivaldi.com/download/
 # Brave https://brave.com/linux/#release-channel-installation
 # Safari (sudo apt install playonlinux -> and then install Safari from there)
-# Appimages z.B.:
+# Appimages:
 # krita https://krita.org/
 # inkscape https://inkscape.org/
 # MyPaint http://mypaint.org/
@@ -149,7 +154,6 @@ wget -L https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.de
 # cd ~/Programs && sudo apt install ./*.deb
 #
 #C: Move AppImages to ~/Programs and make executable (no installation needed)
-# mv ~/Downloads/*.AppImage ~/Programs/
 # chmod +x ~/Programs/*.AppImage
 #
 #D: Extract blender and copy to Programs folder:
@@ -160,7 +164,7 @@ wget -L https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.de
 #Und JMesh_Hard_Surface_Tools: https://github.com/jayanam/jmesh-tools
 #
 ### 6. Konsolentools herunterladen:
-#cd ~/Programs && git clone https://github.com/Tornado3P9/Konsolentools
+#cd && git clone https://github.com/Tornado3P9/Konsolentools
 #
 ### 7. Virtuelle Python Environment erstellen https://github.com/Tornado3P9/Konsolentools/blob/master/python3_virtualenv.txt
 #mkdir ~/my-python-venv && cd $_
@@ -242,12 +246,15 @@ fi
 #  apt-get install $i -y
 #done
 #
+### Delete a program, either with "remove" or "purge"
+#sudo apt remove program_name
+#
 ### install better compatibility with "the better distro kernel" (optional)
 #https://liquorix.net/
 #
 ### Audio+Video Converter:
 # ffmpeg (complex converter tool for videos, movies, images, pdfs, ...) https://wiki.ubuntuusers.de/FFmpeg/ http://ffmpeg.org/ffmpeg.html
-# handbrake (Very Good! -> see above for PPA install) https://wiki.ubuntuusers.de/HandBrake/
+# handbrake (Very Good!) https://wiki.ubuntuusers.de/HandBrake/
 # winff (Grafic Interface for ffmpeg)
 # traGtor (Alternatively) http://mein-neues-blog.de/
 #
@@ -260,9 +267,7 @@ fi
 # Openshot (Simple)
 #
 ### Desktop Sketchpads / Direkt auf dem Bildschrirm malen:
-# Gromit for most systems - https://wiki.ubuntuusers.de/Gromit/
-#sudo apt install gromit
-# "Annotate" plugin in compiz for Gnome
+# Annotate plugin in compiz for Gnome
 #sudo apt install compizconfig-settings-manager compiz-plugins compiz-plugins-extra
 #
 ### Grafic Tablet Zeichenprogramme:
@@ -277,9 +282,10 @@ fi
 #
 ### ArduinoIDE benoetigt unter Umstaenden noch folgende zwei Pakete:
 #sudo apt install python-is-python3 python3-serial
+# Also remember to give permissions to the program https://www.arduino.cc/en/Guide/Linux
 #
 ### VirtualBox - https://www.virtualbox.org/manual/  https://www.virtualbox.org/wiki/Downloads  https://youtu.be/HLnA5UekwAI
-# It's better to manually download and install the programm from the main website as the version in the repositories
+# It's better to manually download and install the programm from the official website as the version in the repositories
 # is sometimes an older one. But ofcourse the repository version will work just fine:
 #sudo apt install virtualbox
 #sudo apt install virtualbox—ext–pack
@@ -287,11 +293,14 @@ fi
 ### Dia Diagram Editor http://dia-installer.de/ https://www.osradar.com/some-programs-to-make-uml-diagrams-in-linux/
 #sudo apt install dia
 #
+### Grafical Disk Usage Analyzer https://apps.gnome.org/app/org.gnome.baobab/ https://apps.gnome.org/app/org.gnome.DiskUtility/
+#sudo apt install baobab
+#
 ### Create Packages with FPM https://fpm.readthedocs.io/en/latest/index.html
 #sudo apt install squashfs-tools
 #gem install fpm
 #
-### ddimage script to use dd more savely (for creating linux usb live stick)
+### ddimage script to use dd more savely (for creating a linux live system on your usb drive)
 # curl -sS https://raw.githubusercontent.com/Tornado3P9/installscript-linux/master/ddimage -O
 # chmod +x ddimage
 # sudo mv ddimage /usr/bin/
@@ -304,7 +313,8 @@ fi
 # Delete via: sudo apt purge golang-go
 # Test installation: go version
 #
-### Speeding up Ubuntu https://itsfoss.com/speed-up-ubuntu-1310/
+### Speeding up Ubuntu
+# https://itsfoss.com/speed-up-ubuntu-1310/
 #
 ### Installing drivers on Ubuntu is not necessary as Ubuntu detects the Video Card automaticly and installs the driver. AMD drivers have already been integrated into the linux kernel..so nothing much to do there..
 #But for the case that you unchecked the checkbox (automaticly install proprietary software...) when installing the system then you can go to (Settings -> Additional Drivers) -> and klick on the line, where it says (proprietary, tested)
@@ -315,6 +325,9 @@ fi
 #
 ### Grafical installers on Linux? Don't use them! Always choose the terminal or you could try "Synaptic Package Manager" to get used to package names in the beginning. (sudo apt install synaptic)
 #
+### Prolong the life span of your SSD/Flash Memory
+# https://linuxconfig.org/improve-hard-drive-write-speed-with-write-back-caching
+#sudo apt install hdparm
 #
 read -p "Process Finished. Press Enter to Exit:"
 printf "\n"
