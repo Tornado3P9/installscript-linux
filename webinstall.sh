@@ -328,6 +328,22 @@ fi
 ### Prolong the life span of your SSD/Flash Memory
 # https://linuxconfig.org/improve-hard-drive-write-speed-with-write-back-caching
 #sudo apt install hdparm
+# Or Create A Ramdisk:
+# https://linuxhint.com/ramdisk_ubuntu_1804/ https://www.linuxbabe.com/command-line/create-ramdisk-linux https://www.cyberciti.biz/faq/howto-create-linux-ram-disk-filesystem/
+#
+### Managing Trash/Recycle Bin
+#sudo apt install trash-cli
+# More interesting details about trash handling below and in the man page.
+#   restore-trash (1)    - Restore for Command line trash utility.
+#   trash (1)            - Command line trash utility.
+#   trash-empty (1)      - Empty for Command line trash utility.
+#   trash-list (1)       - List trashed files.
+#   trash-put (1)        - Command line trash utility.
+#   trash-rm (1)         - Removes files matching a pattern from the trash can
+# Or create an alias emptyTrash='rm -rf ~/.local/share/Trash/*' if you wish to delete only
+# Or you could use this script: https://askubuntu.com/a/727758/225694 even with custom sound!
+# Or you could use 'sudo apt-get install autotrash' https://vitux.com/how-to-automatically-empty-the-trash-in-ubuntu/
+#
 #
 read -p "Process Finished. Press Enter to Exit:"
 printf "\n"
