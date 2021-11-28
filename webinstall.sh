@@ -44,7 +44,7 @@ sudo apt install libavcodec-extra ttf-mscorefonts-installer unrar rar gstreamer1
 ##############################
 # Install line snap          #
 ##############################
-# Managed by Canonical, the company from Ubuntu
+# Managed by Canonical, the company behind Ubuntu
 #sudo apt install snapd
 # https://snapcraft.io/store look here to see whether a snap version exists for your program.
 #snap install heroku --classic
