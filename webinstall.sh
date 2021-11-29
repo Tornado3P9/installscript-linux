@@ -14,7 +14,7 @@
 ##############################
 # Installing from the ubuntu repository is almost always the best option because these packages have been tested.
 # But ofcourse sometimes they are not the most recent up to date versions for your app.
-# If you don't like that, then download the app from it's official website or use Appimages, Snaps, Flatpaks, PPAs or compile the app from source code.
+# If you don't like that, then download the app from it's official website or use Appimages, Snaps, Flatpaks, PPAs or compile the app from source code or use the Website Version.
 sudo apt update && sudo apt upgrade -y
 sudo apt install \
 git gparted synaptic \
@@ -38,46 +38,58 @@ jeex bless jq rename \
 usb-creator-gtk \
 python3-pip python3-venv libopencv-dev python3-opencv \
 docker.io
-# https://linuxhint.com/install-ubuntu-restricted-extras/ (media codecs all install one-liner)
-# Show package content by typing: "apt show ubuntu-restricted-extras" or manually install via the following line:
+# https://linuxhint.com/install-ubuntu-restricted-extras/ (for a media codecs single line installer)
+# Show package content by typing: "apt show ubuntu-restricted-extras" or install manually via the following line:
 sudo apt install libavcodec-extra ttf-mscorefonts-installer unrar rar gstreamer1.0-libav gstreamer1.0-plugins-ugly gstreamer1.0-vaapi xz-utils
+# Ubuntu has got a lot of command line utils preinstalled. To see their contents, type 'apt show package_name'.
+# Interesting ones are: coreutils, alsa-utils, ubuntu-restricted-extras, ...
 ##############################
 # Install line snap          #
 ##############################
 # Managed by Canonical, the company behind Ubuntu
 #sudo apt install snapd
 # https://snapcraft.io/store look here to see whether a snap version exists for your program.
-#snap install heroku --classic
-#snap install micro --classic
-#snap install pycharm-community --classic
-#snap install android-studio --classic
-#snap install eclipse --classic
-#snap install code --classic
-#snap install blender --classic
-#snap install skype --classic
-#snap install inkscape krita meshlab zoom-client kdenlive discord fast vlc obs-studio
+#sudo snap install heroku --classic
+#sudo snap install micro --classic
+#sudo snap install pycharm-community --classic
+#sudo snap install android-studio --classic
+#sudo snap install eclipse --classic
+#sudo snap install code --classic
+#sudo snap install blender --classic
+#sudo snap install skype --classic
+#sudo snap install inkscape krita meshlab zoom-client kdenlive discord fast vlc obs-studio whatsapp-for-linux spotify
 ##############################
 # Install line Flathub       #
 ##############################
 #https://flatpak.org/setup/Ubuntu/
 #sudo apt install flatpak
 # https://flathub.org look here to see whether a flatpak version exists for your program.
-#
 # https://flathub.org/apps/details/fr.handbrake.ghb
 #flatpak install flathub fr.handbrake.ghb
 ##############################
 # Adding PPAs                #
 ##############################
-# Most often non official packages. Always try the repository version or the official website first.
-#sudo add-apt-repository ppa:stebbins/handbrake-releases
-#sudo add-apt-repository ppa:kdenlive/kdenlive-stable
-#sudo add-apt-repository ppa:ubuntuhandbook1/audacity
-#sudo add-apt-repository ppa:cteehayder/ffmulticonverter
-#sudo add-apt-repository ppa:bashtop-monitor/bashtop
-#sudo add-apt-repository ppa:audio-recorder/ppa
-#sudo add-apt-repository ppa:obsproject/obs-studio
+# Most often non official packages. ALWAYS try the repository version or the official website first!
+#sudo add-apt-repository ppa:stebbins/handbrake-releases    #handbrake-gtk
+#sudo add-apt-repository ppa:kdenlive/kdenlive-stable       #kdenlive
+#sudo add-apt-repository ppa:ubuntuhandbook1/audacity       #audacity
+#sudo add-apt-repository ppa:cteehayder/ffmulticonverter    #ffmulticonverter
+#sudo add-apt-repository ppa:bashtop-monitor/bashtop        #bashtop
+#sudo add-apt-repository ppa:audio-recorder/ppa             #audio-recorder
+#sudo add-apt-repository ppa:obsproject/obs-studio          #obs-studio
+#sudo add-apt-repository ppa:nilarimogard/webupd8           #pulseaudio-equalizer
+#
 #sudo apt update
 #sudo apt install audio-recorder
+#
+## To purge the PPA as well as downgrade the package, run command in terminal:
+#sudo apt install ppa-purge && sudo ppa-purge ppa:kdenlive/kdenlive-stable
+##To remove the PPA only, run command:
+#sudo add-apt-repository --remove ppa:kdenlive/kdenlive-stable
+##And to remove Kdenlive, run command:
+#sudo apt remove --autoremove kdenlive kdenlive-data
+#
+#To manage the repository in a GUI, go to "Settings" > "Software & Updates" > "Other Software"
 ##############################
 # Install line pip3          #
 ##############################
@@ -344,6 +356,7 @@ fi
 # Or you could use this script: https://askubuntu.com/a/727758/225694 even with custom sound!
 # Or you could use 'sudo apt-get install autotrash' https://vitux.com/how-to-automatically-empty-the-trash-in-ubuntu/
 #
+### Audio Control https://www.howtoforge.com/tutorial/advanced-audio-control-on-linux/
 #
 read -p "Process Finished. Press Enter to Exit:"
 printf "\n"
