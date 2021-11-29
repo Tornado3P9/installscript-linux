@@ -103,6 +103,8 @@ sudo apt install libavcodec-extra ttf-mscorefonts-installer unrar rar gstreamer1
 ##############################
 # Install additional items   #
 ##############################
+### Grafical installers on Linux? Don't use them! Always choose the terminal or you could try "Synaptic Package Manager" to get used to package names in the beginning.
+#
 ### 1. Do you want to install Texlive and Texmaker? https://wiki.ubuntuusers.de/TeX_Live/
 printf "\n"
 read -p "Do you want to install Texlive and Texmaker? [Y/n]: " yn
@@ -139,6 +141,7 @@ mkdir $HOME/Programs
 # PyCharm https://www.jetbrains.com/pycharm/download/#section=linux
 # OBS Studio https://obsproject.com/wiki/install-instructions#linux
 # GeoGebra https://wiki.geogebra.org/en/Reference:GeoGebra_Installation#GeoGebra_Classic_5_for_Desktop
+# SQL Developer / Universal Database Tool https://dbeaver.io/
 # Web Browsers:
 # Firefox (already preinstalled)
 # Chrome https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
@@ -335,8 +338,6 @@ fi
 #Only go there if you encounter any problems with the standard configuration. For example you could enable "Force Composition Pipeline" inside the "X SERVER DISPLAY CONFIGURATION" tab, "apply" and "Save To X Configuration File" if you encounter things like "screen tearing".
 #I myself never encountered any Problems with grafics cards, but just in case. https://launchpad.net/~graphics-drivers/+archive/ubuntu/ppa
 #
-### Grafical installers on Linux? Don't use them! Always choose the terminal or you could try "Synaptic Package Manager" to get used to package names in the beginning. (sudo apt install synaptic)
-#
 ### Prolong the life span of your SSD/Flash Memory
 # https://linuxconfig.org/improve-hard-drive-write-speed-with-write-back-caching
 #sudo apt install hdparm
@@ -356,7 +357,14 @@ fi
 # Or you could use this script: https://askubuntu.com/a/727758/225694 even with custom sound!
 # Or you could use 'sudo apt-get install autotrash' https://vitux.com/how-to-automatically-empty-the-trash-in-ubuntu/
 #
-### Audio Control https://www.howtoforge.com/tutorial/advanced-audio-control-on-linux/
+### Audio Control
+# https://www.howtoforge.com/tutorial/advanced-audio-control-on-linux/
+#
+### Record Desktop:
+# - OBS Studio https://obsproject.com/
+# - ffmpeg https://github.com/Tornado3P9/Konsolentools/tree/master/FFmpeg
+# - kazam (type "cat ~/.config/kazam/kazam.conf" to see your kazam configuration file)
+#
 #
 read -p "Process Finished. Press Enter to Exit:"
 printf "\n"
