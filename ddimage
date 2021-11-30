@@ -10,7 +10,7 @@ HELP () {
   printf "\nDisplay Images:\n"
   ls -1v *.iso *.img
   printf "\nDisplay Drives:\n"
-  lsblk -pd
+  lsblk -pdn -o NAME
 }
 
 # Ensure we are root

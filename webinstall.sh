@@ -129,7 +129,7 @@ sudo apt install plank
 mkdir $HOME/Programs
 #
 ### 5. Installation steps for extern Applications:
-#A: Downloade the installation file for the program that you want:
+#A: Download the installation file for the program that you want:
 # Sublime-Text, VSCode, Atom, JetBrains WebStorm/Rider/PyCharm IDE
 # Blender https://www.blender.org/download/
 # magick https://imagemagick.org/script/download.php
