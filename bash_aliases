@@ -20,6 +20,9 @@ alias cl='clear;ls'
 alias root='sudo su'
 alias ports='netstat -tupan'
 #
+#nano text editor show line numbers
+alias nano='nano --linenumbers'
+#
 #find the largest top 10 files and directories in human readable format
 alias dumax='du -hsx * | sort -rh | head -10'
 #

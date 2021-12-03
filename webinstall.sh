@@ -42,7 +42,7 @@ docker.io
 # Show package content by typing: "apt show ubuntu-restricted-extras" or install manually via the following line:
 sudo apt install libavcodec-extra ttf-mscorefonts-installer unrar rar gstreamer1.0-libav gstreamer1.0-plugins-ugly gstreamer1.0-vaapi xz-utils
 # Ubuntu has got a lot of command line utils preinstalled. To see their contents, type 'apt show package_name'.
-# Interesting ones are: coreutils, alsa-utils, ubuntu-restricted-extras, ...
+# Interesting ones are: coreutils, alsa-utils, ubuntu-restricted-extras, util-linux, ...
 ##############################
 # Install line snap          #
 ##############################
@@ -311,9 +311,14 @@ fi
 ### Grafical Disk Usage Analyzer https://apps.gnome.org/app/org.gnome.baobab/ https://apps.gnome.org/app/org.gnome.DiskUtility/
 #sudo apt install baobab
 #
-### Create Packages with FPM https://fpm.readthedocs.io/en/latest/index.html
+### Create Installation Packages with FPM https://fpm.readthedocs.io/en/latest/index.html
 #sudo apt install squashfs-tools
 #gem install fpm
+# If gem wasn't preinstalled, just install the ruby-full package below or use 'sudo apt install gem'
+#
+### Ruby language
+# It should be preinstalled. If not, just do:
+#sudo apt install ruby-full
 #
 ### ddimage script to use dd more savely (for creating a linux live system on your usb drive)
 # curl -sS https://raw.githubusercontent.com/Tornado3P9/installscript-linux/master/ddimage -O
