@@ -10,7 +10,7 @@ alias update='sudo apt update && apt list --upgradeable && read -p "Press Enter 
 alias restartaudio='pulseaudio -k && sudo alsa force-reload'
 alias nHistory='history -c && history -w'
 alias nthumbnails='rm -r /home/user/.cache/thumbnails/*'
-alias emptyTrash='rm -rf ~/.local/share/Trash/*'
+alias emptyTrash='sudo rm -rf ~/.local/share/Trash/*'
 alias beenden='shutdown -h now'
 alias renamehelp='echo rename \'\''s/#//\'\'' \*.m4a'
 alias weckerhelp='echo sleep 5m && mpv sound.mp3 --no-video --start=00:00:13 --loop'

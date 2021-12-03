@@ -359,6 +359,16 @@ fi
 #
 ### Audio Control
 # https://www.howtoforge.com/tutorial/advanced-audio-control-on-linux/
+# If audio give you trouble and it's not because of some proprietary Hardware/Software reason...
+# then that's probably because of 'pulse audio' which is still managing the audio today...better versions coming in the future hopefully
+# But what you can do is to open the conf file "sudo nano /etc/pulse/daemon.conf" and change two lines (activate them by deleting the semicolon):
+#default-sample-rate = 44100
+#alternate-sample-rate = 44100
+# A good tipp: before you change anything in a configuration file...make a copy of the original...or make a screenshot!(usually has got the date and time in it's name)
+# and then put this into a directory on your desktop? where you save all your originals so that you always know what changes you made in the past
+# because you will forget sooner or later what it was you did!!
+# You probably also can try changing "avoid-resampling" to true or just restart the audio. "pulseaudio -k" will kill the process and systemd will automaticly restart the process.
+# That will work but is just inconvenient.
 #
 ### Record Desktop:
 # - OBS Studio https://obsproject.com/

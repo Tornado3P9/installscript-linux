@@ -8,7 +8,7 @@ HELP () {
   echo ddimage [name_of_the_image] [path_to_the_usb_drive]
   echo Example: sudo ddimage debian.iso /dev/sdc
   printf "\nDisplay Images:\n"
-  ls -1v *.iso *.img
+  ls -1v *.iso *.img 2>/dev/null
   printf "\nDisplay Drives:\n"
   lsblk -pdn -o NAME
 }
