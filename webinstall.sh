@@ -67,7 +67,7 @@ sudo apt install libavcodec-extra ttf-mscorefonts-installer unrar rar gstreamer1
 # https://flathub.org/apps/details/fr.handbrake.ghb
 #flatpak install flathub fr.handbrake.ghb
 ##############################
-# Adding PPAs                #
+# Install line PPA           #
 ##############################
 # Most often non official packages. ALWAYS try the repository version or the official website first!
 #sudo add-apt-repository ppa:stebbins/handbrake-releases    #handbrake-gtk
@@ -130,7 +130,11 @@ mkdir $HOME/Programs
 #
 ### 5. Installation steps for extern Applications:
 #A: Download the installation file for the program that you want:
-# Sublime-Text, VSCode, Atom, JetBrains WebStorm/Rider/PyCharm IDE
+# JetBrains WebStorm/Rider/PyCharm IDE https://www.jetbrains.com/pycharm/download/#section=linux
+# Sublime Text https://www.sublimetext.com/
+# Sublime Merge https://www.sublimemerge.com/
+# VSCode https://code.visualstudio.com/
+# Atom https://atom.io/
 # Blender https://www.blender.org/download/
 # magick https://imagemagick.org/script/download.php
 # ffmulticonverter https://sites.google.com/site/ffmulticonverter/download
@@ -138,7 +142,6 @@ mkdir $HOME/Programs
 # zoom-client https://zoom.us/download
 # Microsoft Teams https://www.microsoft.com/en-us/microsoft-teams/download-app
 # gcolor2_colorpicker http://mirrors.edge.kernel.org/ubuntu/pool/universe/g/gcolor2/
-# PyCharm https://www.jetbrains.com/pycharm/download/#section=linux
 # OBS Studio https://obsproject.com/wiki/install-instructions#linux
 # GeoGebra https://wiki.geogebra.org/en/Reference:GeoGebra_Installation#GeoGebra_Classic_5_for_Desktop
 # SQL Developer / Universal Database Tool https://dbeaver.io/
@@ -380,6 +383,10 @@ fi
 # - ffmpeg https://github.com/Tornado3P9/Konsolentools/tree/master/FFmpeg
 # - kazam (type "cat ~/.config/kazam/kazam.conf" to see your kazam configuration file)
 #
+### Gaming:
+# Many Developers provide a Linux version for their game in Steam. Like "Shadow of Morder" for instance. But sometimes the linux version only runs on a NVidea grafics card (Witcher 2). So be aware of that if sth. doesn't work.
+# Steam also provides the feature to run Windows games with their own wine version called Proton. Alteratively you might want to take a look onto the https://lutris.net/ platform where other linux gamers explain
+# how to install some games. Often times there is a ready to go solution or a tutorial and there is also a forum to ask questions. But don't expect anything. Linux is not a gaming system. That's Window's speciality.
 #
 read -p "Process Finished. Press Enter to Exit:"
 printf "\n"
