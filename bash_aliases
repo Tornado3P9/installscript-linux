@@ -6,14 +6,14 @@ PS1="\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]-->\[\
 #PS1="\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\[\033[00m\]\[\033[01;34m\]\w\[\033[00m\]\$ "
 #
 # some more aliases
-alias update='sudo apt update && apt list --upgradeable && read -p "Press Enter To Continue Or STRG+C To Cancel:" && sudo apt upgrade -y'
+alias update='sudo apt update && apt list --upgradeable && echo "" && read -p "Press Enter To Continue Or STRG+C To Cancel:" && sudo apt upgrade -y'
 alias restartaudio='pulseaudio -k && sudo alsa force-reload'
 alias nHistory='history -c && history -w'
 alias nthumbnails='rm -r /home/user/.cache/thumbnails/*'
 alias emptyTrash='sudo rm -rf ~/.local/share/Trash/*'
-alias beenden='shutdown -h now'
+alias shutdown='shutdown -h now'
 alias renamehelp='echo rename \'\''s/#//\'\'' \*.m4a'
-alias weckerhelp='echo sleep 5m && mpv sound.mp3 --no-video --start=00:00:13 --loop'
+alias alarmclockhelp='echo sleep 5m && mpv sound.mp3 --no-video --start=00:00:13 --loop'
 alias aliases='less ~/.bash_aliases'
 alias c='clear'
 alias cl='clear;ls'

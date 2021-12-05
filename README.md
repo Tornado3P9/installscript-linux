@@ -1,9 +1,18 @@
 # installscript-linux
-Normalerweise verwendet man kein `sudo` in einem Bash script, aber hier handelt es sich auch mehr um  
-eine Beispielsammlung von Programmen und eher weniger um ein fertiges Script.  
-Es sollte zwar auch so problemlos die genannten packages installieren,  
-jedoch finden sich viele auskommentierte Pakete und Links, die ja gerade dazu da sind  
-um je nach Bedarf aktiviert zu werden.  
+This script is supposed to automate the installation of a lot programs in far less time.  
+Normally you wouldn't use `sudo` in a bash script, but in this case it's probably more like a  
+collection of programs and apps and less of a normal script.  
+This script includes a lot of deactivated/commented lines and you are encouraged to uncomment them  
+depending on your needs. You can use this script as a guide to install some additional programs and codecs.  
+I also tried to add a few explanations on the side.  
+
+If you want to use this setup script the way it is, open your terminal and type:
+```
+sudo apt install curl
+curl -sS https://raw.githubusercontent.com/Tornado3P9/installscript-linux/master/webinstall.sh -O
+chmod +x webinstall.sh
+./webinstall.sh
+```
 
 ### Tipp:
 Before invoking `apt install`, filter non-existent packages out of the list. The list of installable  

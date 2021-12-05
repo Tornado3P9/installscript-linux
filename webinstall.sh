@@ -59,7 +59,7 @@ sudo apt install libavcodec-extra ttf-mscorefonts-installer unrar rar gstreamer1
 #sudo snap install skype --classic
 #sudo snap install inkscape krita meshlab zoom-client kdenlive discord fast vlc obs-studio whatsapp-for-linux spotify
 ##############################
-# Install line Flathub       #
+# Install line Flatpak       #
 ##############################
 #https://flatpak.org/setup/Ubuntu/
 #sudo apt install flatpak
@@ -145,6 +145,7 @@ mkdir $HOME/Programs
 # OBS Studio https://obsproject.com/wiki/install-instructions#linux
 # GeoGebra https://wiki.geogebra.org/en/Reference:GeoGebra_Installation#GeoGebra_Classic_5_for_Desktop
 # SQL Developer / Universal Database Tool https://dbeaver.io/
+# Raspberry Pi Imager https://www.raspberrypi.com/software/ https://www.raspberrypi.com/documentation/computers/getting-started.html#advanced-options
 # Web Browsers:
 # Firefox (already preinstalled)
 # Chrome https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
