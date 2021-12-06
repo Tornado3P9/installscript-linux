@@ -133,7 +133,8 @@ mkdir $HOME/Programs
 # JetBrains WebStorm/Rider/PyCharm IDE https://www.jetbrains.com/pycharm/download/#section=linux
 # Sublime Text https://www.sublimetext.com/
 # Sublime Merge https://www.sublimemerge.com/
-# VSCode https://code.visualstudio.com/
+# VSCodium https://vscodium.com/ does not contain telemetry/tracking
+# VSCode https://code.visualstudio.com/ does contain additional telemetry/tracking
 # Atom https://atom.io/
 # Blender https://www.blender.org/download/
 # magick https://imagemagick.org/script/download.php
