@@ -29,7 +29,7 @@ apt-cache --generate pkgnames \
   … \
 | xargs apt install -y
 ```
-[If you do these 5 things... You should NOT use Linux](https://youtu.be/06cKL5DQ5CY]  
+[If you do these 5 things... You should NOT use Linux](https://youtu.be/06cKL5DQ5CY)  
 [Simple Tasks on Linux](https://youtu.be/6h2UmKTcCfA)  
 [How to Use GitHub](https://youtu.be/v_1iqtOnUMg)  
 [Git Tutorial Playlist](https://www.youtube.com/playlist?list=PL4cUxeGkcC9goXbgTDQ0n_4TBzOO0ocPR)  
