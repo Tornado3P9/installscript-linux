@@ -1,5 +1,5 @@
 # installscript-linux
-This script is supposed to automate the installation of a lot programs in far less time.  
+This script is supposed to automate the installation of many programs at the same time.  
 Normally you wouldn't use `sudo` in a bash script, but in this case it's probably more like a  
 collection of programs and apps and less of a normal script.  
 This script includes a lot of deactivated/commented lines and you are encouraged to uncomment them  
@@ -14,7 +14,15 @@ chmod +x webinstall.sh
 ./webinstall.sh
 ```
 
-### Tipp:
+### Tipps:
+[If you do these 5 things... You should NOT use Linux](https://youtu.be/06cKL5DQ5CY)  
+[Simple Tasks on Linux](https://youtu.be/6h2UmKTcCfA)  
+[How to Use GitHub](https://youtu.be/v_1iqtOnUMg)  
+[Git Tutorial Playlist](https://www.youtube.com/playlist?list=PL4cUxeGkcC9goXbgTDQ0n_4TBzOO0ocPR)  
+[Understanding Linux Distros](https://youtu.be/DKFnqAtEOvc)  
+[How to Choose a Linux Distribution](https://youtu.be/iox7fr7p5Hc)  
+
+### Optional:
 Before invoking `apt install`, filter non-existent packages out of the list. The list of installable  
 packages can be obtained by running `apt-cache --generate pkgnames`, which we then `grep` for  
 the packages we want to install, and `xargs` the result into `apt install`. The full command looks  
@@ -29,10 +37,4 @@ apt-cache --generate pkgnames \
   … \
 | xargs apt install -y
 ```
-[If you do these 5 things... You should NOT use Linux](https://youtu.be/06cKL5DQ5CY)  
-[Simple Tasks on Linux](https://youtu.be/6h2UmKTcCfA)  
-[How to Use GitHub](https://youtu.be/v_1iqtOnUMg)  
-[Git Tutorial Playlist](https://www.youtube.com/playlist?list=PL4cUxeGkcC9goXbgTDQ0n_4TBzOO0ocPR)  
-[Understanding Linux Distros](https://youtu.be/DKFnqAtEOvc)  
-[How to Choose a Linux Distribution](https://youtu.be/iox7fr7p5Hc)  
 
