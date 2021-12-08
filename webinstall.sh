@@ -37,6 +37,7 @@ kleopatra \
 jeex bless jq rename \
 usb-creator-gtk \
 python3-pip python3-venv libopencv-dev python3-opencv \
+xclip \
 docker.io
 # https://linuxhint.com/install-ubuntu-restricted-extras/ (for a media codecs single line installer)
 # Show package content by typing: "apt show ubuntu-restricted-extras" or install manually via the following line:
@@ -237,7 +238,12 @@ fi
 ### 13. Sicherheitslücke in Firefox schließen:
 # Firefox öffnen -> about:config in der URL-Zeile eingeben -> pdfjs.en eingeben -> pdfjs.enableScripting auf False stellen
 #
-### 14. Weiteres:
+### 14. Create a folder for your own Truetype (.ttf) fonts...show hidden files with the shortcut 'Strg+h'
+mkdir $HOME/.fonts
+# Now just put all your favourite fonts into this folder. The System will automaticly find them.
+#mv ~/Downloads/*.ttf ~/.fonts/
+#
+### 15. Weiteres:
 ###
 ### Microsoft Office Alternativen, die auf allen Betriebssystemen laufen!:
 # Wer nicht mit Libreoffice zufrieden ist...(ich bins und fuer grosse Arbeiten benutzt man sowieso LateX/Texmaker...),
@@ -340,6 +346,7 @@ fi
 #
 ### Speeding up Ubuntu
 # https://itsfoss.com/speed-up-ubuntu-1310/
+# https://github.com/Tornado3P9/Konsolentools/blob/master/snap.txt (completely remove snapd)
 #
 ### Installing drivers on Ubuntu is not necessary as Ubuntu detects the Video Card automaticly and installs the driver. AMD drivers have already been integrated into the linux kernel..so nothing much to do there..
 #But for the case that you unchecked the checkbox (automaticly install proprietary software...) when installing the system then you can go to (Settings -> Additional Drivers) -> and klick on the line, where it says (proprietary, tested)
