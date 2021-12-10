@@ -26,6 +26,9 @@ alias nano='nano --linenumbers'
 #find the largest top 10 files and directories in human readable format
 alias dumax='du -hsx * | sort -rh | head -10'
 #
+#find which processes consume the most memory
+alias memax='ps -e -orss=,args= | sort -nr | head'
+#
 #open in file manager
 alias open='thunar'
 #
