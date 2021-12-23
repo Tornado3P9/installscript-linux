@@ -40,7 +40,7 @@ python3-pip python3-venv libopencv-dev python3-opencv \
 xclip \
 docker.io
 # https://linuxhint.com/install-ubuntu-restricted-extras/ (for a media codecs single line installer)
-# Show package content by typing: "apt show ubuntu-restricted-extras" or install manually via the following line:
+#sudo apt install ubuntu-restricted-extras libdvd-pkg ubuntu-restricted-addons && sudo dpkg-reconfigure libdvd-pkg
 sudo apt install libavcodec-extra ttf-mscorefonts-installer unrar rar gstreamer1.0-libav gstreamer1.0-plugins-ugly gstreamer1.0-vaapi xz-utils
 # Ubuntu has got a lot of command line utils preinstalled. To see their contents, type 'apt show package_name'.
 # Interesting ones are: coreutils, alsa-utils, ubuntu-restricted-extras, util-linux, ...
@@ -203,9 +203,9 @@ read -p "EnterTaste zum Fortfahren:"
 ### 10. TASTENKUERZEL FUER LIEBLINGSPROGRAMME ERSTELLEN: xfce4-settings-manager -> Tastatur -> Tastenkuerzel
 ### or by typing: xfce4-keyboard-settings
 #Strg+Alt+Entf     -> xfce4-session-logout
-#Strg+Alt+Esc      -> xkill = Kill Window under X
-#Super+L           -> xflock4 = Bildschirm sperren
-#Umschalt+Strg+Esc -> xfce4-taskmanager
+#Strg+Alt+Esc      -> xkill                      = Kill Window under X
+#Super+L           -> xflock4                    = Bildschirm sperren
+#Shift+Strg+Esc    -> xfce4-taskmanager
 #--Defaults--
 #Alt+F2        -> xfrun4
 #Super+W       -> exo-open --launch WebBrowser
@@ -347,6 +347,7 @@ mkdir $HOME/.fonts
 ### Speeding up Ubuntu
 # https://itsfoss.com/speed-up-ubuntu-1310/
 # https://github.com/Tornado3P9/Konsolentools/blob/master/snap.txt (completely remove snapd)
+# https://averagelinuxuser.com/linux-swap/ (Decrease Swap use)
 #
 ### Installing drivers on Ubuntu is not necessary as Ubuntu detects the Video Card automaticly and installs the driver. AMD drivers have already been integrated into the linux kernel..so nothing much to do there..
 #But for the case that you unchecked the checkbox (automaticly install proprietary software...) when installing the system then you can go to (Settings -> Additional Drivers) -> and klick on the line, where it says (proprietary, tested)

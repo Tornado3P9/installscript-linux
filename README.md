@@ -21,6 +21,7 @@ chmod +x webinstall.sh
 [Git Tutorial Playlist](https://www.youtube.com/playlist?list=PL4cUxeGkcC9goXbgTDQ0n_4TBzOO0ocPR)  
 [Understanding Linux Distros](https://youtu.be/DKFnqAtEOvc)  
 [How to Choose a Linux Distribution](https://youtu.be/iox7fr7p5Hc)  
+[20 Essential Things to Do After Installing Debian 11](https://averagelinuxuser.com/debian-11-after-install/)  
 Use Linux for things like very long blender 3d renderings because the linux version will often cut the render time in half.
 Use Linux if your game runs too slow on Windows or your pc is just very old and you know how to use Linux.  
 
