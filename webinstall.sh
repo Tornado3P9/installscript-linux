@@ -165,11 +165,11 @@ mkdir $HOME/Programs
 # BalenaEtcher https://www.balena.io/etcher/
 # Virtual MIDI Piano Keyboard (VMPK) https://vmpk.sourceforge.io/
 #
-wget -L https://zoom.us/client/latest/zoom_amd64.deb -O $HOME/Programs/zoom_amd64.deb
-wget -L https://mirrors.edge.kernel.org/ubuntu/pool/universe/g/gcolor2/gcolor2_0.4-2.1ubuntu1_amd64.deb -O $HOME/Programs/gcolor2_0.4-2.1ubuntu1_amd64.deb
-wget -L https://downloads.raspberrypi.org/imager/imager_latest_amd64.deb -O $HOME/Programs/imager_latest_amd64.deb
-wget -L "https://www.geogebra.org/download/deb.php?arch=amd64" -O $HOME/Programs/geogebra5_amd64.deb
-wget -L https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb -O $HOME/Programs/google-chrome_amd64.deb
+wget -L https://zoom.us/client/latest/zoom_amd64.deb -P $HOME/Programs/
+wget -L https://mirrors.edge.kernel.org/ubuntu/pool/universe/g/gcolor2/gcolor2_0.4-2.1ubuntu1_amd64.deb -P $HOME/Programs/
+wget -L https://downloads.raspberrypi.org/imager/imager_latest_amd64.deb -P $HOME/Programs/
+wget -L "https://www.geogebra.org/download/deb.php?arch=amd64" -P $HOME/Programs/
+wget -L https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb -P $HOME/Programs/
 #
 #B: Change directory to the Programs folder and(&&) install all the debian packages in one go:
 # cd ~/Programs && sudo apt install ./*.deb
