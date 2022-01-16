@@ -21,7 +21,7 @@ git gparted synaptic \
 xsane simple-scan \
 pdfshuffler \
 gimp pinta hugin gifsicle \
-htop glances whowatch arp-scan nmap nethogs wireshark speedtest-cli traceroute mtr neofetch net-tools \
+htop glances whowatch arp-scan nmap nethogs wireshark speedtest-cli traceroute mtr neofetch net-tools iperf3 \
 libreoffice libreoffice-l10n-de libreoffice-help-de \
 sqlite3 nodejs npm \
 mediainfo mediainfo-gui \

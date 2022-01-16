@@ -1,7 +1,7 @@
 # Old command prompt: echo $PS1
 #PS1="\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ "
 # New command prompt version A:
-PS1="\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]-->\[\033[00m\] \[\033[01;34m\]\w\[\033[00m\]\$ "
+PS1="\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]-->\[\033[00m\] \h: \[\033[01;34m\]\w\[\033[00m\]\$ "
 # New command prompt version B:
 #PS1="\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\[\033[00m\]\[\033[01;34m\]\w\[\033[00m\]\$ "
 #
@@ -20,7 +20,7 @@ alias cl='clear;ls'
 alias root='sudo su'
 alias ports='netstat -tupan'
 #
-#nano text editor show line numbers
+#nano text editor show line numbers (type '\nano' to use the default configuration of nano)
 alias nano='nano --linenumbers'
 #
 #find the largest top 10 files and directories in human readable format
