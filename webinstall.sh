@@ -398,5 +398,9 @@ mkdir $HOME/.fonts
 # Steam also provides the feature to run Windows games with their own wine version called Proton. Alteratively you might want to take a look onto the https://lutris.net/ platform where other linux gamers explain
 # how to install some games. Often times there is a ready to go solution or a tutorial and there is also a forum to ask questions. But don't expect anything. Linux is not a gaming system. That's Window's speciality.
 #
+### Clipboard for multiple items
+#sudo apt install xfce4-clipman-plugin
+#
+#
 read -p "Process Finished. Press Enter to Exit:"
 printf "\n"
