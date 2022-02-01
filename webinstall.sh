@@ -216,6 +216,7 @@ read -p "EnterTaste zum Fortfahren:"
 #Super+F1      -> xfce4-find-cursor
 #Strg+Esc      -> xfce4-popup-whiskermenu (Standard Menu)
 #Alt+F1        -> xfce4-popup-applicationsmenu
+#Super+D       -> Show Desktop (minimize windows)
 ### for setting other Keyboard-Shortcuts in your windows-manager:
 #xfwm4-settings
 #
