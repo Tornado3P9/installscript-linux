@@ -60,6 +60,9 @@ alias videosoundup='for f in *.mp4; do ffmpeg -i "$f" -filter:a "volume=30dB" -c
 #view only mounted drives
 alias mnt="mount | awk -F' ' '{ printf \"%s\t%s\n\",\$1,\$3; }' | column -t | egrep ^/dev/ | sort"
 #
+#view the mount output formated with columns
+alias lsmount='mount | column -t'
+#
 #search from history by word: gh bash
 alias gh='history|grep'
 #
