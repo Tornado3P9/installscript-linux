@@ -317,6 +317,10 @@ mkdir $HOME/.fonts
 #sudo apt install virtualbox
 #sudo apt install virtualbox—ext–pack
 #
+### QEMU - sometimes even faster than VirtualBox
+# https://www.christitus.com/vm-setup-in-linux   https://youtu.be/Kq849CpGd88
+# https://github.com/Tornado3P9/Konsolentools/blob/master/QEMU%20virtual%20manager.txt
+#
 ### Dia Diagram Editor http://dia-installer.de/ https://www.osradar.com/some-programs-to-make-uml-diagrams-in-linux/
 #sudo apt install dia
 #
