@@ -330,7 +330,6 @@ mkdir $HOME/.fonts
 ### Create Installation Packages with FPM https://fpm.readthedocs.io/en/latest/index.html
 #sudo apt install squashfs-tools
 #gem install fpm
-# If gem wasn't preinstalled, just install the ruby-full package below or use 'sudo apt install gem'
 #
 ### Ruby language
 # It should be preinstalled. If not, just do:
