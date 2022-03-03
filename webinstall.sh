@@ -405,6 +405,15 @@ mkdir $HOME/.fonts
 ### Clipboard for multiple items
 #sudo apt install xfce4-clipman-plugin
 #
+### Terraform
+# https://www.terraform.io/downloads
+# https://www.terraform.io/cli/install/apt
+#sudo apt install terraform
+#
+### AWS CLI
+# https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
+#sudo apt install awscli
+#
 #
 read -p "Process Finished. Press Enter to Exit:"
 printf "\n"
