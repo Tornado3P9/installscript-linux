@@ -101,6 +101,7 @@ sudo apt install libavcodec-extra ttf-mscorefonts-installer unrar rar gstreamer1
 #pip3 install pylint flake8 isort autopep8 pandas seaborn bokeh
 #pip3 install opencv-python
 ## https://pypi.org/project/opencv-python/
+pip3 install tldr
 ##############################
 # Install additional items   #
 ##############################
@@ -413,6 +414,13 @@ mkdir $HOME/.fonts
 ### AWS CLI
 # https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
 #sudo apt install awscli
+#
+### fd (alternative for the find command)
+# https://github.com/sharkdp/fd
+# https://youtu.be/f0N_4SgCoMY
+#sudo apt install fd-find
+#fdfind --version
+#echo "alias fd=fdfind" >> ~/.bash_aliases && source ~/.bashrc
 #
 #
 read -p "Process Finished. Press Enter to Exit:"
