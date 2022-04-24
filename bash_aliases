@@ -20,10 +20,10 @@ alias cl='clear;ls'
 alias root='sudo su'
 alias ports='netstat -tupan'
 #
-#nano text editor show line numbers (type '\nano' to use the default configuration of nano)
+#text editor (Alt+N = Turn line numbers on/off) (type '\nano' to use the default configuration of nano) (https://nano-editor.org/dist/latest/cheatsheet.html)
 alias nano='nano --linenumbers'
 #
-#find the largest top 10 files and directories in human readable format
+#find the largest top 10 files and directories in human readable format (ignore hidden files)
 alias dumax='du -hsx * | sort -rh | head -10'
 #
 #find which processes consume the most memory
@@ -77,4 +77,14 @@ alias count='find . -type f | wc -l'
 function playline() {
   local n1=$(ls -1v | sed -n "$1 p");
   mpv "$n1";
+}
+#
+function recordaudio() {
+  # Requiring exactly one argument for the audio file name. If not, exit.
+  [ ! $# -eq 1 ] && echo 'Requiring exactly one argument for the audio file name' && exit
+
+  local NAME=${1}.mp3
+  local SAVE_AT=${HOME}/Music
+
+  ffmpeg -f pulse -i default ${SAVE_AT}/${NAME}
 }
