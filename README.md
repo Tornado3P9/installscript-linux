@@ -42,8 +42,8 @@ sudo apt install ubuntu-restricted-extras rar
 ```
 
 ### System Update Settings
-- Open **![:menu:](https://docs.xubuntu.org/current/user/libs/images/icon_menu.png) → ![:preferences:](https://docs.xubuntu.org/current/user/libs/images/preferences-desktop.png) Settings Manager → Software & Updates** and go to the _Updates_ tab
-- Open **![:menu:](https://docs.xubuntu.org/current/user/libs/images/icon_menu.png) → Software → Software & Updates** and go to the _Updates_ tab
+- Open **![menu](https://docs.xubuntu.org/current/user/libs/images/icon_menu.png) → ![preferences](https://docs.xubuntu.org/current/user/libs/images/preferences-desktop.png) Settings Manager → Software & Updates** and go to the _Updates_ tab
+- Open **![menu](https://docs.xubuntu.org/current/user/libs/images/icon_menu.png) → Software → Software & Updates** and go to the _Updates_ tab
 
 ### Create a '.fonts' directory for your own Truetype (.ttf) fonts
 ```bash
@@ -155,67 +155,67 @@ wget -L "https://raw.githubusercontent.com/Tornado3P9/installscript-linux/master
 ```
 
 ### Installing additional applications that are not included in the repository (some are but not the most recent version)
-**Development**
-JetBrains WebStorm/Rider/PyCharm IDE https://www.jetbrains.com/pycharm/download/#section=linux
-Sublime Text https://www.sublimetext.com/
-Sublime Merge https://www.sublimemerge.com/
-VSCodium https://vscodium.com/ does not contain telemetry/tracking
-VSCode https://code.visualstudio.com/ does contain additional telemetry/tracking
-Atom https://atom.io/
-Blender https://www.blender.org/download/
-magick https://imagemagick.org/script/download.php
-ffmulticonverter https://sites.google.com/site/ffmulticonverter/download
-mono https://www.mono-project.com/download/stable/
-gcolor2_colorpicker http://mirrors.edge.kernel.org/ubuntu/pool/universe/g/gcolor2/
-SQL Developer / Universal Database Tool https://dbeaver.io/
-Raspberry Pi Imager https://www.raspberrypi.com/software/ https://www.raspberrypi.com/documentation/computers/getting-started.html#advanced-options
-KiCad EDA https://www.kicad.org/
-Arduino IDE https://www.arduino.cc/en/software (additionally install: `sudo apt install python-is-python3 python3-serial`)
-Android Studio https://developer.android.com/studio https://snapcraft.io/android-studio
-DaVinci Resolve https://www.blackmagicdesign.com/products/davinciresolve/
-Gaupol Subtitle Editor https://otsaloma.io/gaupol/ (part of the repository: `sudo apt install gaupol` )
-Sigil - EPUB Editor https://sigil-ebook.com/ (part of the repository: `sudo apt install sigil`)
-AWS CLI https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html (part of the repository: `sudo apt install awscli`)
+**Development**  
+JetBrains WebStorm/Rider/PyCharm IDE https://www.jetbrains.com/pycharm/download/#section=linux  
+Sublime Text https://www.sublimetext.com/  
+Sublime Merge https://www.sublimemerge.com/  
+VSCodium https://vscodium.com/ does not contain telemetry/tracking  
+VSCode https://code.visualstudio.com/ does contain additional telemetry/tracking  
+Atom https://atom.io/  
+Blender https://www.blender.org/download/  
+magick https://imagemagick.org/script/download.php  
+ffmulticonverter https://sites.google.com/site/ffmulticonverter/download  
+mono https://www.mono-project.com/download/stable/  
+gcolor2_colorpicker http://mirrors.edge.kernel.org/ubuntu/pool/universe/g/gcolor2/  
+SQL Developer / Universal Database Tool https://dbeaver.io/  
+Raspberry Pi Imager https://www.raspberrypi.com/software/ https://www.raspberrypi.com/documentation/computers/getting-started.html#advanced-options  
+KiCad EDA https://www.kicad.org/  
+Arduino IDE https://www.arduino.cc/en/software (additionally install: `sudo apt install python-is-python3 python3-serial`)  
+Android Studio https://developer.android.com/studio https://snapcraft.io/android-studio  
+DaVinci Resolve https://www.blackmagicdesign.com/products/davinciresolve/  
+Gaupol Subtitle Editor https://otsaloma.io/gaupol/ (part of the repository: `sudo apt install gaupol` )  
+Sigil - EPUB Editor https://sigil-ebook.com/ (part of the repository: `sudo apt install sigil`)  
+AWS CLI https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html (part of the repository: `sudo apt install awscli`)  
 
-**Team/School**
-zoom-client https://zoom.us/download
-Microsoft Teams https://www.microsoft.com/en-us/microsoft-teams/download-app
-GeoGebra https://wiki.geogebra.org/en/Reference:GeoGebra_Installation#GeoGebra_Classic_5_for_Desktop
-OBS Studio https://obsproject.com/wiki/install-instructions#linux
-JFLAP https://www.jflap.org/jflaptmp/ (start with: `java -jar JFLAP.jar`)
-Periodic Table https://ptable.com/#Properties (online)
-printfriendly https://www.printfriendly.com/ (online)
-Diagram Editor https://www.diagrameditor.com/ (online)
-Dia Diagram Editor http://dia-installer.de/download/linux.html (part of the repository: `sudo apt install dia` )
-OnlyOffice https://www.onlyoffice.com/
-FreeOffice https://www.freeoffice.com/en/
-WPS Office https://www.wps.com/
-LibreOffice https://www.libreoffice.org/ (already preinstalled)
-OpenOffice https://www.openoffice.org/
-Atril - PDF Viewer https://wiki.mate-desktop.org/mate-desktop/applications/atril/ (already preinstalled)
-PDFArranger (already preinstalled)
+**Team/School**  
+zoom-client https://zoom.us/download  
+Microsoft Teams https://www.microsoft.com/en-us/microsoft-teams/download-app  
+GeoGebra https://wiki.geogebra.org/en/Reference:GeoGebra_Installation#GeoGebra_Classic_5_for_Desktop  
+OBS Studio https://obsproject.com/wiki/install-instructions#linux  
+JFLAP https://www.jflap.org/jflaptmp/ (start with: `java -jar JFLAP.jar`)  
+Periodic Table https://ptable.com/#Properties (online)  
+printfriendly https://www.printfriendly.com/ (online)  
+Diagram Editor https://www.diagrameditor.com/ (online)  
+Dia Diagram Editor http://dia-installer.de/download/linux.html (part of the repository: `sudo apt install dia` )  
+OnlyOffice https://www.onlyoffice.com/  
+FreeOffice https://www.freeoffice.com/en/  
+WPS Office https://www.wps.com/  
+LibreOffice https://www.libreoffice.org/ (already preinstalled)  
+OpenOffice https://www.openoffice.org/  
+Atril - PDF Viewer https://wiki.mate-desktop.org/mate-desktop/applications/atril/ (already preinstalled)  
+PDFArranger (already preinstalled)  
 
-**Web Browser**
-Firefox (already preinstalled)
-Chrome https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-Vivaldi https://vivaldi.com/download/
-Brave https://brave.com/linux/#release-channel-installation
-Safari (sudo apt install playonlinux -> and then install Safari from there)
+**Web Browser**  
+Firefox (already preinstalled)  
+Chrome https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb  
+Vivaldi https://vivaldi.com/download/  
+Brave https://brave.com/linux/#release-channel-installation  
+Safari (sudo apt install playonlinux -> and then install Safari from there)  
 
-**Appimage Programs that run on any Linux system**
-krita https://krita.org/
-inkscape https://inkscape.org/
-MyPaint http://mypaint.org/
-Stellarium http://stellarium.org/
-Unity-Hub https://unity3d.com/get-unity/download
-Kdenlive https://kdenlive.org/en/download/
-Obsidian https://obsidian.md/
-BalenaEtcher https://www.balena.io/etcher/
-Virtual MIDI Piano Keyboard (VMPK) https://vmpk.sourceforge.io/
-Hugin Panorama Stitcher - Grafics Editor http://hugin.sourceforge.net/
-OpenShot Video Editor https://www.openshot.org/
-Shotcut Video Editor https://www.shotcut.org/
-Olive Video Editor https://www.olivevideoeditor.org/
+**Appimage Programs that run on any Linux system**  
+krita https://krita.org/  
+inkscape https://inkscape.org/  
+MyPaint http://mypaint.org/  
+Stellarium http://stellarium.org/  
+Unity-Hub https://unity3d.com/get-unity/download  
+Kdenlive https://kdenlive.org/en/download/  
+Obsidian https://obsidian.md/  
+BalenaEtcher https://www.balena.io/etcher/  
+Virtual MIDI Piano Keyboard (VMPK) https://vmpk.sourceforge.io/  
+Hugin Panorama Stitcher - Grafics Editor http://hugin.sourceforge.net/  
+OpenShot Video Editor https://www.openshot.org/  
+Shotcut Video Editor https://www.shotcut.org/  
+Olive Video Editor https://www.olivevideoeditor.org/  
 ```bash
 # You can also use 'wget' or 'curl' to download the programs
 wget -L https://zoom.us/client/latest/zoom_amd64.deb -P $HOME/Programs/
@@ -239,28 +239,28 @@ tar xvf ~/Downloads/blender*.tar.xz -C ~/Programs/
 
 ### Adding ShortCuts
 
-`xfce4-settings-manager` -> Tastatur -> Tastenkuerzel
-`xfce4-keyboard-settings`
+`xfce4-settings-manager` -> Tastatur -> Tastenkuerzel  
+`xfce4-keyboard-settings`  
 
-For setting Keyboard-Shortcuts in your windows-manager:
-`xfwm4-settings`
+For setting Keyboard-Shortcuts in your windows-manager:  
+`xfwm4-settings`  
 
-**Default:**
-(Strg+Alt+Entf -> xfce4-session-logout)
-(Shift+Strg+Esc -> xfce4-taskmanager)
-(Alt+F2 -> xfrun4)
-(Super+L -> xflock4)
-(Super+W -> exo-open --launch WebBrowser)
-(Super+F -> exo-open --launch FileManager)
-(Super+D -> Show Desktop (minimize windows) )
-(Super+F1 -> xfce4-find-cursor)
-(Print -> xfce4-screenshooter -f)
-(Shift+Print -> xfce4-screenshooter -r)
-(Alt+Print  -> xfce4-screenshooter -w)
-(Strg+Esc -> xfce4-popup-whiskermenu (Standard Menu) )
-(Alt+F1 -> xfce4-popup-applicationsmenu)
-Quite useful: kill the open window below the mouse pointer
-(Strg+Alt+Esc -> xkill)
+**Default:**  
+(Strg+Alt+Entf -> xfce4-session-logout)  
+(Shift+Strg+Esc -> xfce4-taskmanager)  
+(Alt+F2 -> xfrun4)  
+(Super+L -> xflock4)  
+(Super+W -> exo-open --launch WebBrowser)  
+(Super+F -> exo-open --launch FileManager)  
+(Super+D -> Show Desktop (minimize windows) )  
+(Super+F1 -> xfce4-find-cursor)  
+(Print -> xfce4-screenshooter -f)  
+(Shift+Print -> xfce4-screenshooter -r)  
+(Alt+Print  -> xfce4-screenshooter -w)  
+(Strg+Esc -> xfce4-popup-whiskermenu (Standard Menu) )  
+(Alt+F1 -> xfce4-popup-applicationsmenu)  
+Quite useful: kill the open window below the mouse pointer  
+(Strg+Alt+Esc -> xkill)  
 
 ### 4 ways to create a Linux Live System on a usb stick
 1. `sudo apt install usb-creator-gtk`
@@ -315,7 +315,6 @@ Update pip via: `python3 -m pip install --upgrade pip`
 - [Lutris](https://lutris.net/)
 - [Steam](https://store.steampowered.com/)
 - [itch.io](https://itch.io/)
-
 
 ### Tipps:
 [If you do these 5 things... You should NOT use Linux](https://youtu.be/06cKL5DQ5CY)  
