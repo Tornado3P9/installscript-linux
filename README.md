@@ -170,12 +170,14 @@ gcolor2_colorpicker http://mirrors.edge.kernel.org/ubuntu/pool/universe/g/gcolor
 SQL Developer / Universal Database Tool https://dbeaver.io/  
 Raspberry Pi Imager https://www.raspberrypi.com/software/ [#advanced-options](https://www.raspberrypi.com/documentation/computers/getting-started.html#advanced-options)  
 KiCad EDA https://www.kicad.org/  
-Arduino IDE https://www.arduino.cc/en/software (additionally install: `sudo apt install python-is-python3 python3-serial`)  
+Arduino IDE https://www.arduino.cc/en/software  
+(additionally install: `sudo apt install python-is-python3 python3-serial`)  
 Android Studio https://developer.android.com/studio https://snapcraft.io/android-studio  
 DaVinci Resolve https://www.blackmagicdesign.com/products/davinciresolve/  
 Gaupol Subtitle Editor https://otsaloma.io/gaupol/ (part of the repository: `sudo apt install gaupol` )  
 Sigil - EPUB Editor https://sigil-ebook.com/ (part of the repository: `sudo apt install sigil`)  
-AWS CLI https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html (part of the repository: `sudo apt install awscli`)  
+AWS CLI https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html  
+(part of the repository: `sudo apt install awscli`)  
 
 **Team/School**  
 zoom-client https://zoom.us/download  
@@ -193,7 +195,7 @@ WPS Office https://www.wps.com/
 LibreOffice https://www.libreoffice.org/ (already preinstalled)  
 OpenOffice https://www.openoffice.org/  
 Atril - PDF Viewer https://wiki.mate-desktop.org/mate-desktop/applications/atril/ (already preinstalled)  
-PDFArranger (already preinstalled)  
+PDFArranger (already preinstalled: `sudo apt install pdfarranger`)  
 
 **Web Browser**  
 Firefox (already preinstalled)  
