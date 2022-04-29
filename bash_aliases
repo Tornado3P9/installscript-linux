@@ -21,7 +21,7 @@ alias root='sudo su'
 alias ports='netstat -tupan'
 #
 #text editor (Alt+N = Turn line numbers on/off) (type '\nano' to use the default configuration of nano) (https://nano-editor.org/dist/latest/cheatsheet.html)
-alias nano='nano --linenumbers'
+#alias nano='nano --linenumbers'
 #
 #find the largest top 10 files and directories in human readable format (ignore hidden files)
 alias dumax='du -hsx * | sort -rh | head -10'
@@ -55,7 +55,7 @@ alias flac2mp3='for f in *.flac; do ffmpeg -i "$f" -c:v copy -q:a 0 "${f%.flac}.
 alias videosoundup='for f in *.mp4; do ffmpeg -i "$f" -filter:a "volume=30dB" -codec:a aac -b:a 74k -c:v copy "_${f}"; done'
 #
 #search
-#alias lt='ls --human-readable --size -1 -S --classify'
+alias lt='ls --human-readable --size -1 -S --classify'
 #
 #view only mounted drives
 alias mnt="mount | awk -F' ' '{ printf \"%s\t%s\n\",\$1,\$3; }' | column -t | egrep ^/dev/ | sort"
@@ -65,6 +65,9 @@ alias lsmount='mount | column -t'
 #
 #search from history by word: gh bash
 alias gh='history|grep'
+#
+##delete after asking for permission
+#alias rm='rm -i'
 #
 #sort by modification time
 alias left='ls -t -1'
@@ -83,8 +86,7 @@ function recordaudio() {
   # Requiring exactly one argument for the audio file name. If not, exit.
   [ ! $# -eq 1 ] && echo 'Requiring exactly one argument for the audio file name' && exit
 
-  local NAME=${1}.mp3
-  local SAVE_AT=${HOME}/Music
+  local SAVE_AT=${HOME}/${1}.mp3
 
-  ffmpeg -f pulse -i default ${SAVE_AT}/${NAME}
+  ffmpeg -f pulse -i default ${SAVE_AT}
 }
