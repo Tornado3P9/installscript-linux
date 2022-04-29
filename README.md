@@ -265,7 +265,7 @@ Quite useful: kill the open window below the mouse pointer
 (Strg+Alt+Esc -> xkill)  
 
 ### 4 ways to create a Linux Live System on a usb stick
-1. `sudo apt install usb-creator-gtk`
+1. Startup Disk Creator `sudo apt install usb-creator-gtk`
 2. [BalenaEtcher](https://www.balena.io/etcher/)
 3. [Raspberry Pi Imager](https://www.raspberrypi.com/software/) [#advanced-options](https://www.raspberrypi.com/documentation/computers/getting-started.html#advanced-options)
 4. ddimage script using dd[^4]
