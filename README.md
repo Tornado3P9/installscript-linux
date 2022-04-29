@@ -168,7 +168,7 @@ ffmulticonverter https://sites.google.com/site/ffmulticonverter/download
 mono https://www.mono-project.com/download/stable/  
 gcolor2_colorpicker http://mirrors.edge.kernel.org/ubuntu/pool/universe/g/gcolor2/  
 SQL Developer / Universal Database Tool https://dbeaver.io/  
-Raspberry Pi Imager https://www.raspberrypi.com/software/ https://www.raspberrypi.com/documentation/computers/getting-started.html#advanced-options  
+Raspberry Pi Imager https://www.raspberrypi.com/software/ [#advanced-options](https://www.raspberrypi.com/documentation/computers/getting-started.html#advanced-options)  
 KiCad EDA https://www.kicad.org/  
 Arduino IDE https://www.arduino.cc/en/software (additionally install: `sudo apt install python-is-python3 python3-serial`)  
 Android Studio https://developer.android.com/studio https://snapcraft.io/android-studio  
@@ -265,7 +265,7 @@ Quite useful: kill the open window below the mouse pointer
 ### 4 ways to create a Linux Live System on a usb stick
 1. `sudo apt install usb-creator-gtk`
 2. [BalenaEtcher](https://www.balena.io/etcher/)
-3. [Raspberry Pi Imager](https://www.raspberrypi.com/software/) [advanced-options](https://www.raspberrypi.com/documentation/computers/getting-started.html#advanced-options)
+3. [Raspberry Pi Imager](https://www.raspberrypi.com/software/) [#advanced-options](https://www.raspberrypi.com/documentation/computers/getting-started.html#advanced-options)
 4. ddimage script using dd[^4]
 ```bash
 curl -sS https://raw.githubusercontent.com/Tornado3P9/installscript-linux/master/ddimage -O
@@ -309,7 +309,7 @@ Update pip via: `python3 -m pip install --upgrade pip`
 
 ### Virtual Machine
 - [VirtualBox](https://www.virtualbox.org/wiki/Downloads) - `sudo apt install virtualbox`
-- [QEMU](https://www.christitus.com/vm-setup-in-linux) [second link](https://github.com/Tornado3P9/Konsolentools/blob/master/QEMU%20virtual%20manager.txt) - Even faster than VirtualBox
+- [QEMU](https://www.christitus.com/vm-setup-in-linux), [second link](https://github.com/Tornado3P9/Konsolentools/blob/master/QEMU%20virtual%20manager.txt) - Even faster than VirtualBox
 
 ### Gaming
 - [Lutris](https://lutris.net/)
