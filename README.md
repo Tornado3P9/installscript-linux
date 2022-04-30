@@ -34,7 +34,7 @@ Installing Texlive and Texmaker for writing LaTeX documents
 sudo apt install texlive texlive-lang-german texlive-lang-english texlive-latex-extra texmaker
 ```
 
-Also you might want to install some additional codecs[^3]. The Mycrosoft Fonts for instance are not open source and therefore are not included in the ubuntu image.
+Also you might want to install some additional codecs[^3]. The Microsoft Fonts for instance are not open source and therefore are not included in the ubuntu image.
 ```bash
 # ubuntu-restricted-extras is a so called 'meta-package' which installes a number of other packages.
 sudo apt install ubuntu-restricted-extras rar
@@ -49,27 +49,28 @@ sudo apt install ubuntu-restricted-extras rar
 
 ### Create a '.fonts' directory for your own Truetype (.ttf) fonts
 ```bash
-# Just put all your favourite fonts into this folder. The System will automaticly find them.
+# Just put all your favourite fonts into this folder. The System will automatically find them.
 mkdir $HOME/.fonts
 
 # Moving the .ttf files from the Downloads folder to the .fonts folder:
 mv ~/Downloads/*.ttf ~/.fonts/
 
-# Show hidden files with the shortcut 'Strg+h'
+# Show hidden files with the shortcut 'Ctrl+H' (or 'Strg+H')
 ```
 
 ### Creating a 'Progams' folder for all the manually downloaded packages. 
-If you keep all the downloaded binaries and installations files together in this folder instead of deleting them, then you will always know what you did to your system in the past. Very simple.
+If you keep all the downloaded binaries and installation files together in this folder instead of deleting them, you will always know what you did to your system in the past. Very simple.
 
 ```bash
 mkdir $HOME/Programs
 ```
 
 ### Firefox[^1]
-This goes over how to Disable Snaps and making sure it doesn’t automatically reinstall.
-In this case we are removing the snap version of firefox which was added in ubuntu22.04 instead of the usual .deb package.
-The thing about snaps is that they run 'root' and update automaticly without your knowledge and without asking you for permission. And snaps are even terribly slow, especially at first startup.
-And snaps will overflow your filesystem output with a hell lot of loopback devices. Snaps are certainly a promising idea but because I can just create the debian installation file myself if it doesn't exist therefore snaps only worsen my experience. I can also use [Flatpaks](https://flathub.org/home) or Appimages if I have to. If you want to use [Snaps then here](https://snapcraft.io/) is where to look for apps.
+How to disable Snaps and making sure it doesn’t automatically reinstall.
+The issue with Snaps is that they run 'root' and update automatically without your knowledge and without asking for permission.
+They are also terribly slow, especially at first startup, and will overflow your filesystem output with a lot of loopback devices.
+Snaps are certainly a promising idea, but because we can just create the debian installation file ourselves if it doesn't exist, snaps only worsen the overall experience.
+You can also use [Flatpaks](https://flathub.org/home) or Appimages if you have to. If you want to use [Snaps, then here](https://snapcraft.io/) is where to look for apps.
 
 ```bash
 # List and Uninstall Snaps
@@ -100,7 +101,7 @@ You can also create a ShellScript that updates the installation in one go.
 
 ```bash
 #!/bin/bash
-# The file firefox.tar.bz2 will be overwritten automaticly because of the '-O'
+# The file firefox.tar.bz2 will be overwritten automatically because of the '-O'
 wget "https://download.mozilla.org/?product=firefox-latest-ssl&os=linux64&lang=en-US" -O firefox.tar.bz2
 tar xvjf firefox.tar.bz2
 
@@ -134,7 +135,7 @@ echo "$USER  hard  nproc  2000" | sudo tee /etc/security/limits.conf
 sudo apt install arc-theme moka-icon-theme numix-icon-theme numix-gtk-theme lightdm-gtk-greeter-settings
 
 # Install a Panel/Dockleiste https://wiki.ubuntuusers.de/Plank/
-# If Plank is not available in the default repository, just install from ppa:ricotz/docky (Press Strg+Right_Mouse_Button for the configuration menu)
+# If Plank is not available in the default repository, just install from ppa:ricotz/docky (Press Ctrl+Right_Mouse_Button for the configuration menu)
 sudo apt install plank
 
 # (Alt+F2 -> xfce4-) and change some settings:
@@ -250,8 +251,8 @@ For setting Keyboard-Shortcuts in your windows-manager:
 `xfwm4-settings`  
 
 **Default:**  
-(Strg+Alt+Entf -> xfce4-session-logout)  
-(Shift+Strg+Esc -> xfce4-taskmanager)  
+(Ctrl+Alt+Delete -> xfce4-session-logout)  
+(Shift+Ctrl+Esc -> xfce4-taskmanager)  
 (Alt+F2 -> xfrun4)  
 (Super+L -> xflock4)  
 (Super+W -> exo-open --launch WebBrowser)  
@@ -261,10 +262,10 @@ For setting Keyboard-Shortcuts in your windows-manager:
 (Print -> xfce4-screenshooter -f)  
 (Shift+Print -> xfce4-screenshooter -r)  
 (Alt+Print  -> xfce4-screenshooter -w)  
-(Strg+Esc -> xfce4-popup-whiskermenu (Standard Menu) )  
+(Ctrl+Esc -> xfce4-popup-whiskermenu (Standard Menu) )  
 (Alt+F1 -> xfce4-popup-applicationsmenu)  
 Quite useful: kill the open window below the mouse pointer  
-(Strg+Alt+Esc -> xkill)  
+(Ctrl+Alt+Esc -> xkill)  
 
 ### 4 ways to create a Linux Live System on a usb stick
 1. Startup Disk Creator `sudo apt install usb-creator-gtk`
@@ -295,9 +296,9 @@ source ~/.profile && rustc --version
 
 ### pip install ...
 
-The pip version is always up to date and usually the better choice compared with the repository version of your operating system.
+The pip version is always up to date and usually the better choice compared to the repository version of your operating system.
 ```bash
-# Installing tldr (too long too read) for better help information compared to the usualy 'man'-page or the --help command.
+# Installing tldr (too long didn´t read) for better help information compared to the usually 'man'-page or the --help command.
 # But remember that you probably have to restart your session because the PATH variable hasn't updated yet. See `echo $PATH`
 # But another way is to just reload the .profile file if the entry does exist but just hasn't been updated to the current running session.
 pip install tldr
@@ -328,7 +329,7 @@ sudo apt install libdvd-pkg
 # And by running the following command, which will download, build and install the latest libdvdcss source to your machine:
 sudo dpkg-reconfigure libdvd-pkg
 ```
-If there are Problems with the video playback, then it might help to delete the hidden directory `rm -r ~/.dvdcss/` in order to force the program to create a new css key.
+If there are problems with the video playback, then it might help to delete the hidden directory `rm -r ~/.dvdcss/` in order to force the program to create a new css key.
 You also might want to [disable Hardware-accelerated decoding](https://wiki.videolan.org/VLC_HowTo/Hardware_acceleration/) in your media player if the displayed output is flawed and you are using a AMD Radeon graphics card.
 
 ### Tipps:
