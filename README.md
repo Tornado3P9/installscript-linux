@@ -212,11 +212,11 @@ inkscape https://inkscape.org/
 MyPaint http://mypaint.org/  
 Stellarium http://stellarium.org/  
 Unity-Hub https://unity3d.com/get-unity/download  
-Kdenlive https://kdenlive.org/en/download/  
 Obsidian https://obsidian.md/  
 BalenaEtcher https://www.balena.io/etcher/  
 Virtual MIDI Piano Keyboard (VMPK) https://vmpk.sourceforge.io/  
 Hugin Panorama Stitcher - Grafics Editor http://hugin.sourceforge.net/  
+Kdenlive Video Editor https://kdenlive.org/en/download/  
 OpenShot Video Editor https://www.openshot.org/  
 Shotcut Video Editor https://www.shotcut.org/  
 Olive Video Editor https://www.olivevideoeditor.org/  
