@@ -244,10 +244,10 @@ tar xvf ~/Downloads/blender*.tar.xz -C ~/Programs/
 
 ### Adding ShortCuts
 
-`xfce4-settings-manager` -> Tastatur -> Tastenkuerzel  
+`xfce4-settings-manager` -> Keyboard -> Application Shortcuts  
 `xfce4-keyboard-settings`  
 
-For setting Keyboard-Shortcuts in your windows-manager:  
+For setting Keyboard Shortcuts in your windows manager:  
 `xfwm4-settings`  
 
 **Default:**  
@@ -282,7 +282,7 @@ ddimage
 ### Programming languages
 ```bash
 # Ruby and the fpm utility (https://fpm.readthedocs.io/en/latest/index.html)
-sudo apt install ruby-full rpm && sudo gem install fpm
+sudo apt install squashfs-tools ruby-full rpm && sudo gem install fpm
 fpm --version
 
 # GoLang (https://go.dev/)
