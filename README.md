@@ -36,11 +36,11 @@ sudo apt install texlive texlive-lang-german texlive-lang-english texlive-latex-
 
 Also you might want to install some additional codecs[^3]. The Microsoft Fonts for instance are not open source and therefore are not included in the ubuntu image.
 ```bash
-# ubuntu-restricted-extras is a so called 'meta-package' which installes a number of other packages.
 sudo apt install ubuntu-restricted-extras rar
+# ubuntu-restricted-extras is a so called 'meta-package' which installes a number of other packages.
 # Or you can try to install the packages manually. Some of the packages are:
 # libavcodec-extra ttf-mscorefonts-installer gstreamer1.0-libav gstreamer1.0-plugins-ugly gstreamer1.0-vaapi unrar rar xz-utils
-# The packages zip, unzip, unrar and xz-utils are also included. But making sure never hurts.
+# The packages zip and unzip are also included. But making sure never hurts.
 ```
 
 ### System Update Settings
@@ -266,6 +266,9 @@ For setting Keyboard Shortcuts in your windows manager:
 (Alt+F1 -> xfce4-popup-applicationsmenu)  
 Quite useful: kill the open window below the mouse pointer  
 (Ctrl+Alt+Esc -> xkill)  
+
+### Adding App launcher to the panel
+![[add_launcher.gif]]
 
 ### 4 ways to create a Linux Live System on a usb stick
 1. Startup Disk Creator `sudo apt install usb-creator-gtk`
