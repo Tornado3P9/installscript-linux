@@ -268,7 +268,7 @@ Quite useful: kill the open window below the mouse pointer
 (Ctrl+Alt+Esc -> xkill)  
 
 ### Adding App launcher to the panel
-![[add_launcher.gif]]
+![app launcher](pics/add_launcher.gif)
 
 ### 4 ways to create a Linux Live System on a usb stick
 1. Startup Disk Creator `sudo apt install usb-creator-gtk`
