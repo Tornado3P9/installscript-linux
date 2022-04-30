@@ -37,8 +37,10 @@ sudo apt install texlive texlive-lang-german texlive-lang-english texlive-latex-
 Also you might want to install some additional codecs[^3]. The Mycrosoft Fonts for instance are not open source and therefore are not included in the ubuntu image.
 ```bash
 # ubuntu-restricted-extras is a so called 'meta-package' which installes a number of other packages.
-# The packages zip, unzip, unrar and xz-utils are also included.
-sudo apt install ubuntu-restricted-extras rar 
+sudo apt install ubuntu-restricted-extras rar
+# Or you can try to install the packages manually. Some of the packages are:
+# libavcodec-extra ttf-mscorefonts-installer gstreamer1.0-libav gstreamer1.0-plugins-ugly gstreamer1.0-vaapi unrar rar xz-utils
+# The packages zip, unzip, unrar and xz-utils are also included. But making sure never hurts.
 ```
 
 ### System Update Settings
@@ -318,6 +320,17 @@ Update pip via: `python3 -m pip install --upgrade pip`
 - [Steam](https://store.steampowered.com/)
 - [itch.io](https://itch.io/)
 
+### DVD
+If your PC has got a DVD player, then you might want to install the missing library for playing commercial DVDs[^5]
+```bash
+# On Debian and Ubuntu, you can install `libdvdcss` via `libdvd-pkg` helper package:
+sudo apt install libdvd-pkg
+# And by running the following command, which will download, build and install the latest libdvdcss source to your machine:
+sudo dpkg-reconfigure libdvd-pkg
+```
+If there are Problems with the video playback, then it might help to delete the hidden directory `rm -r ~/.dvdcss/` in order to force the program to create a new css key.
+You also might want to [disable Hardware-accelerated decoding](https://wiki.videolan.org/VLC_HowTo/Hardware_acceleration/) in your media player if the displayed output is flawed and you are using a AMD Radeon graphics card.
+
 ### Tipps:
 [If you do these 5 things... You should NOT use Linux](https://youtu.be/06cKL5DQ5CY)  
 [Who should use Linux?](https://youtu.be/7SU-BupOe7s)  
@@ -349,5 +362,5 @@ apt-cache --generate pkgnames \
 [^1]:Install Firefox manually: https://itsfoss.com/firefox-quantum-ubuntu/
 [^2]:Firewall: https://github.com/Tornado3P9/Konsolentools/blob/master/firewall_ufw.txt
 [^4]:dd https://www.raspberrypi.com/documentation/computers/getting-started.html#installing-images-on-linux https://github.com/Tornado3P9/Konsolentools/blob/master/dd.txt
-
+[^5]:VideoLAN libdvdcss: https://www.videolan.org/developers/libdvdcss.html, https://wiki.ubuntuusers.de/DVD-Wiedergabe/#Problembehebung
 
