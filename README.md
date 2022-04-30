@@ -1,5 +1,5 @@
 # Xubuntu 22.04 LTS
-https://cloudcone.com/docs/article/ubuntu-22-04-release-schedule-and-features/
+https://xubuntu.org/
 
 ### **Installing some useful packages**
 
