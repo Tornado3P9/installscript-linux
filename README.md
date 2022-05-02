@@ -132,7 +132,7 @@ sudo ufw enable && sudo ufw status
 
 # Limit potential DoS Attack without root access (optional)
 sudo cp /etc/security/limits.conf /etc/security/limits.conf.backup
-echo "$USER  hard  nproc  2000" | sudo tee /etc/security/limits.conf
+echo "$USER  hard  nproc  2000" | sudo tee -a /etc/security/limits.conf
 
 ```
 
