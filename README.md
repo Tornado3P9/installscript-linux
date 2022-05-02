@@ -66,6 +66,13 @@ mkdir $HOME/Programs
 ```
 
 ### Firefox[^1]
+Security tipp for using Firefox:
+- Type `about:config` into the *URL Search Bar* and then look for `pdfjs.enableScripting`. Set that to `false`.
+- Type `about:preferences` into the *URL Search Bar* and go to **Privacy & Security**. Scroll down and choose `Enable HTTPS-Only Mode in all windows`.
+This way your browser will only allow save connections and will ask you for permission if the website does not support https.
+- Type `about:performance` into the *URL Search Bar* to see the Firefox **Task Manager**. There you can see which application or addon uses up too much resources.
+
+
 How to disable Snaps and making sure it doesn’t automatically reinstall.
 The issue with Snaps is that they run 'root' and update automatically without your knowledge and without asking for permission.
 They are also terribly slow, especially at first startup, and will overflow your filesystem output with a lot of loopback devices.
