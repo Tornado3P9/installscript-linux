@@ -199,6 +199,7 @@ Periodic Table https://ptable.com/#Properties (online)
 printfriendly https://www.printfriendly.com/ (online)  
 Diagram Editor https://www.diagrameditor.com/ (online)  
 Dia Diagram Editor http://dia-installer.de/download/linux.html (part of the repository: `sudo apt install dia` )  
+Mermaid Diagram Editor https://mermaid.live/ (online)  
 OnlyOffice https://www.onlyoffice.com/  
 FreeOffice https://www.freeoffice.com/en/  
 WPS Office https://www.wps.com/  
