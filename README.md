@@ -179,6 +179,7 @@ ffmulticonverter https://sites.google.com/site/ffmulticonverter/download
 mono https://www.mono-project.com/download/stable/  
 gcolor2_colorpicker http://mirrors.edge.kernel.org/ubuntu/pool/universe/g/gcolor2/  
 SQL Developer / Universal Database Tool https://dbeaver.io/  
+Oracle SQL Developer https://www.oracle.com/tools/downloads/sqldev-downloads.html  
 Raspberry Pi Imager https://www.raspberrypi.com/software/ [#advanced-options](https://www.raspberrypi.com/documentation/computers/getting-started.html#advanced-options)  
 KiCad EDA https://www.kicad.org/  
 Arduino IDE https://www.arduino.cc/en/software  
