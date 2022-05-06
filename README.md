@@ -76,7 +76,8 @@ This way your browser will only allow save connections and will ask you for perm
 How to disable Snaps and making sure it doesn’t automatically reinstall.
 The issue with Snaps is that they run 'root' and update automatically without your knowledge and without asking for permission.
 They are also terribly slow, especially at first startup, and will overflow your filesystem output with a lot of loopback devices.
-Snaps are certainly a promising idea, but because we can just create the debian installation file ourselves if it doesn't exist, snaps only worsen the overall experience.
+The desktop integration is not always perfect. The results can be wrong color schemes or unreadable texts. However, Snaps seem to be working well on server installations.
+Snaps are certainly a promising idea, but because we can just create the debian installation file ourselves if it doesn't exist, Snaps only worsen the overall experience.
 You can also use [Flatpaks](https://flathub.org/home) or Appimages if you have to. If you want to use [Snaps, then here](https://snapcraft.io/) is where to look for apps.
 
 ```bash
@@ -188,6 +189,7 @@ Gaupol Subtitle Editor https://otsaloma.io/gaupol/ (part of the repository: `sud
 Sigil - EPUB Editor https://sigil-ebook.com/ (part of the repository: `sudo apt install sigil`)  
 AWS CLI https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html  
 (part of the repository: `sudo apt install awscli`)  
+FileZilla https://filezilla-project.org/download.php?type=client (part of the repository: `sudo apt install filezilla`)  
 
 **Team/School**  
 zoom-client https://zoom.us/download  
@@ -199,7 +201,7 @@ Periodic Table https://ptable.com/#Properties (online)
 printfriendly https://www.printfriendly.com/ (online)  
 Diagram Editor https://www.diagrameditor.com/ (online)  
 Dia Diagram Editor http://dia-installer.de/download/linux.html (part of the repository: `sudo apt install dia` )  
-Mermaid Diagram Editor https://mermaid.live/ (online)  
+Mermaid Diagram Editor https://mermaid.live/ [about](https://mermaid-js.github.io/mermaid/#/) [video](https://youtu.be/JiQmpA474BY) (online)  
 OnlyOffice https://www.onlyoffice.com/  
 FreeOffice https://www.freeoffice.com/en/  
 WPS Office https://www.wps.com/  
