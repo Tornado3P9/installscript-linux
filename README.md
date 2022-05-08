@@ -1,5 +1,5 @@
 # Xubuntu 22.04 LTS
-https://xubuntu.org/
+https://xubuntu.org/ + [balenaEtcher](https://www.balena.io/etcher/) or [Rufus USB Writer](https://rufus.ie/en/) for Windows users
 
 ### **Installing some useful packages**
 
