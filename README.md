@@ -176,7 +176,7 @@ Atom https://atom.io/
 Eclipse IDE https://www.eclipse.org/  
 NetBeans IDE https://netbeans.apache.org/download/  
 Blender https://www.blender.org/download/ KeenTools https://keentools.io/  
-NormalMap https://www.smart-page.net/smartnormal/  
+NormalMap https://www.smart-page.net/smartnormal/ (online)  
 magick https://imagemagick.org/script/download.php  
 ffmulticonverter https://sites.google.com/site/ffmulticonverter/download  
 mono https://www.mono-project.com/download/stable/  
@@ -239,14 +239,14 @@ OpenShot Video Editor https://www.openshot.org/
 Shotcut Video Editor https://www.shotcut.org/  
 Olive Video Editor https://www.olivevideoeditor.org/  
 
-**Other**
+**Other**  
 Celestia https://celestia.space/  
 NASA’s Eyes https://eyes.nasa.gov/ (online)  
 Stuff in Space http://stuffin.space/ (online)  
 Helioviewer https://www.helioviewer.org/ (online)  
 Windy https://www.windy.com/ (online)  
 Earth https://earth.nullschool.net/ (online)  
-The True Size Of ... https://www.thetruesize.com/ (online)  
+The True Size Of Countries https://www.thetruesize.com/ (online)  
 
 ```bash
 # You can also use 'wget' or 'curl' to download the programs
