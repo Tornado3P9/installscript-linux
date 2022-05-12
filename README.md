@@ -214,6 +214,8 @@ FreeOffice https://www.freeoffice.com/en/
 WPS Office https://www.wps.com/  
 LibreOffice https://www.libreoffice.org/ (already preinstalled)  
 OpenOffice https://www.openoffice.org/  
+Microsoft Office 365 https://www.office.com/ (online)  
+Google Docs https://www.google.com/docs/about/ (online)  
 Atril - PDF Viewer https://wiki.mate-desktop.org/mate-desktop/applications/atril/ (already preinstalled)  
 PDFArranger (already preinstalled: `sudo apt install pdfarranger`)  
 
