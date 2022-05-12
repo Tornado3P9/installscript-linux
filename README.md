@@ -217,7 +217,7 @@ OpenOffice https://www.openoffice.org/
 Microsoft Office 365 https://www.office.com/ (online)  
 Google Docs https://www.google.com/docs/about/ (online)  
 Atril - PDF Viewer https://wiki.mate-desktop.org/mate-desktop/applications/atril/ (already preinstalled)  
-PDFArranger (already preinstalled: `sudo apt install pdfarranger`)  
+PDFArranger (part of the repository: `sudo apt install pdfarranger`)  
 
 **Web Browser**  
 Firefox (already preinstalled)  
