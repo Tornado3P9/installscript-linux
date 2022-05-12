@@ -173,7 +173,10 @@ Sublime Merge https://www.sublimemerge.com/
 VSCodium https://vscodium.com/ does not contain telemetry/tracking  
 VSCode https://code.visualstudio.com/ does contain additional telemetry/tracking  
 Atom https://atom.io/  
-Blender https://www.blender.org/download/  
+Eclipse IDE https://www.eclipse.org/  
+NetBeans IDE https://netbeans.apache.org/download/  
+Blender https://www.blender.org/download/ KeenTools https://keentools.io/  
+NormalMap https://www.smart-page.net/smartnormal/  
 magick https://imagemagick.org/script/download.php  
 ffmulticonverter https://sites.google.com/site/ffmulticonverter/download  
 mono https://www.mono-project.com/download/stable/  
@@ -186,6 +189,8 @@ Arduino IDE https://www.arduino.cc/en/software
 (additionally install: `sudo apt install python-is-python3 python3-serial`)  
 Android Studio https://developer.android.com/studio https://snapcraft.io/android-studio  
 DaVinci Resolve https://www.blackmagicdesign.com/products/davinciresolve/  
+FL Studio https://jstaf.github.io/2018/02/22/flstudio-on-linux.html  
+Unreal Engine https://www.unrealengine.com/  
 Gaupol Subtitle Editor https://otsaloma.io/gaupol/ (part of the repository: `sudo apt install gaupol` )  
 Sigil - EPUB Editor https://sigil-ebook.com/ (part of the repository: `sudo apt install sigil`)  
 AWS CLI https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html  
@@ -195,6 +200,7 @@ FileZilla https://filezilla-project.org/download.php?type=client (part of the re
 **Team/School**  
 zoom-client https://zoom.us/download  
 Microsoft Teams https://www.microsoft.com/en-us/microsoft-teams/download-app  
+Jitsi https://jitsi.org/  
 GeoGebra https://wiki.geogebra.org/en/Reference:GeoGebra_Installation#GeoGebra_Classic_5_for_Desktop  
 OBS Studio https://obsproject.com/wiki/install-instructions#linux  
 JFLAP https://www.jflap.org/jflaptmp/ (start with: `java -jar JFLAP.jar`)  
@@ -232,6 +238,16 @@ Kdenlive Video Editor https://kdenlive.org/en/download/
 OpenShot Video Editor https://www.openshot.org/  
 Shotcut Video Editor https://www.shotcut.org/  
 Olive Video Editor https://www.olivevideoeditor.org/  
+
+**Other**
+Celestia https://celestia.space/  
+NASA’s Eyes https://eyes.nasa.gov/ (online)  
+Stuff in Space http://stuffin.space/ (online)  
+Helioviewer https://www.helioviewer.org/ (online)  
+Windy https://www.windy.com/ (online)  
+Earth https://earth.nullschool.net/ (online)  
+The True Size Of ... https://www.thetruesize.com/ (online)  
+
 ```bash
 # You can also use 'wget' or 'curl' to download the programs
 wget -L https://zoom.us/client/latest/zoom_amd64.deb -P $HOME/Programs/
