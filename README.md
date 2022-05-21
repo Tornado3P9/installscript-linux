@@ -365,6 +365,33 @@ sudo dpkg-reconfigure libdvd-pkg
 If there are problems with the video playback, then it might help to delete the hidden directory `rm -r ~/.dvdcss/` in order to force the program to create a new css key.
 You also might want to [disable Hardware-accelerated decoding](https://wiki.videolan.org/VLC_HowTo/Hardware_acceleration/) in your media player if the displayed output is flawed and you are using a AMD Radeon graphics card.
 
+### Grub2 - boot menu
+To make small changes to the configuration, just open this text file with the command `nano /etc/default/grub`. You will then be presented with sth like this:
+```bash
+# If you change this file, run 'update-grub' afterwards to update
+# /boot/grub/grub.cfg.
+# For full documentation of the options in this file, see:
+#   info -f grub -n 'Simple configuration'
+
+GRUB_DEFAULT=0
+GRUB_TIMEOUT_STYLE=hidden
+GRUB_TIMEOUT=2
+GRUB_DISTRIBUTOR=`lsb_release -i -s 2> /dev/null || echo Debian`
+GRUB_CMDLINE_LINUX_DEFAULT="quiet splash"
+GRUB_CMDLINE_LINUX=""
+
+# Uncomment to enable BadRAM filtering, modify to suit your needs
+# This works with Linux (no patch required) and with any kernel that obtains
+# the memory map information from GRUB (GNU Mach, kernel of FreeBSD ...)
+#GRUB_BADRAM="0x01234567,0xfefefefe,0x89abcdef,0xefefefef"
+
+# Uncomment to disable graphical terminal (grub-pc only)
+#GRUB_TERMINAL=console
+
+```
+Changing the number from `GRUB_TIMEOUT` will change the number of seconds that the grub menu will be visible.  
+For further instructions go to https://www.gnu.org/software/grub/manual/grub/grub.html#Simple-configuration  
+
 ### Tipps:
 [If you do these 5 things... You should NOT use Linux](https://youtu.be/06cKL5DQ5CY)  
 [Who should use Linux?](https://youtu.be/7SU-BupOe7s)  
