@@ -1,10 +1,16 @@
 # Xubuntu 22.04 LTS
+
+### First set up the base system
 https://xubuntu.org/ + [balenaEtcher](https://www.balena.io/etcher/) or [Rufus USB Writer](https://rufus.ie/en/) for Windows users
 
-### **Installing some useful packages**
-
+### Now you can make some customizations to the new system
+bring your installation up to date
 ```bash
 sudo apt update && sudo apt upgrade -y
+```
+
+install some useful packages
+```bash
 sudo apt install \
 git gparted synaptic \
 xsane simple-scan \
@@ -29,23 +35,23 @@ xclip \
 docker.io
 ```
 
-Installing Texlive and Texmaker for writing LaTeX documents
-```bash
-sudo apt install texlive texlive-lang-german texlive-lang-english texlive-latex-extra texmaker
-```
-
-Also you might want to install some additional codecs[^3]. The Microsoft Fonts for instance are not open source and therefore are not included in the ubuntu image.
+Also you might want to install some additional codecs[^3].
 ```bash
 sudo apt install ubuntu-restricted-extras rar
-# ubuntu-restricted-extras is a so called 'meta-package' which installes a number of other packages.
-# Or you can try to install the packages manually. Some of the packages are:
-# libavcodec-extra ttf-mscorefonts-installer gstreamer1.0-libav gstreamer1.0-plugins-ugly gstreamer1.0-vaapi unrar rar xz-utils
-# The packages zip and unzip are also included. But making sure never hurts.
 ```
+The Microsoft Fonts for instance are not open source and therefore are not included in the ubuntu image.  
+*ubuntu-restricted-extras* is a so called 'meta-package' which installs a number of other packages.  
+Or you can try to do this manually. Some of the packages are:  
+*libavcodec-extra ttf-mscorefonts-installer gstreamer1.0-libav gstreamer1.0-plugins-ugly gstreamer1.0-vaapi unrar rar xz-utils*  
+The packages zip and unzip are also included. But making sure never hurts.  
 
 ### System Update Settings
 - Open **![menu](https://docs.xubuntu.org/current/user/libs/images/icon_menu.png) → ![preferences](https://docs.xubuntu.org/current/user/libs/images/preferences-desktop.png) Settings Manager → Software & Updates** and go to the _Updates_ tab
 - Open **![menu](https://docs.xubuntu.org/current/user/libs/images/icon_menu.png) → Software → Software & Updates** and go to the _Updates_ tab
+
+### The Alt key problem
+Some Linux systems use the option to move Applications around using the **Alt** key. The problem is that a lot of Programs that run on both Windows and Linux also make heavy usage of the Alt key.
+- Open **![menu](https://docs.xubuntu.org/current/user/libs/images/icon_menu.png) → ![preferences](https://docs.xubuntu.org/current/user/libs/images/preferences-desktop.png) Settings Manager → Window Manager Tweaks → Accessibility** and change the *Key used to grab and move windows* to **None**.
 
 ### Create a '.fonts' directory for your own Truetype (.ttf) fonts
 ```bash
@@ -60,7 +66,6 @@ mv ~/Downloads/*.ttf ~/.fonts/
 
 ### Creating a 'Progams' folder for all the manually downloaded packages. 
 If you keep all the downloaded binaries and installation files together in this folder instead of deleting them, you will always know what you did to your system in the past. Very simple.
-
 ```bash
 mkdir $HOME/Programs
 ```
@@ -165,6 +170,11 @@ wget -L "https://raw.githubusercontent.com/Tornado3P9/installscript-linux/master
 # for displaying the aliases type "aliases" or "alias"
 ```
 
+### Installing Texlive and Texmaker for writing LaTeX documents
+```bash
+sudo apt install texlive texlive-lang-german texlive-lang-english texlive-latex-extra texmaker
+```
+
 ### Installing additional applications that are not included in the repository (some are but not the most recent version)
 **Development**  
 JetBrains WebStorm/Rider/PyCharm IDE https://www.jetbrains.com/pycharm/download/#section=linux  
@@ -240,15 +250,6 @@ Kdenlive Video Editor https://kdenlive.org/en/download/
 OpenShot Video Editor https://www.openshot.org/  
 Shotcut Video Editor https://www.shotcut.org/  
 Olive Video Editor https://www.olivevideoeditor.org/  
-
-**Other**  
-Celestia https://celestia.space/  
-NASA’s Eyes https://eyes.nasa.gov/ (online)  
-Stuff in Space http://stuffin.space/ (online)  
-Helioviewer https://www.helioviewer.org/ (online)  
-Windy https://www.windy.com/ (online)  
-Earth https://earth.nullschool.net/ (online)  
-The True Size Of Countries https://www.thetruesize.com/ (online)  
 
 ```bash
 # You can also use 'wget' or 'curl' to download the programs
@@ -354,6 +355,25 @@ Update pip via: `python3 -m pip install --upgrade pip`
 - [Steam](https://store.steampowered.com/)
 - [itch.io](https://itch.io/)
 
+### Photoshop alternatives (most adope applications don't work well on linux)[^6]
+- Gimp (very good image manipulation editor) https://www.gimp.org/
+- Krita (supports many different color codes -> good for printing tasks) https://krita.org/
+- MyPaint (good for working with a digital drawing tablet) http://mypaint.org/
+- Inkscape (vector graphics) https://inkscape.org/
+- Blender (2d drawing tool for working with a digital drawing tablet) https://www.blender.org/
+- Darktable (photography workflow application and raw developer) https://www.darktable.org/
+- PIXLR (online) https://pixlr.com/
+- Photopea (online, good compatibility with Photoshop's text objects) https://www.photopea.com/
+
+### Decentralized Data Storage - IPFS
+- IPFS Desktop https://docs.ipfs.io/install/ipfs-desktop/
+- IPFS Companion browser add-on https://docs.ipfs.io/install/ipfs-companion/
+- host single-page website https://docs.ipfs.io/how-to/websites-on-ipfs/single-page-website/#linux
+
+### Converting RPM to DEB packages
+- FPM [fpm.readthedocs.io](https://fpm.readthedocs.io/en/latest/packages/rpm.html#arguments-when-used-as-input-type)
+- Alien [manpages.ubuntu.com](https://manpages.ubuntu.com/manpages/jammy/man1/alien.1p.html) [geeksforgeeks.com](https://www.geeksforgeeks.org/how-to-convert-rpm-package-to-deb-using-alien-package-converter/)
+
 ### DVD
 If your PC has got a DVD player, then you might want to install the missing library for playing commercial DVDs[^5]
 ```bash
@@ -424,4 +444,5 @@ apt-cache --generate pkgnames \
 [^2]:Firewall: https://github.com/Tornado3P9/Konsolentools/blob/master/firewall_ufw.txt
 [^4]:dd https://www.raspberrypi.com/documentation/computers/getting-started.html#installing-images-on-linux https://github.com/Tornado3P9/Konsolentools/blob/master/dd.txt
 [^5]:VideoLAN libdvdcss: https://www.videolan.org/developers/libdvdcss.html, https://wiki.ubuntuusers.de/DVD-Wiedergabe/#Problembehebung
+[^6]:Photoshop: https://appdb.winehq.org/objectManager.php?sClass=application&iId=20, https://lutris.net/games/adobe-photoshop-cs6/
 
