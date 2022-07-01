@@ -67,8 +67,9 @@ mkdir $HOME/Programs
 - Open **![menu](https://docs.xubuntu.org/current/user/libs/images/icon_menu.png) → Software → Software & Updates** and go to the _Updates_ tab
 
 ### The Alt key problem
-Some Linux systems support the option to move Applications around using the **Alt** key. The problem is that a lot of Programs that run on both Windows and Linux also make heavy usage of the Alt key.
-- Open **![menu](https://docs.xubuntu.org/current/user/libs/images/icon_menu.png) → ![preferences](https://docs.xubuntu.org/current/user/libs/images/preferences-desktop.png) Settings Manager → Window Manager Tweaks → Accessibility** and change the *Key used to grab and move windows* to **None**.
+Some Linux systems support the option to move applications around using the **Alt** key. The problem is that a lot of Programs that run on both Windows and Linux also make heavy usage of the Alt key.
+- Open **![menu](https://docs.xubuntu.org/current/user/libs/images/icon_menu.png) → ![preferences](https://docs.xubuntu.org/current/user/libs/images/preferences-desktop.png) Settings Manager → Window Manager Tweaks → Accessibility** and change the *Key used to grab and move windows* to **None**
+- Press **Alt+F2** and type *xfce4-settings-manager*. Then go to **Window Manager Tweaks → Accessibility** and change the *Key used to grab and move windows* to **None**
 
 ### Firefox[^1]
 Security tipp for using Firefox:
@@ -150,11 +151,6 @@ sudo apt install arc-theme moka-icon-theme numix-icon-theme numix-gtk-theme ligh
 # Install a Panel/Dockleiste https://wiki.ubuntuusers.de/Plank/
 # If Plank is not available in the default repository, just install from ppa:ricotz/docky (Press Ctrl+Right_Mouse_Button for the configuration menu)
 sudo apt install plank
-
-# (Alt+F2 -> xfce4-) and change some settings:
-# xfce4-settings-manager -> Window Manager Tweaks -> Accessibility -> key used to grab and move windows: None
-# (german) xfce4-settings-manager -> Fenstereinstellungen der Fensterverwaltung -> Zugreifbarkeit -> Taste zum nehmen und verschieben der Fenster: None
-xfce4-settings-manager
 
 # The standard desktop image folder is located at:
 locate backdrops
