@@ -4,12 +4,12 @@
 https://xubuntu.org/ + [balenaEtcher](https://www.balena.io/etcher/) or [Rufus USB Writer](https://rufus.ie/en/) for Windows users
 
 ### Now you can make some customizations to the new system
-bring your installation up to date
+Bring your installation up to date
 ```bash
 sudo apt update && sudo apt upgrade -y
 ```
 
-install some useful packages
+Install some useful packages
 ```bash
 sudo apt install \
 git gparted synaptic \
@@ -35,7 +35,7 @@ xclip \
 docker.io
 ```
 
-Also you might want to install some additional codecs[^3].
+Install some additional codecs[^3].
 ```bash
 sudo apt install ubuntu-restricted-extras rar
 ```
