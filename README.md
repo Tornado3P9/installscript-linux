@@ -4,12 +4,12 @@
 https://xubuntu.org/ + [balenaEtcher](https://www.balena.io/etcher/) or [Rufus USB Writer](https://rufus.ie/en/) for Windows users
 
 ### Now you can make some customizations to the new system
-Bring your installation up to date
+Bring your installation up to date:
 ```bash
 sudo apt update && sudo apt upgrade -y
 ```
 
-Install some useful packages
+Install some useful packages:
 ```bash
 sudo apt install \
 git gparted synaptic \
@@ -35,7 +35,7 @@ xclip \
 docker.io
 ```
 
-Install some additional codecs[^3].
+Install some additional codecs:[^3]
 ```bash
 sudo apt install ubuntu-restricted-extras rar
 ```
@@ -409,15 +409,17 @@ Changing the number from `GRUB_TIMEOUT` will change the number of seconds that t
 For further instructions go to https://www.gnu.org/software/grub/manual/grub/grub.html#Simple-configuration  
 
 ### Tipps:
+[Customize Your Xfce Desktop To Look Like macOS Big Sur](https://youtu.be/uvvoJU69uNo)  
+[Make Your Xfce Desktop Look More Unique and Beautiful](https://youtu.be/X3siZNJN3ec)  
 [If you do these 5 things... You should NOT use Linux](https://youtu.be/06cKL5DQ5CY)  
 [Who should use Linux?](https://youtu.be/7SU-BupOe7s)  
 [Simple Tasks on Linux](https://youtu.be/6h2UmKTcCfA)  
+[Understanding Linux Distros](https://youtu.be/DKFnqAtEOvc)  
+[Choosing the Right Linux Distro](https://youtu.be/dL05DoJ0qsQ)  
+[Linux gaming is better than Windows sometimes](https://youtu.be/i9Op7Xa5eKs)  
+[Linux being better for Blender 3D Renderings](https://youtu.be/cpE2B2QSsa0)  
 [How to Use GitHub](https://youtu.be/v_1iqtOnUMg)  
 [Git Tutorial Playlist](https://www.youtube.com/playlist?list=PL4cUxeGkcC9goXbgTDQ0n_4TBzOO0ocPR)  
-[Understanding Linux Distros](https://youtu.be/DKFnqAtEOvc)  
-[How to Choose a Linux Distribution](https://youtu.be/iox7fr7p5Hc)  
-[Linux gaming is better than Windows sometimes](https://youtu.be/i9Op7Xa5eKs)  
-[Linux being better for Blender 3D Renderings](https://youtu.be/cpE2B2QSsa0)
 
 ### Optional:
 Before invoking `apt install`, filter non-existent packages out of the list. The list of installable  
