@@ -67,7 +67,7 @@ mkdir $HOME/Programs
 - Open **![menu](https://docs.xubuntu.org/current/user/libs/images/icon_menu.png) → Software → Software & Updates** and go to the _Updates_ tab
 
 ### The Alt key problem
-Some Linux systems support the option to move applications around using the **Alt** key. The problem is that a lot of Programs that run on both Windows and Linux also make heavy usage of the Alt key.
+Some Linux systems support the option to move applications around using the **Alt** key. The problem is that a lot of programs that run on both Windows and Linux also make heavy usage of the Alt key.
 - Open **![menu](https://docs.xubuntu.org/current/user/libs/images/icon_menu.png) → ![preferences](https://docs.xubuntu.org/current/user/libs/images/preferences-desktop.png) Settings Manager → Window Manager Tweaks → Accessibility** and change the *Key used to grab and move windows* to **None**
 - Press **Alt+F2** and type *xfce4-settings-manager*. Then go to **Window Manager Tweaks → Accessibility** and change the *Key used to grab and move windows* to **None**
 
@@ -271,28 +271,28 @@ tar xvf ~/Downloads/blender*.tar.xz -C ~/Programs/
 
 ### Adding ShortCuts
 
-`xfce4-settings-manager` -> Keyboard -> Application Shortcuts  
+`xfce4-settings-manager` → Keyboard → Application Shortcuts  
 `xfce4-keyboard-settings`  
 
 For setting Keyboard Shortcuts in your windows manager:  
 `xfwm4-settings`  
 
 **Default:**  
-(Ctrl+Alt+Delete -> xfce4-session-logout)  
-(Shift+Ctrl+Esc -> xfce4-taskmanager)  
-(Alt+F2 -> xfrun4)  
-(Super+L -> xflock4)  
-(Super+W -> exo-open --launch WebBrowser)  
-(Super+F -> exo-open --launch FileManager)  
-(Super+D -> Show Desktop (minimize windows) )  
-(Super+F1 -> xfce4-find-cursor)  
-(Print -> xfce4-screenshooter -f)  
-(Shift+Print -> xfce4-screenshooter -r)  
-(Alt+Print  -> xfce4-screenshooter -w)  
-(Ctrl+Esc -> xfce4-popup-whiskermenu (Standard Menu) )  
-(Alt+F1 -> xfce4-popup-applicationsmenu)  
-Quite useful: kill the open window below the mouse pointer  
-(Ctrl+Alt+Esc -> xkill)  
+(Ctrl+Alt+Delete = xfce4-session-logout)  
+(Shift+Ctrl+Esc = xfce4-taskmanager)  
+(Alt+F2 = xfrun4)  
+(Super+L = xflock4)  
+(Super+W = exo-open --launch WebBrowser)  
+(Super+F = exo-open --launch FileManager)  
+(Super+D = Show Desktop (minimize windows) )  
+(Super+F1 = xfce4-find-cursor)  
+(Print = xfce4-screenshooter -f)  
+(Shift+Print = xfce4-screenshooter -r)  
+(Alt+Print  = xfce4-screenshooter -w)  
+(Ctrl+Esc = xfce4-popup-whiskermenu (Standard Menu) )  
+(Alt+F1 = xfce4-popup-applicationsmenu)  
+*Quite useful: killing the open window below the mouse pointer*  
+(Ctrl+Alt+Esc = xkill)  
 
 ### Adding App launcher to the panel
 ![app launcher](pics/add_launcher.gif)
