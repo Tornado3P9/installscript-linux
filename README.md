@@ -39,19 +39,11 @@ Install some additional codecs[^3].
 ```bash
 sudo apt install ubuntu-restricted-extras rar
 ```
-The Microsoft Fonts for instance are not open source and therefore are not included in the ubuntu image.  
 *ubuntu-restricted-extras* is a so called 'meta-package' which installs a number of other packages.  
+The Microsoft Fonts for instance are not open source and therefore are not included in the ubuntu image.  
 Or you can try to do this manually. Some of the packages are:  
 *libavcodec-extra ttf-mscorefonts-installer gstreamer1.0-libav gstreamer1.0-plugins-ugly gstreamer1.0-vaapi unrar rar xz-utils*  
 The packages zip and unzip are also included. But making sure never hurts.  
-
-### System Update Settings
-- Open **![menu](https://docs.xubuntu.org/current/user/libs/images/icon_menu.png) → ![preferences](https://docs.xubuntu.org/current/user/libs/images/preferences-desktop.png) Settings Manager → Software & Updates** and go to the _Updates_ tab
-- Open **![menu](https://docs.xubuntu.org/current/user/libs/images/icon_menu.png) → Software → Software & Updates** and go to the _Updates_ tab
-
-### The Alt key problem
-Some Linux systems use the option to move Applications around using the **Alt** key. The problem is that a lot of Programs that run on both Windows and Linux also make heavy usage of the Alt key.
-- Open **![menu](https://docs.xubuntu.org/current/user/libs/images/icon_menu.png) → ![preferences](https://docs.xubuntu.org/current/user/libs/images/preferences-desktop.png) Settings Manager → Window Manager Tweaks → Accessibility** and change the *Key used to grab and move windows* to **None**.
 
 ### Create a '.fonts' directory for your own Truetype (.ttf) fonts
 ```bash
@@ -69,6 +61,14 @@ If you keep all the downloaded binaries and installation files together in this 
 ```bash
 mkdir $HOME/Programs
 ```
+
+### System Update Settings
+- Open **![menu](https://docs.xubuntu.org/current/user/libs/images/icon_menu.png) → ![preferences](https://docs.xubuntu.org/current/user/libs/images/preferences-desktop.png) Settings Manager → Software & Updates** and go to the _Updates_ tab
+- Open **![menu](https://docs.xubuntu.org/current/user/libs/images/icon_menu.png) → Software → Software & Updates** and go to the _Updates_ tab
+
+### The Alt key problem
+Some Linux systems use the option to move Applications around using the **Alt** key. The problem is that a lot of Programs that run on both Windows and Linux also make heavy usage of the Alt key.
+- Open **![menu](https://docs.xubuntu.org/current/user/libs/images/icon_menu.png) → ![preferences](https://docs.xubuntu.org/current/user/libs/images/preferences-desktop.png) Settings Manager → Window Manager Tweaks → Accessibility** and change the *Key used to grab and move windows* to **None**.
 
 ### Firefox[^1]
 Security tipp for using Firefox:
