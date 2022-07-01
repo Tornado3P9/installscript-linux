@@ -56,7 +56,7 @@ mv ~/Downloads/*.ttf ~/.fonts/
 # Show hidden files with the shortcut 'Ctrl+H' (or 'Strg+H')
 ```
 
-### Creating a 'Progams' folder for all the manually downloaded packages. 
+### Create a 'Progams' folder for all the manually downloaded packages. 
 If you keep all the downloaded binaries and installation files together in this folder instead of deleting them, you will always know what you did to your system in the past. Very simple.
 ```bash
 mkdir $HOME/Programs
@@ -67,7 +67,7 @@ mkdir $HOME/Programs
 - Open **![menu](https://docs.xubuntu.org/current/user/libs/images/icon_menu.png) → Software → Software & Updates** and go to the _Updates_ tab
 
 ### The Alt key problem
-Some Linux systems use the option to move Applications around using the **Alt** key. The problem is that a lot of Programs that run on both Windows and Linux also make heavy usage of the Alt key.
+Some Linux systems support the option to move Applications around using the **Alt** key. The problem is that a lot of Programs that run on both Windows and Linux also make heavy usage of the Alt key.
 - Open **![menu](https://docs.xubuntu.org/current/user/libs/images/icon_menu.png) → ![preferences](https://docs.xubuntu.org/current/user/libs/images/preferences-desktop.png) Settings Manager → Window Manager Tweaks → Accessibility** and change the *Key used to grab and move windows* to **None**.
 
 ### Firefox[^1]
