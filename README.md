@@ -56,7 +56,7 @@ mv ~/Downloads/*.ttf ~/.fonts/
 # Show hidden files with the shortcut 'Ctrl+H' (or 'Strg+H')
 ```
 
-### Create a 'Progams' folder for all the manually downloaded packages. 
+### Create a 'Programs' folder for all the manually downloaded packages. 
 If you keep all the downloaded binaries and installation files together in this folder instead of deleting them, you will always know what you did to your system in the past. Very simple.
 ```bash
 mkdir $HOME/Programs
@@ -72,11 +72,11 @@ Some Linux systems support the option to move applications around using the **Al
 - Press **Alt+F2** and type *xfce4-settings-manager*. Then go to **Window Manager Tweaks → Accessibility** and change the *Key used to grab and move windows* to **None**
 
 ### Firefox[^1]
-Security tipp for using Firefox:
+Security tip for using Firefox:
 - Type `about:config` into the *URL Search Bar* and then look for `pdfjs.enableScripting`. Set that to `false`.
 - Type `about:preferences` into the *URL Search Bar* and go to **Privacy & Security**. Scroll down and choose `Enable HTTPS-Only Mode in all windows`.
 This way your browser will only allow save connections and will ask you for permission if the website does not support https.
-- Type `about:performance` into the *URL Search Bar* to see the Firefox **Task Manager**. There you can see which application or addon uses up too much resources.
+- Type `about:performance` into the *URL Search Bar* to see the Firefox **Task Manager**. There you can see which application or addon uses up too many resources.
 
 
 How to disable Snaps and making sure it doesn’t automatically reinstall.
@@ -361,7 +361,7 @@ Update pip via: `python3 -m pip install --upgrade pip`
 - PIXLR (online) https://pixlr.com/
 - Photopea (online, good compatibility with Photoshop's text objects) https://www.photopea.com/
 
-### Decentralized Data Storage - IPFS
+### Decentralised Data Storage - IPFS
 - IPFS Desktop https://docs.ipfs.io/install/ipfs-desktop/
 - IPFS Companion browser add-on https://docs.ipfs.io/install/ipfs-companion/
 - host single-page website https://docs.ipfs.io/how-to/websites-on-ipfs/single-page-website/#linux
@@ -382,7 +382,7 @@ If there are problems with the video playback, then it might help to delete the 
 You also might want to [disable Hardware-accelerated decoding](https://wiki.videolan.org/VLC_HowTo/Hardware_acceleration/) in your media player if the displayed output is flawed and you are using a AMD Radeon graphics card.
 
 ### Grub2 - boot menu
-To make small changes to the configuration, just open this text file with the command `nano /etc/default/grub`. You will then be presented with sth like this:
+To make small changes to the configuration, just open this text file with the command `nano /etc/default/grub`. You will then be presented with smth like this:
 ```bash
 # If you change this file, run 'update-grub' afterwards to update
 # /boot/grub/grub.cfg.
