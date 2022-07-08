@@ -28,6 +28,7 @@ wget curl \
 tree \
 ufw gufw \
 kleopatra \
+wireguard \
 jeex bless jq rename \
 usb-creator-gtk \
 python3-pip python3-venv libopencv-dev python3-opencv python-is-python3 \

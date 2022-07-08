@@ -1,9 +1,4 @@
-### Microsoft Office Alternativen, die auf allen Betriebssystemen laufen!:
-# Wer nicht mit Libreoffice zufrieden ist...(ich bins und fuer grosse Arbeiten benutzt man sowieso LateX/Texmaker...),
-# der kann FreeOffice von Softmaker benutzen. Das ist eine exakte Kopie von MicrosoftOffice, wenn nicht sogar besser.
-# OnlyOffice ist ebenfalls ein sehr gut aussehendes Paket und kompatibel mit MSOffice.
-# Oder WPS_Office aus China...ebenfalls eine Kopie von MSOffice.
-#
+
 ### Excel VBA:
 # Man kann Excel per Wine auf Linux installieren, empfehle ich aber nicht.
 # Libreoffice-Calc hat ja bereits die selben Eigenschaften wie Excel.
@@ -12,86 +7,8 @@
 # https://pandas.pydata.org/pandas-docs/stable/getting_started/index.html#getting-started
 # https://plotly.com/python/plotly-express/
 #
-### Photoshop Alternativen:
-# Gimp (Fotomanipulation) https://www.gimp.org/
-# Krita (Viele unterschiedliche Farbcodes, daher gut fuer Druckaufgaben) https://krita.org/
-# Photopea (Onlinetool, gute Kompatibilitaet zu Photoshops Textobjekten) https://www.photopea.com/
-# Inkscape (Vektorgrafiken) https://inkscape.org/
-# MyPaint (Professionelles Maltool fuer Arbeit am Digital Drawing Tablet) http://mypaint.org/
-# Blender2.9+ (Professionelles 2D-Maltool fuer Arbeit am Digital Drawing Tablet) https://www.blender.org/
-#
-### Automaticly enter 'yes' when asked:
-#for i in program1 program2 program3; do
-#  apt-get install $i -y
-#done
-#
-### Delete a program, either with "remove" or "purge"
-#sudo apt remove program_name
-#
-### install better compatibility with "the better distro kernel" (optional)
-#https://liquorix.net/
-#
-### Audio+Video Converter:
-# ffmpeg (complex converter tool for videos, movies, images, pdfs, ...) https://wiki.ubuntuusers.de/FFmpeg/ http://ffmpeg.org/ffmpeg.html
-# handbrake (Very Good!) https://wiki.ubuntuusers.de/HandBrake/
-# winff (Grafic Interface for ffmpeg)
-# traGtor (Alternatively) http://mein-neues-blog.de/
-#
-### Professionelle Videobearbeitung:
-# DaVinci Resolve
-# Kdenlive
-# Blender
-# Shotcut
-# Olive
-# Openshot (Simple)
-#
-### Desktop Sketchpads / Direkt auf dem Bildschrirm malen:
-# Annotate plugin in compiz for Gnome
-#sudo apt install compizconfig-settings-manager compiz-plugins compiz-plugins-extra
-#
-### Grafic Tablet Zeichenprogramme:
-# Xournal++ (Professionelles kostenloses Programm für den Unterricht!) https://github.com/xournalpp/xournalpp
-# MyPaint (Professionelles Maltool fuer Arbeit am Digital Drawing Tablet) http://mypaint.org/
-#
-### Create and Edit EPUB Files on Linux With Sigil
-#sudo apt install sigil
-#
-### Create and Edit text-based Subtitles with Gaupol https://otsaloma.io/gaupol/
-#sudo apt install gaupol
-#
-### ArduinoIDE benoetigt unter Umstaenden noch folgende zwei Pakete:
-#sudo apt install python-is-python3 python3-serial
-# Also remember to give permissions to the program https://www.arduino.cc/en/Guide/Linux
-#
-### VirtualBox - https://www.virtualbox.org/manual/  https://www.virtualbox.org/wiki/Downloads  https://youtu.be/HLnA5UekwAI
-# It's better to manually download and install the programm from the official website as the version in the repositories
-# is sometimes an older one. But ofcourse the repository version will work just fine:
-#sudo apt install virtualbox
-#sudo apt install virtualbox—ext–pack
-#
-### QEMU - sometimes even faster than VirtualBox
-# https://www.christitus.com/vm-setup-in-linux   https://youtu.be/Kq849CpGd88
-# https://github.com/Tornado3P9/Konsolentools/blob/master/QEMU%20virtual%20manager.txt
-#
-### Dia Diagram Editor http://dia-installer.de/ https://www.osradar.com/some-programs-to-make-uml-diagrams-in-linux/
-#sudo apt install dia
-#
 ### Grafical Disk Usage Analyzer https://apps.gnome.org/app/org.gnome.baobab/ https://apps.gnome.org/app/org.gnome.DiskUtility/
 #sudo apt install baobab
-#
-### Create Installation Packages with FPM https://fpm.readthedocs.io/en/latest/index.html
-#sudo apt install squashfs-tools
-#gem install fpm
-#
-### Ruby language
-# It should be preinstalled. If not, just do:
-#sudo apt install ruby-full
-#
-### ddimage script to use dd more savely (for creating a linux live system on your usb drive)
-# curl -sS https://raw.githubusercontent.com/Tornado3P9/installscript-linux/master/ddimage -O
-# chmod +x ddimage
-# sudo mv ddimage /usr/bin/
-# ddimage
 #
 ### go (go-golang) programming language
 # Newest Version: https://golang.org/doc/install
