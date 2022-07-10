@@ -205,9 +205,6 @@ AWS CLI https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install
 FileZilla https://filezilla-project.org/download.php?type=client (part of the repository: `sudo apt install filezilla`)  
 
 **Team/School**  
-zoom-client https://zoom.us/download  
-Microsoft Teams https://www.microsoft.com/en-us/microsoft-teams/download-app  
-Jitsi https://jitsi.org/  
 GeoGebra https://wiki.geogebra.org/en/Reference:GeoGebra_Installation#GeoGebra_Classic_5_for_Desktop  
 OBS Studio https://obsproject.com/wiki/install-instructions#linux  
 JFLAP https://www.jflap.org/jflaptmp/ (start with: `java -jar JFLAP.jar`)  
@@ -225,6 +222,14 @@ Microsoft Office 365 https://www.office.com/ (online)
 Google Docs https://www.google.com/docs/about/ (online)  
 Atril - PDF Viewer https://wiki.mate-desktop.org/mate-desktop/applications/atril/ (already preinstalled)  
 PDFArranger (part of the repository: `sudo apt install pdfarranger`)  
+
+**Video Calls**  
+zoom-client https://zoom.us/download  
+Microsoft Teams https://www.microsoft.com/en-us/microsoft-teams/download-app  
+Jitsi https://jitsi.org/  
+Jami https://jami.net/  
+Nextcloud Talk https://nextcloud.com/talk/  
+BigBlueButton https://bigbluebutton.org/  
 
 **Web Browser**  
 Firefox (already preinstalled)  
