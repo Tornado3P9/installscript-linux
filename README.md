@@ -185,7 +185,6 @@ NetBeans IDE https://netbeans.apache.org/download/
 Blender https://www.blender.org/download/ KeenTools https://keentools.io/  
 NormalMap https://www.smart-page.net/smartnormal/ (online)  
 magick https://imagemagick.org/script/download.php  
-ffmulticonverter https://sites.google.com/site/ffmulticonverter/download  
 mono https://www.mono-project.com/download/stable/  
 gcolor2_colorpicker http://mirrors.edge.kernel.org/ubuntu/pool/universe/g/gcolor2/  
 SQL Developer / Universal Database Tool https://dbeaver.io/  
@@ -244,6 +243,7 @@ inkscape https://inkscape.org/
 MyPaint http://mypaint.org/  
 Stellarium http://stellarium.org/  
 Unity-Hub https://unity3d.com/get-unity/download  
+Ultimaker Cura (3D printing + slicer) https://ultimaker.com/software/ultimaker-cura  
 Obsidian https://obsidian.md/  
 BalenaEtcher https://www.balena.io/etcher/  
 Virtual MIDI Piano Keyboard (VMPK) https://vmpk.sourceforge.io/  
