@@ -183,6 +183,7 @@ Atom https://atom.io/
 Eclipse IDE https://www.eclipse.org/  
 NetBeans IDE https://netbeans.apache.org/download/  
 Blender https://www.blender.org/download/ KeenTools https://keentools.io/  
+MeshLab https://www.meshlab.net/  
 NormalMap https://www.smart-page.net/smartnormal/ (online)  
 magick https://imagemagick.org/script/download.php  
 mono https://www.mono-project.com/download/stable/  
@@ -212,6 +213,8 @@ printfriendly https://www.printfriendly.com/ (online)
 Diagram Editor https://www.diagrameditor.com/ (online)  
 Dia Diagram Editor http://dia-installer.de/download/linux.html (part of the repository: `sudo apt install dia` )  
 Mermaid Diagram Editor https://mermaid.live/ [about](https://mermaid-js.github.io/mermaid/#/) [video](https://youtu.be/JiQmpA474BY) (online)  
+Miro Board https://miro.com/ (online)  
+Trello Board https://trello.com/ (online)  
 OnlyOffice https://www.onlyoffice.com/  
 FreeOffice https://www.freeoffice.com/en/  
 WPS Office https://www.wps.com/  
