@@ -183,7 +183,6 @@ Atom https://atom.io/
 Eclipse IDE https://www.eclipse.org/  
 NetBeans IDE https://netbeans.apache.org/download/  
 Blender https://www.blender.org/download/ KeenTools https://keentools.io/  
-MeshLab https://www.meshlab.net/  
 NormalMap https://www.smart-page.net/smartnormal/ (online)  
 magick https://imagemagick.org/script/download.php  
 mono https://www.mono-project.com/download/stable/  
@@ -247,6 +246,7 @@ MyPaint http://mypaint.org/
 Stellarium http://stellarium.org/  
 Unity-Hub https://unity3d.com/get-unity/download  
 Ultimaker Cura (3D printing + slicer) https://ultimaker.com/software/ultimaker-cura  
+MeshLab https://www.meshlab.net/  
 Obsidian https://obsidian.md/  
 BalenaEtcher https://www.balena.io/etcher/  
 Virtual MIDI Piano Keyboard (VMPK) https://vmpk.sourceforge.io/  
@@ -418,6 +418,7 @@ Changing the number from `GRUB_TIMEOUT` will change the number of seconds that t
 For further instructions go to https://www.gnu.org/software/grub/manual/grub/grub.html#Simple-configuration  
 
 ### Tipps:
+[Speedup Linux](https://christitus.com/speedup-linux/)  
 [Customize Your Xfce Desktop To Look Like macOS Big Sur](https://youtu.be/uvvoJU69uNo)  
 [Make Your Xfce Desktop Look More Unique and Beautiful](https://youtu.be/X3siZNJN3ec)  
 [If you do these 5 things... You should NOT use Linux](https://youtu.be/06cKL5DQ5CY)  
