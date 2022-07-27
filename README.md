@@ -112,8 +112,8 @@ sudo mv firefox /opt/firefox
 sudo ln -s /opt/firefox/firefox /usr/bin/firefox
 ```
 
-You can also create a ShellScript that updates the installation in one go.
-
+Firefox will update itself from now on if you leave the download setting in the general settings section unchanged.
+But if you are someone who likes to do the update manually, here is a script that you can use:
 ```bash
 #!/bin/bash
 # The file firefox.tar.bz2 will be overwritten automatically because of the '-O'
