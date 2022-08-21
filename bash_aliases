@@ -1,9 +1,7 @@
 # Old command prompt: echo $PS1
 #PS1="\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ "
-# New command prompt version A:
+# New command prompt:
 PS1="\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]-->\[\033[00m\] \h: \[\033[01;34m\]\w\[\033[00m\]\$ "
-# New command prompt version B:
-#PS1="\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\[\033[00m\]\[\033[01;34m\]\w\[\033[00m\]\$ "
 #
 # some more aliases
 alias update='sudo apt update && apt list --upgradeable && echo "" && read -p "Press Enter To Continue Or STRG+C To Cancel:" && sudo apt upgrade -y'
