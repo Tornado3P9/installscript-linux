@@ -90,3 +90,8 @@ function recordaudio() {
 
   ffmpeg -f pulse -i default ${SAVE_AT}
 }
+# overwrite 'rm' with a function that moves the files to a bin instead of directly deleting it
+rm(){
+ mkdir -p /tmp/trash
+ mv $@ /tmp/trash
+}
