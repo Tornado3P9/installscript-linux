@@ -174,7 +174,7 @@ sudo apt install texlive texlive-lang-german texlive-lang-english texlive-latex-
 
 ### Installing additional applications that are not included in the repository (some are but not the most recent version)
 **Development**  
-JetBrains WebStorm/Rider/PyCharm IDE https://www.jetbrains.com/pycharm/download/#section=linux  
+JetBrains WebStorm/Rider/IntelliJ/PyCharm IDE https://www.jetbrains.com/pycharm/download/#section=linux  
 Sublime Text https://www.sublimetext.com/  
 Sublime Merge https://www.sublimemerge.com/  
 VSCodium https://vscodium.com/ does not contain telemetry/tracking  
@@ -222,8 +222,9 @@ LibreOffice https://www.libreoffice.org/ (already preinstalled)
 OpenOffice https://www.openoffice.org/  
 Microsoft Office 365 https://www.office.com/ (online)  
 Google Docs https://www.google.com/docs/about/ (online)  
-Atril - PDF Viewer https://wiki.mate-desktop.org/mate-desktop/applications/atril/ (already preinstalled)  
+Atril - PDF/ebook Viewer https://wiki.mate-desktop.org/mate-desktop/applications/atril/ (already preinstalled)  
 PDFArranger (part of the repository: `sudo apt install pdfarranger`)  
+Calibre - ebook management https://calibre-ebook.com/download_linux  
 
 **Video Calls**  
 zoom-client https://zoom.us/download  
