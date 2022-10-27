@@ -196,6 +196,9 @@ Arduino IDE https://www.arduino.cc/en/software
 Android Studio https://developer.android.com/studio https://snapcraft.io/android-studio  
 DaVinci Resolve https://www.blackmagicdesign.com/products/davinciresolve/  
 FL Studio https://jstaf.github.io/2018/02/22/flstudio-on-linux.html  
+Hydrogen http://hydrogen-music.org/ (part of the repository: `sudo apt install hydrogen` )  
+Ardour https://ardour.org/ (part of the repository: `sudo apt install ardour` )  
+LMMS https://lmms.io/ (part of the repository: `sudo apt install lmms` )  
 Unreal Engine https://www.unrealengine.com/  
 Gaupol Subtitle Editor https://otsaloma.io/gaupol/ (part of the repository: `sudo apt install gaupol` )  
 Sigil - EPUB Editor https://sigil-ebook.com/ (part of the repository: `sudo apt install sigil`)  
@@ -257,6 +260,7 @@ Kdenlive Video Editor https://kdenlive.org/en/download/
 OpenShot Video Editor https://www.openshot.org/  
 Shotcut Video Editor https://www.shotcut.org/  
 Olive Video Editor https://www.olivevideoeditor.org/  
+LMMS https://lmms.io/download#linux  
 
 ```bash
 # You can also use 'wget' or 'curl' to download the programs
