@@ -133,6 +133,9 @@ else
 fi
 ```
 
+Now you can start *Firefox* with the shortcut `Windows key + W` or by typing `firefox` into the command line.  
+Start your *File Manager* with the shortcut `Windows key + F` or by typing `thunar` into the command line.  
+
 ### Firewall[^2]
 ```bash
 # Enable User_Friendly_Firewall and verify status
@@ -165,6 +168,12 @@ echo 'export HISTTIMEFORMAT="%F %T "' >> ~/.bashrc
 # for adding some aliases
 wget -L "https://raw.githubusercontent.com/Tornado3P9/installscript-linux/master/bash_aliases" -O $HOME/.bash_aliases && source ~/.bashrc
 # for displaying the aliases type "aliases" or "alias"
+
+# Show time zone:
+date
+timedatectl
+# If you wish to change the current time zone:
+dpkg-reconfigure tzdata
 ```
 
 ### Installing Texlive and Texmaker for writing LaTeX documents
@@ -397,7 +406,7 @@ If there are problems with the video playback, then it might help to delete the 
 You also might want to [disable Hardware-accelerated decoding](https://wiki.videolan.org/VLC_HowTo/Hardware_acceleration/) in your media player if the displayed output is flawed and you are using a AMD Radeon graphics card.
 
 ### Grub2 - boot menu
-To make small changes to the configuration, just open this text file with the command `nano /etc/default/grub`. You will then be presented with smth like this:
+To make small changes to the configuration, just open this text file with the command `sudo nano /etc/default/grub`. You will then be presented with smth like this:
 ```bash
 # If you change this file, run 'update-grub' afterwards to update
 # /boot/grub/grub.cfg.
@@ -451,7 +460,6 @@ apt-cache --generate pkgnames \
   … \
 | xargs apt install -y
 ```
-
 
 [^3]:Additional Codecs https://www.makeuseof.com/tag/ubuntu-restricted-extras-install-ubuntu-linux/
 [^1]:Install Firefox manually: https://itsfoss.com/firefox-quantum-ubuntu/
