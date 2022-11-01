@@ -15,7 +15,7 @@ sudo apt install \
 git gparted synaptic \
 xsane simple-scan \
 pdfarranger img2pdf \
-gimp pinta gifsicle \
+gimp pinta gifsicle qrencode \
 htop glances whowatch arp-scan nmap nethogs wireshark speedtest-cli traceroute mtr neofetch net-tools iperf3 \
 libreoffice libreoffice-l10n-de libreoffice-help-de \
 mediainfo mediainfo-gui \
