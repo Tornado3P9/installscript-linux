@@ -25,15 +25,16 @@ libimage-exiftool-perl perl-doc \
 steam \
 xsensors \
 wget curl \
-tree \
+tree autojump xclip \
 ufw gufw \
 kleopatra \
 wireguard \
 jeex bless jq rename \
 usb-creator-gtk \
 python3-pip python3-venv libopencv-dev python3-opencv python-is-python3 \
-xclip \
-docker.io
+docker.io \
+sqlite3 \
+trash-cli
 ```
 
 Install some additional codecs:[^3]
@@ -368,7 +369,7 @@ Update pip via: `python3 -m pip install --upgrade pip`
 
 ### Virtual Machine
 - [VirtualBox](https://www.virtualbox.org/wiki/Downloads) - `sudo apt install virtualbox`
-- [QEMU](https://www.christitus.com/vm-setup-in-linux), [second link](https://github.com/Tornado3P9/Konsolentools/blob/master/QEMU%20virtual%20manager.txt) - Even faster than VirtualBox
+- [QEMU](https://www.christitus.com/vm-setup-in-linux), [second link](https://github.com/Tornado3P9/Linux-Console-Tools/blob/master/QEMU%20virtual%20manager.md) - Even faster than VirtualBox
 
 ### Gaming
 - [Lutris](https://lutris.net/)
@@ -463,8 +464,8 @@ apt-cache --generate pkgnames \
 
 [^3]:Additional Codecs https://www.makeuseof.com/tag/ubuntu-restricted-extras-install-ubuntu-linux/
 [^1]:Install Firefox manually: https://itsfoss.com/firefox-quantum-ubuntu/
-[^2]:Firewall: https://github.com/Tornado3P9/Konsolentools/blob/master/firewall_ufw.txt
-[^4]:dd https://www.raspberrypi.com/documentation/computers/getting-started.html#installing-images-on-linux https://github.com/Tornado3P9/Konsolentools/blob/master/dd.txt
+[^2]:Firewall: https://github.com/Tornado3P9/Linux-Console-Tools/blob/master/admin%20tools/firewall_ufw.txt
+[^4]:dd https://www.raspberrypi.com/documentation/computers/getting-started.html#installing-images-on-linux https://github.com/Tornado3P9/Linux-Console-Tools/blob/master/dd.md
 [^5]:VideoLAN libdvdcss: https://www.videolan.org/developers/libdvdcss.html, https://wiki.ubuntuusers.de/DVD-Wiedergabe/#Problembehebung
 [^6]:Photoshop: https://appdb.winehq.org/objectManager.php?sClass=application&iId=20, https://lutris.net/games/adobe-photoshop-cs6/
 
