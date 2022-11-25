@@ -88,8 +88,12 @@ function recordaudio() {
 
   ffmpeg -f pulse -i default ${SAVE_AT}
 }
-# overwrite 'rm' with a function that moves the files to a bin instead of directly deleting it
+# overwrite 'rm' with a function that moves the files to a bin instead of directly deleting it OR use the `trash-cli` tool
 rm(){
  mkdir -p /tmp/trash
  mv $@ /tmp/trash
+}
+# compile a c++ program and execute
+function c() {
+  g++ -o app $1 && ./app
 }
