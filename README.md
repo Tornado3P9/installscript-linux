@@ -209,6 +209,7 @@ FL Studio https://jstaf.github.io/2018/02/22/flstudio-on-linux.html
 Hydrogen http://hydrogen-music.org/ (part of the repository: `sudo apt install hydrogen` )  
 Ardour https://ardour.org/ (part of the repository: `sudo apt install ardour` )  
 LMMS https://lmms.io/ (part of the repository: `sudo apt install lmms` )  
+Wavacity https://wavacity.com/ (derived from Audacity: online)  
 Unreal Engine https://www.unrealengine.com/  
 Gaupol Subtitle Editor https://otsaloma.io/gaupol/ (part of the repository: `sudo apt install gaupol` )  
 Sigil - EPUB Editor https://sigil-ebook.com/ (part of the repository: `sudo apt install sigil`)  
