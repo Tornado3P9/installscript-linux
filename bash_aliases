@@ -97,3 +97,10 @@ rm(){
 function c() {
   g++ -o app $1 && ./app
 }
+# change between lower and upper case string
+function upper() {
+  echo "$1" | tr '[:lower:]' '[:upper:]';
+}
+function lower() {
+  echo "$1" | tr '[:upper:]' '[:lower:]';
+}
