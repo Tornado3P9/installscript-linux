@@ -434,6 +434,21 @@ GRUB_CMDLINE_LINUX=""
 Changing the number from `GRUB_TIMEOUT` will change the number of seconds that the grub menu will be visible.  
 For further instructions go to https://www.gnu.org/software/grub/manual/grub/grub.html#Simple-configuration  
 
+### Wine (run windows programs)
+```bash
+sudo dpkg --add-architecture i386
+sudo apt update
+
+sudo apt install wine64 wine32
+
+wine --version
+
+winecfg
+
+cd ~/Programs
+wine program.exe
+```
+
 ### Tipps:
 [Speedup Linux](https://christitus.com/speedup-linux/)  
 [Customize Your Xfce Desktop To Look Like macOS Big Sur](https://youtu.be/uvvoJU69uNo)  
