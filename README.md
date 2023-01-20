@@ -250,6 +250,7 @@ BigBlueButton https://bigbluebutton.org/
 
 **Web Browser**  
 Firefox (already preinstalled)  
+LibreWolf: An Open-Source Firefox Fork Without the Telemetry https://librewolf.net/  
 Chrome https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb  
 Vivaldi https://vivaldi.com/download/  
 Brave https://brave.com/linux/#release-channel-installation  
