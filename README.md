@@ -361,7 +361,9 @@ The pip version is always up to date and usually the better choice compared to t
 pip install tldr
 source ~/.profile && tldr --version
 ```
-Update pip via: `python3 -m pip install --upgrade pip`
+You will find the binary at `ls /home/${USER}/.local/bin/`
+
+Update `pip` via: `python3 -m pip install --upgrade pip`
 
 ### Backups
 - [Timeshift](https://linuxconfig.org/ubuntu-22-04-system-backup-and-restore) - `sudo apt install timeshift`
