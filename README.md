@@ -465,6 +465,7 @@ wine program.exe
 [Linux gaming is better than Windows sometimes](https://youtu.be/i9Op7Xa5eKs)  
 [Linux being better for Blender 3D Renderings](https://youtu.be/cpE2B2QSsa0)  
 
+<!---
 ### Optional:
 Before invoking `apt install`, filter non-existent packages out of the list. The list of installable  
 packages can be obtained by running `apt-cache --generate pkgnames`, which we then `grep` for  
@@ -479,6 +480,7 @@ apt-cache --generate pkgnames \
   … \
 | xargs apt install -y
 ```
+-->
 
 [^3]:Additional Codecs https://www.makeuseof.com/tag/ubuntu-restricted-extras-install-ubuntu-linux/
 [^1]:Install Firefox manually: https://itsfoss.com/firefox-quantum-ubuntu/
