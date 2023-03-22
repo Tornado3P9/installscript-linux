@@ -454,6 +454,7 @@ wine program.exe
 
 ### Tipps:
 [Speedup Linux](https://christitus.com/speedup-linux/)  
+[Desktop and editor setup for Rust development](https://youtu.be/ycMiMDHopNc)  
 [Customize Your Xfce Desktop To Look Like macOS Big Sur](https://youtu.be/uvvoJU69uNo)  
 [Make Your Xfce Desktop Look More Unique and Beautiful](https://youtu.be/X3siZNJN3ec)  
 [If you do these 5 things... You should NOT use Linux](https://youtu.be/06cKL5DQ5CY)  
@@ -463,8 +464,6 @@ wine program.exe
 [Choosing the Right Linux Distro](https://youtu.be/dL05DoJ0qsQ)  
 [Linux gaming is better than Windows sometimes](https://youtu.be/i9Op7Xa5eKs)  
 [Linux being better for Blender 3D Renderings](https://youtu.be/cpE2B2QSsa0)  
-[How to Use GitHub](https://youtu.be/v_1iqtOnUMg)  
-[Git Tutorial Playlist](https://www.youtube.com/playlist?list=PL4cUxeGkcC9goXbgTDQ0n_4TBzOO0ocPR)  
 
 ### Optional:
 Before invoking `apt install`, filter non-existent packages out of the list. The list of installable  
