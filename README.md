@@ -52,10 +52,13 @@ The packages zip and unzip are also included. But making sure never hurts.
 # Just put all your favourite fonts into this folder. The System will automatically find them.
 mkdir $HOME/.fonts
 
+# You may use these TeX fonts for jsMath as an example (web browsers use them to display math formulas)
+# https://www.math.union.edu/~dpvc/jsMath/download/jsMath-fonts.html
+
 # Moving the .ttf files from the Downloads folder to the .fonts folder:
 mv ~/Downloads/*.ttf ~/.fonts/
 
-# Show hidden files with the shortcut 'Ctrl+H' (or 'Strg+H')
+# Hint: Show hidden files with the shortcut 'Ctrl+H' (or 'Strg+H')
 ```
 
 ### Create a 'Programs' folder for all the manually downloaded packages. 
