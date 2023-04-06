@@ -211,6 +211,7 @@ Ardour https://ardour.org/ (part of the repository: `sudo apt install ardour` )
 LMMS https://lmms.io/ (part of the repository: `sudo apt install lmms` )  
 Wavacity https://wavacity.com/ (derived from Audacity: online)  
 Unreal Engine https://www.unrealengine.com/  
+Unity https://unity.com/download  
 Gaupol Subtitle Editor https://otsaloma.io/gaupol/ (part of the repository: `sudo apt install gaupol` )  
 Sigil - EPUB Editor https://sigil-ebook.com/ (part of the repository: `sudo apt install sigil`)  
 AWS CLI https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html  
@@ -262,7 +263,6 @@ krita https://krita.org/
 inkscape https://inkscape.org/  
 MyPaint http://mypaint.org/  
 Stellarium http://stellarium.org/  
-Unity-Hub https://unity3d.com/get-unity/download  
 Ultimaker Cura (3D printing + slicer) https://ultimaker.com/software/ultimaker-cura  
 MeshLab https://www.meshlab.net/  
 Obsidian https://obsidian.md/  
@@ -380,6 +380,12 @@ Update `pip` via: `python3 -m pip install --upgrade pip`
 - [Lutris](https://lutris.net/)
 - [Steam](https://store.steampowered.com/)
 - [itch.io](https://itch.io/)
+
+### Game Engines
+- [Pygame](https://pypi.org/project/pygame/)
+- [Bevy](https://crates.io/crates/bevy)
+- [Unity](https://unity.com/download)
+- [Unreal Engine](https://www.unrealengine.com/)
 
 ### Photoshop alternatives (most adope applications don't work well on linux)[^6]
 - Gimp (very good image manipulation editor) https://www.gimp.org/
