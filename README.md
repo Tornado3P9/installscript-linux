@@ -198,6 +198,7 @@ NetBeans IDE https://netbeans.apache.org/download/
 Blender https://www.blender.org/download/ KeenTools https://keentools.io/  
 NormalMap https://www.smart-page.net/smartnormal/ (online)  
 magick https://imagemagick.org/script/download.php  
+.NET https://learn.microsoft.com/en-us/dotnet/core/install/linux-ubuntu-2204  
 mono https://www.mono-project.com/download/stable/  
 gcolor2_colorpicker http://mirrors.edge.kernel.org/ubuntu/pool/universe/g/gcolor2/  
 SQL Developer / Universal Database Tool https://dbeaver.io/  
