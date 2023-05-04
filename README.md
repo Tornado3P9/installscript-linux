@@ -192,6 +192,7 @@ Sublime Text https://www.sublimetext.com/
 Sublime Merge https://www.sublimemerge.com/  
 VSCodium https://vscodium.com/ does not contain telemetry/tracking  
 VSCode https://code.visualstudio.com/ does contain additional telemetry/tracking  
+VSCode-Online https://vscode.dev/ (online)  
 Atom https://atom.io/  
 Eclipse IDE https://www.eclipse.org/  
 NetBeans IDE https://netbeans.apache.org/download/  
@@ -409,6 +410,9 @@ Update `pip` via: `python3 -m pip install --upgrade pip`
 ### Converting RPM to DEB packages
 - FPM [fpm.readthedocs.io](https://fpm.readthedocs.io/en/latest/packages/rpm.html#arguments-when-used-as-input-type)
 - Alien [manpages.ubuntu.com](https://manpages.ubuntu.com/manpages/jammy/man1/alien.1p.html) [geeksforgeeks.com](https://www.geeksforgeeks.org/how-to-convert-rpm-package-to-deb-using-alien-package-converter/)
+
+### ShellGPT
+- https://github.com/TheR1D/shell_gpt#readme
 
 ### DVD
 If your PC has got a DVD player, then you might want to install the missing library for playing commercial DVDs[^5]
