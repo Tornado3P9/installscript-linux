@@ -106,11 +106,8 @@ apt list --installed | grep snap
 # Download Firefox from https://www.mozilla.org/en-US/firefox/all/#product-desktop-release
 wget "https://download.mozilla.org/?product=firefox-latest-ssl&os=linux64&lang=en-US" -O firefox.tar.bz2
 
-# Extract it
-tar xvjf firefox.tar.bz2
-
-# Move the just extracted directory to the /opt/ directory
-sudo mv firefox /opt/firefox
+# Extract it and Move the content to the /opt/ directory
+sudo tar xvjf firefox.tar.bz2 -C /opt/
 
 # Create a symbolic link to the Firefox in /usr/bin so that all users will be able to run it
 sudo ln -s /opt/firefox/firefox /usr/bin/firefox
@@ -122,14 +119,14 @@ But if you are someone who likes to do the update manually, here is a script tha
 #!/bin/bash
 # The file firefox.tar.bz2 will be overwritten automatically because of the '-O'
 wget "https://download.mozilla.org/?product=firefox-latest-ssl&os=linux64&lang=en-US" -O firefox.tar.bz2
-tar xvjf firefox.tar.bz2
+tar xjf firefox.tar.bz2
 
 tree firefox
 read -p "Are you OK with the download? [Y/n]: " yn
 [ "$yn" = "n" ] && exit
 
 if [[ -d /opt/firefox/ ]]; then
-  sudo rm -r /opt/firefox
+  sudo rm -rf /opt/firefox
   sudo mv firefox /opt/firefox
 else
   sudo mv firefox /opt/firefox
@@ -148,7 +145,6 @@ sudo ufw enable && sudo ufw status
 # Limit potential DoS Attack without root access (optional)
 sudo cp /etc/security/limits.conf /etc/security/limits.conf.backup
 echo "$USER  hard  nproc  2000" | sudo tee -a /etc/security/limits.conf
-
 ```
 
 ### Additional Themes
