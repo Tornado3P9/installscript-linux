@@ -101,7 +101,7 @@ sudo apt purge snapd
 sudo apt-mark hold snapd
 
 # Verify Uninstall
-apt list --installed | grep snap
+apt list --installed | grep -i snap
 
 # Download Firefox from https://www.mozilla.org/en-US/firefox/all/#product-desktop-release
 wget "https://download.mozilla.org/?product=firefox-latest-ssl&os=linux64&lang=en-US" -O firefox.tar.bz2
@@ -120,18 +120,15 @@ But if you are someone who likes to do the update manually, here is a script tha
 # The file firefox.tar.bz2 will be overwritten automatically because of the '-O'
 wget "https://download.mozilla.org/?product=firefox-latest-ssl&os=linux64&lang=en-US" -O firefox.tar.bz2
 tar xjf firefox.tar.bz2
-
 tree firefox
+
 read -p "Are you OK with the download? [Y/n]: " yn
 [ "$yn" = "n" ] && exit
 
-if [[ -d /opt/firefox/ ]]; then
-  sudo rm -rf /opt/firefox
-  sudo mv firefox /opt/firefox
-else
-  sudo mv firefox /opt/firefox
-  sudo ln -s /opt/firefox/firefox /usr/bin/firefox
-fi
+[ -d /opt/firefox/ ] && sudo rm -rf /opt/firefox
+
+sudo mv firefox /opt/firefox
+sudo ln -sf /opt/firefox/firefox /usr/bin/firefox
 ```
 
 Now you can start *Firefox* with the shortcut `Windows key + W` or by typing `firefox` into the command line.  
