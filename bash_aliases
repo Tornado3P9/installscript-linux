@@ -62,7 +62,7 @@ alias mnt="mount | awk -F' ' '{ printf \"%s\t%s\n\",\$1,\$3; }' | column -t | eg
 alias lsmount='mount | column -t'
 #
 #search from history by word: gh bash
-alias gh='history|grep'
+alias gh='history|grep'  # same as: alias gh='history|rg'
 #
 ##delete after asking for permission
 #alias rm='rm -i'

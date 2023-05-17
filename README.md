@@ -29,7 +29,7 @@ tree autojump xclip \
 ufw gufw \
 kleopatra \
 wireguard \
-jeex bless jq rename \
+jeex bless jq rename rg \
 usb-creator-gtk \
 python3-pip python3-venv libopencv-dev python3-opencv python-is-python3 \
 docker.io \
