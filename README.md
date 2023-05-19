@@ -382,6 +382,7 @@ Update `pip` via: `python3 -m pip install --upgrade pip`
 ### Game Engines
 - [Pygame](https://pypi.org/project/pygame/)
 - [Bevy](https://crates.io/crates/bevy)
+- [SDL2](https://github.com/Tornado3P9/Linux-Console-Tools/blob/master/How-To-Install-SDL-On-Ubuntu.md)
 - [Unity](https://unity.com/download)
 - [Unreal Engine](https://www.unrealengine.com/)
 
