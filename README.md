@@ -144,6 +144,18 @@ sudo cp /etc/security/limits.conf /etc/security/limits.conf.backup
 echo "$USER  hard  nproc  2000" | sudo tee -a /etc/security/limits.conf
 ```
 
+### One-time password (OTP) also known as 2-Factor authentication
+```bash
+# 1. Install Google Authenticator
+sudo apt install libpam-google-authenticator
+
+# 2. Install OTP mobile app on your phone
+
+# 3. Configure and activate Google Authenticator
+google-authenticator
+```
+further details at: https://averagelinuxuser.com/otp-ubuntu/  
+
 ### Additional Themes
 ```bash
 # Themes and Icons
