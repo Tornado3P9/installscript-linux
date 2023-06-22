@@ -145,6 +145,7 @@ echo "$USER  hard  nproc  2000" | sudo tee -a /etc/security/limits.conf
 ```
 
 ### One-time password (OTP) also known as 2-Factor authentication
+Probably more useful for server access..:
 ```bash
 # 1. Install Google Authenticator
 sudo apt install libpam-google-authenticator
@@ -228,6 +229,7 @@ AWS CLI https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install
 (part of the repository: `sudo apt install awscli`)  
 FileZilla https://filezilla-project.org/download.php?type=client (part of the repository: `sudo apt install filezilla`)  
 Angry IP Scanner https://angryip.org/  
+Sparx Enterprise Architect https://sparxsystems.com/products/ea/16.1/sysreq.html  
 
 **Team/School**  
 GeoGebra https://wiki.geogebra.org/en/Reference:GeoGebra_Installation#GeoGebra_Classic_5_for_Desktop  
