@@ -230,6 +230,7 @@ AWS CLI https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install
 FileZilla https://filezilla-project.org/download.php?type=client (part of the repository: `sudo apt install filezilla`)  
 Angry IP Scanner https://angryip.org/  
 Sparx Enterprise Architect https://sparxsystems.com/products/ea/16.1/sysreq.html  
+RStudio Desktop https://posit.co/download/rstudio-desktop/  
 
 **Team/School**  
 GeoGebra https://wiki.geogebra.org/en/Reference:GeoGebra_Installation#GeoGebra_Classic_5_for_Desktop  
