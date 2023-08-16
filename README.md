@@ -272,6 +272,7 @@ Brave https://brave.com/linux/#release-channel-installation
 Safari (sudo apt install playonlinux -> and then install Safari from there)  
 
 **Appimage Programs that run on any Linux system**  
+KeePassXC https://keepassxc.org/  
 krita https://krita.org/  
 inkscape https://inkscape.org/  
 MyPaint http://mypaint.org/  
