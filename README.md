@@ -273,8 +273,8 @@ Safari (sudo apt install playonlinux -> and then install Safari from there)
 
 **Appimage Programs that run on any Linux system**  
 KeePassXC https://keepassxc.org/  
-krita https://krita.org/  
-inkscape https://inkscape.org/  
+Krita https://krita.org/  
+Inkscape https://inkscape.org/  
 MyPaint http://mypaint.org/  
 Stellarium http://stellarium.org/  
 Ultimaker Cura (3D printing + slicer) https://ultimaker.com/software/ultimaker-cura  
@@ -411,6 +411,10 @@ Update `pip` via: `python3 -m pip install --upgrade pip`
 - Darktable (photography workflow application and raw developer) https://www.darktable.org/
 - PIXLR (online) https://pixlr.com/
 - Photopea (online, good compatibility with Photoshop's text objects) https://www.photopea.com/
+
+### Password manager
+- bitwarden (very professional) https://bitwarden.com/
+- KeePassXC (simple) https://keepassxc.org/
 
 ### Decentralised Data Storage - IPFS
 - IPFS Desktop https://docs.ipfs.io/install/ipfs-desktop/
