@@ -134,7 +134,7 @@ sudo ln -sf /opt/firefox/firefox /usr/bin/firefox
 Now you can start *Firefox* with the shortcut `Windows key + W` or by typing `firefox` into the command line.  
 Start your *File Manager* with the shortcut `Windows key + F` or by typing `thunar` into the command line.  
 
-You can find most configuration files in your home directory (cd /home/$USER/). Type 'Ctrl+H' to display the hidden files in the file explorer or `ls -a` in the terminal.
+You can find most configuration files in your home directory (`cd /home/$USER/`). Use the shortcut `Ctrl+H` to display the hidden files in the file explorer or `ls -a` in the terminal.
 The names of hidden files or directories start with a dot, e.g. `.config`. The configuration files, addons and bookmarks of firefox reside at `/home/$USER/.mozilla/`.
 Deleting the directory `.mozilla` gives you the experience of a "freshly installed firefox" without any customizations. Handle with care.  
 
