@@ -368,6 +368,9 @@ go version
 # Rust (https://www.rust-lang.org/tools/install)
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 source ~/.profile && rustc --version
+
+# GNU R (https://www.r-project.org/)
+sudo apt install r-base
 ```
 
 ### pip install ...
