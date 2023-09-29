@@ -25,7 +25,7 @@ libimage-exiftool-perl perl-doc \
 steam \
 xsensors \
 wget curl \
-tree autojump xclip \
+tree autojump \
 ufw gufw \
 kleopatra \
 wireguard \
@@ -172,6 +172,15 @@ sudo apt install plank
 
 # The standard desktop image folder is located at:
 locate backdrops
+```
+
+### Clipboard Driver to paste information from console to clipboard so that it can be used with `Ctrl+V`:
+```bash
+# on X11 it requires xclip
+sudo apt install xclip
+
+# on Wayland it requires wl-clipboard
+sudo apt install wl-clipboard
 ```
 
 ### Terminal Style
