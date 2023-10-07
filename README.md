@@ -429,8 +429,8 @@ Update `pip` via: `python3 -m pip install --upgrade pip`
 - Photopea (online, good compatibility with Photoshop's text objects) https://www.photopea.com/
 
 ### Password manager
-- bitwarden (very professional) https://bitwarden.com/
-- KeePassXC (simple) https://keepassxc.org/
+- bitwarden (very professional online web service) https://bitwarden.com/
+- KeePassXC (simple offline application) https://keepassxc.org/ `sudo apt install keepassxc`
 
 ### Decentralised Data Storage - IPFS
 - IPFS Desktop https://docs.ipfs.io/install/ipfs-desktop/

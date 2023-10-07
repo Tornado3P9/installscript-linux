@@ -104,3 +104,21 @@ function upper() {
 function lower() {
   echo "$1" | tr '[:upper:]' '[:lower:]';
 }
+# Function to remove special characters, leading and ending spaces, and multiple spaces
+# Usage: make_markdown_link "   Hello! This is a    Test Title.   "
+# Returns: #hello-this-is-a-test-title
+make_markdown_link() {
+    # Remove special characters
+    sanitized_string=$(echo "$1" | sed 's/[^a-zA-Z0-9 ]//g')
+
+    # Remove leading and ending spaces
+    sanitized_string=$(echo "$sanitized_string" | sed 's/^[[:space:]]*//;s/[[:space:]]*$//')
+
+    # Remove multiple spaces and replace remaining single spaces with '-'
+    sanitized_string=$(echo "$sanitized_string" | tr -s ' ' | sed 's/ /-/g')
+
+    # Convert to lowercase
+    sanitized_string=$(echo "$sanitized_string" | tr '[:upper:]' '[:lower:]')
+
+    echo "#$sanitized_string"
+}
