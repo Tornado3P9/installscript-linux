@@ -209,7 +209,7 @@ sudo apt install texlive texlive-lang-german texlive-lang-english texlive-latex-
 JetBrains WebStorm/Rider/IntelliJ/PyCharm IDE https://www.jetbrains.com/pycharm/download/#section=linux  
 Sublime Text https://www.sublimetext.com/  
 Sublime Merge https://www.sublimemerge.com/  
-VSCodium https://vscodium.com/ does not contain telemetry/tracking  
+VSCodium https://vscodium.com/ does not contain telemetry/tracking but some extensions have to be added [manually](https://milicendev.netlify.app/article/install-vs-codium-and-integrate-vs-code-extensions/)  
 VSCode https://code.visualstudio.com/ does contain additional telemetry/tracking  
 VSCode-Online https://vscode.dev/ (online)  
 Atom https://atom.io/  
