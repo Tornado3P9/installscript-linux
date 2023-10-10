@@ -174,15 +174,6 @@ sudo apt install plank
 locate backdrops
 ```
 
-### Clipboard Driver to paste information from console to clipboard so that it can be used with `Ctrl+V`:
-```bash
-# on X11 it requires xclip
-sudo apt install xclip
-
-# on Wayland it requires wl-clipboard
-sudo apt install wl-clipboard
-```
-
 ### Terminal Style
 ```bash
 # for displaying the date and time of the terminal history output, type the following line into your terminal:
@@ -443,6 +434,15 @@ Update `pip` via: `python3 -m pip install --upgrade pip`
 
 ### ShellGPT
 - https://github.com/TheR1D/shell_gpt#readme
+
+### Clipboard Driver to paste information from console to clipboard so that it can be used with `Ctrl+V`:
+```bash
+# on X11 it requires xclip
+sudo apt install xclip
+
+# on Wayland it requires wl-clipboard
+sudo apt install wl-clipboard
+```
 
 ### DVD
 If your PC has got a DVD player, then you might want to install the missing library for playing commercial DVDs[^5]
