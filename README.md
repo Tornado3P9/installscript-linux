@@ -423,6 +423,10 @@ Update `pip` via: `python3 -m pip install --upgrade pip`
 - bitwarden (very professional online web service) https://bitwarden.com/
 - KeePassXC (simple offline application) https://keepassxc.org/ `sudo apt install keepassxc`
 
+### PowerShell
+- https://github.com/PowerShell/PowerShell
+- [Installing PowerShell on Ubuntu (Microsoft Tutorial)](https://learn.microsoft.com/en-us/powershell/scripting/install/install-ubuntu?view=powershell-7.3)
+
 ### Decentralised Data Storage - IPFS
 - IPFS Desktop https://docs.ipfs.io/install/ipfs-desktop/
 - IPFS Companion browser add-on https://docs.ipfs.io/install/ipfs-companion/
@@ -477,7 +481,6 @@ GRUB_CMDLINE_LINUX=""
 
 # Uncomment to disable graphical terminal (grub-pc only)
 #GRUB_TERMINAL=console
-
 ```
 Changing the number from `GRUB_TIMEOUT` will change the number of seconds that the grub menu will be visible.  
 For further instructions go to https://www.gnu.org/software/grub/manual/grub/grub.html#Simple-configuration  
