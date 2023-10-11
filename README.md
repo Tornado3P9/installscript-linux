@@ -486,11 +486,10 @@ Changing the number from `GRUB_TIMEOUT` will change the number of seconds that t
 For further instructions go to https://www.gnu.org/software/grub/manual/grub/grub.html#Simple-configuration  
 
 ### Wine (run windows programs)
+https://wiki.winehq.org/Ubuntu
 ```bash
 sudo dpkg --add-architecture i386
-sudo apt update
-
-sudo apt install wine64 wine32
+sudo apt update && sudo apt install wine
 
 wine --version
 
