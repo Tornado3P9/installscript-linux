@@ -36,3 +36,9 @@ This command will try to find any missing packages that didn't install automatic
 
 Now you should be done and you can restart your PC.
 After restart, Zoom should be able to start without a problem.
+
+Terminal-only version:
+```bash
+wget -L https://zoom.us/client/latest/zoom_amd64.deb -P $HOME/Downloads/
+cd $HOME/Downloads/ && sudo apt install ./zoom_amd64.deb
+```
