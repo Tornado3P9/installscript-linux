@@ -260,7 +260,7 @@ PDFArranger (part of the repository: `sudo apt install pdfarranger`)
 Calibre - ebook management https://calibre-ebook.com/download_linux  
 
 **Video Calls**  
-zoom-client https://zoom.us/download  
+zoom-client https://zoom.us/download [install-guide](https://github.com/Tornado3P9/installscript-linux/blob/master/zoom.md)  
 Microsoft Teams https://www.microsoft.com/en-us/microsoft-teams/download-app  
 Jitsi https://jitsi.org/  
 Jami https://jami.net/  
