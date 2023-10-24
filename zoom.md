@@ -11,10 +11,11 @@ Go to https://zoom.us/download and download the version for your Linux System.
 Go to your Download Folder and open your Terminal via `right-click` on some white space in your file explorer  
 ![](pics/right-click.png)  
 
-If there is `~/Downloads` at the beginning of a line, just like in this picture here  
+If there is `~/Downloads` at the beginning of a line, just like in this picture here..
 ![](pics/terminal1.png)  
-Then your Terminal is working in the correct directory. You can type `ls` to list all the files that are in the current directory.
-If you are satisfied, then you can go on with the installation.
+..then your Terminal is working in the correct directory.  
+You can type `ls` to list all the files that are in the current directory.  
+If you are satisfied, then you can go on with the installation.  
 
 First it is recommended to delete any old Versions of the program that you are going to install, as they might be the reason that you had any problems.
 ```bash
