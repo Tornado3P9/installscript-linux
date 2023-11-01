@@ -108,17 +108,30 @@ function lower() {
 # Usage: make_markdown_link "   Hello! This is a    Test Title.   "
 # Returns: #hello-this-is-a-test-title
 make_markdown_link() {
-    # Remove special characters
-    sanitized_string=$(echo "$1" | sed 's/[^a-zA-Z0-9 ]//g')
+  # Remove special characters
+  sanitized_string=$(echo "$1" | sed 's/[^a-zA-Z0-9 ]//g')
 
-    # Remove leading and ending spaces
-    sanitized_string=$(echo "$sanitized_string" | sed 's/^[[:space:]]*//;s/[[:space:]]*$//')
+  # Remove leading and ending spaces
+  sanitized_string=$(echo "$sanitized_string" | sed 's/^[[:space:]]*//;s/[[:space:]]*$//')
 
-    # Remove multiple spaces and replace remaining single spaces with '-'
-    sanitized_string=$(echo "$sanitized_string" | tr -s ' ' | sed 's/ /-/g')
+  # Remove multiple spaces and replace remaining single spaces with '-'
+  sanitized_string=$(echo "$sanitized_string" | tr -s ' ' | sed 's/ /-/g')
 
-    # Convert to lowercase
-    sanitized_string=$(echo "$sanitized_string" | tr '[:upper:]' '[:lower:]')
+  # Convert to lowercase
+  sanitized_string=$(echo "$sanitized_string" | tr '[:upper:]' '[:lower:]')
 
-    echo "#$sanitized_string"
+  echo "#$sanitized_string"
+}
+#
+# lazy-git
+# Usage: lzgit "finally easy commits"
+function lzgit() {
+  git add .
+  git commit -m "$1"
+}
+#
+# Get the url for the Github remote repository (you have to be inside the project folder)
+# Usage: giturl
+function giturl() {
+  git config --get remote.origin.url
 }
