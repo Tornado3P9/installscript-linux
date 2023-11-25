@@ -195,7 +195,7 @@ dpkg-reconfigure tzdata
 sudo apt install texlive texlive-lang-german texlive-lang-english texlive-latex-extra texmaker
 ```
 
-### Installing additional applications that are not included in the repository (some are but not the most recent version)
+### Installing additional applications that are not included in the repository (some are but not with the most recent version)
 **Development**  
 JetBrains WebStorm/Rider/IntelliJ/PyCharm IDE https://www.jetbrains.com/pycharm/download/#section=linux  
 Sublime Text https://www.sublimetext.com/  
