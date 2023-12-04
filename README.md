@@ -388,6 +388,17 @@ You will find the binary at `ls /home/${USER}/.local/bin/`
 
 Update `pip` via: `python3 -m pip install --upgrade pip`
 
+Or build the latest version from the source:
+```bash
+git clone https://github.com/tldr-pages/tldr-c-client.git
+cd tldr-c-client
+
+sudo ./deps.sh           # install dependencies
+make                     # build tldr
+sudo make install        # install tldr
+https://github.com/tldr-pages/tldr-c-client
+```
+
 ### Backups
 - [Timeshift](https://linuxconfig.org/ubuntu-22-04-system-backup-and-restore) - `sudo apt install timeshift`
 - [Chezmoi - Easily moving Linux installs](https://christitus.com/chezmoi/)

@@ -1,5 +1,6 @@
 # Multiple Python Versions in parallel
 
+## Standard Repository
 To use different Python versions on Xubuntu 20.04, you can follow these steps:
 
 1. Check the available Python versions: 
@@ -24,13 +25,14 @@ To use different Python versions on Xubuntu 20.04, you can follow these steps:
    - Open a terminal.
    - Run the command `python<version>` to use a specific Python version. For example, to use Python 3.8, you would run `python3.8`.
 
-Some Python versions may not be available in the default Ubuntu repositories. In such cases, you can use alternative methods like using a package manager like `pyenv` or manually installing from source.
+Note: Some Python versions may not be available in the default Ubuntu repositories. In such cases, you can use alternative methods like using a package manager like `pyenv` or manually installing from source.
 
-With 'pyenv', you can install and manage different versions of Python, set a global Python version, and specify a Python version for a specific project. It also provides a plugin system that allows you to extend its functionality.
+## pyenv
+With `pyenv`, you can install and manage different versions of Python, set a global Python version, and specify a Python version for a specific project. It also provides a plugin system that allows you to extend its functionality.
 
-Here's an example of how 'pyenv' can be used:
+Here's an example of how `pyenv` can be used:
 
-1. Install 'pyenv':
+1. Install `pyenv`:
    ```bash
    $ git clone https://github.com/pyenv/pyenv.git ~/.pyenv
    $ echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bashrc
@@ -69,11 +71,57 @@ Here's an example of how 'pyenv' can be used:
    $ pyenv deactivate
    ```
 
-By using 'pyenv', you can easily manage different Python versions and create isolated environments for your projects, ensuring compatibility and flexibility.
+By using `pyenv`, you can easily manage different Python versions and create isolated environments for your projects, ensuring compatibility and flexibility.
 
-By installing new python versions via PPA, you get more choice but usually PPAs are seen as less secure than the standard repository of your os system.
+## PPA
+By installing new python versions via PPA you will get more choice but usually PPAs are seen as being less secure than the standard repository of your os.
 
-But if you want to try it out, use:
+If you still want to try it out, use:
 ```bash
 sudo add-apt-repository ppa:deadsnakes/ppa -y
 ```
+
+## Compile Python Yourself
+By compiling the python version yourself you also get more room for customizations.
+To use Python 3.12 in a local directory without installing it on your Linux system, you can follow these steps:
+
+1. Download the Python 3.12 source code from the official Python website or using the following command:
+   ```
+   wget https://www.python.org/ftp/python/3.12.0/Python-3.12.0.tgz
+   ```
+
+2. Extract the downloaded source code using the following command:
+   ```
+   tar -xf Python-3.12.0.tgz
+   ```
+
+3. Navigate to the extracted directory:
+   ```
+   cd Python-3.12.0
+   ```
+
+4. Configure the build and specify the installation directory using the following command:
+   ```
+   ./configure --prefix=/path/to/installation/directory
+   ```
+
+   Replace "/path/to/installation/directory" with the actual path where you want to install Python 3.12.
+
+5. Build Python using the following command:
+   ```
+   make
+   ```
+
+6. Install Python using the following command:
+   ```
+   make install
+   ```
+
+7. Now you can use Python 3.12 by specifying the full path to the Python executable in your local directory. For example:
+   ```
+   /path/to/installation/directory/bin/python3.12
+   ```
+
+   Replace "/path/to/installation/directory" with the actual path where you installed Python 3.12.
+
+Note: This method installs Python 3.12 only in the specified directory and does not affect the system-wide Python installation.
