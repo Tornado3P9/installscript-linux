@@ -396,7 +396,6 @@ cd tldr-c-client
 sudo ./deps.sh           # install dependencies
 make                     # build tldr
 sudo make install        # install tldr
-https://github.com/tldr-pages/tldr-c-client
 ```
 
 ### Backups
