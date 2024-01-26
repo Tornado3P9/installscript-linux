@@ -235,6 +235,7 @@ FileZilla https://filezilla-project.org/download.php?type=client (part of the re
 Angry IP Scanner https://angryip.org/  
 Sparx Enterprise Architect https://sparxsystems.com/products/ea/16.1/sysreq.html  
 RStudio Desktop https://posit.co/download/rstudio-desktop/  
+IDA Free https://hex-rays.com/ida-free/  
 
 **Team/School**  
 GeoGebra https://wiki.geogebra.org/en/Reference:GeoGebra_Installation#GeoGebra_Classic_5_for_Desktop  
@@ -522,6 +523,7 @@ wine program.exe
 [Choosing the Right Linux Distro](https://youtu.be/dL05DoJ0qsQ)  
 [Linux gaming is better than Windows sometimes](https://youtu.be/i9Op7Xa5eKs)  
 [Linux being better for Blender 3D Renderings](https://youtu.be/cpE2B2QSsa0)  
+[Xubuntu - Configure dual monitors](https://youtu.be/O25rgXH3L7o)  
 
 <!---
 ### Optional:
