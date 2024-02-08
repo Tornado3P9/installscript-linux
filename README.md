@@ -512,7 +512,7 @@ wine program.exe
 ```
 
 ### External Hardware
-- jstest-gtk - joystick testing and configuration tool `sudo apt install jstest-gtk`
+- jstest-gtk (joystick testing and configuration tool) `sudo apt install jstest-gtk`
 
 ### Tipps:
 [Speedup Linux](https://christitus.com/speedup-linux/)  
