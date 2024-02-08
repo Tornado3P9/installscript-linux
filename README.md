@@ -511,6 +511,9 @@ cd ~/Programs
 wine program.exe
 ```
 
+### External Hardware
+- jstest-gtk - joystick testing and configuration tool `sudo apt install jstest-gtk`
+
 ### Tipps:
 [Speedup Linux](https://christitus.com/speedup-linux/)  
 [Desktop and editor setup for Rust development](https://youtu.be/ycMiMDHopNc)  
