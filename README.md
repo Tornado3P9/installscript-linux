@@ -195,6 +195,18 @@ dpkg-reconfigure tzdata
 sudo apt install texlive texlive-lang-german texlive-lang-english texlive-latex-extra texmaker
 ```
 
+### Installing tldr (too long, didn't read) helper tool
+```bash
+git clone https://github.com/tldr-pages/tldr-c-client.git
+cd tldr-c-client
+
+sudo ./deps.sh      # install dependencies
+make                # build tldr
+sudo make install   # install tldr
+
+tldr ls             # run tldr and explain with examples how the command 'ls' works
+```
+
 ### Installing additional applications that are not included in the repository (some are but not with the most recent version)
 **Development**  
 JetBrains WebStorm/Rider/IntelliJ/PyCharm IDE https://www.jetbrains.com/pycharm/download/#section=linux  
@@ -379,25 +391,19 @@ sudo apt install r-base
 
 The pip version is always up to date and usually the better choice compared to the repository version of your operating system.
 ```bash
-# Installing tldr (too long didn´t read) for better help information compared to the usually 'man'-page or the --help command.
-# But remember that you probably have to restart your session because the PATH variable hasn't updated yet. See `echo $PATH`
-# But another way is to just reload the .profile file if the entry does exist but just hasn't been updated to the current running session.
-pip install tldr
-source ~/.profile && tldr --version
+# If you installed a python program from pypi.org ...
+pip install pip-check
+
+# ... and the program is not found by your system, it is possible that you first have to  
+# restart your session because the PATH variable might not have updated yet. Type `echo $PATH` to see the current configuration.
+# Another way is to just reload the .profile file if the entry does exist but just hasn't been updated to the current running session.
+source ~/.profile
+pip-check
 ```
-You will find the binary at `ls /home/${USER}/.local/bin/`
+You will find the binary at `ls /home/${USER}/.local/bin/`  
+or in `./your_venv_name/bin/` if you used a virtual environment.
 
 Update `pip` via: `python3 -m pip install --upgrade pip`
-
-Or build the latest version from the source:
-```bash
-git clone https://github.com/tldr-pages/tldr-c-client.git
-cd tldr-c-client
-
-sudo ./deps.sh           # install dependencies
-make                     # build tldr
-sudo make install        # install tldr
-```
 
 ### Backups
 - [Timeshift](https://linuxconfig.org/ubuntu-22-04-system-backup-and-restore) - `sudo apt install timeshift`
