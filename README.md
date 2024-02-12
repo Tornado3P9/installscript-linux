@@ -521,7 +521,10 @@ wine program.exe
 - evtest (monitor and debug input devices such as keyboards, mice, and joysticks) `sudo apt install evtest`
 - jstest-gtk (joystick testing and configuration tool) `sudo apt install jstest-gtk`
 - python3-serial (Python library used for serial communication) `sudo apt install python3-serial`
-- https://www.kernel.org/doc/Documentation/admin-guide/devices.txt
+  Alternatively: `pip3 install pyserial` and test with `python3 -c "import serial"`
+  Try `pyserial-miniterm` which comes with the PySerial library.
+- Devices are 'files' at `ls -l /dev/` (https://www.kernel.org/doc/Documentation/admin-guide/devices.txt)
+
 
 ### Tipps:
 [Speedup Linux](https://christitus.com/speedup-linux/)  
