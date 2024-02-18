@@ -49,8 +49,8 @@ After restart, Zoom should be able to start without a problem.
 Terminal-only version:
 ```bash
 wget -L https://zoom.us/client/latest/zoom_amd64.deb -P $HOME/Downloads/
-gpg --verify zoom_amd64.deb
 cd $HOME/Downloads/
+gpg --verify zoom_amd64.deb
 sudo apt-get install ./zoom_amd64.deb -y
 reboot
 ```
