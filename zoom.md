@@ -25,6 +25,8 @@ sudo apt purge zoom
 
 Then install the debian installation package (.deb) with the command:
 ```bash
+sudo apt-get install ./zoom_amd64.deb
+# or with the command
 sudo dpkg -i zoom_amd64.deb
 ```
 
@@ -42,5 +44,7 @@ After restart, Zoom should be able to start without a problem.
 Terminal-only version:
 ```bash
 wget -L https://zoom.us/client/latest/zoom_amd64.deb -P $HOME/Downloads/
-cd $HOME/Downloads/ && sudo apt install ./zoom_amd64.deb
+cd $HOME/Downloads/
+sudo apt-get install ./zoom_amd64.deb -y
+reboot
 ```
