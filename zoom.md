@@ -23,6 +23,11 @@ First it is recommended to delete any old Versions of the program that you are g
 sudo apt purge zoom
 ```
 
+(Optionally) If you also downloaded and imported the Public Key, you can verify the downloaded package before installing it:
+```bash
+gpg --verify zoom_amd64.deb
+```
+
 Then install the debian installation package (.deb) with the command:
 ```bash
 sudo apt-get install ./zoom_amd64.deb
@@ -44,7 +49,10 @@ After restart, Zoom should be able to start without a problem.
 Terminal-only version:
 ```bash
 wget -L https://zoom.us/client/latest/zoom_amd64.deb -P $HOME/Downloads/
+gpg --verify zoom_amd64.deb
 cd $HOME/Downloads/
 sudo apt-get install ./zoom_amd64.deb -y
 reboot
 ```
+
+.
