@@ -275,6 +275,7 @@ Calibre - ebook management https://calibre-ebook.com/download_linux
 **Video Calls**  
 zoom-client https://zoom.us/download . [how-to](https://github.com/Tornado3P9/installscript-linux/blob/master/zoom.md)  
 Microsoft Teams https://www.microsoft.com/en-us/microsoft-teams/download-app  
+TeleGuard https://teleguard.com/  
 Jitsi https://jitsi.org/  
 Jami https://jami.net/  
 Nextcloud Talk https://nextcloud.com/talk/  
