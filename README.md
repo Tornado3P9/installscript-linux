@@ -12,7 +12,7 @@ sudo apt update && sudo apt upgrade -y
 Install some useful packages:
 ```bash
 sudo apt install \
-git gparted synaptic \
+git gparted synaptic mtools \
 xsane simple-scan \
 pdfarranger img2pdf \
 gimp pinta gifsicle qrencode scrot zbar-tools \
@@ -181,7 +181,7 @@ echo 'export HISTTIMEFORMAT="%F %T "' >> ~/.bashrc
 
 # for adding some aliases
 wget -L "https://raw.githubusercontent.com/Tornado3P9/installscript-linux/master/bash_aliases" -O $HOME/.bash_aliases && source ~/.bashrc
-# for displaying the aliases type "aliases" or "alias"
+# for displaying the aliases, type "aliases" or "alias"
 
 # Show time zone:
 date
@@ -252,6 +252,7 @@ IDA Free https://hex-rays.com/ida-free/
 **Team/School**  
 GeoGebra https://wiki.geogebra.org/en/Reference:GeoGebra_Installation#GeoGebra_Classic_5_for_Desktop  
 OBS Studio https://obsproject.com/wiki/install-instructions#linux  
+HandBrake https://handbrake.fr/ (part of the repository: `sudo apt install handbrake` )  
 JFLAP https://www.jflap.org/jflaptmp/ (start with: `java -jar JFLAP.jar`)  
 Periodic Table https://ptable.com/#Properties (online)  
 printfriendly https://www.printfriendly.com/ (online)  
@@ -290,6 +291,7 @@ Brave https://brave.com/linux/#release-channel-installation
 Safari (sudo apt install playonlinux -> and then install Safari from there)  
 
 **Appimage Programs that run on any Linux system**  
+Audacity https://www.audacityteam.org/ (part of the repository: `sudo apt install audacity` )  
 KeePassXC https://keepassxc.org/  
 Krita https://krita.org/  
 Inkscape https://inkscape.org/  
@@ -417,7 +419,7 @@ Update `pip` via: `python3 -m pip install --upgrade pip`
 
 ### Gaming
 - [Lutris](https://lutris.net/)
-- [Steam](https://store.steampowered.com/)
+- [Steam](https://store.steampowered.com/app/220200/Kerbal_Space_Program/)
 - [itch.io](https://itch.io/)
 
 ### Game Engines
