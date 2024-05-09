@@ -31,7 +31,7 @@ kleopatra \
 wireguard \
 jeex bless jq rename rg \
 usb-creator-gtk \
-python3-pip python3-venv libopencv-dev python3-opencv python-is-python3 \
+python3-pip python3-venv python3-tk libopencv-dev python3-opencv python-is-python3 \
 docker.io \
 sqlite3 \
 trash-cli
