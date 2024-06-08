@@ -134,4 +134,19 @@ function remove_trailing_spaces() {
   # sed 's/[[:space:]]\+$//' "$file" > "new_$file"
 }
 
+function checksums() {
+  if [ "$#" -ne 1 ]; then
+    echo "Usage: checksums <directory path>"
+    echo "Usage: checksums checksums.md5"
+    return 1
+  fi
+  if [[ $1 == *.md5 ]]; then
+    md5sum -c $1 | grep --color=auto FAILED      # checksums.md5
+    #sha256sum -c $1 | grep --color=auto FAILED  # checksums.sha256
+    return
+  fi
+  find "$1" -type f -exec md5sum {} + > checksums.md5
+  #find "$1" -type f -exec sha256sum {} + > checksums.sha256
+}
+
 #
