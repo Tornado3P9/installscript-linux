@@ -251,7 +251,7 @@ IDA Free https://hex-rays.com/ida-free/
 
 **Team/School**  
 GeoGebra https://wiki.geogebra.org/en/Reference:GeoGebra_Installation#GeoGebra_Classic_5_for_Desktop  
-OBS Studio https://obsproject.com/wiki/install-instructions#linux  
+OBS Studio https://obsproject.com/wiki/install-instructions#linux (part of the repository: `sudo apt install obs-studio` )  
 HandBrake https://handbrake.fr/ (part of the repository: `sudo apt install handbrake` )  
 JFLAP https://www.jflap.org/jflaptmp/ (start with: `java -jar JFLAP.jar`)  
 Periodic Table https://ptable.com/#Properties (online)  
@@ -541,6 +541,7 @@ wine program.exe
 [Linux gaming is better than Windows sometimes](https://youtu.be/i9Op7Xa5eKs)  
 [Linux being better for Blender 3D Renderings](https://youtu.be/cpE2B2QSsa0)  
 [Xubuntu - Configure dual monitors](https://youtu.be/O25rgXH3L7o)  
+[My biggest problems with Linux Desktop and How I fixed them](https://christitus.com/my-problems-with-linux/)  
 
 <!---
 ### Optional:
