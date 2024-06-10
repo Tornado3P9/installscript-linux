@@ -296,6 +296,7 @@ KeePassXC https://keepassxc.org/
 Krita https://krita.org/  
 Inkscape https://inkscape.org/  
 MyPaint http://mypaint.org/  
+Aseprite https://www.aseprite.org/  
 Stellarium http://stellarium.org/  
 Ultimaker Cura (3D printing + slicer) https://ultimaker.com/software/ultimaker-cura  
 MeshLab https://www.meshlab.net/  
