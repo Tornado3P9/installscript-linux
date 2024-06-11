@@ -281,8 +281,11 @@ Jitsi https://jitsi.org/
 Jami https://jami.net/  
 Nextcloud Talk https://nextcloud.com/talk/  
 BigBlueButton https://bigbluebutton.org/  
+Discord https://discord.com/download?linux (or just use the web version)  
 Skype https://snapcraft.io/skype (you need snap enabled for this)  
 Slack https://snapcraft.io/slack (you need snap enabled for this)  
+Signal https://signal.org/download/linux/  
+Telegram https://desktop.telegram.org/  
 
 **Web Browser**  
 Firefox (already preinstalled)  
@@ -292,6 +295,8 @@ Vivaldi https://vivaldi.com/download/
 Brave https://brave.com/linux/#release-channel-installation  
 Safari (sudo apt install playonlinux -> and then install Safari from there)  
 Thorium https://thorium.rocks/  
+Mullvad https://mullvad.net/en/download/browser/linux  
+Tor Browser https://www.torproject.org/download/  
 
 **Appimage Programs that run on any Linux system**  
 Audacity https://www.audacityteam.org/ (part of the repository: `sudo apt install audacity` )  
