@@ -291,6 +291,7 @@ Chrome https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 Vivaldi https://vivaldi.com/download/  
 Brave https://brave.com/linux/#release-channel-installation  
 Safari (sudo apt install playonlinux -> and then install Safari from there)  
+Thorium https://thorium.rocks/  
 
 **Appimage Programs that run on any Linux system**  
 Audacity https://www.audacityteam.org/ (part of the repository: `sudo apt install audacity` )  
