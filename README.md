@@ -281,6 +281,8 @@ Jitsi https://jitsi.org/
 Jami https://jami.net/  
 Nextcloud Talk https://nextcloud.com/talk/  
 BigBlueButton https://bigbluebutton.org/  
+Skype https://snapcraft.io/skype (you need snap enabled for this)  
+Slack https://snapcraft.io/slack (you need snap enabled for this)  
 
 **Web Browser**  
 Firefox (already preinstalled)  
