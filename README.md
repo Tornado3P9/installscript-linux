@@ -62,17 +62,18 @@ mv ~/Downloads/*.ttf ~/.fonts/
 ```
 
 ### Create a 'Programs' folder for all the manually downloaded packages. 
-If you keep all the downloaded binaries and installation files together in this folder instead of deleting them, you will always know what you did to your system in the past. Very simple. **`$HOME/`** and **`~/`** basically do the same thing.
+If you keep all the downloaded binaries and installation files together in this folder instead of deleting them, you will always know what you did to your system in the past. Very simple.
 ```bash
 mkdir $HOME/Programs
 ```
+**`$HOME/`** and **`~/`** basically do the same thing.
 
 ### System Update Settings
 - Open **![menu](https://docs.xubuntu.org/current/user/libs/images/icon_menu.png) → ![preferences](https://docs.xubuntu.org/current/user/libs/images/preferences-desktop.png) Settings Manager → Software & Updates** and go to the _Updates_ tab
 - Open **![menu](https://docs.xubuntu.org/current/user/libs/images/icon_menu.png) → Software → Software & Updates** and go to the _Updates_ tab
 
 ### The Alt key problem
-Some Linux systems support the option to move applications around using the **`Alt`** key. The problem is that a lot of programs that run on both Windows and Linux also make heavy usage of the Alt key. Therefore it might be necessary to remove the presetting on linux.
+Some Linux systems support the option to move applications around using the **`Alt`** key. The problem is that a lot of programs that run on both Windows and Linux also make heavy usage of the Alt key. Therefore it might be necessary to remove the presetting on Linux.
 - Open **![menu](https://docs.xubuntu.org/current/user/libs/images/icon_menu.png) → ![preferences](https://docs.xubuntu.org/current/user/libs/images/preferences-desktop.png) Settings Manager → Window Manager Tweaks → Accessibility** and change the *Key used to grab and move windows* to **None**
 - Press **Alt+F2** and type *xfce4-settings-manager*. Then go to **Window Manager Tweaks → Accessibility** and change the *Key used to grab and move windows* to **None**
 
@@ -365,10 +366,10 @@ For setting Keyboard Shortcuts in your windows manager:
 *Quite useful: killing the open window below the mouse pointer*  
 (Ctrl+Alt+Esc = xkill)  
 
-### Adding App launcher to the panel
+### Adding App launcher to the XFCE panel
 ![app launcher](pics/add_launcher.gif)
 
-### 4 ways to create a Linux Live System on a usb stick
+### Four ways to create a Linux Live System on a usb stick
 1. Startup Disk Creator `sudo apt install usb-creator-gtk`
 2. [BalenaEtcher](https://www.balena.io/etcher/)
 3. [Raspberry Pi Imager](https://www.raspberrypi.com/software/) [#advanced-options](https://www.raspberrypi.com/documentation/computers/getting-started.html#advanced-options)
