@@ -62,7 +62,7 @@ mv ~/Downloads/*.ttf ~/.fonts/
 ```
 
 ### Create a 'Programs' folder for all the manually downloaded packages. 
-If you keep all the downloaded binaries and installation files together in this folder instead of deleting them, you will always know what you did to your system in the past. Very simple.
+If you keep all the downloaded binaries and installation files together in this folder instead of deleting them, you will always know what you did to your system in the past. Very simple. **`$HOME/`** and **`~/`** basically do the same thing.
 ```bash
 mkdir $HOME/Programs
 ```
@@ -72,7 +72,7 @@ mkdir $HOME/Programs
 - Open **![menu](https://docs.xubuntu.org/current/user/libs/images/icon_menu.png) → Software → Software & Updates** and go to the _Updates_ tab
 
 ### The Alt key problem
-Some Linux systems support the option to move applications around using the **Alt** key. The problem is that a lot of programs that run on both Windows and Linux also make heavy usage of the Alt key.
+Some Linux systems support the option to move applications around using the **`Alt`** key. The problem is that a lot of programs that run on both Windows and Linux also make heavy usage of the Alt key. Therefore it might be necessary to remove the presetting on linux.
 - Open **![menu](https://docs.xubuntu.org/current/user/libs/images/icon_menu.png) → ![preferences](https://docs.xubuntu.org/current/user/libs/images/preferences-desktop.png) Settings Manager → Window Manager Tweaks → Accessibility** and change the *Key used to grab and move windows* to **None**
 - Press **Alt+F2** and type *xfce4-settings-manager*. Then go to **Window Manager Tweaks → Accessibility** and change the *Key used to grab and move windows* to **None**
 
@@ -82,7 +82,6 @@ Security tip for using Firefox:
 - Type `about:preferences` into the *URL Search Bar* and go to **Privacy & Security**. Scroll down and choose `Enable HTTPS-Only Mode in all windows`.
 This way your browser will only allow save connections and will ask you for permission if the website does not support https.
 - Type `about:performance` into the *URL Search Bar* to see the Firefox **Task Manager**. There you can see which application or addon uses up too many resources.
-
 
 How to disable Snaps and making sure it doesn’t automatically reinstall.
 The issue with Snaps is that they run 'root' and update automatically without your knowledge and without asking for permission.
@@ -134,7 +133,7 @@ sudo ln -sf /opt/firefox/firefox /usr/bin/firefox
 Now you can start *Firefox* with the shortcut `Windows key + W` or by typing `firefox` into the command line.  
 Start your *File Manager* with the shortcut `Windows key + F` or by typing `thunar` into the command line.  
 
-You can find most configuration files in your home directory (`cd /home/$USER/`). Use the shortcut `Ctrl+H` to display the hidden files in the file explorer or `ls -a` in the terminal.
+You can find most configuration files in your home directory (`cd /home/$USER/`). Use the shortcut `Ctrl+H` to display the hidden files in the file explorer and `ls -a` or `ls -la` in the terminal.
 The names of hidden files or directories start with a dot, e.g. `.config`. The configuration files, addons and bookmarks of firefox reside at `/home/$USER/.mozilla/`.
 Deleting the directory `.mozilla` gives you the experience of a "freshly installed firefox" without any customizations. Handle with care.  
 
@@ -469,7 +468,20 @@ Update `pip` via: `python3 -m pip install --upgrade pip`
 ### ShellGPT
 - https://github.com/TheR1D/shell_gpt#readme
 
-### Clipboard Driver to paste information from console to clipboard so that it can be used with `Ctrl+V`:
+### The Clipboard Manager
+On Windows 10 and later versions, pressing the **`Windows key + V`** opens the clipboard history. This feature allows you to view a history of items you've copied to the clipboard, pin frequently used items, and choose which item to paste. However, this shortcut does not apply to Linux/Ubuntu systems, as they have different keyboard shortcuts and clipboard management tools.  
+In XFCE (Xubuntu) the **`xfce4-clipman-plugin`** is tailored for users who prefer a plugin that integrates with the XFCE panel, but there are at least 10 other alternatives to choose from.
+```bash
+# The clipman-plugin can be installed with:
+sudo apt install xfce4-clipman-plugin
+
+# Open the clipboard setting with:
+xfce4-clipman-settings
+```
+If the Plugin Icon is missing from the XFCE panel, create it by:  
+**`Right-clicking on the XFCE panel → Panel → Add New Items → Clipman`**
+
+#### A Clipboard Driver to paste information from console to clipboard so that it can be used together with the `Ctrl+V` shortcut or other console applications can be installed with:
 ```bash
 # on X11 it requires xclip
 sudo apt install xclip
