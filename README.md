@@ -483,7 +483,7 @@ If the Plugin Icon is missing from the XFCE panel, create it by Right-clicking o
 **`XFCE panel` → `Panel` → `Add New Items` → `Clipman`**  
 Once that is done you can create a shortcut by starting the  
 **xfce4-settings-manager → `Keyboard` → `Application Shortcuts` → `Add`**  
-and create a custom shortcut with the command **xfce4-popup-clipman** and your preferred key combination, e.g. **`Windows key + C`**
+and create a custom shortcut with the command **xfce4-popup-clipman** and your preferred key combination, e.g. **`Windows key + V`**
 
 #### A Clipboard Driver to paste information from console to clipboard so that it can be used together with the `Ctrl+V` shortcut or other console applications can be installed with:
 ```bash
