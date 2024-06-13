@@ -66,7 +66,7 @@ If you keep all the downloaded binaries and installation files together in this 
 ```bash
 mkdir $HOME/Programs
 ```
-**`$HOME/`** and **`~/`** basically do the same thing.
+`$HOME/` and `~/` basically do the same thing.
 
 ### System Update Settings
 - Open **![menu](https://docs.xubuntu.org/current/user/libs/images/icon_menu.png) → ![preferences](https://docs.xubuntu.org/current/user/libs/images/preferences-desktop.png) Settings Manager → Software & Updates** and go to the _Updates_ tab
@@ -471,7 +471,7 @@ Update `pip` via: `python3 -m pip install --upgrade pip`
 
 ### The Clipboard Manager
 On Windows 10 and later versions, pressing the **`Windows key + V`** opens the clipboard history. This feature allows you to view a history of items you've copied to the clipboard, pin frequently used items, and choose which item to paste. However, this shortcut does not apply to Linux/Ubuntu systems, as they have different keyboard shortcuts and clipboard management tools.  
-In XFCE (Xubuntu) the **`xfce4-clipman-plugin`** is tailored for users who prefer a plugin that integrates with the XFCE panel, but there are at least 10 other alternatives to choose from.
+In XFCE (Xubuntu) the **xfce4-clipman-plugin** is tailored for users who prefer a plugin that integrates with the XFCE panel, but there are at least 10 other alternatives to choose from.
 ```bash
 # The clipman-plugin can be installed with:
 sudo apt install xfce4-clipman-plugin
@@ -479,8 +479,11 @@ sudo apt install xfce4-clipman-plugin
 # Open the clipboard setting with:
 xfce4-clipman-settings
 ```
-If the Plugin Icon is missing from the XFCE panel, create it by:  
-**`Right-clicking on the XFCE panel → Panel → Add New Items → Clipman`**
+If the Plugin Icon is missing from the XFCE panel, create it by Right-clicking on the  
+**`XFCE panel` → `Panel` → `Add New Items` → `Clipman`**  
+Once that is done you can create a shortcut by starting the  
+**xfce4-settings-manager → `Keyboard` → `Application Shortcuts` → `Add`**  
+and create a custom shortcut with the command **xfce4-popup-clipman** and your preferred key combination, e.g. **`Windows key + C`**
 
 #### A Clipboard Driver to paste information from console to clipboard so that it can be used together with the `Ctrl+V` shortcut or other console applications can be installed with:
 ```bash
