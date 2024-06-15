@@ -219,6 +219,7 @@ Atom https://atom.io/
 Eclipse IDE https://www.eclipse.org/  
 NetBeans IDE https://netbeans.apache.org/download/  
 Blender https://www.blender.org/download/ KeenTools https://keentools.io/  
+Cascadeur https://cascadeur.com/download  
 NormalMap https://www.smart-page.net/smartnormal/ (online)  
 magick https://imagemagick.org/script/download.php  
 .NET https://learn.microsoft.com/en-us/dotnet/core/install/linux-ubuntu-2204  
@@ -473,7 +474,7 @@ Update `pip` via: `python3 -m pip install --upgrade pip`
 On Windows 10 and later versions, pressing the **`Windows key + V`** opens the clipboard history. This feature allows you to view a history of items you've copied to the clipboard, pin frequently used items, and choose which item to paste. However, this shortcut does not apply to Linux/Ubuntu systems, as they have different keyboard shortcuts and clipboard management tools.  
 In XFCE (Xubuntu) the **xfce4-clipman-plugin** is tailored for users who prefer a plugin that integrates with the XFCE panel, but there are at least 10 other alternatives to choose from.
 ```bash
-# The clipman-plugin can be installed with:
+# The clipman-plugin can be installed with (usually preinstalled):
 sudo apt install xfce4-clipman-plugin
 
 # Open the clipboard setting with:
