@@ -424,6 +424,11 @@ Update `pip` via: `python3 -m pip install --upgrade pip`
 - [Déjà Dup Backups](https://snapcraft.io/deja-dup) - `sudo apt install deja-dup`
 - [Make a Full Disk Backup with DD](https://bdoga.com/full-disk-backup-with-dd/)
 
+#### Check File Integrity
+- [Check File Integrity on Linux the Easy Way With GtkHash](https://www.makeuseof.com/check-file-integrity-on-linux-with-gtkhash/) - `sudo apt install gtkhash`
+- [Advanced Intrusion Detection Environment (AIDE)](https://www.tecmint.com/check-integrity-of-file-and-directory-using-aide-in-linux/) - `sudo apt install aide`
+- [Tripwire](https://www.tripwire.com/) - `sudo apt install tripwire`
+
 ### Virtual Machine
 - [VirtualBox](https://www.virtualbox.org/wiki/Downloads) - `sudo apt install virtualbox`
 - [QEMU](https://www.christitus.com/vm-setup-in-linux), [second link](https://github.com/Tornado3P9/Linux-Console-Tools/blob/master/QEMU%20virtual%20manager.md) - Even faster than VirtualBox
