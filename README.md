@@ -446,14 +446,17 @@ Update `pip` via: `python3 -m pip install --upgrade pip`
 - [Unreal Engine](https://www.unrealengine.com/)
 
 ### Photoshop alternatives (most adope applications don't work well on linux)[^6]
-- Gimp (very good image manipulation editor) https://www.gimp.org/
-- Krita (supports many different color codes -> good for printing tasks) https://krita.org/
-- MyPaint (good for working with a digital drawing tablet) http://mypaint.org/
-- Inkscape (vector graphics) https://inkscape.org/
+- Gimp (very good image manipulation editor) https://www.gimp.org/ `sudo apt install gimp`
+- Krita (supports many different color codes -> good for printing tasks) https://krita.org/ `sudo apt install krita`
+- MyPaint (good for working with a digital drawing tablet) http://mypaint.org/ `sudo apt install mypaint`
+- Inkscape (vector graphics) https://inkscape.org/ `sudo apt install inkscape`
 - Blender (2d drawing tool for working with a digital drawing tablet) https://www.blender.org/
-- Darktable (photography workflow application and raw developer) https://www.darktable.org/
-- PIXLR (online) https://pixlr.com/
+- Darktable (photography workflow application and raw developer) https://www.darktable.org/ `sudo apt install darktable`
 - Photopea (online, good compatibility with Photoshop's text objects) https://www.photopea.com/
+- Affinity (Windows Version using Wine) https://codeberg.org/Wanesty/affinity-wine-docs
+- Pinta (Pinta is a GTK clone of Paint.Net 3.0) https://www.pinta-project.com/ `sudo apt install pinta`
+- ExcaliDraw (online, very simple) https://excalidraw.com/
+- PIXLR (online) https://pixlr.com/
 
 ### Password manager
 - bitwarden (very professional online web service) https://bitwarden.com/
