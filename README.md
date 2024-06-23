@@ -577,6 +577,7 @@ wine program.exe
 [Linux being better for Blender 3D Renderings](https://youtu.be/cpE2B2QSsa0)  
 [Xubuntu - Configure dual monitors](https://youtu.be/O25rgXH3L7o)  
 [My biggest problems with Linux Desktop and How I fixed them](https://christitus.com/my-problems-with-linux/)  
+[everyone codes faster when they stop using their mouse](https://youtu.be/WkT8ZC4ncX8)  
 
 <!---
 ### Optional:
