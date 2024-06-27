@@ -266,7 +266,7 @@ Miro Board https://miro.com/ (online)
 Trello Board https://trello.com/ (online)  
 OnlyOffice https://www.onlyoffice.com/  
 FreeOffice https://www.freeoffice.com/en/  
-WPS Office https://www.wps.com/  
+WPS Office https://www.wps.com/ (developed by Kingsoft, based in Beijing, China)  
 LibreOffice https://www.libreoffice.org/ (already preinstalled)  
 OpenOffice https://www.openoffice.org/  
 Microsoft Office 365 https://www.office.com/ (online)  
