@@ -274,6 +274,8 @@ Google Docs https://www.google.com/docs/about/ (online)
 Atril - PDF/ebook Viewer https://wiki.mate-desktop.org/mate-desktop/applications/atril/ (already preinstalled)  
 PDFArranger (part of the repository: `sudo apt install pdfarranger`)  
 Calibre - ebook management https://calibre-ebook.com/download_linux  
+OneNote https://www.onenote.com/hrd (oneline)  
+Obsidian - like OneNote but private https://obsidian.md/download (Deb, Snap or Appimage)  
 
 **Video Calls**  
 zoom-client https://zoom.us/download . [how-to](https://github.com/Tornado3P9/installscript-linux/blob/master/zoom.md)  
@@ -319,6 +321,7 @@ OpenShot Video Editor https://www.openshot.org/
 Shotcut Video Editor https://www.shotcut.org/  
 Olive Video Editor https://www.olivevideoeditor.org/  
 LMMS https://lmms.io/download#linux  
+OneNote (Unofficial Desktop App, actually an independent browser window for the online OneNote) https://github.com/patrikx3/onenote  
 
 ```bash
 # You can also use 'wget' or 'curl' to download the programs
