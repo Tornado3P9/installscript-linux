@@ -274,7 +274,8 @@ Google Docs https://www.google.com/docs/about/ (online)
 Atril - PDF/ebook Viewer https://wiki.mate-desktop.org/mate-desktop/applications/atril/ (already preinstalled)  
 PDFArranger (part of the repository: `sudo apt install pdfarranger`)  
 Calibre - ebook management https://calibre-ebook.com/download_linux  
-OneNote https://www.onenote.com/hrd (oneline)  
+Microsoft OneNote https://www.onenote.com/hrd (online)  
+Google Workspace - like OneNote https://workspace.google.com/ (online)  
 Obsidian - like OneNote but private https://obsidian.md/download (Deb, Snap or Appimage)  
 
 **Video Calls**  
