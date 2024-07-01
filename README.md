@@ -507,6 +507,10 @@ sudo apt install xclip
 sudo apt install wl-clipboard
 ```
 
+### Tiling Window Desktop Environments
+- [i3](https://i3wm.org/) (part of the repository: `sudo apt install i3`)
+- [Hyprland](https://hyprland.org/) Example: https://youtu.be/wcHUQXMhhow
+
 ### DVD
 If your PC has got a DVD player, then you might want to install the missing library for playing commercial DVDs[^5]
 ```bash
