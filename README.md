@@ -250,6 +250,8 @@ Sparx Enterprise Architect https://sparxsystems.com/products/ea/16.1/sysreq.html
 RStudio Desktop https://posit.co/download/rstudio-desktop/  
 IDA Free https://hex-rays.com/ida-free/  
 NI LabVIEW https://www.ni.com/en/shop/labview.html  
+QT (GUI Development) https://www.qt.io/download-dev  
+Slint (GUI Development) https://slint.dev/  
 
 **Team/School**  
 GeoGebra https://wiki.geogebra.org/en/Reference:GeoGebra_Installation#GeoGebra_Classic_5_for_Desktop  
