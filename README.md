@@ -428,10 +428,13 @@ Update `pip` via: `python3 -m pip install --upgrade pip`
 - [Déjà Dup Backups](https://snapcraft.io/deja-dup) - `sudo apt install deja-dup`
 - [Make a Full Disk Backup with DD](https://bdoga.com/full-disk-backup-with-dd/)
 
-#### Check File Integrity
+  ### Check File Integrity
 - [Check File Integrity on Linux the Easy Way With GtkHash](https://www.makeuseof.com/check-file-integrity-on-linux-with-gtkhash/) - `sudo apt install gtkhash`
 - [Advanced Intrusion Detection Environment (AIDE)](https://www.tecmint.com/check-integrity-of-file-and-directory-using-aide-in-linux/) - `sudo apt install aide`
 - [Tripwire](https://www.tripwire.com/) - `sudo apt install tripwire`
+- [rust_hasher](https://github.com/Tornado3P9/rust_hasher)
+- `md5sum testfile` → `echo "4311d1887f6d4ddf411b36df124dfde6  testfile" | md5sum -c`
+- `sha256sum testfile > checksums.txt` → `sha256sum -c checksums.txt`
 
 ### Virtual Machine
 - [VirtualBox](https://www.virtualbox.org/wiki/Downloads) - `sudo apt install virtualbox`
