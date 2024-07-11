@@ -198,6 +198,6 @@ function whatsmyip ()
 }
 
 # Search files in the current folder
-alias f="find . | grep "
+alias f="find . | grep -i "
 
 #
