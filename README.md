@@ -1,4 +1,4 @@
-# Xubuntu 22.04 LTS
+# Xubuntu
 
 ### First set up the base system
 https://xubuntu.org/ + [balenaEtcher](https://www.balena.io/etcher/) or [Rufus USB Writer](https://rufus.ie/en/) for Windows users
@@ -252,6 +252,8 @@ IDA Free https://hex-rays.com/ida-free/
 NI LabVIEW https://www.ni.com/en/shop/labview.html  
 QT (GUI Development) https://www.qt.io/download-dev  
 Slint (GUI Development) https://slint.dev/  
+Gitleaks https://github.com/gitleaks/gitleaks  
+GitGuardian https://www.gitguardian.com/state-of-secrets-sprawl-report-2023  
 
 **Team/School**  
 GeoGebra https://wiki.geogebra.org/en/Reference:GeoGebra_Installation#GeoGebra_Classic_5_for_Desktop  
