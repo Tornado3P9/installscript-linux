@@ -174,7 +174,7 @@ sudo apt install plank
 locate backdrops
 ```
 
-### Terminal Style
+### Terminal behavior
 ```bash
 # for displaying the date and time of the terminal history output, type the following line into your terminal:
 echo 'export HISTTIMEFORMAT="%F %T "' >> ~/.bashrc
@@ -189,8 +189,6 @@ timedatectl
 # If you wish to change the current time zone:
 dpkg-reconfigure tzdata
 ```
-
-### Terminal behavior
 The linux terminal usually accepts `Ctrl+Shift+C` and `Ctrl+Shift+V` instead of the more common `Ctrl+C` and `Ctrl+V`. You can change that in the terminal by going to **Edit → Preferences → Shortcuts** and change it the way you like it best.
 
 ### Installing Texlive and Texmaker for writing LaTeX documents
