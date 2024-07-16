@@ -190,6 +190,9 @@ timedatectl
 dpkg-reconfigure tzdata
 ```
 
+### Terminal behavior
+The linux terminal usually accepts `Ctrl+Shift+C` and `Ctrl+Shift+V` instead of the more common `Ctrl+C` and `Ctrl+V`. You can change that in the terminal by going to **Edit → Preferences → Shortcuts** and change it the way you like it best.
+
 ### Installing Texlive and Texmaker for writing LaTeX documents
 ```bash
 sudo apt install texlive texlive-lang-german texlive-lang-english texlive-latex-extra texmaker
@@ -218,7 +221,7 @@ VSCode-Online https://vscode.dev/ (online)
 Atom https://atom.io/  
 Eclipse IDE https://www.eclipse.org/  
 NetBeans IDE https://netbeans.apache.org/download/  
-Blender https://www.blender.org/download/ KeenTools https://keentools.io/  
+Blender https://www.blender.org/download/ KeenTools https://keentools.io/ CAD Sketcher https://makertales.gumroad.com/l/CADsketcher?a=742446579  
 Cascadeur https://cascadeur.com/download  
 NormalMap https://www.smart-page.net/smartnormal/ (online)  
 magick https://imagemagick.org/script/download.php  
