@@ -66,7 +66,7 @@ If you keep all the downloaded binaries and installation files together in this 
 ```bash
 mkdir $HOME/Programs
 ```
-`$HOME/` and `~/` basically do the same thing.
+`$HOME/` and `~/` and `/home/$USER/` basically do the same thing.
 
 ### System Update Settings
 - Open **![menu](https://docs.xubuntu.org/current/user/libs/images/icon_menu.png) → ![preferences](https://docs.xubuntu.org/current/user/libs/images/preferences-desktop.png) Settings Manager → Software & Updates** and go to the _Updates_ tab
