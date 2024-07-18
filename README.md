@@ -509,6 +509,8 @@ Once that is done you can create a shortcut by starting the
 **xfce4-settings-manager → `Keyboard` → `Application Shortcuts` → `Add`**  
 and create a custom shortcut with the command **xfce4-popup-clipman** and your preferred key combination, e.g. **`Windows key + V`**
 
+**Note**: Make sure your password manager is compatible with your Clipboard Manager or you may introduce a security vulnerability!
+
 #### A Clipboard Driver to paste information from console to clipboard so that it can be used together with the `Ctrl+V` shortcut or other console applications can be installed with:
 ```bash
 # on X11 it requires xclip
