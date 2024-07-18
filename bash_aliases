@@ -4,7 +4,8 @@
 PS1="\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]-->\[\033[00m\] \h: \[\033[01;34m\]\w\[\033[00m\]\$ "
 
 # some more aliases
-alias update='sudo apt update && apt list --upgradeable && echo "" && read -p "Press Enter To Continue Or STRG+C To Cancel:" && sudo apt upgrade -y'
+alias update='sudo apt update && apt list --upgradeable'
+alias upgrade='sudo apt upgrade -y'
 alias restartaudio='pulseaudio -k && sudo alsa force-reload'
 alias nHistory='history -c && history -w'
 alias nThunarHistory='rm ~/.local/share/recently-used.xbel*'
@@ -74,20 +75,16 @@ alias left='ls -t -1'
 #count files
 alias count='find . -type f | wc -l'
 
-#play 6th line inside directory (ls -1v)
-#Example: playline 6
+# Make a numbered list of the audio files in a directory and play the chosen file
+# Example: playline
+# Example: playline 6
 function playline() {
+  if [ "$#" -ne 1 ]; then
+    ls -1v | nl
+    return 0
+  fi
   local n1=$(ls -1v | sed -n "$1 p");
   mpv "$n1";
-}
-
-function recordaudio() {
-  # Requiring exactly one argument for the audio file name. If not, exit.
-  [ ! $# -eq 1 ] && echo 'Requiring exactly one argument for the audio file name' && exit
-
-  local SAVE_AT=${HOME}/${1}.mp3
-
-  ffmpeg -f pulse -i default ${SAVE_AT}
 }
 
 # overwrite 'rm' with a function that moves the files to a bin instead of directly deleting it OR use the `trash-cli` tool
