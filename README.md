@@ -450,7 +450,9 @@ Update `pip` via: `python3 -m pip install --upgrade pip`
 ### Gaming
 - [Lutris](https://lutris.net/)
 - [Steam](https://store.steampowered.com/app/220200/Kerbal_Space_Program/)  
-  `find $HOME/.steam/steam/steamapps/compatdata/ -type f -name "*.log"`
+  - Log files: `find $HOME/.steam/steam/steamapps/compatdata/ -type f -name "*.log"`
+  - Game files: `ls -lh $HOME/.local/share/Steam/steamapps/common/`  
+  or `ls -lh $HOME/.steam/steam/steamapps/common/`
 - [itch.io](https://itch.io/)
 
 ### Game Engines

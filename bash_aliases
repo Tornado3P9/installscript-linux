@@ -75,7 +75,7 @@ alias m4a2wav='for f in *.m4a; do ffmpeg -i "$f" "${f%.m4a}.wav"; done'
 alias flac2mp3='for f in *.flac; do ffmpeg -i "$f" -c:v copy -q:a 0 "${f%.flac}.mp3"; done'
 alias videosoundup='for f in *.mp4; do ffmpeg -i "$f" -filter:a "volume=30dB" -codec:a aac -b:a 74k -c:v copy "_${f}"; done'
 
-# Make a numbered list of the audio files in a directory and play the chosen file
+# Make a numbered list from the media files in the current directory and play the chosen file
 # Example: playline
 # Example: playline 6
 function playline() {
