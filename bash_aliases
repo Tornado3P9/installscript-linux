@@ -20,8 +20,26 @@ alias cl='clear;ls'
 alias root='sudo su'
 alias ports='netstat -tupan'
 
-#text editor (Alt+N = Turn line numbers on/off) (type '\nano' to use the default configuration of nano) (https://nano-editor.org/dist/latest/cheatsheet.html)
-#alias nano='nano --linenumbers'
+#Search files in the current folder
+alias f="find . | grep -i"
+
+#sort by modification time
+alias left='ls -t -1'
+
+#count files
+alias count='find . -type f | wc -l'
+
+#list files
+alias lt='ls --human-readable --size -1 -S --classify'
+
+#view only mounted drives
+alias mnt="mount | awk -F' ' '{ printf \"%s\t%s\n\",\$1,\$3; }' | column -t | egrep ^/dev/ | sort"
+
+#view the mount output formated with columns
+alias lsmount='mount | column -t'
+
+#search from history by word: gh bash
+alias gh='history|grep'  # same as: alias gh='history|rg'
 
 #find the largest top 10 files and directories in human readable format (ignore hidden files)
 alias dumax='du -hsx * | sort -rh | head -10'
@@ -38,6 +56,9 @@ alias Downloads='cd ~/Downloads'
 alias Music='cd ~/Music'
 alias Videos='cd ~/Videos'
 
+#text editor (Alt+N = Turn line numbers on/off) (type '\nano' to use the default configuration of nano) (https://nano-editor.org/dist/latest/cheatsheet.html)
+#alias nano='nano --linenumbers'
+
 #alias ase='acpi -b && sensors'
 alias ase='sensors'
 
@@ -53,30 +74,6 @@ alias mp32wav='for f in *.mp3; do ffmpeg -i "$f" "${f%.mp3}.wav"; done'
 alias m4a2wav='for f in *.m4a; do ffmpeg -i "$f" "${f%.m4a}.wav"; done'
 alias flac2mp3='for f in *.flac; do ffmpeg -i "$f" -c:v copy -q:a 0 "${f%.flac}.mp3"; done'
 alias videosoundup='for f in *.mp4; do ffmpeg -i "$f" -filter:a "volume=30dB" -codec:a aac -b:a 74k -c:v copy "_${f}"; done'
-
-#search
-alias lt='ls --human-readable --size -1 -S --classify'
-
-#view only mounted drives
-alias mnt="mount | awk -F' ' '{ printf \"%s\t%s\n\",\$1,\$3; }' | column -t | egrep ^/dev/ | sort"
-
-#view the mount output formated with columns
-alias lsmount='mount | column -t'
-
-#search from history by word: gh bash
-alias gh='history|grep'  # same as: alias gh='history|rg'
-
-##delete after asking for permission
-#alias rm='rm -i'
-
-#sort by modification time
-alias left='ls -t -1'
-
-#count files
-alias count='find . -type f | wc -l'
-
-#Search files in the current folder
-alias f="find . | grep -i "
 
 # Make a numbered list of the audio files in a directory and play the chosen file
 # Example: playline
@@ -95,10 +92,15 @@ rm(){
  mkdir -p /tmp/trash
  mv $@ /tmp/trash
 }
+
+##delete after asking for permission
+#alias rm='rm -i'
+
 # compile a c++ program and execute
 function c() {
   g++ -o app $1 && ./app
 }
+
 # change between lower and upper case string
 function upper() {
   echo "$1" | tr '[:lower:]' '[:upper:]';
@@ -164,7 +166,7 @@ alias unzip='/usr/bin/unxz --keep'
 alias mktarxz='tar -cJf'
 alias untarxz='tar -xvf'
 
-# Extracts any archive(s) (if unp isn't installed)
+# Extracts any archive(s) (if unp isn't installed): extract archive1.xz archive2.tar.gz
 extract() {
 	for archive in "$@"; do
 		if [ -f "$archive" ]; then
