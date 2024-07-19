@@ -75,6 +75,9 @@ alias left='ls -t -1'
 #count files
 alias count='find . -type f | wc -l'
 
+#Search files in the current folder
+alias f="find . | grep -i "
+
 # Make a numbered list of the audio files in a directory and play the chosen file
 # Example: playline
 # Example: playline 6
@@ -148,13 +151,18 @@ function checksums() {
 
 # https://github.com/ChrisTitusTech/mybash/blob/main/.bashrc
 
-# Alias's for archives
+# Alias's for archives: mkgz archive.tar.gz file1 file2 file3
 alias mktar='tar -cvf'
 alias mkbz2='tar -cvjf'
 alias mkgz='tar -cvzf'
 alias untar='tar -xvf'
 alias unbz2='tar -xvjf'
 alias ungz='tar -xvzf'
+
+alias xz='/usr/bin/xz --keep'
+alias unzip='/usr/bin/unxz --keep'
+alias mktarxz='tar -cJf'
+alias untarxz='tar -xvf'
 
 # Extracts any archive(s) (if unp isn't installed)
 extract() {
@@ -172,6 +180,8 @@ extract() {
 			*.zip) unzip $archive ;;
 			*.Z) uncompress $archive ;;
 			*.7z) 7z x $archive ;;
+			*.tar.xz) tar xvf $archive ;;
+			*.xz) unxz --keep $archive ;;
 			*) echo "don't know how to extract '$archive'..." ;;
 			esac
 		else
@@ -193,8 +203,5 @@ function whatsmyip ()
         curl -s ifconfig.me
         echo ""
 }
-
-# Search files in the current folder
-alias f="find . | grep -i "
 
 #
