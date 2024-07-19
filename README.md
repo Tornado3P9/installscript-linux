@@ -578,7 +578,8 @@ wine program.exe
 ```
 
 ### External Hardware/Controller/Game Pad
-- Xboxdrv (driver package) `sudo apt install xboxdrv`
+- Xboxdrv (driver package) `sudo apt install xboxdrv`  
+  For most users, the Linux kernel built-in `xpad` driver should suffice for Xbox 360 and Xbox One controllers.
 - evtest (monitor and debug input devices such as keyboards, mice, and joysticks) `sudo apt install evtest`
 - jstest-gtk (joystick testing and configuration tool) `sudo apt install jstest-gtk`
 - python3-serial (Python library used for serial communication) `sudo apt install python3-serial`
