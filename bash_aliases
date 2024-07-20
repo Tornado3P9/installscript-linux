@@ -159,7 +159,7 @@ alias unbz2='tar -xvjf'
 alias ungz='tar -xvzf'
 
 alias xz='/usr/bin/xz --keep'
-alias unzip='/usr/bin/unxz --keep'
+alias unxz='/usr/bin/unxz --keep'
 alias mktarxz='tar -cJf'
 alias untarxz='tar -xvf'
 
