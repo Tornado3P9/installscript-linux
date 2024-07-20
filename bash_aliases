@@ -189,6 +189,32 @@ extract() {
 	done
 }
 
+# List content of any archive(s)
+listarchive() {
+	for archive in "$@"; do
+		if [ -f "$archive" ]; then
+			case $archive in
+			*.tar.bz2) tar -tjf $archive ;;
+			*.tar.gz) tar -tzf $archive ;;
+			*.tar.xz) tar -tJf $archive ;;
+			*.bz2) bzcat $archive ;;
+			*.rar) unrar l $archive ;;
+			*.gz) gunzip -c $archive ;;
+			*.tar) tar -tf $archive ;;
+			*.tbz2) tar -jtf $archive ;;
+			*.tgz) tar -tzf $archive ;;
+			*.zip) unzip -l $archive ;;
+			*.Z) zcat $archive ;;
+			*.7z) 7z l $archive ;;
+			*.xz) xz --list $archive ;;
+			*) echo "don't know how to list the content of '$archive'..." ;;
+			esac
+		else
+			echo "'$archive' is not a valid file!"
+		fi
+	done
+}
+
 # IP address lookup
 alias whatismyip="whatsmyip"
 function whatsmyip ()
