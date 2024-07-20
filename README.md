@@ -209,57 +209,9 @@ tldr ls             # run tldr and explain with examples how the command 'ls' wo
 ```
 
 ### Installing additional applications that are not included in the repository (some are but not with the most recent version)
-**Development**  
-JetBrains WebStorm/Rider/IntelliJ/PyCharm IDE https://www.jetbrains.com/pycharm/download/#section=linux  
-Sublime Text https://www.sublimetext.com/  
-Sublime Merge https://www.sublimemerge.com/  
-VSCodium https://vscodium.com/ does not contain telemetry/tracking but some extensions have to be added [manually](https://milicendev.netlify.app/article/install-vs-codium-and-integrate-vs-code-extensions/)  
-VSCode https://code.visualstudio.com/ does contain additional telemetry/tracking  
-VSCode-Online https://vscode.dev/ (online)  
-Atom https://atom.io/  
-Eclipse IDE https://www.eclipse.org/  
-NetBeans IDE https://netbeans.apache.org/download/  
-Blender https://www.blender.org/download/ KeenTools https://keentools.io/ CAD Sketcher https://makertales.gumroad.com/l/CADsketcher?a=742446579  
-Cascadeur https://cascadeur.com/download  
-NormalMap https://www.smart-page.net/smartnormal/ (online)  
-magick https://imagemagick.org/script/download.php  
-.NET https://learn.microsoft.com/en-us/dotnet/core/install/linux-ubuntu-2204  
-mono https://www.mono-project.com/download/stable/  
-gcolor2_colorpicker http://mirrors.edge.kernel.org/ubuntu/pool/universe/g/gcolor2/  
-SQL Developer / Universal Database Tool https://dbeaver.io/  
-Oracle SQL Developer https://www.oracle.com/tools/downloads/sqldev-downloads.html  
-Raspberry Pi Imager https://www.raspberrypi.com/software/ [#advanced-options](https://www.raspberrypi.com/documentation/computers/getting-started.html#advanced-options)  
-KiCad EDA https://www.kicad.org/  
-Arduino IDE https://www.arduino.cc/en/software  
-(additionally install: `sudo apt install python-is-python3 python3-serial`)  
-Android Studio https://developer.android.com/studio https://snapcraft.io/android-studio  
-DaVinci Resolve https://www.blackmagicdesign.com/products/davinciresolve/  
-FL Studio https://jstaf.github.io/2018/02/22/flstudio-on-linux.html  
-Hydrogen http://hydrogen-music.org/ (part of the repository: `sudo apt install hydrogen` )  
-Ardour https://ardour.org/ (part of the repository: `sudo apt install ardour` )  
-LMMS https://lmms.io/ (part of the repository: `sudo apt install lmms` )  
-Wavacity https://wavacity.com/ (derived from Audacity: online)  
-Unreal Engine https://www.unrealengine.com/  
-Unity https://unity.com/download  
-Gaupol Subtitle Editor https://otsaloma.io/gaupol/ (part of the repository: `sudo apt install gaupol` )  
-Sigil - EPUB Editor https://sigil-ebook.com/ (part of the repository: `sudo apt install sigil`)  
-AWS CLI https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html  
-(part of the repository: `sudo apt install awscli`)  
-FileZilla https://filezilla-project.org/download.php?type=client (part of the repository: `sudo apt install filezilla`)  
-Angry IP Scanner https://angryip.org/  
-Sparx Enterprise Architect https://sparxsystems.com/products/ea/16.1/sysreq.html  
-RStudio Desktop https://posit.co/download/rstudio-desktop/  
-IDA Free https://hex-rays.com/ida-free/  
-NI LabVIEW https://www.ni.com/en/shop/labview.html  
-QT (GUI Development) https://www.qt.io/download-dev  
-Slint (GUI Development) https://slint.dev/  
-Gitleaks https://github.com/gitleaks/gitleaks  
-GitGuardian https://www.gitguardian.com/state-of-secrets-sprawl-report-2023  
 
-**Team/School**  
+**Office/School**  
 GeoGebra https://wiki.geogebra.org/en/Reference:GeoGebra_Installation#GeoGebra_Classic_5_for_Desktop  
-OBS Studio https://obsproject.com/wiki/install-instructions#linux (part of the repository: `sudo apt install obs-studio` )  
-HandBrake https://handbrake.fr/ (part of the repository: `sudo apt install handbrake` )  
 JFLAP https://www.jflap.org/jflaptmp/ (start with: `java -jar JFLAP.jar`)  
 Periodic Table https://ptable.com/#Properties (online)  
 printfriendly https://www.printfriendly.com/ (online)  
@@ -297,6 +249,29 @@ Slack https://snapcraft.io/slack (you need snap enabled for this)
 Signal https://signal.org/download/linux/  
 Telegram https://desktop.telegram.org/  
 
+**Screen Recording**  
+OBS Studio https://obsproject.com/wiki/install-instructions#linux (part of the repository: `sudo apt install obs-studio` )  
+SimpleScreenRecorder https://www.maartenbaert.be/simplescreenrecorder/#download (part of the repository: `sudo apt install simplescreenrecorder` )  
+Kazam https://github.com/henrywoo/kazam (part of the repository: `sudo apt install kazam` )  
+ScreenRec https://screenrec.com/screen-recorder#download  
+
+**Video Editing**  
+DaVinci Resolve https://www.blackmagicdesign.com/products/davinciresolve/  
+HandBrake https://handbrake.fr/ a multithreaded video transcoder (part of the repository: `sudo apt install handbrake` )  
+Blender https://www.blender.org/features/video-editing/  
+Kdenlive Video Editor https://kdenlive.org/en/download/ (part of the repository: `sudo apt install kdenlive` )  
+OpenShot Video Editor https://www.openshot.org/  
+Shotcut Video Editor https://www.shotcut.org/  
+Olive Video Editor https://www.olivevideoeditor.org/  
+
+**Sound Editing**  
+Audacity https://www.audacityteam.org/ (part of the repository: `sudo apt install audacity` )  
+FL Studio https://jstaf.github.io/2018/02/22/flstudio-on-linux.html  
+Hydrogen http://hydrogen-music.org/downloads/ (part of the repository: `sudo apt install hydrogen` )  
+Ardour https://ardour.org/ (part of the repository: `sudo apt install ardour` )  
+LMMS https://lmms.io/ (part of the repository: `sudo apt install lmms` )  
+Wavacity https://wavacity.com/ (derived from Audacity: online)  
+
 **Web Browser**  
 Firefox (already preinstalled)  
 LibreWolf: An Open-Source Firefox Fork Without the Telemetry https://librewolf.net/  
@@ -307,6 +282,47 @@ Safari (sudo apt install playonlinux -> and then install Safari from there)
 Thorium https://thorium.rocks/  
 Mullvad https://mullvad.net/en/download/browser/linux  
 Tor Browser https://www.torproject.org/download/  
+
+**Development**  
+JetBrains WebStorm/Rider/IntelliJ/PyCharm IDE https://www.jetbrains.com/pycharm/download/#section=linux  
+Sublime Text https://www.sublimetext.com/  
+Sublime Merge https://www.sublimemerge.com/  
+VSCodium https://vscodium.com/ does not contain telemetry/tracking but some extensions have to be added [manually](https://milicendev.netlify.app/article/install-vs-codium-and-integrate-vs-code-extensions/)  
+VSCode https://code.visualstudio.com/ does contain additional telemetry/tracking  
+VSCode-Online https://vscode.dev/ (online)  
+Atom https://atom.io/  
+Eclipse IDE https://www.eclipse.org/  
+NetBeans IDE https://netbeans.apache.org/download/  
+Blender https://www.blender.org/download/ KeenTools https://keentools.io/ CAD Sketcher https://makertales.gumroad.com/l/CADsketcher?a=742446579  
+Cascadeur https://cascadeur.com/download  
+NormalMap https://www.smart-page.net/smartnormal/ (online)  
+magick https://imagemagick.org/script/download.php  
+.NET https://learn.microsoft.com/en-us/dotnet/core/install/linux-ubuntu-2204  
+mono https://www.mono-project.com/download/stable/  
+gcolor2_colorpicker http://mirrors.edge.kernel.org/ubuntu/pool/universe/g/gcolor2/  
+SQL Developer / Universal Database Tool https://dbeaver.io/  
+Oracle SQL Developer https://www.oracle.com/tools/downloads/sqldev-downloads.html  
+Raspberry Pi Imager https://www.raspberrypi.com/software/ [#advanced-options](https://www.raspberrypi.com/documentation/computers/getting-started.html#advanced-options)  
+KiCad EDA https://www.kicad.org/  
+Arduino IDE https://www.arduino.cc/en/software  
+(additionally install: `sudo apt install python-is-python3 python3-serial`)  
+Android Studio https://developer.android.com/studio https://snapcraft.io/android-studio  
+Unreal Engine https://www.unrealengine.com/  
+Unity https://unity.com/download  
+Gaupol Subtitle Editor https://otsaloma.io/gaupol/ (part of the repository: `sudo apt install gaupol` )  
+Sigil - EPUB Editor https://sigil-ebook.com/ (part of the repository: `sudo apt install sigil`)  
+AWS CLI https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html  
+(part of the repository: `sudo apt install awscli`)  
+FileZilla https://filezilla-project.org/download.php?type=client (part of the repository: `sudo apt install filezilla`)  
+Angry IP Scanner https://angryip.org/  
+Sparx Enterprise Architect https://sparxsystems.com/products/ea/16.1/sysreq.html  
+RStudio Desktop https://posit.co/download/rstudio-desktop/  
+IDA Free https://hex-rays.com/ida-free/  
+NI LabVIEW https://www.ni.com/en/shop/labview.html  
+QT (GUI Development) https://www.qt.io/download-dev  
+Slint (GUI Development) https://slint.dev/  
+Gitleaks https://github.com/gitleaks/gitleaks  
+GitGuardian https://www.gitguardian.com/state-of-secrets-sprawl-report-2023  
 
 **Appimage Programs that run on any Linux system**  
 Audacity https://www.audacityteam.org/ (part of the repository: `sudo apt install audacity` )  
@@ -449,7 +465,7 @@ Update `pip` via: `python3 -m pip install --upgrade pip`
 
 ### Gaming
 - [Lutris](https://lutris.net/)
-- [Steam](https://store.steampowered.com/app/220200/Kerbal_Space_Program/)  
+- [Steam](https://store.steampowered.com/app/220200/Kerbal_Space_Program/) - `sudo apt install steam`  
   - Log files: `find $HOME/.steam/steam/steamapps/compatdata/ -type f -name "*.log"`
   - Game files: `ls -lh $HOME/.local/share/Steam/steamapps/common/`  
   or `ls -lh $HOME/.steam/steam/steamapps/common/`

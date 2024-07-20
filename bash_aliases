@@ -20,7 +20,7 @@ alias cl='clear;ls'
 alias root='sudo su'
 alias ports='netstat -tupan'
 
-#Search files in the current folder
+#Search files in the current folder: f "funny-clip"
 alias f="find . | grep -i"
 
 #sort by modification time
@@ -59,9 +59,6 @@ alias Videos='cd ~/Videos'
 #text editor (Alt+N = Turn line numbers on/off) (type '\nano' to use the default configuration of nano) (https://nano-editor.org/dist/latest/cheatsheet.html)
 #alias nano='nano --linenumbers'
 
-#alias ase='acpi -b && sensors'
-alias ase='sensors'
-
 #virtual environments workflow: python3 -m venv my-project-env && source my-project-env/bin/activate
 alias ve='python3 -m venv ./venv'
 alias ae='deactivate &> /dev/null; source ./venv/bin/activate'
@@ -89,8 +86,8 @@ function playline() {
 
 # overwrite 'rm' with a function that moves the files to a bin instead of directly deleting it OR use the `trash-cli` tool
 rm(){
- mkdir -p /tmp/trash
- mv $@ /tmp/trash
+  mkdir -p /tmp/trash
+  mv $@ /tmp/trash
 }
 
 ##delete after asking for permission
@@ -151,7 +148,7 @@ function checksums() {
   #find "$1" -type f -exec sha256sum {} + > checksums.sha256
 }
 
-# https://github.com/ChrisTitusTech/mybash/blob/main/.bashrc
+# The following was partly copied from https://github.com/ChrisTitusTech/mybash/blob/main/.bashrc
 
 # Alias's for archives: mkgz archive.tar.gz file1 file2 file3
 alias mktar='tar -cvf'
