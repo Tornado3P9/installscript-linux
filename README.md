@@ -9,7 +9,7 @@ Bring your installation up to date:
 sudo apt update && sudo apt upgrade -y
 ```
 
-Install some useful packages:
+Install some useful packages (remove what lines you don't want):
 ```bash
 sudo apt install \
 git gparted synaptic mtools \
@@ -239,6 +239,7 @@ Obsidian - like OneNote but private https://obsidian.md/download (Deb, Snap or A
 zoom-client https://zoom.us/download . [how-to](https://github.com/Tornado3P9/installscript-linux/blob/master/zoom.md)  
 Microsoft Teams https://www.microsoft.com/en-us/microsoft-teams/download-app  
 TeleGuard https://teleguard.com/  
+Element https://element.io/  
 Jitsi https://jitsi.org/  
 Jami https://jami.net/  
 Nextcloud Talk https://nextcloud.com/talk/  
@@ -325,7 +326,7 @@ Gitleaks https://github.com/gitleaks/gitleaks
 GitGuardian https://www.gitguardian.com/state-of-secrets-sprawl-report-2023  
 
 **Appimage Programs that run on any Linux system**  
-Audacity https://www.audacityteam.org/ (part of the repository: `sudo apt install audacity` )  
+Audacity https://www.audacityteam.org/  
 KeePassXC https://keepassxc.org/  
 Krita https://krita.org/  
 Inkscape https://inkscape.org/  
