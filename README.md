@@ -1,9 +1,11 @@
 # Xubuntu
 
+Deutscher Linux Support auf https://www.linuxguides.de/linux-support/
+
 ### First set up the base system
 https://xubuntu.org/ + [balenaEtcher](https://www.balena.io/etcher/) or [Rufus USB Writer](https://rufus.ie/en/) for Windows users
 
-### Now you can make some customizations to the new system
+### Now you can make some first customizations to the new system
 Bring your installation up to date:
 ```bash
 sudo apt update && sudo apt upgrade -y
@@ -46,6 +48,11 @@ The Microsoft Fonts for instance are not open source and therefore are not inclu
 Or you can try to do this manually. Some of the packages are:  
 *libavcodec-extra ttf-mscorefonts-installer gstreamer1.0-libav gstreamer1.0-plugins-ugly gstreamer1.0-vaapi unrar rar xz-utils*  
 The packages zip and unzip are also included. But making sure never hurts.  
+
+### (Optional) Use a Graphical Linux Assistant
+- https://www.linux-assistant.org/ Beginner friendly and with [Youtube-Tutorials](https://youtu.be/uW11Uu8vhqc)
+- https://github.com/ChrisTitusTech/linutil For Linux users
+- https://github.com/ChrisTitusTech/winutil For Windows users
 
 ### Create a '.fonts' directory for your own Truetype (.ttf) fonts
 ```bash
@@ -236,7 +243,7 @@ Google Workspace - like OneNote https://workspace.google.com/ (online)
 Obsidian - like OneNote but private https://obsidian.md/download (Deb, Snap or Appimage)  
 
 **Video Calls**  
-zoom-client https://zoom.us/download . [how-to](https://github.com/Tornado3P9/installscript-linux/blob/master/zoom.md)  
+Zoom https://zoom.us/download . [how-to](https://github.com/Tornado3P9/installscript-linux/blob/master/zoom.md)  
 Microsoft Teams https://www.microsoft.com/en-us/microsoft-teams/download-app  
 TeleGuard https://teleguard.com/  
 Element https://element.io/  
