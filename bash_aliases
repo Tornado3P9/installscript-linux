@@ -70,7 +70,18 @@ alias wav2mp3='for f in *.wav; do ffmpeg -i "$f" -acodec libmp3lame -ab 256k -ar
 alias mp32wav='for f in *.mp3; do ffmpeg -i "$f" "${f%.mp3}.wav"; done'
 alias m4a2wav='for f in *.m4a; do ffmpeg -i "$f" "${f%.m4a}.wav"; done'
 alias flac2mp3='for f in *.flac; do ffmpeg -i "$f" -c:v copy -q:a 0 "${f%.flac}.mp3"; done'
-alias videosoundup='for f in *.mp4; do ffmpeg -i "$f" -filter:a "volume=30dB" -codec:a aac -b:a 74k -c:v copy "_${f}"; done'
+alias videosoundupmp4='for f in *.mp4; do ffmpeg -i "$f" -filter:a "volume=30dB" -codec:a aac -b:a 74k -c:v copy "_${f}"; done'
+
+videosoundup() {
+  if [ "$#" -ne 1 ]; then
+    echo "Usage: videosoundup <video_file>"
+    return 1
+  fi
+  # increase the volume by 30dB:
+  ffmpeg -i "$1" -vcodec copy -af "volume=30dB" "modified_${1}"
+  # increase the volume by the factor 2:
+#  ffmpeg -i "$1" -vcodec copy -af "volume=2.0" "modified_${1}"
+}
 
 # Make a numbered list from the media files in the current directory and play the chosen file
 # Example: playline

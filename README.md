@@ -49,7 +49,7 @@ Or you can try to do this manually. Some of the packages are:
 *libavcodec-extra ttf-mscorefonts-installer gstreamer1.0-libav gstreamer1.0-plugins-ugly gstreamer1.0-vaapi unrar rar xz-utils*  
 The packages zip and unzip are also included. But making sure never hurts.  
 
-### (Optional) Use a Graphical Linux Assistant
+### Graphical Configuration Assistants are a great help
 - https://www.linux-assistant.org/ Beginner friendly and with [Youtube-Tutorials](https://youtu.be/uW11Uu8vhqc)
 - https://github.com/ChrisTitusTech/linutil For Linux users
 - https://github.com/ChrisTitusTech/winutil For Windows users
@@ -240,7 +240,7 @@ PDFArranger (part of the repository: `sudo apt install pdfarranger`)
 Calibre - ebook management https://calibre-ebook.com/download_linux  
 Microsoft OneNote https://www.onenote.com/hrd (online)  
 Google Workspace - like OneNote https://workspace.google.com/ (online)  
-Obsidian - like OneNote but private https://obsidian.md/download (Deb, Snap or Appimage)  
+Obsidian - like OneNote but private https://obsidian.md/download (**Deb**, Snap or Appimage)  
 
 **Video Calls**  
 Zoom https://zoom.us/download . [how-to](https://github.com/Tornado3P9/installscript-linux/blob/master/zoom.md)  
