@@ -242,13 +242,13 @@ LibreOffice https://www.libreoffice.org/ (already preinstalled)
 OpenOffice https://www.openoffice.org/  
 Microsoft Office 365 https://www.office.com/ (online)  
 Google Docs https://www.google.com/docs/about/ (online)  
-Libre Workspace https://www.libre-workspace.org/ (online/local but in german), [Youtube-Playlist](https://www.youtube.com/watch?v=tzs9SdfeOMc&list=PL26JW41WknwissQLa5JSEnGui9rHppYXB)  
 Atril - PDF/ebook Viewer https://wiki.mate-desktop.org/mate-desktop/applications/atril/ (already preinstalled)  
 PDFArranger (part of the repository: `sudo apt install pdfarranger`)  
-Calibre - ebook management https://calibre-ebook.com/download_linux  
+Calibre - ebook management https://calibre-ebook.com/download_linux (part of the repository: `sudo apt install calibre`)  
 Microsoft OneNote https://www.onenote.com/hrd (online)  
 Google Workspace - like OneNote https://workspace.google.com/ (online)  
 Obsidian - like OneNote but private https://obsidian.md/download (**Deb**, Snap or Appimage)  
+Libre Workspace https://www.libre-workspace.org/ (online/local, language german)  
 
 **Video Calls**  
 Zoom https://zoom.us/download . [how-to](https://github.com/Tornado3P9/installscript-linux/blob/master/zoom.md)  
