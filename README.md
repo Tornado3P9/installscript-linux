@@ -84,6 +84,13 @@ Some Linux systems support the option to move applications around using the **`A
 - Open **![menu](https://docs.xubuntu.org/current/user/libs/images/icon_menu.png) → ![preferences](https://docs.xubuntu.org/current/user/libs/images/preferences-desktop.png) Settings Manager → Window Manager Tweaks → Accessibility** and change the *Key used to grab and move windows* to **None**
 - Press **Alt+F2** and type *xfce4-settings-manager*. Then go to **Window Manager Tweaks → Accessibility** and change the *Key used to grab and move windows* to **None**
 
+### You can change the keyboard key map
+- [**Kanata**](https://github.com/jtroo/kanata) - A cross-platform software keyboard remapper for Linux, macOS and Windows  
+Setup: https://github.com/jtroo/kanata/blob/main/docs/setup-linux.md  
+Example: https://github.com/dreamsofcode-io/escapecontrol/tree/main/linux/kanata
+- [caps2esc](https://gitlab.com/interception/linux/plugins/caps2esc) for Linux
+- [Karabiner-Elements](https://karabiner-elements.pqrs.org/) for macOS
+
 ### Firefox[^1]
 Security tip for using Firefox:
 - Type `about:config` into the *URL Search Bar* and then look for `pdfjs.enableScripting`. Set that to `false`.
