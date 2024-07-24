@@ -310,6 +310,7 @@ Atom https://atom.io/
 Eclipse IDE https://www.eclipse.org/  
 NetBeans IDE https://netbeans.apache.org/download/  
 Blender https://www.blender.org/download/ KeenTools https://keentools.io/ CAD Sketcher https://makertales.gumroad.com/l/CADsketcher?a=742446579  
+Onshape https://www.onshape.com/en/ (online)  
 Cascadeur https://cascadeur.com/download  
 NormalMap https://www.smart-page.net/smartnormal/ (online)  
 magick https://imagemagick.org/script/download.php  
