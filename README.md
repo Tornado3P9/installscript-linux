@@ -274,11 +274,11 @@ ScreenRec https://screenrec.com/screen-recorder#download
 **Video Editing**  
 DaVinci Resolve https://www.blackmagicdesign.com/products/davinciresolve/  
 HandBrake https://handbrake.fr/ a multithreaded video transcoder (part of the repository: `sudo apt install handbrake` )  
-Blender https://www.blender.org/features/video-editing/  
 Kdenlive Video Editor https://kdenlive.org/en/download/ (part of the repository: `sudo apt install kdenlive` )  
 OpenShot Video Editor https://www.openshot.org/  
 Shotcut Video Editor https://www.shotcut.org/  
 Olive Video Editor https://www.olivevideoeditor.org/  
+Blender https://www.blender.org/features/video-editing/  
 
 **Sound Editing**  
 Audacity https://www.audacityteam.org/ (part of the repository: `sudo apt install audacity` )  
