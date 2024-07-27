@@ -11,6 +11,16 @@ Bring your installation up to date:
 sudo apt update && sudo apt upgrade -y
 ```
 
+Install some additional codecs:[^3]
+```bash
+sudo apt install ubuntu-restricted-extras rar
+```
+*ubuntu-restricted-extras* is a so called 'meta-package' which installs a number of other packages.  
+The Microsoft Fonts for instance are not open source and therefore are not included in the ubuntu image.  
+Or you can try to do this manually. Some of the packages are:  
+*libavcodec-extra ttf-mscorefonts-installer gstreamer1.0-libav gstreamer1.0-plugins-ugly gstreamer1.0-vaapi unrar rar xz-utils*  
+The packages zip and unzip are also included. But making sure never hurts.  
+
 Install some useful packages (remove what lines you don't want):
 ```bash
 sudo apt install \
@@ -38,16 +48,6 @@ docker.io \
 sqlite3 \
 trash-cli
 ```
-
-Install some additional codecs:[^3]
-```bash
-sudo apt install ubuntu-restricted-extras rar
-```
-*ubuntu-restricted-extras* is a so called 'meta-package' which installs a number of other packages.  
-The Microsoft Fonts for instance are not open source and therefore are not included in the ubuntu image.  
-Or you can try to do this manually. Some of the packages are:  
-*libavcodec-extra ttf-mscorefonts-installer gstreamer1.0-libav gstreamer1.0-plugins-ugly gstreamer1.0-vaapi unrar rar xz-utils*  
-The packages zip and unzip are also included. But making sure never hurts.  
 
 ### Graphical Configuration Assistants are a great help
 - https://www.linux-assistant.org/ Beginner friendly and with [Youtube-Tutorials](https://youtu.be/uW11Uu8vhqc)
@@ -330,6 +330,7 @@ Gaupol Subtitle Editor https://otsaloma.io/gaupol/ (part of the repository: `sud
 Sigil - EPUB Editor https://sigil-ebook.com/ (part of the repository: `sudo apt install sigil`)  
 AWS CLI https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html  
 (part of the repository: `sudo apt install awscli`)  
+Google Cloud CLI https://cloud.google.com/sdk/docs/install#deb  
 FileZilla https://filezilla-project.org/download.php?type=client (part of the repository: `sudo apt install filezilla`)  
 Angry IP Scanner https://angryip.org/  
 Sparx Enterprise Architect https://sparxsystems.com/products/ea/16.1/sysreq.html  
