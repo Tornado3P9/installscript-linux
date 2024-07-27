@@ -270,6 +270,13 @@ Slack https://snapcraft.io/slack (you need snap enabled for this)
 Signal https://signal.org/download/linux/  
 Telegram https://desktop.telegram.org/  
 
+**Video Player**  
+MPV Player https://mpv.io/ with [keyboard shortcuts](https://manpages.ubuntu.com/manpages/bionic/man1/mpv.1.html) (part of the repository: `sudo apt install mpv` )  
+Haruna Video Player https://haruna.kde.org/ (part of the repository: `sudo apt install haruna` )  
+SMPlayer https://www.smplayer.info/ (part of the repository: `sudo apt install smplayer` )  
+VLC Media Player https://www.videolan.org/vlc/ (part of the repository: `sudo apt install vlc` )  
+Parole https://docs.xfce.org/apps/parole/start (already preinstalled)  
+
 **Screen Recording**  
 OBS Studio https://obsproject.com/wiki/install-instructions#linux (part of the repository: `sudo apt install obs-studio` )  
 SimpleScreenRecorder https://www.maartenbaert.be/simplescreenrecorder/#download (part of the repository: `sudo apt install simplescreenrecorder` )  
