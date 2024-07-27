@@ -1,6 +1,8 @@
 # Xubuntu
 
-Deutscher Linux Support auf https://www.linuxguides.de/linux-support/
+### Deutscher Linux Support
+- https://www.linuxguides.de/linux-support/
+- https://www.b1-systems.de/
 
 ### First set up the base system
 https://xubuntu.org/ + [balenaEtcher](https://www.balena.io/etcher/) or [Rufus USB Writer](https://rufus.ie/en/) for Windows users
@@ -21,7 +23,7 @@ Or you can try to do this manually. Some of the packages are:
 *libavcodec-extra ttf-mscorefonts-installer gstreamer1.0-libav gstreamer1.0-plugins-ugly gstreamer1.0-vaapi unrar rar xz-utils*  
 The packages zip and unzip are also included. But making sure never hurts.  
 
-Install some useful packages (remove what lines you don't want):
+Install some useful programs (remove what lines you don't want):
 ```bash
 sudo apt install \
 git gparted synaptic mtools \
@@ -54,21 +56,29 @@ trash-cli
 - https://github.com/ChrisTitusTech/linutil For Linux users
 - https://github.com/ChrisTitusTech/winutil For Windows users
 
-### Create a '.fonts' directory for your own Truetype (.ttf) fonts
-```bash
-# Just put all your favourite fonts into this folder. The System will automatically find them.
-mkdir $HOME/.fonts
+You can find most configuration files in your home directory (**`cd /home/$USER/`**). Use the shortcut **`Ctrl+H`** to display the hidden files in the *File Manager* or the commands **`ls -a`** or **`ls -la`** in the terminal.
+The names of hidden files or directories start with a dot, e.g. **`.config`**
 
-# You may use these TeX fonts for jsMath as an example (web browsers use them to display math formulas)
-# https://www.math.union.edu/~dpvc/jsMath/download/jsMath-fonts.html
+You can start your *File Manager* with the shortcut **`Windows key + F`** or by typing **`thunar`** into the terminal. You also can start your main web browser with the shortcut **`Windows key + W`** or by typing **`firefox`** into the terminal.
 
-# Moving the .ttf files from the Downloads folder to the .fonts folder:
-mv ~/Downloads/*.ttf ~/.fonts/
+### Create a `.fonts` directory for your own Truetype (.ttf) fonts
+Just put all your favourite fonts into this folder. The System will automatically find them.
 
-# Hint: Show hidden files with the shortcut 'Ctrl+H' (or 'Strg+H')
-```
+1. Create the fonts directory (makedirectory):  
+   ```bash
+   mkdir $HOME/.fonts
+   ```
 
-### Create a 'Programs' folder for all the manually downloaded packages. 
+2. Download some new fonts:  
+Let's take these TeX fonts for jsMath as an example (web browsers use them to display math formulas)  
+https://www.math.union.edu/~dpvc/jsMath/download/jsMath-fonts.html
+
+3. Move all .ttf files from the Downloads folder to the .fonts folder:  
+   ```bash
+   mv ~/Downloads/*.ttf ~/.fonts/
+   ```
+
+### Create a `Programs` folder for all the manually downloaded packages. 
 If you keep all the downloaded binaries and installation files together in this folder instead of deleting them, you will always know what you did to your system in the past. Very simple.
 ```bash
 mkdir $HOME/Programs
@@ -145,12 +155,7 @@ sudo mv firefox /opt/firefox
 sudo ln -sf /opt/firefox/firefox /usr/bin/firefox
 ```
 
-Now you can start *Firefox* with the shortcut `Windows key + W` or by typing `firefox` into the command line.  
-Start your *File Manager* with the shortcut `Windows key + F` or by typing `thunar` into the command line.  
-
-You can find most configuration files in your home directory (`cd /home/$USER/`). Use the shortcut `Ctrl+H` to display the hidden files in the file explorer and `ls -a` or `ls -la` in the terminal.
-The names of hidden files or directories start with a dot, e.g. `.config`. The configuration files, addons and bookmarks of firefox reside at `/home/$USER/.mozilla/`.
-Deleting the directory `.mozilla` gives you the experience of a "freshly installed firefox" without any customizations. Handle with care.  
+The configuration files, addons and bookmarks of firefox reside at `/home/$USER/.mozilla/`. Deleting the directory `.mozilla` gives you the experience of a "freshly installed firefox" without any customizations. Handle with care.  
 
 ### Firewall[^2]
 ```bash
