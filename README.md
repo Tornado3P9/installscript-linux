@@ -336,6 +336,7 @@ Sigil - EPUB Editor https://sigil-ebook.com/ (part of the repository: `sudo apt 
 AWS CLI https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html  
 (part of the repository: `sudo apt install awscli`)  
 Google Cloud CLI https://cloud.google.com/sdk/docs/install#deb  
+Azure CLI https://learn.microsoft.com/en-us/cli/azure/install-azure-cli-linux?pivots=apt  
 FileZilla https://filezilla-project.org/download.php?type=client (part of the repository: `sudo apt install filezilla`)  
 Angry IP Scanner https://angryip.org/  
 Sparx Enterprise Architect https://sparxsystems.com/products/ea/16.1/sysreq.html  
