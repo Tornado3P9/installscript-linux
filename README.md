@@ -138,7 +138,7 @@ sudo apt install arc-theme moka-icon-theme numix-icon-theme numix-gtk-theme ligh
 # Be careful when downloading themes from the internet. If unsure, don't do it.
 
 # Install an Apple Macbook like Panel/Dockleiste https://wiki.ubuntuusers.de/Plank/
-# If Plank is not available in the default repository, just install from ppa:ricotz/docky
+# If Plank is not available in the default repository, just install from ppa:ricotz/docky (don't just trust PPAs)
 # (Press Ctrl+Right_Mouse_Button for the configuration menu. For the panel to appear at startup, you have to add it to the 'session and startup' programs list in the Xubuntu Settings.)
 sudo apt install plank
 
@@ -161,7 +161,7 @@ timedatectl
 # If you wish to change the current time zone:
 dpkg-reconfigure tzdata
 ```
-The linux terminal usually accepts `Ctrl+Shift+C` and `Ctrl+Shift+V` instead of the more common `Ctrl+C` and `Ctrl+V`. You can change that in the terminal by going to **Edit → Preferences → Shortcuts**. Still, it might be better to just get accustomed to the standard shortcuts as other people on forums will also be using those which will make it easier for when you need to ask for help. Also remember that the shortcut for stopping a process `Ctrl+C` will not work anymore and might change to `Ctrl+Shift+C`.
+The linux terminal usually accepts `Ctrl+Shift+C` and `Ctrl+Shift+V` instead of the more common `Ctrl+C` and `Ctrl+V`. You can change that in the terminal by going to **Edit → Preferences → Shortcuts**. Still, it might be better to just get accustomed to the standard shortcuts as other people on forums will also be using those. That will make it easier for when you need to ask for help. Also remember that the shortcut for stopping a process `Ctrl+C` will not work anymore and might change to `Ctrl+Shift+C`.
 
 ### Installing Texlive and Texmaker for writing LaTeX documents
 ```bash
