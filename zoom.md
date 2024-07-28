@@ -30,14 +30,14 @@ gpg --verify zoom_amd64.deb
 
 Then install the debian installation package (.deb) with the command:
 ```bash
-sudo apt-get install ./zoom_amd64.deb
+sudo apt-get install ./zoom_amd64.deb -y
 # or with the command
 sudo dpkg -i zoom_amd64.deb
 ```
 
-If there are any messages about missing packages or dependencies or what have you, just try the command:
+If there are any messages about missing packages or dependencies or what have you, just try the -f/--fix-broken command:
 ```bash
-sudo apt install --fix-broken
+sudo apt-get install -f
 ```
 This command will try to find any missing packages that didn't install automaticly.
 
@@ -48,10 +48,11 @@ After restart, Zoom should be able to start without a problem.
 
 Terminal-only version:
 ```bash
-wget -L https://zoom.us/client/latest/zoom_amd64.deb -P $HOME/Downloads/
-cd $HOME/Downloads/
+cd ~/Downloads
+wget -L https://zoom.us/client/latest/zoom_amd64.deb
 gpg --verify zoom_amd64.deb
-sudo apt-get install ./zoom_amd64.deb -y
+sudo dpkg -i zoom_amd64.deb
+sudo apt-get install -f
 reboot
 ```
 

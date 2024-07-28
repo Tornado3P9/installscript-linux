@@ -101,66 +101,16 @@ Example: https://github.com/dreamsofcode-io/escapecontrol/tree/main/linux/kanata
 - [caps2esc](https://gitlab.com/interception/linux/plugins/caps2esc) for Linux
 - [Karabiner-Elements](https://karabiner-elements.pqrs.org/) for macOS
 
-### Firefox[^1]
-Security tip for using Firefox:
-- Type `about:config` into the *URL Search Bar* and then look for `pdfjs.enableScripting`. Set that to `false`.
-- Type `about:preferences` into the *URL Search Bar* and go to **Privacy & Security**. Scroll down and choose `Enable HTTPS-Only Mode in all windows`.
-This way your browser will only allow save connections and will ask you for permission if the website does not support https.
-- Type `about:performance` into the *URL Search Bar* to see the Firefox **Task Manager**. There you can see which application or addon uses up too many resources.
-
-How to disable Snaps and making sure it doesn’t automatically reinstall.
-The issue with Snaps is that they run 'root' and update automatically without your knowledge and without asking for permission.
-They are also terribly slow, especially at first startup, and will overflow your filesystem output with a lot of loopback devices.
-The desktop integration is not always perfect. The results can be wrong color schemes or unreadable texts. However, Snaps seem to be working well on server installations.
-Snaps are certainly a promising idea, but because we can just create the debian installation file ourselves if it doesn't exist, Snaps only worsen the overall experience.
-You can also use [Flatpaks](https://flathub.org/home) or Appimages if you have to. If you want to use [Snaps, then here](https://snapcraft.io/) is where to look for apps.
-
-```bash
-# List and Uninstall Snaps
-snap list # This shows you what snaps are installed
-sudo snap remove firefox # Fill in all snaps listed above
-
-# Purge Snaps and Block Reinstall
-sudo apt purge snapd
-sudo apt-mark hold snapd
-
-# Verify Uninstall
-apt list --installed | grep -i snap
-
-# Download Firefox from https://www.mozilla.org/en-US/firefox/all/#product-desktop-release
-wget "https://download.mozilla.org/?product=firefox-latest-ssl&os=linux64&lang=en-US" -O firefox.tar.bz2
-
-# Extract it and Move the content to the /opt/ directory
-sudo tar xvjf firefox.tar.bz2 -C /opt/
-
-# Create a symbolic link to the Firefox in /usr/bin so that all users will be able to run it
-sudo ln -s /opt/firefox/firefox /usr/bin/firefox
-```
-
-Firefox will update itself from now on if you leave the download setting in the general settings section unchanged.
-But if you are someone who likes to do the update manually, here is a script that you can use:
-```bash
-#!/bin/bash
-# The file firefox.tar.bz2 will be overwritten automatically because of the '-O'
-wget "https://download.mozilla.org/?product=firefox-latest-ssl&os=linux64&lang=en-US" -O firefox.tar.bz2
-tar xjf firefox.tar.bz2
-tree firefox
-
-read -p "Are you OK with the download? [Y/n]: " yn
-[ "$yn" = "n" ] && exit
-
-[ -d /opt/firefox/ ] && sudo rm -rf /opt/firefox
-
-sudo mv firefox /opt/firefox
-sudo ln -sf /opt/firefox/firefox /usr/bin/firefox
-```
-
-The configuration files, addons and bookmarks of firefox reside at `/home/$USER/.mozilla/`. Deleting the directory `.mozilla` gives you the experience of a "freshly installed firefox" without any customizations. Handle with care.  
-
 ### Firewall[^2]
 ```bash
-# Enable User_Friendly_Firewall and verify status
+# For Desktop Users: Enable User_Friendly_Firewall and verify status
 sudo ufw enable && sudo ufw status
+
+# For Servers: UFW, Fail2Ban, AppArmor or SELinux, ...
+# Take a look at
+https://christitus.com/linux-security-mistakes/
+https://gitlab.com/apparmor/apparmor/-/wikis/Documentation
+https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/7/html/selinux_users_and_administrators_guide/index
 
 # Limit potential DoS Attack without root access (optional)
 sudo cp /etc/security/limits.conf /etc/security/limits.conf.backup
@@ -182,11 +132,14 @@ further details at: https://averagelinuxuser.com/otp-ubuntu/
 
 ### Additional Themes
 ```bash
-# Themes and Icons
+# Themes and Icons from the repository
 sudo apt install arc-theme moka-icon-theme numix-icon-theme numix-gtk-theme lightdm-gtk-greeter-settings
 
-# Install a Panel/Dockleiste https://wiki.ubuntuusers.de/Plank/
-# If Plank is not available in the default repository, just install from ppa:ricotz/docky (Press Ctrl+Right_Mouse_Button for the configuration menu)
+# Be careful when downloading themes from the internet. If unsure, don't do it.
+
+# Install an Apple Macbook like Panel/Dockleiste https://wiki.ubuntuusers.de/Plank/
+# If Plank is not available in the default repository, just install from ppa:ricotz/docky
+# (Press Ctrl+Right_Mouse_Button for the configuration menu. For the panel to appear at startup, you have to add it to the 'session and startup' programs list in the Xubuntu Settings.)
 sudo apt install plank
 
 # The standard desktop image folder is located at:
@@ -252,7 +205,7 @@ PDFArranger (part of the repository: `sudo apt install pdfarranger`)
 Calibre - ebook management https://calibre-ebook.com/download_linux (part of the repository: `sudo apt install calibre`)  
 Microsoft OneNote https://www.onenote.com/hrd (online)  
 Google Workspace - like OneNote https://workspace.google.com/ (online)  
-Obsidian - like OneNote but private https://obsidian.md/download (**Deb**, Snap or Appimage)  
+Obsidian - like OneNote but private https://obsidian.md/download (**.Deb**, Snap or .Appimage)  
 Libre Workspace https://www.libre-workspace.org/ (online/local, language german)  
 
 **Video Calls**  
@@ -266,7 +219,7 @@ Nextcloud Talk https://nextcloud.com/talk/
 BigBlueButton https://bigbluebutton.org/  
 Discord https://discord.com/download?linux (or just use the web version)  
 Skype https://snapcraft.io/skype (you need snap enabled for this)  
-Slack https://snapcraft.io/slack (you need snap enabled for this)  
+Slack https://slack.com/downloads/linux (**.Deb**, Snap, or .RPM)  
 Signal https://signal.org/download/linux/  
 Telegram https://desktop.telegram.org/  
 
@@ -376,8 +329,8 @@ Olive Video Editor https://www.olivevideoeditor.org/
 LMMS https://lmms.io/download#linux  
 OneNote (Unofficial Desktop App, actually an independent browser window for the online OneNote) https://github.com/patrikx3/onenote  
 
+**You can also use `wget` or `curl` to download the programs**
 ```bash
-# You can also use 'wget' or 'curl' to download the programs
 wget -L https://zoom.us/client/latest/zoom_amd64.deb -P $HOME/Programs/
 wget -L https://mirrors.edge.kernel.org/ubuntu/pool/universe/g/gcolor2/gcolor2_0.4-2.1ubuntu1_amd64.deb -P $HOME/Programs/
 wget -L https://downloads.raspberrypi.org/imager/imager_latest_amd64.deb -P $HOME/Programs/
@@ -386,17 +339,87 @@ wget -L https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.de
 curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
 ```
 
-Installation and Setup of the downloaded Programs:
+**Installation and Setup of the downloaded Programs:**  
+Changing directory to the Programs folder and(&&) installing all the debian packages in one go:  
 ```bash
-# Changing directory to the Programs folder and(&&) installing all the debian packages in one go
-cd ~/Programs && sudo apt install ./*.deb
-
-# Making all the AppImages executable that have been placed into of the ~/Programs directory (no installation needed)
-chmod u+x ~/Programs/*.AppImage
-
-# Extracting the downloaded blender archive and copying to Programs folder...if you downloaded it into the Downloads folder... (no installation needed)
-tar xvf ~/Downloads/blender*.tar.xz -C ~/Programs/
+cd ~/Programs && sudo apt install ./*.deb  # Version A
+cd ~/Programs && sudo dpkg -i *.deb        # Version B
 ```
+
+If the .deb program does not install correctly, just try the `-f/--fix-broken` command:  
+```bash
+sudo apt-get install -f
+```
+
+Making all the AppImages executable that have been placed into the ~/Programs directory (no installation needed)  
+```bash
+chmod u+x ~/Programs/*.AppImage
+```
+You can do the same by clicking with your Right Mouse Button at the .AppImage file:  
+`Properties` → `Permissions` → `'Allow this file to run as a program'` or `'Set executional bit'`
+
+Extracting the downloaded blender archive and copying to Programs folder...if you downloaded it into the Downloads folder... (no installation needed)  
+```bash
+tar xvf ~/Downloads/blender*.tar.xz -C ~/Programs/
+# If it's already in your ~/Programs folder, just do:
+tar xvf ~/Downloads/blender*.tar.xz
+```
+
+### `Firefox` Web Browser[^1]
+Security tip for using Firefox:
+- Type `about:config` into the *URL Search Bar* and then look for `pdfjs.enableScripting`. Set that to `false`.
+- Type `about:preferences` into the *URL Search Bar* and go to **Privacy & Security**. Scroll down and choose `Enable HTTPS-Only Mode in all windows`.
+This way your browser will only allow save connections and will ask you for permission if the website does not support https.
+- Type `about:performance` into the *URL Search Bar* to see the Firefox **Task Manager**. There you can see which application or addon uses up too many resources.
+
+How to disable Snaps and making sure it doesn’t automatically reinstall.
+The issue with Snaps is that they run 'root' and update automatically without your knowledge and without asking for permission.
+They are also terribly slow, especially at first startup, and will overflow your filesystem output with a lot of loopback devices.
+The desktop integration is not always perfect. The results can be wrong color schemes or unreadable texts. However, Snaps seem to be working well on server installations.
+Snaps are certainly a promising idea, but because we can just create the debian installation file ourselves if it doesn't exist, Snaps only worsen the overall experience.
+You can also use [Flatpaks](https://flathub.org/home) or Appimages if you have to. If you want to use [Snaps, then here](https://snapcraft.io/) is where to look for apps.
+
+```bash
+# List and Uninstall Snaps
+snap list # This shows you what snaps are installed
+sudo snap remove firefox # Fill in all snaps listed above
+
+# Purge Snaps and Block Reinstall
+sudo apt purge snapd
+sudo apt-mark hold snapd
+
+# Verify Uninstall
+apt list --installed | grep -i snap
+
+# Download Firefox from https://www.mozilla.org/en-US/firefox/all/#product-desktop-release
+wget "https://download.mozilla.org/?product=firefox-latest-ssl&os=linux64&lang=en-US" -O firefox.tar.bz2
+
+# Extract it and Move the content to the /opt/ directory
+sudo tar xvjf firefox.tar.bz2 -C /opt/
+
+# Create a symbolic link to the Firefox in /usr/bin so that all users will be able to run it
+sudo ln -s /opt/firefox/firefox /usr/bin/firefox
+```
+
+Firefox will update itself from now on if you leave the download setting in the general settings section unchanged.
+But if you are someone who likes to do the update manually, here is a script that you can use:
+```bash
+#!/bin/bash
+# The file firefox.tar.bz2 will be overwritten automatically because of the '-O'
+wget "https://download.mozilla.org/?product=firefox-latest-ssl&os=linux64&lang=en-US" -O firefox.tar.bz2
+tar xjf firefox.tar.bz2
+tree firefox
+
+read -p "Are you OK with the download? [Y/n]: " yn
+[ "$yn" = "n" ] && exit
+
+[ -d /opt/firefox/ ] && sudo rm -rf /opt/firefox
+
+sudo mv firefox /opt/firefox
+sudo ln -sf /opt/firefox/firefox /usr/bin/firefox
+```
+
+The configuration files, addons and bookmarks of firefox reside at `/home/$USER/.mozilla/`. Deleting the directory `.mozilla` gives you the experience of a "freshly installed firefox" without any customizations. Handle with care.  
 
 ### Adding ShortCuts
 
