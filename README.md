@@ -23,7 +23,7 @@ Or you can try to do this manually. Some of the packages are:
 *libavcodec-extra ttf-mscorefonts-installer gstreamer1.0-libav gstreamer1.0-plugins-ugly gstreamer1.0-vaapi unrar rar xz-utils*  
 The packages zip and unzip are also included. But making sure never hurts.  
 
-Install some useful programs (remove what lines you don't want):
+Install some useful programs (remove what lines you don't want, copy the whole command block, paste it into the terminal and press Enter):
 ```bash
 sudo apt install \
 git gparted synaptic mtools \
@@ -94,7 +94,7 @@ Some Linux systems support the option to move applications around using the **`A
 - Open **![menu](https://docs.xubuntu.org/current/user/libs/images/icon_menu.png) → ![preferences](https://docs.xubuntu.org/current/user/libs/images/preferences-desktop.png) Settings Manager → Window Manager Tweaks → Accessibility** and change the *Key used to grab and move windows* to **None**
 - Press **Alt+F2** and type *xfce4-settings-manager*. Then go to **Window Manager Tweaks → Accessibility** and change the *Key used to grab and move windows* to **None**
 
-### You can change the keyboard key map
+### (Optional) You can change the keyboard key map
 - [**Kanata**](https://github.com/jtroo/kanata) - A cross-platform software keyboard remapper for Linux, macOS and Windows  
 Setup: https://github.com/jtroo/kanata/blob/main/docs/setup-linux.md  
 Example: https://github.com/dreamsofcode-io/escapecontrol/tree/main/linux/kanata
@@ -106,7 +106,7 @@ Example: https://github.com/dreamsofcode-io/escapecontrol/tree/main/linux/kanata
 # For Desktop Users: Enable User_Friendly_Firewall and verify status
 sudo ufw enable && sudo ufw status
 
-# For Servers: UFW, Fail2Ban, AppArmor or SELinux, ...
+# For Servers: UFW, Fail2Ban, AppArmor or SELinux, iptables, ...
 # Take a look at
 https://christitus.com/linux-security-mistakes/
 https://gitlab.com/apparmor/apparmor/-/wikis/Documentation
@@ -207,6 +207,7 @@ Microsoft OneNote https://www.onenote.com/hrd (online)
 Google Workspace - like OneNote https://workspace.google.com/ (online)  
 Obsidian - like OneNote but private https://obsidian.md/download (**.Deb**, Snap or .Appimage)  
 Libre Workspace https://www.libre-workspace.org/ (online/local, language german)  
+Kleopatra https://www.openpgp.org/software/kleopatra/ (part of the repository: `sudo apt install kleopatra`)  
 
 **Video Calls**  
 Zoom https://zoom.us/download . [how-to](https://github.com/Tornado3P9/installscript-linux/blob/master/zoom.md)  
