@@ -8,7 +8,7 @@
 https://xubuntu.org/ + [balenaEtcher](https://www.balena.io/etcher/) or [Rufus USB Writer](https://rufus.ie/en/) for Windows users
 
 ### Now you can make some first customizations to the new system
-Bring your installation up to date:
+Bring your installation up to date (What is [apt](https://www.maketecheasier.com/ultimate-guide-apt-and-apt-get-commands/)?):
 ```bash
 sudo apt update && sudo apt upgrade -y
 ```
@@ -25,6 +25,7 @@ The packages zip and unzip are also included. But making sure never hurts.
 
 Install some useful programs (remove what lines you don't want, copy the whole command block, paste it into the terminal and press Enter):
 ```bash
+sudo apt update && \
 sudo apt install \
 git gparted synaptic mtools \
 xsane simple-scan \
@@ -340,31 +341,47 @@ wget -L https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.de
 curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
 ```
 
-**Installation and Setup of the downloaded Programs:**  
+### Installation and Setup of the downloaded Programs:
+
+**Debian Packages**  
 Changing directory to the Programs folder and(&&) installing all the debian packages in one go:  
 ```bash
 cd ~/Programs && sudo apt install ./*.deb  # Version A
 cd ~/Programs && sudo dpkg -i *.deb        # Version B
 ```
 
-If the .deb program does not install correctly, just try the `-f/--fix-broken` command:  
+If the .deb program does not install correctly, just try the `-f/--fix-broken` command ([fix-broken-packages-ubuntu](https://www.maketecheasier.com/fix-broken-packages-ubuntu/)):  
 ```bash
-sudo apt-get install -f
+sudo apt install -f
 ```
 
-Making all the AppImages executable that have been placed into the ~/Programs directory (no installation needed)  
+**AppImage Packages**  
+AppImages don't require installation. You just have to tell your system that the program is allowed to be executed. Once that is done you can just double click on it.
 ```bash
+# Setting the executable bit to all Appimage files in the Programs directory:
 chmod u+x ~/Programs/*.AppImage
 ```
 You can do the same by clicking with your Right Mouse Button at the .AppImage file:  
 `Properties` → `Permissions` → `'Allow this file to run as a program'` or `'Set executional bit'`
 
-Extracting the downloaded blender archive and copying to Programs folder...if you downloaded it into the Downloads folder... (no installation needed)  
+**Compressed/Archived Packages**  
+Extract the downloaded blender package and copy it to your Programs folder:
 ```bash
 tar xvf ~/Downloads/blender*.tar.xz -C ~/Programs/
-# If it's already in your ~/Programs folder, just do:
-tar xvf ~/Downloads/blender*.tar.xz
 ```
+Once that is done you can usually just double click on it.
+
+Optionally you can extract the program directory into the /opt/ folder and..  
+- add the blender directory path to the Session `PATH` variable, which will let you start blender from the terminal
+   ```bash
+   echo 'export PATH=$PATH:/opt/program_directory/' >> ~/.bashrc
+   source ~/.bashrc
+   ```
+- or create a link to the system programs directory `/usr/bin/blender` which will let you start it from the terminal and the Applications Menu
+   ```bash
+   sudo ln -sf /opt/program_directory/blender /usr/bin/blender
+   ```
+- or create a [Panel App Launcher](#adding-app-launcher-to-the-xfce-panel)
 
 ### `Firefox` Web Browser[^1]
 Security tip for using Firefox:
