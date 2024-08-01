@@ -110,6 +110,7 @@ sudo ufw enable && sudo ufw status
 # For Servers: UFW, Fail2Ban, AppArmor or SELinux, iptables, ...
 # Take a look at
 https://christitus.com/linux-security-mistakes/
+https://github.com/Jean28518/linux-guides/tree/main/basic-security-for-server
 https://gitlab.com/apparmor/apparmor/-/wikis/Documentation
 https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/7/html/selinux_users_and_administrators_guide/index
 
