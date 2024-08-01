@@ -4,23 +4,23 @@
 PS1="\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]-->\[\033[00m\] \h: \[\033[01;34m\]\w\[\033[00m\]\$ "
 
 # some more aliases
-alias update='sudo apt update && apt list --upgradeable'
-alias upgrade='sudo apt upgrade -y'
+alias update='apt update && apt list --upgradeable'
+alias upgrade='apt upgrade'
 alias restartaudio='pulseaudio -k && sudo alsa force-reload'
 alias nHistory='history -c && history -w'
 alias nThunarHistory='rm ~/.local/share/recently-used.xbel*'
 alias nthumbnails='rm -r ~/.cache/thumbnails/*'
 alias emptyTrash='rm -rf ~/.local/share/Trash/*'
-alias shutdown='shutdown -h now'
+alias shutdown='shutdown -h now'  # reboot, poweroff, shutdown, halt
 alias renamehelp='echo rename \'\''s/#//\'\'' \*.m4a'
-alias alarmclockhelp='echo sleep 5m && mpv sound.mp3 --no-video --start=00:00:13 --loop'
+alias alarmclockhelp='echo "sleep 5m && mpv sound.mp3 --no-video --start=00:00:13 --loop"'
 alias aliases='less ~/.bash_aliases'
 alias c='clear'
 alias cl='clear;ls'
 alias root='sudo su'
 alias ports='netstat -tupan'
 
-#Search files in the current folder: f "funny-clip"
+#Search files in the current folder, e.g.: f "funny-clip"
 alias f="find . | grep -i"
 
 #sort by modification time
@@ -72,17 +72,6 @@ alias m4a2wav='for f in *.m4a; do ffmpeg -i "$f" "${f%.m4a}.wav"; done'
 alias flac2mp3='for f in *.flac; do ffmpeg -i "$f" -c:v copy -q:a 0 "${f%.flac}.mp3"; done'
 alias videosoundupmp4='for f in *.mp4; do ffmpeg -i "$f" -filter:a "volume=30dB" -codec:a aac -b:a 74k -c:v copy "_${f}"; done'
 
-videosoundup() {
-  if [ "$#" -ne 1 ]; then
-    echo "Usage: videosoundup <video_file>"
-    return 1
-  fi
-  # increase the volume by 30dB:
-  ffmpeg -i "$1" -vcodec copy -af "volume=30dB" "modified_${1}"
-  # increase the volume by the factor 2:
-#  ffmpeg -i "$1" -vcodec copy -af "volume=2.0" "modified_${1}"
-}
-
 # Make a numbered list from the media files in the current directory and play the chosen file
 # Example: playline
 # Example: playline 6
@@ -101,7 +90,7 @@ rm(){
   mv $@ /tmp/trash
 }
 
-##delete after asking for permission
+##delete only after asking for permission
 #alias rm='rm -i'
 
 # compile a c++ program and execute
