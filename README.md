@@ -239,6 +239,7 @@ OBS Studio https://obsproject.com/wiki/install-instructions#linux (part of the r
 SimpleScreenRecorder https://www.maartenbaert.be/simplescreenrecorder/#download (part of the repository: `sudo apt install simplescreenrecorder` )  
 Kazam https://github.com/henrywoo/kazam (part of the repository: `sudo apt install kazam` )  
 ScreenRec https://screenrec.com/screen-recorder#download  
+Terminal https://youtu.be/vWWSpDE7Gk4  
 
 **Video Editing**  
 DaVinci Resolve https://www.blackmagicdesign.com/products/davinciresolve/  
