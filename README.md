@@ -15,7 +15,17 @@
 - [Terminal behavior](#terminal-behavior)
 - [Installing tldr (too long, didn't read) helper tool](#installing-tldr-too-long-didnt-read-helper-tool)
 - [Installing Texlive and Texmaker for writing LaTeX documents](#installing-texlive-and-texmaker-for-writing-latex-documents)
-- [Incomplete list of applications that can be installed](#installing-additional-applications-that-are-not-included-in-the-repository-some-are-but-not-with-the-most-recent-version)
+- [Incomplete list of applications](#incomplete-list-of-applications)
+  - [Office/School](#officeschool)
+  - [Video Calls](#video-calls)
+  - [Video Player](#video-player)
+  - [Screen Recording](#screen-recording)
+  - [Video Editing](#video-editing)
+  - [Sound Editing](#sound-editing)
+  - [Image Editing](#image-editing)
+  - [Web Browser](#web-browser)
+  - [Development](#development)
+  - [Appimage Programs that run on any Linux system](#appimage-programs-that-run-on-any-linux-system)
 - [Installation and Setup of the downloaded Programs](#installation-and-setup-of-the-downloaded-programs)
 - [`Firefox` Web Browser](#firefox-web-browser1)
 - [Adding ShortCuts](#adding-shortcuts)
@@ -28,7 +38,6 @@
 - [Virtual Machine](#virtual-machine)
 - [Gaming](#gaming)
 - [Game Engines](#game-engines)
-- [Photoshop alternatives (most adope applications don't work well on linux)](#photoshop-alternatives-most-adope-applications-dont-work-well-on-linux6)
 - [Password manager](#password-manager)
 - [Microsoft PowerShell](#microsoft-powershell)
 - [Decentralised Data Storage - IPFS](#decentralised-data-storage---ipfs)
@@ -223,158 +232,175 @@ tldr ls             # run tldr and explain with examples how the command 'ls' wo
 sudo apt install texlive texlive-lang-german texlive-lang-english texlive-latex-extra texmaker
 ```
 
-### Incomplete list of applications that can be installed
-Incomplete list of Applications that are not included in the repository or just not with the most recent version:
+### Incomplete list of applications
+Applications that are not included in the repository or just not with the most recent version:
 
-**Office/School**  
-GeoGebra https://wiki.geogebra.org/en/Reference:GeoGebra_Installation#GeoGebra_Classic_5_for_Desktop  
-JFLAP https://www.jflap.org/jflaptmp/ (start with: `java -jar JFLAP.jar`)  
-Periodic Table https://ptable.com/#Properties (online)  
-printfriendly https://www.printfriendly.com/ (online)  
-Diagram Editor https://www.diagrameditor.com/ (online)  
-ExcaliDraw https://excalidraw.com/ (online)  
-Dia Diagram Editor http://dia-installer.de/download/linux.html (part of the repository: `sudo apt install dia` )  
-Mermaid Diagram Editor https://mermaid.live/ [about](https://mermaid-js.github.io/mermaid/#/) [video](https://youtu.be/JiQmpA474BY) (online)  
-Miro Board https://miro.com/ (online)  
-Trello Board https://trello.com/ (online)  
-OnlyOffice https://www.onlyoffice.com/  
-FreeOffice https://www.freeoffice.com/en/  
-WPS Office https://www.wps.com/ (developed by Kingsoft, based in Beijing, China)  
-LibreOffice https://www.libreoffice.org/ (already preinstalled)  
-OpenOffice https://www.openoffice.org/  
-Microsoft Office 365 https://www.office.com/ (online)  
-Google Docs https://www.google.com/docs/about/ (online)  
-Atril - PDF/ebook Viewer https://wiki.mate-desktop.org/mate-desktop/applications/atril/ (already preinstalled)  
-PDFArranger (part of the repository: `sudo apt install pdfarranger`)  
-Stirling PDF https://stirlingpdf.io/ (online)  
-Calibre - ebook management https://calibre-ebook.com/download_linux (part of the repository: `sudo apt install calibre`)  
-Microsoft OneNote https://www.onenote.com/hrd (online)  
-Google Workspace - like OneNote https://workspace.google.com/ (online)  
-Obsidian - like OneNote but private https://obsidian.md/download (**.Deb**, Snap or .Appimage)  
-Libre Workspace https://www.libre-workspace.org/ (online/local, language german)  
-Kleopatra https://www.openpgp.org/software/kleopatra/ (part of the repository: `sudo apt install kleopatra`)  
+#### Office/School
+- GeoGebra https://wiki.geogebra.org/en/Reference:GeoGebra_Installation#GeoGebra_Classic_5_for_Desktop
+- JFLAP https://www.jflap.org/jflaptmp/ (start with: `java -jar JFLAP.jar`)
+- Periodic Table https://ptable.com/#Properties (online)
+- printfriendly https://www.printfriendly.com/ (online)
+- Diagram Editor https://www.diagrameditor.com/ (online)
+- ExcaliDraw https://excalidraw.com/ (online)
+- Dia Diagram Editor http://dia-installer.de/download/linux.html (part of the repository: `sudo apt install dia` )
+- Mermaid Diagram Editor https://mermaid.live/ [about](https://mermaid-js.github.io/mermaid/#/) [video](https://youtu.be/JiQmpA474BY) (online)
+- Miro Board https://miro.com/ (online)
+- Trello Board https://trello.com/ (online)
+- OnlyOffice https://www.onlyoffice.com/
+- FreeOffice https://www.freeoffice.com/en/
+- WPS Office https://www.wps.com/ (developed by Kingsoft, based in Beijing, China)
+- LibreOffice https://www.libreoffice.org/ (already preinstalled)
+- OpenOffice https://www.openoffice.org/
+- Microsoft Office 365 https://www.office.com/ (online)
+- Google Docs https://www.google.com/docs/about/ (online)
+- Atril - PDF/ebook Viewer https://wiki.mate-desktop.org/mate-desktop/applications/atril/ (already preinstalled)
+- PDFArranger (part of the repository: `sudo apt install pdfarranger`)
+- Stirling PDF https://stirlingpdf.io/ (online)
+- Calibre - ebook management https://calibre-ebook.com/download_linux (part of the repository: `sudo apt install calibre`)
+- Microsoft OneNote https://www.onenote.com/hrd (online)
+- Google Workspace - like OneNote https://workspace.google.com/ (online)
+- Obsidian - like OneNote but private https://obsidian.md/download (**.Deb**, Snap or .Appimage)
+- Libre Workspace https://www.libre-workspace.org/ (online/local, language german)
+- Kleopatra https://www.openpgp.org/software/kleopatra/ (part of the repository: `sudo apt install kleopatra`)
 
-**Video Calls**  
-Zoom https://zoom.us/download . [how-to](https://github.com/Tornado3P9/installscript-linux/blob/master/zoom.md)  
-Microsoft Teams https://www.microsoft.com/en-us/microsoft-teams/download-app  
-TeleGuard https://teleguard.com/  
-Element https://element.io/  
-Jitsi https://jitsi.org/  
-Jami https://jami.net/  
-Nextcloud Talk https://nextcloud.com/talk/  
-BigBlueButton https://bigbluebutton.org/  
-Discord https://discord.com/download?linux (or just use the web version)  
-Skype https://snapcraft.io/skype (you need snap enabled for this)  
-Slack https://slack.com/downloads/linux (**.Deb**, Snap, or .RPM)  
-Signal https://signal.org/download/linux/  
-Telegram https://desktop.telegram.org/  
+#### Video Calls
+- Zoom https://zoom.us/download . [how-to](https://github.com/Tornado3P9/installscript-linux/blob/master/zoom.md)
+- Microsoft Teams https://www.microsoft.com/en-us/microsoft-teams/download-app
+- TeleGuard https://teleguard.com/
+- Element https://element.io/
+- Jitsi https://jitsi.org/
+- Jami https://jami.net/
+- Nextcloud Talk https://nextcloud.com/talk/
+- BigBlueButton https://bigbluebutton.org/
+- Discord https://discord.com/download?linux (or just use the web version)
+- Skype https://snapcraft.io/skype (you need snap enabled for this)
+- Slack https://slack.com/downloads/linux (**.Deb**, Snap, or .RPM)
+- Signal https://signal.org/download/linux/
+- Telegram https://desktop.telegram.org/
 
-**Video Player**  
-MPV Player https://mpv.io/ with [keyboard shortcuts](https://manpages.ubuntu.com/manpages/bionic/man1/mpv.1.html) (part of the repository: `sudo apt install mpv` )  
-Haruna Video Player https://haruna.kde.org/ (part of the repository: `sudo apt install haruna` )  
-SMPlayer https://www.smplayer.info/ (part of the repository: `sudo apt install smplayer` )  
-VLC Media Player https://www.videolan.org/vlc/ (part of the repository: `sudo apt install vlc` )  
-Parole https://docs.xfce.org/apps/parole/start (already preinstalled)  
+#### Video Player
+- MPV Player https://mpv.io/ with [keyboard shortcuts](https://manpages.ubuntu.com/manpages/bionic/man1/mpv.1.html) (part of the repository: `sudo apt install mpv` )
+- Haruna Video Player https://haruna.kde.org/ (part of the repository: `sudo apt install haruna` )
+- SMPlayer https://www.smplayer.info/ (part of the repository: `sudo apt install smplayer` )
+- VLC Media Player https://www.videolan.org/vlc/ (part of the repository: `sudo apt install vlc` )
+- Parole https://docs.xfce.org/apps/parole/start (already preinstalled)
 
-**Screen Recording**  
-OBS Studio https://obsproject.com/wiki/install-instructions#linux (part of the repository: `sudo apt install obs-studio` )  
-SimpleScreenRecorder https://www.maartenbaert.be/simplescreenrecorder/#download (part of the repository: `sudo apt install simplescreenrecorder` )  
-Kazam https://github.com/henrywoo/kazam (part of the repository: `sudo apt install kazam` )  
-ScreenRec https://screenrec.com/screen-recorder#download  
-Terminal https://youtu.be/vWWSpDE7Gk4  
+#### Screen Recording
+- OBS Studio https://obsproject.com/wiki/install-instructions#linux (part of the repository: `sudo apt install obs-studio` )
+- SimpleScreenRecorder https://www.maartenbaert.be/simplescreenrecorder/#download (part of the repository: `sudo apt install simplescreenrecorder` )
+- Kazam https://github.com/henrywoo/kazam (part of the repository: `sudo apt install kazam` )
+- ScreenRec https://screenrec.com/screen-recorder#download
+- Terminal https://youtu.be/vWWSpDE7Gk4 (programs you may use: `sudo apt install v4l-utils ffmpeg mpv guvcview vlc`)
 
-**Video Editing**  
-DaVinci Resolve https://www.blackmagicdesign.com/products/davinciresolve/  
-HandBrake https://handbrake.fr/ a multithreaded video transcoder (part of the repository: `sudo apt install handbrake` )  
-Kdenlive Video Editor https://kdenlive.org/en/download/ (part of the repository: `sudo apt install kdenlive` )  
-OpenShot Video Editor https://www.openshot.org/  
-Shotcut Video Editor https://www.shotcut.org/  
-Olive Video Editor https://www.olivevideoeditor.org/  
-Blender https://www.blender.org/features/video-editing/  
+#### Video Editing
+- DaVinci Resolve https://www.blackmagicdesign.com/products/davinciresolve/
+- HandBrake https://handbrake.fr/ a multithreaded video transcoder (part of the repository: `sudo apt install handbrake` )
+- Kdenlive Video Editor https://kdenlive.org/en/download/ (part of the repository: `sudo apt install kdenlive` )
+- OpenShot Video Editor https://www.openshot.org/
+- Shotcut Video Editor https://www.shotcut.org/
+- Olive Video Editor https://www.olivevideoeditor.org/
+- Blender https://www.blender.org/features/video-editing/
 
-**Sound Editing**  
-Audacity https://www.audacityteam.org/ (part of the repository: `sudo apt install audacity` )  
-FL Studio https://jstaf.github.io/2018/02/22/flstudio-on-linux.html  
-Hydrogen http://hydrogen-music.org/downloads/ (part of the repository: `sudo apt install hydrogen` )  
-Ardour https://ardour.org/ (part of the repository: `sudo apt install ardour` )  
-LMMS https://lmms.io/ (part of the repository: `sudo apt install lmms` )  
-Wavacity https://wavacity.com/ (derived from Audacity: online)  
+#### Sound Editing
+- Audacity https://www.audacityteam.org/ (part of the repository: `sudo apt install audacity` )
+- FL Studio https://jstaf.github.io/2018/02/22/flstudio-on-linux.html
+- Hydrogen http://hydrogen-music.org/downloads/ (part of the repository: `sudo apt install hydrogen` )
+- Ardour https://ardour.org/ (part of the repository: `sudo apt install ardour` )
+- LMMS https://lmms.io/ (part of the repository: `sudo apt install lmms` )
+- Wavacity https://wavacity.com/ (derived from Audacity: online)
 
-**Web Browser**  
-Firefox (already preinstalled)  
-LibreWolf: An Open-Source Firefox Fork Without the Telemetry https://librewolf.net/  
-Chrome https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb  
-Vivaldi https://vivaldi.com/download/  
-Brave https://brave.com/linux/#release-channel-installation  
-Safari (sudo apt install playonlinux -> and then install Safari from there)  
-Thorium https://thorium.rocks/  
-Mullvad https://mullvad.net/en/download/browser/linux  
-Tor Browser https://www.torproject.org/download/  
+#### Image Editing
+- Gimp (very good image manipulation editor) https://www.gimp.org/ `sudo apt install gimp`
+- Photopea (online, good compatibility with Photoshop's text objects) https://www.photopea.com/
+- Krita (supports many different color codes -> good for printing tasks) https://krita.org/ `sudo apt install krita`
+- MyPaint (good for working with a digital drawing tablet) http://mypaint.org/ `sudo apt install mypaint`
+- Inkscape (vector graphics) https://inkscape.org/ `sudo apt install inkscape`
+- Blender (2d drawing tool for working with a digital drawing tablet) https://www.blender.org/
+- Darktable (photography workflow application and raw developer) https://www.darktable.org/ `sudo apt install darktable`
+- Affinity (Windows Version using Wine) https://codeberg.org/Wanesty/affinity-wine-docs
+- Pinta (Pinta is a GTK clone of Paint.Net 3.0) https://www.pinta-project.com/ `sudo apt install pinta`
+- ExcaliDraw (online, very simple) https://excalidraw.com/
+- PIXLR (online) https://pixlr.com/
+- Photoflare https://photoflare.io/ `sudo apt install photoflare`
+- (most adope applications don't work well on linux)[^6]
 
-**Development**  
-JetBrains WebStorm/Rider/IntelliJ/PyCharm IDE https://www.jetbrains.com/pycharm/download/#section=linux  
-Sublime Text https://www.sublimetext.com/  
-Sublime Merge https://www.sublimemerge.com/  
-VSCodium https://vscodium.com/ does not contain telemetry/tracking but some extensions have to be added [manually](https://milicendev.netlify.app/article/install-vs-codium-and-integrate-vs-code-extensions/)  
-VSCode https://code.visualstudio.com/ does contain additional telemetry/tracking  
-VSCode-Online https://vscode.dev/ (online)  
-Atom https://atom.io/  
-Eclipse IDE https://www.eclipse.org/  
-NetBeans IDE https://netbeans.apache.org/download/  
-Blender https://www.blender.org/download/ KeenTools https://keentools.io/ CAD Sketcher https://makertales.gumroad.com/l/CADsketcher?a=742446579  
-Onshape https://www.onshape.com/en/ (online)  
-Cascadeur https://cascadeur.com/download  
-NormalMap https://www.smart-page.net/smartnormal/ (online)  
-magick https://imagemagick.org/script/download.php  
-.NET https://learn.microsoft.com/en-us/dotnet/core/install/linux-ubuntu-2204  
-mono https://www.mono-project.com/download/stable/  
-gcolor2_colorpicker http://mirrors.edge.kernel.org/ubuntu/pool/universe/g/gcolor2/  
-SQL Developer / Universal Database Tool https://dbeaver.io/  
-Oracle SQL Developer https://www.oracle.com/tools/downloads/sqldev-downloads.html  
-Raspberry Pi Imager https://www.raspberrypi.com/software/ [#advanced-options](https://www.raspberrypi.com/documentation/computers/getting-started.html#advanced-options)  
-KiCad EDA https://www.kicad.org/  
-Arduino IDE https://www.arduino.cc/en/software  
-(additionally install: `sudo apt install python-is-python3 python3-serial`)  
-Android Studio https://developer.android.com/studio https://snapcraft.io/android-studio  
-Unreal Engine https://www.unrealengine.com/  
-Unity https://unity.com/download  
-Gaupol Subtitle Editor https://otsaloma.io/gaupol/ (part of the repository: `sudo apt install gaupol` )  
-Sigil - EPUB Editor https://sigil-ebook.com/ (part of the repository: `sudo apt install sigil`)  
-AWS CLI https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html  
-(part of the repository: `sudo apt install awscli`)  
-Google Cloud CLI https://cloud.google.com/sdk/docs/install#deb  
-Azure CLI https://learn.microsoft.com/en-us/cli/azure/install-azure-cli-linux?pivots=apt  
-FileZilla https://filezilla-project.org/download.php?type=client (part of the repository: `sudo apt install filezilla`)  
-Angry IP Scanner https://angryip.org/  
-Sparx Enterprise Architect https://sparxsystems.com/products/ea/16.1/sysreq.html  
-RStudio Desktop https://posit.co/download/rstudio-desktop/  
-IDA Free https://hex-rays.com/ida-free/  
-NI LabVIEW https://www.ni.com/en/shop/labview.html  
-QT (GUI Development) https://www.qt.io/download-dev  
-Slint (GUI Development) https://slint.dev/  
-Gitleaks https://github.com/gitleaks/gitleaks  
-GitGuardian https://www.gitguardian.com/state-of-secrets-sprawl-report-2023  
+#### Web Browser
+- Firefox (already preinstalled)
+- LibreWolf: An Open-Source Firefox Fork Without the Telemetry https://librewolf.net/
+- Chrome https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+- Vivaldi https://vivaldi.com/download/
+- Brave https://brave.com/linux/#release-channel-installation
+- Thorium https://thorium.rocks/
+- Mullvad https://mullvad.net/en/download/browser/linux
+- Tor Browser https://www.torproject.org/download/
+- Safari (sudo apt install playonlinux -> and then install Safari from there)
 
-**Appimage Programs that run on any Linux system**  
-Audacity https://www.audacityteam.org/  
-KeePassXC https://keepassxc.org/  
-Krita https://krita.org/  
-Inkscape https://inkscape.org/  
-MyPaint http://mypaint.org/  
-Aseprite https://www.aseprite.org/  
-Stellarium http://stellarium.org/  
-Ultimaker Cura (3D printing + slicer) https://ultimaker.com/software/ultimaker-cura  
-MeshLab https://www.meshlab.net/  
-Obsidian https://obsidian.md/  
-BalenaEtcher https://www.balena.io/etcher/  
-Virtual MIDI Piano Keyboard (VMPK) https://vmpk.sourceforge.io/  
-Hugin Panorama Stitcher - Grafics Editor http://hugin.sourceforge.net/  
-Kdenlive Video Editor https://kdenlive.org/en/download/  
-OpenShot Video Editor https://www.openshot.org/  
-Shotcut Video Editor https://www.shotcut.org/  
-Olive Video Editor https://www.olivevideoeditor.org/  
-LMMS https://lmms.io/download#linux  
-OneNote (Unofficial Desktop App, actually an independent browser window for the online OneNote) https://github.com/patrikx3/onenote  
+#### Development
+- JetBrains WebStorm/Rider/IntelliJ/PyCharm IDE https://www.jetbrains.com/pycharm/download/#section=linux
+- Sublime Text https://www.sublimetext.com/
+- Sublime Merge https://www.sublimemerge.com/
+- VSCodium https://vscodium.com/ does not contain telemetry/tracking but some extensions have to be added [manually](https://milicendev.netlify.app/article/install-vs-codium-and-integrate-vs-code-extensions/)
+- VSCode https://code.visualstudio.com/ does contain additional telemetry/tracking
+- VSCode-Online https://vscode.dev/ (online)
+- Atom https://atom.io/
+- Eclipse IDE https://www.eclipse.org/
+- NetBeans IDE https://netbeans.apache.org/download/
+- Blender https://www.blender.org/download/ KeenTools https://keentools.io/ CAD Sketcher https://makertales.gumroad.com/l/CADsketcher?a=742446579
+- Onshape https://www.onshape.com/en/ (online)
+- Cascadeur https://cascadeur.com/download
+- NormalMap https://www.smart-page.net/smartnormal/ (online)
+- magick https://imagemagick.org/script/download.php
+- .NET https://learn.microsoft.com/en-us/dotnet/core/install/linux-ubuntu-2204
+- mono https://www.mono-project.com/download/stable/
+- gcolor2_colorpicker http://mirrors.edge.kernel.org/ubuntu/pool/universe/g/gcolor2/
+- SQL Developer / Universal Database Tool https://dbeaver.io/
+- Oracle SQL Developer https://www.oracle.com/tools/downloads/sqldev-downloads.html
+- Raspberry Pi Imager https://www.raspberrypi.com/software/ [#advanced-options](https://www.raspberrypi.com/documentation/computers/getting-started.html#advanced-options)
+- KiCad EDA https://www.kicad.org/
+- Arduino IDE https://www.arduino.cc/en/software
+(additionally install: `sudo apt install python-is-python3 python3-serial`)
+- Android Studio https://developer.android.com/studio https://snapcraft.io/android-studio
+- Unreal Engine https://www.unrealengine.com/
+- Unity https://unity.com/download
+- Gaupol Subtitle Editor https://otsaloma.io/gaupol/ (part of the repository: `sudo apt install gaupol` )
+- Sigil - EPUB Editor https://sigil-ebook.com/ (part of the repository: `sudo apt install sigil`)
+- AWS CLI https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
+(part of the repository: `sudo apt install awscli`)
+- Google Cloud CLI https://cloud.google.com/sdk/docs/install#deb
+- Azure CLI https://learn.microsoft.com/en-us/cli/azure/install-azure-cli-linux?pivots=apt
+- FileZilla https://filezilla-project.org/download.php?type=client (part of the repository: `sudo apt install filezilla`)
+- Angry IP Scanner https://angryip.org/
+- Sparx Enterprise Architect https://sparxsystems.com/products/ea/16.1/sysreq.html
+- RStudio Desktop https://posit.co/download/rstudio-desktop/
+- IDA Free https://hex-rays.com/ida-free/
+- NI LabVIEW https://www.ni.com/en/shop/labview.html
+- QT (GUI Development) https://www.qt.io/download-dev
+- Slint (GUI Development) https://slint.dev/
+- Gitleaks https://github.com/gitleaks/gitleaks
+- GitGuardian https://www.gitguardian.com/state-of-secrets-sprawl-report-2023
+
+#### Appimage Programs that run on any Linux system
+- Audacity https://www.audacityteam.org/
+- KeePassXC https://keepassxc.org/
+- Krita https://krita.org/
+- Inkscape https://inkscape.org/
+- MyPaint http://mypaint.org/
+- Aseprite https://www.aseprite.org/
+- Stellarium http://stellarium.org/
+- Ultimaker Cura (3D printing + slicer) https://ultimaker.com/software/ultimaker-cura
+- MeshLab https://www.meshlab.net/
+- Obsidian https://obsidian.md/
+- BalenaEtcher https://www.balena.io/etcher/
+- Virtual MIDI Piano Keyboard (VMPK) https://vmpk.sourceforge.io/
+- Hugin Panorama Stitcher - Grafics Editor http://hugin.sourceforge.net/
+- Kdenlive Video Editor https://kdenlive.org/en/download/
+- OpenShot Video Editor https://www.openshot.org/
+- Shotcut Video Editor https://www.shotcut.org/
+- Olive Video Editor https://www.olivevideoeditor.org/
+- LMMS https://lmms.io/download#linux
+- OneNote (Unofficial Desktop App, actually an independent browser window for the online OneNote) https://github.com/patrikx3/onenote
+
+### Installation and Setup of the downloaded Programs:
 
 **You can also use `wget` or `curl` to download the programs**
 ```bash
@@ -385,8 +411,6 @@ wget -L "https://www.geogebra.org/download/deb.php?arch=amd64" -O $HOME/Programs
 wget -L https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb -P $HOME/Programs/
 curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
 ```
-
-### Installation and Setup of the downloaded Programs:
 
 **Debian Packages**  
 Changing directory to the Programs folder and(&&) installing all the debian packages in one go:  
@@ -568,13 +592,13 @@ Update `pip` via: `python3 -m pip install --upgrade pip`
   - `dd if=/dev/sdc conv=sync,noerror status=progress bs=64K | gzip -c > backup_image.img.gz`
   - `gunzip -c backup_image.img.gz | dd of=/dev/sdc status=progress`
 
-  ### Check File Integrity
-- [Check File Integrity on Linux the Easy Way With GtkHash](https://www.makeuseof.com/check-file-integrity-on-linux-with-gtkhash/) - `sudo apt install gtkhash`
-- [Advanced Intrusion Detection Environment (AIDE)](https://www.tecmint.com/check-integrity-of-file-and-directory-using-aide-in-linux/) - `sudo apt install aide`
-- [Tripwire](https://www.tripwire.com/) - `sudo apt install tripwire`
-- [rust_hasher](https://github.com/Tornado3P9/rust_hasher)
-- `md5sum testfile` → `echo "4311d1887f6d4ddf411b36df124dfde6  testfile" | md5sum -c`
-- `sha256sum testfile > checksums.txt` → `sha256sum -c checksums.txt`
+- #### Check File Integrity
+  - [Check File Integrity on Linux the Easy Way With GtkHash](https://www.makeuseof.com/check-file-integrity-on-linux-with-gtkhash/) - `sudo apt install gtkhash`
+  - [Advanced Intrusion Detection Environment (AIDE)](https://www.tecmint.com/check-integrity-of-file-and-directory-using-aide-in-linux/) - `sudo apt install aide`
+  - [Tripwire](https://www.tripwire.com/) - `sudo apt install tripwire`
+  - [rust_hasher](https://github.com/Tornado3P9/rust_hasher)
+  - `md5sum testfile` → `echo "4311d1887f6d4ddf411b36df124dfde6  testfile" | md5sum -c`
+  - `sha256sum testfile > checksums.txt` → `sha256sum -c checksums.txt`
 
 ### Virtual Machine
 - [VirtualBox](https://www.virtualbox.org/wiki/Downloads) - `sudo apt install virtualbox`
@@ -594,19 +618,6 @@ Update `pip` via: `python3 -m pip install --upgrade pip`
 - [SDL2](https://github.com/Tornado3P9/Linux-Console-Tools/blob/master/How-To-Install-SDL-On-Ubuntu.md)
 - [Unity](https://unity.com/download)
 - [Unreal Engine](https://www.unrealengine.com/)
-
-### Photoshop alternatives (most adope applications don't work well on linux)[^6]
-- Gimp (very good image manipulation editor) https://www.gimp.org/ `sudo apt install gimp`
-- Krita (supports many different color codes -> good for printing tasks) https://krita.org/ `sudo apt install krita`
-- MyPaint (good for working with a digital drawing tablet) http://mypaint.org/ `sudo apt install mypaint`
-- Inkscape (vector graphics) https://inkscape.org/ `sudo apt install inkscape`
-- Blender (2d drawing tool for working with a digital drawing tablet) https://www.blender.org/
-- Darktable (photography workflow application and raw developer) https://www.darktable.org/ `sudo apt install darktable`
-- Photopea (online, good compatibility with Photoshop's text objects) https://www.photopea.com/
-- Affinity (Windows Version using Wine) https://codeberg.org/Wanesty/affinity-wine-docs
-- Pinta (Pinta is a GTK clone of Paint.Net 3.0) https://www.pinta-project.com/ `sudo apt install pinta`
-- ExcaliDraw (online, very simple) https://excalidraw.com/
-- PIXLR (online) https://pixlr.com/
 
 ### Password manager
 - bitwarden (very professional online web service) https://bitwarden.com/
