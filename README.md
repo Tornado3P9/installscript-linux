@@ -1,8 +1,49 @@
 # Xubuntu
 
-### Deutscher Linux Support
-- https://www.linuxguides.de/linux-support/
-- https://www.b1-systems.de/
+### table of contents
+- [First set up the base system](#first-set-up-the-base-system)
+- [Now you can make some first customizations to the new system](#now-you-can-make-some-first-customizations-to-the-new-system)
+- [Graphical Configuration Assistants are a great help](#graphical-configuration-assistants-are-a-great-help)
+- [Create a `.fonts` directory for your own Truetype (.ttf) fonts](#create-a-fonts-directory-for-your-own-truetype-ttf-fonts)
+- [Create a `Programs` folder for all the manually downloaded packages](#create-a-programs-folder-for-all-the-manually-downloaded-packages)
+- [System Update Settings](#system-update-settings)
+- [The Alt key problem](#the-alt-key-problem)
+- [You can change the keyboard key map](#you-can-change-the-keyboard-key-map)
+- [Firewall](#firewall2)
+- [One-time password (OTP) also known as 2-Factor authentication](#one-time-password-otp-also-known-as-2-factor-authentication)
+- [Additional Themes](#additional-themes)
+- [Terminal behavior](#terminal-behavior)
+- [Installing tldr (too long, didn't read) helper tool](#installing-tldr-too-long-didnt-read-helper-tool)
+- [Installing Texlive and Texmaker for writing LaTeX documents](#installing-texlive-and-texmaker-for-writing-latex-documents)
+- [Incomplete list of applications that can be installed](#installing-additional-applications-that-are-not-included-in-the-repository-some-are-but-not-with-the-most-recent-version)
+- [Installation and Setup of the downloaded Programs](#installation-and-setup-of-the-downloaded-programs)
+- [`Firefox` Web Browser](#firefox-web-browser1)
+- [Adding ShortCuts](#adding-shortcuts)
+- [Adding App launcher to the XFCE panel](#adding-app-launcher-to-the-xfce-panel)
+- [Four ways to create a Linux Live System on a usb stick](#four-ways-to-create-a-linux-live-system-on-a-usb-stick)
+- [Some Programming languages](#some-programming-languages)
+- [pip install ...](#pip-install-)
+- [Backups](#backups)
+- [Check File Integrity](#check-file-integrity)
+- [Virtual Machine](#virtual-machine)
+- [Gaming](#gaming)
+- [Game Engines](#game-engines)
+- [Photoshop alternatives (most adope applications don't work well on linux)](#photoshop-alternatives-most-adope-applications-dont-work-well-on-linux6)
+- [Password manager](#password-manager)
+- [Microsoft PowerShell](#microsoft-powershell)
+- [Decentralised Data Storage - IPFS](#decentralised-data-storage---ipfs)
+- [Converting RPM to DEB packages](#converting-rpm-to-deb-packages)
+- [ShellGPT](#shellgpt)
+- [The Clipboard Manager](#the-clipboard-manager)
+- [A Clipboard Driver for the terminal](#a-clipboard-driver-to-paste-information-from-console-to-clipboard-so-that-it-can-be-used-together-with-the-ctrlv-shortcut-or-other-console-applications-can-be-installed-with)
+- [Tiling Window Desktop Environments](#tiling-window-desktop-environments)
+- [DVD](#dvd)
+- [Grub2 - boot menu](#grub2---boot-menu)
+- [Wine (run windows programs)](#wine-run-windows-programs)
+- [External Hardware/Controller/Game Pad](#external-hardwarecontrollergame-pad)
+- [Tipps URL list](#tipps)
+- [Deutscher Linux Support](#deutscher-linux-support)
+
 
 ### First set up the base system
 https://xubuntu.org/ + [balenaEtcher](https://www.balena.io/etcher/) or [Rufus USB Writer](https://rufus.ie/en/) for Windows users
@@ -79,7 +120,7 @@ https://www.math.union.edu/~dpvc/jsMath/download/jsMath-fonts.html
    mv ~/Downloads/*.ttf ~/.fonts/
    ```
 
-### Create a `Programs` folder for all the manually downloaded packages. 
+### Create a `Programs` folder for all the manually downloaded packages
 If you keep all the downloaded binaries and installation files together in this folder instead of deleting them, you will always know what you did to your system in the past. Very simple.
 ```bash
 mkdir $HOME/Programs
@@ -95,7 +136,7 @@ Some Linux systems support the option to move applications around using the **`A
 - Open **![menu](https://docs.xubuntu.org/current/user/libs/images/icon_menu.png) → ![preferences](https://docs.xubuntu.org/current/user/libs/images/preferences-desktop.png) Settings Manager → Window Manager Tweaks → Accessibility** and change the *Key used to grab and move windows* to **None**
 - Press **Alt+F2** and type *xfce4-settings-manager*. Then go to **Window Manager Tweaks → Accessibility** and change the *Key used to grab and move windows* to **None**
 
-### (Optional) You can change the keyboard key map
+### You can change the keyboard key map
 - [**Kanata**](https://github.com/jtroo/kanata) - A cross-platform software keyboard remapper for Linux, macOS and Windows  
 Setup: https://github.com/jtroo/kanata/blob/main/docs/setup-linux.md  
 Example: https://github.com/dreamsofcode-io/escapecontrol/tree/main/linux/kanata
@@ -182,7 +223,8 @@ tldr ls             # run tldr and explain with examples how the command 'ls' wo
 sudo apt install texlive texlive-lang-german texlive-lang-english texlive-latex-extra texmaker
 ```
 
-### Installing additional applications that are not included in the repository (some are but not with the most recent version)
+### Incomplete list of applications that can be installed
+Incomplete list of Applications that are not included in the repository or just not with the most recent version:
 
 **Office/School**  
 GeoGebra https://wiki.geogebra.org/en/Reference:GeoGebra_Installation#GeoGebra_Classic_5_for_Desktop  
@@ -482,7 +524,7 @@ sudo mv ddimage /usr/bin/
 ddimage
 ```
 
-### Programming languages
+### Some Programming languages
 ```bash
 # Ruby and the fpm utility (https://fpm.readthedocs.io/en/latest/index.html)
 sudo apt install squashfs-tools ruby-full rpm && sudo gem install fpm
@@ -570,7 +612,7 @@ Update `pip` via: `python3 -m pip install --upgrade pip`
 - bitwarden (very professional online web service) https://bitwarden.com/
 - KeePassXC (simple offline application) https://keepassxc.org/ `sudo apt install keepassxc`
 
-### PowerShell
+### Microsoft PowerShell
 - https://github.com/PowerShell/PowerShell
 - [Installing PowerShell on Ubuntu (Microsoft Tutorial)](https://learn.microsoft.com/en-us/powershell/scripting/install/install-ubuntu?view=powershell-7.3)
 
@@ -693,6 +735,10 @@ wine program.exe
 [Xubuntu - Configure dual monitors](https://youtu.be/O25rgXH3L7o)  
 [My biggest problems with Linux Desktop and How I fixed them](https://christitus.com/my-problems-with-linux/)  
 [everyone codes faster when they stop using their mouse](https://youtu.be/WkT8ZC4ncX8)  
+
+### Deutscher Linux Support
+- https://www.linuxguides.de/linux-support/
+- https://www.b1-systems.de/
 
 <!---
 ### Optional:
