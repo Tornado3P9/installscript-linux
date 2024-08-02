@@ -1,6 +1,6 @@
 # Xubuntu
 
-### table of contents
+### Table of Contents
 - [First set up the base system](#first-set-up-the-base-system)
 - [Now you can make some first customizations to the new system](#now-you-can-make-some-first-customizations-to-the-new-system)
 - [Graphical Configuration Assistants are a great help](#graphical-configuration-assistants-are-a-great-help)
@@ -41,9 +41,9 @@
 - [Grub2 - boot menu](#grub2---boot-menu)
 - [Wine (run windows programs)](#wine-run-windows-programs)
 - [External Hardware/Controller/Game Pad](#external-hardwarecontrollergame-pad)
-- [Tipps URL list](#tipps)
+- [Managing power profiles / battery life](#managing-power-profiles--battery-life)
+- [some different topics list](#some-different-topics)
 - [Deutscher Linux Support](#deutscher-linux-support)
-
 
 ### First set up the base system
 https://xubuntu.org/ + [balenaEtcher](https://www.balena.io/etcher/) or [Rufus USB Writer](https://rufus.ie/en/) for Windows users
@@ -720,7 +720,41 @@ wine program.exe
   Try `pyserial-miniterm` which comes with the PySerial library.
 - Devices are 'files' at `ls -l /dev/` (https://www.kernel.org/doc/Documentation/admin-guide/devices.txt)
 
-### Tipps:
+### Managing power profiles / battery life
+
+https://linuxconfig.org/how-to-manage-power-profiles-over-d-bus-with-power-profiles-daemon-on-linux
+
+`power-profiles-daemon` is a system service that provides a D-Bus interface for applications to request certain power profiles, which is especially useful when working on a mobile device like a laptop where one wants the battery to run for as long as possible. It is typically used in GNOME or KDE environments and is not directly integrated with the XFCE desktop environment, which is known for its modularity and lightweight nature.
+
+However, you can still install and use `power-profiles-daemon` on a system running XFCE. To do so, you can install it via the terminal:
+
+```bash
+sudo apt update
+sudo apt install power-profiles-daemon
+```
+
+After installation, you can use the command line to switch between power profiles. Here are the basic commands:
+
+```bash
+# List available power profiles
+powerprofilesctl list
+
+# Name of the active profile
+powerprofilesctl get
+
+# Set a specific power profile
+sudo powerprofilesctl set <profile_name>
+```
+
+Replace **`<profile_name>`** with the desired profile, such as **`performance`**, **`balanced`**, or **`power-saver`**.
+
+Keep in mind that while you can use `power-profiles-daemon` on XFCE, the integration might not be as seamless as in GNOME, and you may need to use the command line or create custom shortcuts to switch profiles.
+
+You can do **`sudo powertop`** or **`upower -i /org/freedesktop/UPower/devices/battery_BAT0`** and look for the "energy-rate" or "power" field to see the current discharge rate.
+
+Remember that actual battery life can be influenced by many factors, including screen brightness, running applications, and hardware efficiency.
+
+### some different topics:
 [Speedup Linux](https://christitus.com/speedup-linux/)  
 [Desktop and editor setup for Rust development](https://youtu.be/ycMiMDHopNc)  
 [Customize Your Xfce Desktop To Look Like macOS Big Sur](https://youtu.be/uvvoJU69uNo)  
