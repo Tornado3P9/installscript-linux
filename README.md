@@ -7,7 +7,7 @@
 - [Create a `.fonts` directory for your own Truetype (.ttf) fonts](#create-a-fonts-directory-for-your-own-truetype-ttf-fonts)
 - [Create a `Programs` folder for all the manually downloaded packages](#create-a-programs-folder-for-all-the-manually-downloaded-packages)
 - [System Update Settings](#system-update-settings)
-- [The Alt key problem](#the-alt-key-problem)
+- [The `Alt` key problem](#the-alt-key-problem)
 - [You can change the keyboard key map](#you-can-change-the-keyboard-key-map)
 - [Firewall](#firewall2)
 - [One-time password (OTP) also known as 2-Factor authentication](#one-time-password-otp-also-known-as-2-factor-authentication)
@@ -793,7 +793,7 @@ apt-cache --generate pkgnames \
 
 [^3]:Additional Codecs https://www.makeuseof.com/tag/ubuntu-restricted-extras-install-ubuntu-linux/
 [^1]:Install Firefox manually: https://itsfoss.com/firefox-quantum-ubuntu/
-[^2]:Firewall: https://github.com/Tornado3P9/Linux-Console-Tools/blob/master/admin%20tools/firewall_ufw.txt
+[^2]:Firewall: https://github.com/Tornado3P9/Linux-Console-Tools/blob/master/admin%20tools/firewall_ufw.md
 [^4]:dd https://www.raspberrypi.com/documentation/computers/getting-started.html#installing-images-on-linux https://github.com/Tornado3P9/Linux-Console-Tools/blob/master/dd.md
 [^5]:VideoLAN libdvdcss: https://www.videolan.org/developers/libdvdcss.html, https://wiki.ubuntuusers.de/DVD-Wiedergabe/#Problembehebung
 [^6]:Photoshop: https://appdb.winehq.org/objectManager.php?sClass=application&iId=20, https://lutris.net/games/adobe-photoshop-cs6/
