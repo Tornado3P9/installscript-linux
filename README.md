@@ -25,6 +25,7 @@
   - [Image Editing](#image-editing)
   - [Web Browser](#web-browser)
   - [Development](#development)
+  - [Disk Usage Analyzer](#disk-usage-analyzer)
   - [Appimage Programs that run on any Linux system](#appimage-programs-that-run-on-any-linux-system)
 - [Installation and Setup of the downloaded Programs](#installation-and-setup-of-the-downloaded-programs)
 - [`Firefox` Web Browser](#firefox-web-browser1)
@@ -380,6 +381,11 @@ Applications that are not included in the repository or just not with the most r
 - GitGuardian https://www.gitguardian.com/state-of-secrets-sprawl-report-2023
 - Terraform https://developer.hashicorp.com/terraform/install https://developer.hashicorp.com/terraform/cli/install/apt
 
+#### Disk Usage Analyzer
+- Baobab https://apps.gnome.org/Baobab/
+- Disks https://apps.gnome.org/DiskUtility/
+- `ncdu /path/to/directory` (part of the repository: `sudo apt install ncdu`)
+- `du -h --max-depth=1 /path/to/directory` or `du -h --max-depth=1 .` for the current directory
 
 #### Appimage Programs that run on any Linux system
 - Audacity https://www.audacityteam.org/
