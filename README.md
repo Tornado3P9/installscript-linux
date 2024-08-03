@@ -327,7 +327,7 @@ Applications that are not included in the repository or just not with the most r
 #### Web Browser
 - Firefox (already preinstalled)
 - LibreWolf: An Open-Source Firefox Fork Without the Telemetry https://librewolf.net/
-- Chrome https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+- Chrome https://www.google.com/chrome/ (**.Deb** or .RPM)
 - Vivaldi https://vivaldi.com/download/
 - Brave https://brave.com/linux/#release-channel-installation
 - Thorium https://thorium.rocks/
@@ -378,6 +378,8 @@ Applications that are not included in the repository or just not with the most r
 - Slint (GUI Development) https://slint.dev/
 - Gitleaks https://github.com/gitleaks/gitleaks
 - GitGuardian https://www.gitguardian.com/state-of-secrets-sprawl-report-2023
+- Terraform https://developer.hashicorp.com/terraform/install https://developer.hashicorp.com/terraform/cli/install/apt
+
 
 #### Appimage Programs that run on any Linux system
 - Audacity https://www.audacityteam.org/
@@ -611,6 +613,9 @@ Update `pip` via: `python3 -m pip install --upgrade pip`
   - Game files: `ls -lh $HOME/.local/share/Steam/steamapps/common/`  
   or `ls -lh $HOME/.steam/steam/steamapps/common/`
 - [itch.io](https://itch.io/)
+
+Many Developers provide a Linux version for their game in Steam. Like `Shadow of Morder` for instance. But sometimes the linux version only runs on a `NVidea grafics card`, e.g. `Witcher 2`. So be aware of that if sth. doesn't work. Steam also provides the feature to run Windows games with their own wine version called Proton. That also solves the problem with specific grafics cards mentioned before. Sometimes the Windows Game runs better on Linux with Proton than on Windows, e.g. `Elden Ring`. Alteratively you might want to take a look onto the https://lutris.net/ platform where other linux gamers explain how to install some games. Often times there is a ready to go solution or a tutorial and there is also a forum to ask questions. But don't expect anything. Linux is not a gaming system. That's Window's speciality as the games are most of the time being made with Windows in mind! Not because Linux (or Mac for that matter) is a bad system for gaming, quite the contrary, but because as a developer you look for the biggest user base since making a game is always a bit of a gamble where you don't know whether you will get paid when the game gets released after years of work. Still, you will probably find a performance improvement in a lot of cases (e.g. Blender 3d rendering times, ..) just for using Linux.
+If the performance on your linux machine still does not work as well as you were hoping for, try to find out which linux system the developer of your program is using. The developer for Steam Proton, for instance, used to work on Fedora Linux. So just switching to that system for gaming might solve some hard to guess problems. Or use a gaming system like https://nobaraproject.org/ which is a modified version of Fedora Linux with user-friendly fixes added to it, specifically for gaming and streaming.
 
 ### Game Engines
 - [Pygame](https://pypi.org/project/pygame/)

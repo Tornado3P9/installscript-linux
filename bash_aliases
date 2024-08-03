@@ -71,15 +71,13 @@ alias mp32wav='for f in *.mp3; do ffmpeg -i "$f" "${f%.mp3}.wav"; done'
 alias m4a2wav='for f in *.m4a; do ffmpeg -i "$f" "${f%.m4a}.wav"; done'
 alias flac2mp3='for f in *.flac; do ffmpeg -i "$f" -c:v copy -q:a 0 "${f%.flac}.mp3"; done'
 alias videosoundupmp4='for f in *.mp4; do ffmpeg -i "$f" -filter:a "volume=30dB" -codec:a aac -b:a 74k -c:v copy "_${f}"; done'
-
-videosoundup() {
+function videosoundup() {
   if [ "$#" -ne 1 ]; then
     echo "Usage: videosoundup audiofile.ogg"
     return 1
   fi
-
-  # increase the volume by 10dB:
-  #ffmpeg -i "$1" -vcodec copy -af "volume=10dB" "modified_${1}"
+  # # increase the volume by 10dB:
+  # ffmpeg -i "$1" -vcodec copy -af "volume=10dB" "modified_${1}"
   # increase the volume by the factor 5:
   ffmpeg -i "$1" -vcodec copy -af "volume=5.0" "modified_${1}"
 }
@@ -97,7 +95,7 @@ function playline() {
 }
 
 # overwrite 'rm' with a function that moves the files to a bin instead of directly deleting it OR use the `trash-cli` tool
-rm(){
+function rm(){
   mkdir -p /tmp/trash
   mv $@ /tmp/trash
 }
@@ -116,6 +114,21 @@ function upper() {
 }
 function lower() {
   echo "$1" | tr '[:upper:]' '[:lower:]';
+}
+
+# Function to remove special characters, leading and ending spaces, and multiple spaces (some editors like VSC do that automatically)
+# Usage: make_markdown_link_to_some_title_on_same_page "   Hello! This is a    Test String.   "
+# Returns: #hello-this-is-a-test-string
+make_markdown_link_to_some_title_on_same_page() {
+  # Remove special characters
+  modified_string=$(echo "$1" | sed 's/[^a-zA-Z0-9 ]//g')
+  # Remove leading and ending spaces
+  modified_string=$(echo "$modified_string" | sed 's/^[[:space:]]*//;s/[[:space:]]*$//')
+  # Remove multiple spaces and replace remaining single spaces with '-'
+  modified_string=$(echo "$modified_string" | tr -s ' ' | sed 's/ /-/g')
+  # Convert to lowercase
+  modified_string=$(echo "$modified_string" | tr '[:upper:]' '[:lower:]')
+  echo "#$modified_string"
 }
 
 # lazy-git
