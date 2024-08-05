@@ -263,6 +263,8 @@ Applications that are not included in the repository or just not with the most r
 - Obsidian - like OneNote but private https://obsidian.md/download (**.Deb**, Snap or .Appimage)
 - Libre Workspace https://www.libre-workspace.org/ (online/local, language german)
 - Kleopatra https://www.openpgp.org/software/kleopatra/ (part of the repository: `sudo apt install kleopatra`)
+- Document Scanner https://gitlab.gnome.org/GNOME/simple-scan (best choice and part of the repository: `sudo apt install simple-scan`)
+- XSane https://help.ubuntu.com/community/XSane (part of the repository: `sudo apt install xsane`)
 
 #### Video Calls
 - Zoom https://zoom.us/download . [how-to](https://github.com/Tornado3P9/installscript-linux/blob/master/zoom.md)
@@ -384,7 +386,7 @@ Applications that are not included in the repository or just not with the most r
 #### Disk Usage Analyzer
 - Baobab https://apps.gnome.org/Baobab/
 - Disks https://apps.gnome.org/DiskUtility/
-- `ncdu /path/to/directory` (part of the repository: `sudo apt install ncdu`)
+- ncdu [How-To](https://github.com/Tornado3P9/Linux-Console-Tools/blob/master/Working_with_files_and_directory/ncdu.md) (part of the repository: `sudo apt install ncdu`)
 - `du -h --max-depth=1 /path/to/directory` or `du -h --max-depth=1 .` for the current directory
 
 #### Appimage Programs that run on any Linux system
