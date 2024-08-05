@@ -237,7 +237,7 @@ sudo apt install texlive texlive-lang-german texlive-lang-english texlive-latex-
 Applications that are not included in the repository or just not with the most recent version:
 
 #### Office/School
-- GeoGebra https://wiki.geogebra.org/en/Reference:GeoGebra_Installation#GeoGebra_Classic_5_for_Desktop
+- GeoGebra https://www.geogebra.org/calculator / https://www.geogebra.org/classic (online)
 - JFLAP https://www.jflap.org/jflaptmp/ (start with: `java -jar JFLAP.jar`)
 - Periodic Table https://ptable.com/#Properties (online)
 - printfriendly https://www.printfriendly.com/ (online)
