@@ -288,6 +288,7 @@ Note: These kinds of workspace simplifyers might not always support every featur
 - Signal https://signal.org/download/linux/
 - Telegram https://desktop.telegram.org/
 - WhatsApp https://web.whatsapp.com/ . [how-to](https://itsfoss.com/whatsapp-linux-desktop/) (online)
+  - Note: As of yet, WhatsApp Web does not support video calls. So keep your mobile device at hand.
 
 #### Video Player
 - MPV Player https://mpv.io/ with [keyboard shortcuts](https://manpages.ubuntu.com/manpages/bionic/man1/mpv.1.html) (part of the repository: `sudo apt install mpv` )
