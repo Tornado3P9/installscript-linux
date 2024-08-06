@@ -19,6 +19,7 @@
   - [Office/School](#officeschool)
   - [Video Calls](#video-calls)
   - [Video Player](#video-player)
+  - [Password Manager](#password-manager)
   - [Screen Recording](#screen-recording)
   - [Video Editing](#video-editing)
   - [Sound Editing](#sound-editing)
@@ -39,7 +40,6 @@
 - [Virtual Machine](#virtual-machine)
 - [Gaming](#gaming)
 - [Game Engines](#game-engines)
-- [Password manager](#password-manager)
 - [Microsoft PowerShell](#microsoft-powershell)
 - [Decentralised Data Storage - IPFS](#decentralised-data-storage---ipfs)
 - [Converting RPM to DEB packages](#converting-rpm-to-deb-packages)
@@ -290,6 +290,10 @@ Applications that are not included in the repository or just not with the most r
 - SMPlayer https://www.smplayer.info/ (part of the repository: `sudo apt install smplayer` )
 - VLC Media Player https://www.videolan.org/vlc/ (part of the repository: `sudo apt install vlc` )
 - Parole https://docs.xfce.org/apps/parole/start (already preinstalled)
+
+#### Password Manager
+- bitwarden (very professional online web service) https://bitwarden.com/
+- KeePassXC (simple offline application) https://keepassxc.org/ `sudo apt install keepassxc`
 
 #### Screen Recording
 - OBS Studio https://obsproject.com/wiki/install-instructions#linux (part of the repository: `sudo apt install obs-studio` )
@@ -637,10 +641,6 @@ If the performance on your linux machine still does not work as well as you were
 - [SDL2](https://github.com/Tornado3P9/Linux-Console-Tools/blob/master/How-To-Install-SDL-On-Ubuntu.md)
 - [Unity](https://unity.com/download)
 - [Unreal Engine](https://www.unrealengine.com/)
-
-### Password manager
-- bitwarden (very professional online web service) https://bitwarden.com/
-- KeePassXC (simple offline application) https://keepassxc.org/ `sudo apt install keepassxc`
 
 ### Microsoft PowerShell
 - https://github.com/PowerShell/PowerShell
