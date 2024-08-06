@@ -341,7 +341,7 @@ Note: These kinds of workspace simplifyers might not always support every featur
 - (most adope applications don't work well on linux)[^6]
 
 #### Web Browser
-- Firefox (already preinstalled)
+- Firefox https://support.mozilla.org/en-US/kb/install-firefox-linux (preinstalled as Snap, but also available as **.Deb**, Flatpak or Application Binary)
 - LibreWolf: An Open-Source Firefox Fork Without the Telemetry https://librewolf.net/
 - Chrome https://www.google.com/chrome/ (**.Deb** or .RPM)
 - Vivaldi https://vivaldi.com/download/
