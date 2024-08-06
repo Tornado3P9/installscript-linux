@@ -390,8 +390,10 @@ Note: These kinds of workspace simplifyers might not always support every featur
 - RStudio Desktop https://posit.co/download/rstudio-desktop/
 - IDA Free https://hex-rays.com/ida-free/
 - NI LabVIEW https://www.ni.com/en/shop/labview.html
-- QT (GUI Development) https://www.qt.io/download-dev
-- Slint (GUI Development) https://slint.dev/
+- QT (UI-library with C++, Python, Rust) https://www.qt.io/download-dev
+- Slint (UI-library with Rust, C++, JavaScript, Python) https://slint.dev/
+- GTK-4 (UI-library with Rust, C++, Python and more) https://gtk-rs.org/gtk4-rs/stable/latest/book/
+- Tkinter (UI-library with Python) https://github.com/TomSchimansky/CustomTkinter
 - Gitleaks https://github.com/gitleaks/gitleaks
 - GitGuardian https://www.gitguardian.com/state-of-secrets-sprawl-report-2023
 - Terraform https://developer.hashicorp.com/terraform/install https://developer.hashicorp.com/terraform/cli/install/apt
