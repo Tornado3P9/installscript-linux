@@ -154,6 +154,9 @@ Example: https://github.com/dreamsofcode-io/escapecontrol/tree/main/linux/kanata
 - [Karabiner-Elements](https://karabiner-elements.pqrs.org/) for macOS
 
 ### Firewall[^2]
+
+- YouTube Tutorial: [Linux und Virenschutz - So nutzt Du Deinen Linux-Desktop-Rechner sicher!](https://youtu.be/Sb4_LKFT1Xo)
+
 ```bash
 # For Desktop Users: Enable User_Friendly_Firewall and verify status
 sudo ufw enable && sudo ufw status
@@ -475,7 +478,7 @@ The issue with Snaps is that they run 'root' and update automatically without yo
 They are also terribly slow, especially at first startup, and will overflow your filesystem output with a lot of loopback devices.
 The desktop integration is not always perfect. The results can be wrong color schemes or unreadable texts. However, Snaps seem to be working well on server installations.
 Snaps are certainly a promising idea, but because we can just create the debian installation file ourselves if it doesn't exist, Snaps only worsen the overall experience.
-You can also use [Flatpaks](https://flathub.org/home) or Appimages if you have to. If you want to use [Snaps, then here](https://snapcraft.io/) is where to look for apps.
+You can also use [Flatpaks](https://flathub.org/setup/Ubuntu) or Appimages if you have to. If you want to use [Snaps, then here](https://snapcraft.io/) is where to look for apps.
 
 ```bash
 # List and Uninstall Snaps
@@ -599,6 +602,7 @@ Update `pip` via: `python3 -m pip install --upgrade pip`
 - [Timeshift](https://linuxconfig.org/ubuntu-22-04-system-backup-and-restore) - `sudo apt install timeshift`
 - [Chezmoi - Easily moving Linux installs](https://christitus.com/chezmoi/)
 - [Déjà Dup Backups](https://snapcraft.io/deja-dup) - `sudo apt install deja-dup`
+- [Pika Backup](https://apps.gnome.org/PikaBackup/) - (you need flatpak enabled for this)
 - [Make a Full Disk Backup with DD](https://bdoga.com/full-disk-backup-with-dd/)
   - `dd if=/dev/sdc conv=sync,noerror status=progress bs=64K | gzip -c > backup_image.img.gz`
   - `gunzip -c backup_image.img.gz | dd of=/dev/sdc status=progress`
