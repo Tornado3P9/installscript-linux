@@ -268,6 +268,10 @@ Applications that are not included in the repository or just not with the most r
 - Kleopatra https://www.openpgp.org/software/kleopatra/ (part of the repository: `sudo apt install kleopatra`)
 - Document Scanner https://gitlab.gnome.org/GNOME/simple-scan (best choice and part of the repository: `sudo apt install simple-scan`)
 - XSane https://help.ubuntu.com/community/XSane (part of the repository: `sudo apt install xsane`)
+- Messaging app for integrating WhatsApp, Facebook Messenger, Slack, Telegram, WeChat, Google Hangouts, Skype, Zendesk, Instagram, Discord, Teams and many more in a single application, thereby simplifying the workspace.  
+Note: These kinds of workspace simplifyers might not always support every feature of the individual application, and the messenger might run slower with many apps compared to just running one individual app:
+  - Rambox https://rambox.app/download-linux/ (Appimage, .Deb, .RPM or Snap)
+  - Franz https://meetfranz.com/ . [how-to](https://itsfoss.com/franz-messaging-app/) (Appimage, .Deb)
 
 #### Video Calls
 - Zoom https://zoom.us/download . [how-to](https://github.com/Tornado3P9/installscript-linux/blob/master/zoom.md)
@@ -283,6 +287,7 @@ Applications that are not included in the repository or just not with the most r
 - Slack https://slack.com/downloads/linux (**.Deb**, Snap, or .RPM)
 - Signal https://signal.org/download/linux/
 - Telegram https://desktop.telegram.org/
+- WhatsApp https://web.whatsapp.com/ . [how-to](https://itsfoss.com/whatsapp-linux-desktop/) (online)
 
 #### Video Player
 - MPV Player https://mpv.io/ with [keyboard shortcuts](https://manpages.ubuntu.com/manpages/bionic/man1/mpv.1.html) (part of the repository: `sudo apt install mpv` )
@@ -482,7 +487,7 @@ The issue with Snaps is that they run 'root' and update automatically without yo
 They are also terribly slow, especially at first startup, and will overflow your filesystem output with a lot of loopback devices.
 The desktop integration is not always perfect. The results can be wrong color schemes or unreadable texts. However, Snaps seem to be working well on server installations.
 Snaps are certainly a promising idea, but because we can just create the debian installation file ourselves if it doesn't exist, Snaps only worsen the overall experience.
-You can also use [Flatpaks](https://flathub.org/setup/Ubuntu) or Appimages if you have to. If you want to use [Snaps, then here](https://snapcraft.io/) is where to look for apps.
+You can also use [Flatpaks](https://flathub.org/setup/Ubuntu) or [Appimages](https://itsfoss.com/use-appimage-linux/) if you have to. If you want to use [Snaps, then here](https://snapcraft.io/) is where to look for apps.
 
 ```bash
 # List and Uninstall Snaps
