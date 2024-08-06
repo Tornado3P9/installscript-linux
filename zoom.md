@@ -1,10 +1,10 @@
 # Install Zoom Client
 
 Two ways to do this:
-1. You could use the web client that you can start from inside your web browser.
-2. you could download and install the linux version on your pc.
+1. You could use the [web client](https://zoom.us/signin#/login) that you can start from inside your web browser.
+2. You could [download and install](https://itsfoss.com/zoom-ubuntu/) the linux version on your pc.
 
-### Install and Download on you PC:
+### Download and Install on you PC:
 Go to https://zoom.us/download and download the version for your Linux System.  
 ![](pics/zoom1.png)  
 
