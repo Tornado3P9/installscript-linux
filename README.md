@@ -385,9 +385,10 @@ Applications that are not included in the repository or just not with the most r
 
 #### Disk Usage Analyzer
 - Baobab https://apps.gnome.org/Baobab/
-- Disks https://apps.gnome.org/DiskUtility/
 - ncdu [How-To](https://github.com/Tornado3P9/Linux-Console-Tools/blob/master/Working_with_files_and_directory/ncdu.md) (part of the repository: `sudo apt install ncdu`)
 - `du -h --max-depth=1 /path/to/directory` or `du -h --max-depth=1 .` for the current directory
+- GParted (best known partition editor/formatter) https://gparted.org/ (part of the repository: `sudo apt install gparted`)
+- Disks https://apps.gnome.org/DiskUtility/ (already preinstalled: `sudo apt install gnome-disk-utility`)
 
 #### Appimage Programs that run on any Linux system
 - Audacity https://www.audacityteam.org/
