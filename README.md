@@ -478,7 +478,10 @@ Optionally you can extract the program directory into the /opt/ folder and..
    ```
 - or create a [Panel App Launcher](#adding-app-launcher-to-the-xfce-panel)
 
-### `Firefox` Web Browser[^1]
+### `Firefox` Web Browser
+
+https://support.mozilla.org/en-US/kb/install-firefox-linux
+
 Security tip for using Firefox:
 - Type `about:config` into the *URL Search Bar* and then look for `pdfjs.enableScripting`. Set that to `false`.
 - Type `about:preferences` into the *URL Search Bar* and go to **Privacy & Security**. Scroll down and choose `Enable HTTPS-Only Mode in all windows`.
@@ -830,7 +833,6 @@ apt-cache --generate pkgnames \
 -->
 
 [^3]:Additional Codecs https://www.makeuseof.com/tag/ubuntu-restricted-extras-install-ubuntu-linux/
-[^1]:Install Firefox manually: https://itsfoss.com/firefox-quantum-ubuntu/
 [^2]:Firewall: https://github.com/Tornado3P9/Linux-Console-Tools/blob/master/admin%20tools/firewall_ufw.md
 [^4]:dd https://www.raspberrypi.com/documentation/computers/getting-started.html#installing-images-on-linux https://github.com/Tornado3P9/Linux-Console-Tools/blob/master/dd.md
 [^5]:VideoLAN libdvdcss: https://www.videolan.org/developers/libdvdcss.html, https://wiki.ubuntuusers.de/DVD-Wiedergabe/#Problembehebung
