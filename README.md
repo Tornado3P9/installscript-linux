@@ -243,6 +243,7 @@ Applications that are not included in the repository or just not with the most r
 - GeoGebra https://www.geogebra.org/calculator / https://www.geogebra.org/classic (online)
 - JFLAP https://www.jflap.org/jflaptmp/ (start with: `java -jar JFLAP.jar`)
 - Periodic Table https://ptable.com/#Properties (online)
+- CrypTool https://www.cryptool.org/en/ educational cryptography tools
 - printfriendly https://www.printfriendly.com/ (online)
 - Diagram Editor https://www.diagrameditor.com/ (online)
 - ExcaliDraw https://excalidraw.com/ (online)
@@ -259,6 +260,7 @@ Applications that are not included in the repository or just not with the most r
 - Google Docs https://www.google.com/docs/about/ (online)
 - Atril - PDF/ebook Viewer https://wiki.mate-desktop.org/mate-desktop/applications/atril/ (already preinstalled)
 - PDFArranger (part of the repository: `sudo apt install pdfarranger`)
+- PDFsam https://pdfsam.org/
 - Stirling PDF https://stirlingpdf.io/ (online)
 - Calibre - ebook management https://calibre-ebook.com/download_linux (part of the repository: `sudo apt install calibre`)
 - Microsoft OneNote https://www.onenote.com/hrd (online)
@@ -338,6 +340,7 @@ Note: These kinds of workspace simplifyers might not always support every featur
 - ExcaliDraw (online, very simple) https://excalidraw.com/
 - PIXLR (online) https://pixlr.com/
 - Photoflare https://photoflare.io/ `sudo apt install photoflare`
+- Hugin https://hugin.sourceforge.io/
 - (most adope applications don't work well on linux)[^6]
 
 #### Web Browser
