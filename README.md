@@ -361,6 +361,7 @@ Note: These kinds of workspace simplifyers might not always support every featur
 - Atom https://atom.io/
 - Eclipse IDE https://www.eclipse.org/
 - NetBeans IDE https://netbeans.apache.org/download/
+- LazyVim https://www.lazyvim.org/
 - Blender https://www.blender.org/download/ KeenTools https://keentools.io/ CAD Sketcher https://makertales.gumroad.com/l/CADsketcher?a=742446579
 - Onshape https://www.onshape.com/en/ (online)
 - Cascadeur https://cascadeur.com/download
