@@ -470,16 +470,27 @@ tar xvf ~/Downloads/blender*.tar.xz -C ~/Programs/
 ```
 Once that is done you can usually just double click on it.
 
-Optionally you can extract the program directory into the /opt/ folder and..  
+Optionally you can extract the program directory into the /opt/ folder and..
+
 - add the blender directory path to the Session `PATH` variable, which will let you start blender from the terminal
    ```bash
    echo 'export PATH=$PATH:/opt/program_directory/' >> ~/.bashrc
    source ~/.bashrc
    ```
+
 - or create a link to the system programs directory `/usr/local/bin/blender` which will let you start it from the terminal and the Applications Menu. You can create the link in `/usr/bin/`, but since it is intended for system-wide binaries managed by the package manager, consider using `/usr/local/bin/` instead, which is intended for manually installed software.
    ```bash
    sudo ln -sf /opt/program_directory/blender /usr/local/bin/blender
    ```
+   Consider changing the owner and the group of the application directory `/opt/program_directory/` to the current user recursively (`-R`):
+   ```bash
+   sudo chown -R $(whoami):$(whoami) /opt/program_directory/
+   ```
+   If you want to restrict the permissions so that only the current user has access to the directory, you can use the chmod command:
+   ```bash
+   sudo chmod -R 700 /opt/program_directory/
+   ```
+
 - or create a [Panel App Launcher](#adding-app-launcher-to-the-xfce-panel)
 
 ### `Firefox` Web Browser
