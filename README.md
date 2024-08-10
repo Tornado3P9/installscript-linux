@@ -256,6 +256,7 @@ Applications that are not included in the repository or just not with the most r
 - WPS Office https://www.wps.com/ (developed by Kingsoft, based in Beijing, China)
 - LibreOffice https://www.libreoffice.org/ (already preinstalled)
 - OpenOffice https://www.openoffice.org/
+- SoftMaker Office https://www.softmaker.com/en/products/softmaker-office
 - Microsoft Office 365 https://www.office.com/ (online)
 - Google Docs https://www.google.com/docs/about/ (online)
 - Atril - PDF/ebook Viewer https://wiki.mate-desktop.org/mate-desktop/applications/atril/ (already preinstalled)
