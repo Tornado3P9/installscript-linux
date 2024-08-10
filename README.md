@@ -476,9 +476,9 @@ Optionally you can extract the program directory into the /opt/ folder and..
    echo 'export PATH=$PATH:/opt/program_directory/' >> ~/.bashrc
    source ~/.bashrc
    ```
-- or create a link to the system programs directory `/usr/bin/blender` which will let you start it from the terminal and the Applications Menu
+- or create a link to the system programs directory `/usr/local/bin/blender` which will let you start it from the terminal and the Applications Menu. You can create the link in `/usr/bin/`, but since it is intended for system-wide binaries managed by the package manager, consider using `/usr/local/bin/` instead, which is intended for manually installed software.
    ```bash
-   sudo ln -sf /opt/program_directory/blender /usr/bin/blender
+   sudo ln -sf /opt/program_directory/blender /usr/local/bin/blender
    ```
 - or create a [Panel App Launcher](#adding-app-launcher-to-the-xfce-panel)
 
