@@ -310,7 +310,7 @@ Note: These kinds of workspace simplifyers might not always support every featur
 - SimpleScreenRecorder https://www.maartenbaert.be/simplescreenrecorder/#download (part of the repository: `sudo apt install simplescreenrecorder` )
 - Kazam https://github.com/henrywoo/kazam (part of the repository: `sudo apt install kazam` )
 - ScreenRec https://screenrec.com/screen-recorder#download
-- Terminal https://youtu.be/vWWSpDE7Gk4 (programs you may use: `sudo apt install v4l-utils ffmpeg mpv guvcview vlc`)
+- Terminal [how-to](https://github.com/Tornado3P9/Linux-Console-Tools/blob/master/media/screen_recording_using_the_terminal.md) . https://youtu.be/vWWSpDE7Gk4
 
 #### Video Editing
 - DaVinci Resolve https://www.blackmagicdesign.com/products/davinciresolve/
