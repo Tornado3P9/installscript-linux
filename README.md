@@ -307,8 +307,8 @@ Note: These kinds of workspace simplifyers might not always support every featur
 
 #### Screen Recording
 - OBS Studio https://obsproject.com/wiki/install-instructions#linux (part of the repository: `sudo apt install obs-studio` )
-- SimpleScreenRecorder https://www.maartenbaert.be/simplescreenrecorder/#download (part of the repository: `sudo apt install simplescreenrecorder` )
 - Kazam https://github.com/henrywoo/kazam (part of the repository: `sudo apt install kazam` )
+- SimpleScreenRecorder https://www.maartenbaert.be/simplescreenrecorder/#download (part of the repository: `sudo apt install simplescreenrecorder` )
 - ScreenRec https://screenrec.com/screen-recorder#download
 - Terminal [how-to](https://github.com/Tornado3P9/Linux-Console-Tools/blob/master/media/screen_recording_using_the_terminal.md) . https://youtu.be/vWWSpDE7Gk4
 
@@ -656,7 +656,8 @@ Update `pip` via: `python3 -m pip install --upgrade pip`
 - [Steam](https://store.steampowered.com/app/220200/Kerbal_Space_Program/) - `sudo apt install steam`  
   - Log files: `find $HOME/.steam/steam/steamapps/compatdata/ -type f -name "*.log"`
   - Game files: `ls -lh $HOME/.local/share/Steam/steamapps/common/`  
-  or `ls -lh $HOME/.steam/steam/steamapps/common/`
+  or `ls -lh $HOME/.steam/steam/steamapps/common/`  
+  Next to the steam directory, some games also store user-specific non-essential (application-specific) data files, such as game scores, application state, or downloaded data in the `~/.local/share/` directory. It is the equivalent of what is often called "Application Data" on Windows systems.
 - [itch.io](https://itch.io/)
 - [gamingonlinux.com](https://www.gamingonlinux.com/)
 
