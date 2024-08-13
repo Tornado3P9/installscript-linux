@@ -3,7 +3,8 @@
 ### Table of Contents
 - [First set up the base system](#first-set-up-the-base-system)
 - [Now you can make some first customizations to the new system](#now-you-can-make-some-first-customizations-to-the-new-system)
-- [Graphical Configuration Assistants are a great help](#graphical-configuration-assistants-are-a-great-help)
+- [Graphics Card Drivers](#graphics-card-drivers)
+- [Configuration Assistants are a great help](#configuration-assistants-are-a-great-help)
 - [Create a `.fonts` directory for your own Truetype (.ttf) fonts](#create-a-fonts-directory-for-your-own-truetype-ttf-fonts)
 - [Create a `Programs` folder for all the manually downloaded packages](#create-a-programs-folder-for-all-the-manually-downloaded-packages)
 - [System Update Settings](#system-update-settings)
@@ -103,7 +104,22 @@ sqlite3 \
 trash-cli
 ```
 
-### Graphical Configuration Assistants are a great help
+### Graphics Card Drivers
+Installing drivers on Ubuntu is not necessary as Ubuntu detects the Video Card and automatically uses its own Nouveau Open Source driver for nVidia cards. But the proprietary nVidia driver does give a noticeable performance boost over the Nouveau driver, so it is still common to select the proprietary one.  
+AMD graphics card drivers for Linux are provided through the open-source AMDGPU driver, which is integrated into the Linux kernel. This driver supports most modern AMD Radeon graphics cards and is included by default in many Linux distributions, including Ubuntu. The AMDGPU driver is actively developed and regularly updated with new kernel releases.
+For users who require advanced features or the latest GPU support, AMD also provides the AMDGPU-PRO driver, which is a proprietary driver that includes additional features and optimizations. This driver is not included in the kernel and must be downloaded and installed separately from AMD's official website.
+
+If you unchecked the checkbox (automatically install proprietary software...) when installing the system, you can easily select another available nVidia driver at any time:
+- open **![menu](https://docs.xubuntu.org/current/user/libs/images/icon_menu.png) → ![preferences](https://docs.xubuntu.org/current/user/libs/images/preferences-desktop.png) Settings Manager → Additional Drivers** and select a driver by klicking on the line, where it says *`proprietary, tested`*
+
+If there are problems, try an older version. To check which Nvidia packages are installed on the system, run the command `dpkg -l | grep -i nvidia` or `ubuntu-drivers list`. You can even do `sudo ubuntu-drivers autoinstall` to install the recommended driver automatically, but just stay with the graphical **Additional Drivers** menu and you're good.
+
+NVidea will install an additional configuration center "NVIDEA X SERVER SETTINGS" with a green icon in case you want to look for it inside the Settings Menu. You can also open it from the terminal with the command `nvidia-settings`. Only go there if you encounter any problems with the standard configuration. For example you could enable "Force Composition Pipeline" inside the "X SERVER DISPLAY CONFIGURATION" tab, then "apply" and "Save To X Configuration File" if you encounter things like "screen tearing". I myself have never encountered any problems with the standard configuration.
+
+To open the AMD Driver Configuration Center from the terminal, you would typically use the command for the specific tool provided by AMD for your graphics card. For many AMD graphics cards, this tool is called amdcccle, which stands for AMD Catalyst Control Center: Linux Edition. However, AMD has transitioned to the amdgpu driver and associated tools for newer cards.
+If you have the amdcccle installed, you can open it by running `amdcccle` or if you are using the newer amdgpu-pro driver, you might have a different tool, and you can try opening the Radeon Software for Linux with `radeon-settings`.
+
+### Configuration Assistants are a great help
 - https://www.linux-assistant.org/ Beginner friendly and with [Youtube-Tutorials](https://youtu.be/uW11Uu8vhqc)
 - https://github.com/ChrisTitusTech/linutil For Linux users
 - https://github.com/ChrisTitusTech/winutil For Windows users
@@ -307,7 +323,8 @@ Note: These kinds of workspace simplifyers might not always support every featur
 
 #### Screen Recording
 - OBS Studio https://obsproject.com/wiki/install-instructions#linux (part of the repository: `sudo apt install obs-studio` )
-- Kazam https://github.com/henrywoo/kazam (part of the repository: `sudo apt install kazam` )
+- Kazam https://github.com/henrywoo/kazam (part of the repository: `sudo apt install kazam`)  
+`cat ~/.config/kazam/kazam.conf` to see the kazam configuration file
 - SimpleScreenRecorder https://www.maartenbaert.be/simplescreenrecorder/#download (part of the repository: `sudo apt install simplescreenrecorder` )
 - ScreenRec https://screenrec.com/screen-recorder#download
 - Terminal [how-to](https://github.com/Tornado3P9/Linux-Console-Tools/blob/master/media/screen_recording_using_the_terminal.md) . https://youtu.be/vWWSpDE7Gk4
@@ -405,7 +422,7 @@ Note: These kinds of workspace simplifyers might not always support every featur
 - Terraform https://developer.hashicorp.com/terraform/install https://developer.hashicorp.com/terraform/cli/install/apt
 
 #### Disk Usage Analyzer
-- Baobab https://apps.gnome.org/Baobab/
+- Baobab https://apps.gnome.org/Baobab/ (part of the repository: `sudo apt install baobab`)
 - ncdu [How-To](https://github.com/Tornado3P9/Linux-Console-Tools/blob/master/Working_with_files_and_directory/ncdu.md) (part of the repository: `sudo apt install ncdu`)
 - `du -h --max-depth=1 /path/to/directory` or `du -h --max-depth=1 .` for the current directory
 - GParted (best known partition editor/formatter) https://gparted.org/ (part of the repository: `sudo apt install gparted`)
