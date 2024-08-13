@@ -3,11 +3,11 @@
 ### Table of Contents
 - [First set up the base system](#first-set-up-the-base-system)
 - [Now you can make some first customizations to the new system](#now-you-can-make-some-first-customizations-to-the-new-system)
+- [System Update Settings](#system-update-settings)
 - [Graphics Card Drivers](#graphics-card-drivers)
 - [Configuration Assistants are a great help](#configuration-assistants-are-a-great-help)
 - [Create a `.fonts` directory for your own Truetype (.ttf) fonts](#create-a-fonts-directory-for-your-own-truetype-ttf-fonts)
 - [Create a `Programs` folder for all the manually downloaded packages](#create-a-programs-folder-for-all-the-manually-downloaded-packages)
-- [System Update Settings](#system-update-settings)
 - [The `Alt` key problem](#the-alt-key-problem)
 - [You can change the keyboard key map](#you-can-change-the-keyboard-key-map)
 - [Firewall](#firewall2)
@@ -104,6 +104,10 @@ sqlite3 \
 trash-cli
 ```
 
+### System Update Settings
+- Open **![menu](https://docs.xubuntu.org/current/user/libs/images/icon_menu.png) → ![preferences](https://docs.xubuntu.org/current/user/libs/images/preferences-desktop.png) Settings Manager → Software & Updates** and go to the _Updates_ tab
+- Open **![menu](https://docs.xubuntu.org/current/user/libs/images/icon_menu.png) → Software → Software & Updates** and go to the _Updates_ tab
+
 ### Graphics Card Drivers
 Installing drivers on Ubuntu is not necessary as Ubuntu detects the Video Card and automatically uses its own Nouveau Open Source driver for nVidia cards. But the proprietary nVidia driver does give a noticeable performance boost over the Nouveau driver, so it is still common to select the proprietary one.  
 AMD graphics card drivers for Linux are provided through the open-source AMDGPU driver, which is integrated into the Linux kernel. This driver supports most modern AMD Radeon graphics cards and is included by default in many Linux distributions, including Ubuntu. The AMDGPU driver is actively developed and regularly updated with new kernel releases.
@@ -152,10 +156,6 @@ If you keep all the downloaded binaries and installation files together in this 
 mkdir $HOME/Programs
 ```
 `$HOME/` and `~/` and `/home/$USER/` basically do the same thing.
-
-### System Update Settings
-- Open **![menu](https://docs.xubuntu.org/current/user/libs/images/icon_menu.png) → ![preferences](https://docs.xubuntu.org/current/user/libs/images/preferences-desktop.png) Settings Manager → Software & Updates** and go to the _Updates_ tab
-- Open **![menu](https://docs.xubuntu.org/current/user/libs/images/icon_menu.png) → Software → Software & Updates** and go to the _Updates_ tab
 
 ### The Alt key problem
 Some Linux systems support the option to move applications around using the **`Alt`** key. The problem is that a lot of programs that run on both Windows and Linux also make heavy usage of the Alt key. Therefore it might be necessary to remove the presetting on Linux.
