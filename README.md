@@ -295,7 +295,7 @@ Note: These kinds of workspace simplifyers might not always support every featur
 
 #### Video Calls
 - Zoom https://zoom.us/download . [how-to](https://github.com/Tornado3P9/installscript-linux/blob/master/zoom.md)
-- Microsoft Teams https://www.microsoft.com/en-us/microsoft-teams/download-app
+- Microsoft Teams https://www.microsoft.com/en-us/microsoft-teams/compare-microsoft-teams-home-options
 - TeleGuard https://teleguard.com/
 - Element https://element.io/
 - Jitsi https://jitsi.org/
