@@ -283,22 +283,23 @@ Applications that are not included in the repository or just not with the most r
 - Calibre - ebook management https://calibre-ebook.com/download_linux (part of the repository: `sudo apt install calibre`)
 - Microsoft OneNote https://www.onenote.com/hrd (online)
 - Google Workspace - like OneNote https://workspace.google.com/ (online)
-- Obsidian - like OneNote but private https://obsidian.md/download (**.Deb**, Snap or .Appimage)
+- Obsidian - like OneNote but private https://obsidian.md/download (**.Deb**, Snap or .AppImage)
 - Libre Workspace https://www.libre-workspace.org/ (online/local, language german)
 - Kleopatra https://www.openpgp.org/software/kleopatra/ (part of the repository: `sudo apt install kleopatra`)
 - Document Scanner https://gitlab.gnome.org/GNOME/simple-scan (best choice and part of the repository: `sudo apt install simple-scan`)
 - XSane https://help.ubuntu.com/community/XSane (part of the repository: `sudo apt install xsane`)
 - Messaging app for integrating WhatsApp, Facebook Messenger, Slack, Telegram, WeChat, Google Hangouts, Skype, Zendesk, Instagram, Discord, Teams and many more in a single application, thereby simplifying the workspace.  
 Note: These kinds of workspace simplifyers might not always support every feature of the individual application, and the messenger might run slower with many apps compared to just running one individual app:
-  - Rambox https://rambox.app/download-linux/ (Appimage, .Deb, .RPM or Snap)
-  - Franz https://meetfranz.com/ . [how-to](https://itsfoss.com/franz-messaging-app/) (Appimage, .Deb)
+  - Rambox https://rambox.app/download-linux/ (AppImage, .Deb, .RPM or Snap)
+  - Franz https://meetfranz.com/ . [how-to](https://itsfoss.com/franz-messaging-app/) (AppImage, .Deb)
 
 #### Video Calls
 - Zoom https://zoom.us/download . [how-to](https://github.com/Tornado3P9/installscript-linux/blob/master/zoom.md)
-- Microsoft Teams https://www.microsoft.com/en-us/microsoft-teams/compare-microsoft-teams-home-options
 - TeleGuard https://teleguard.com/
-- Element https://element.io/
 - Jitsi https://jitsi.org/
+- Element https://element.io/
+- Microsoft Teams https://www.microsoft.com/en-us/microsoft-teams/compare-microsoft-teams-home-options  
+Unofficial Desktop client https://github.com/IsmaelMartinez/teams-for-linux/releases
 - Jami https://jami.net/
 - Nextcloud Talk https://nextcloud.com/talk/
 - BigBlueButton https://bigbluebutton.org/
@@ -322,9 +323,10 @@ Note: These kinds of workspace simplifyers might not always support every featur
 - KeePassXC (simple offline application) https://keepassxc.org/ `sudo apt install keepassxc`
 
 #### Screen Recording
-- OBS Studio https://obsproject.com/wiki/install-instructions#linux (part of the repository: `sudo apt install obs-studio` )
+- OBS Studio https://obsproject.com/wiki/install-instructions#linux (part of the repository: `sudo apt install obs-studio` )  
+`ls ~/.config/obs-studio/` to see the configuration directory
 - Kazam https://github.com/henrywoo/kazam (part of the repository: `sudo apt install kazam`)  
-`cat ~/.config/kazam/kazam.conf` to see the kazam configuration file
+`cat ~/.config/kazam/kazam.conf` to see the configuration file
 - SimpleScreenRecorder https://www.maartenbaert.be/simplescreenrecorder/#download (part of the repository: `sudo apt install simplescreenrecorder` )
 - ScreenRec https://screenrec.com/screen-recorder#download
 - Terminal [how-to](https://github.com/Tornado3P9/Linux-Console-Tools/blob/master/media/screen_recording_using_the_terminal.md) . https://youtu.be/vWWSpDE7Gk4
@@ -417,6 +419,7 @@ Note: These kinds of workspace simplifyers might not always support every featur
 - Slint (UI-library with Rust, C++, JavaScript, Python) https://slint.dev/
 - GTK-4 (UI-library with Rust, C++, Python and more) https://gtk-rs.org/gtk4-rs/stable/latest/book/
 - Tkinter (UI-library with Python) https://github.com/TomSchimansky/CustomTkinter
+- Electron (create cross-platform desktop app) https://www.electronjs.org/
 - Gitleaks https://github.com/gitleaks/gitleaks
 - GitGuardian https://www.gitguardian.com/state-of-secrets-sprawl-report-2023
 - Terraform https://developer.hashicorp.com/terraform/install https://developer.hashicorp.com/terraform/cli/install/apt
@@ -428,7 +431,7 @@ Note: These kinds of workspace simplifyers might not always support every featur
 - GParted (best known partition editor/formatter) https://gparted.org/ (part of the repository: `sudo apt install gparted`)
 - Disks https://apps.gnome.org/DiskUtility/ (already preinstalled: `sudo apt install gnome-disk-utility`)
 
-#### Appimage Programs that run on any Linux system
+#### AppImage Programs that run on any Linux system
 - Audacity https://www.audacityteam.org/
 - KeePassXC https://keepassxc.org/
 - Krita https://krita.org/
@@ -476,7 +479,7 @@ sudo apt install -f
 **AppImage Packages**  
 AppImages don't require installation. You just have to tell your system that the program is allowed to be executed. Once that is done you can just double click on it.
 ```bash
-# Setting the executable bit to all Appimage files in the Programs directory:
+# Setting the executable bit to all AppImage files in the Programs directory:
 chmod u+x ~/Programs/*.AppImage
 ```
 You can do the same by clicking with your Right Mouse Button at the .AppImage file:  
@@ -527,7 +530,7 @@ The issue with Snaps is that they run 'root' and update automatically without yo
 They are also terribly slow, especially at first startup, and will overflow your filesystem output with a lot of loopback devices.
 The desktop integration is not always perfect. The results can be wrong color schemes or unreadable texts. However, Snaps seem to be working well on server installations.
 Snaps are certainly a promising idea, but because we can just create the debian installation file ourselves if it doesn't exist, Snaps only worsen the overall experience.
-You can also use [Flatpaks](https://flathub.org/setup/Ubuntu) or [Appimages](https://itsfoss.com/use-appimage-linux/) if you have to. If you want to use [Snaps, then here](https://snapcraft.io/) is where to look for apps.
+You can also use [Flatpaks](https://flathub.org/setup/Ubuntu) or [AppImages](https://itsfoss.com/use-appimage-linux/) if you have to. If you want to use [Snaps, then here](https://snapcraft.io/) is where to look for apps.
 
 ```bash
 # List and Uninstall Snaps
