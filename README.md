@@ -323,7 +323,7 @@ Unofficial Desktop client https://github.com/IsmaelMartinez/teams-for-linux/rele
 - KeePassXC (simple offline application) https://keepassxc.org/ `sudo apt install keepassxc`
 
 #### Screen Recording
-- OBS Studio https://obsproject.com/wiki/install-instructions#linux (part of the repository: `sudo apt install obs-studio` )  
+- OBS Studio (by far the best option) https://obsproject.com/wiki/install-instructions#linux (part of the repository: `sudo apt install obs-studio` )  
 `ls ~/.config/obs-studio/` to see the configuration directory
 - Kazam https://github.com/henrywoo/kazam (part of the repository: `sudo apt install kazam`)  
 `cat ~/.config/kazam/kazam.conf` to see the configuration file
@@ -419,7 +419,7 @@ Unofficial Desktop client https://github.com/IsmaelMartinez/teams-for-linux/rele
 - Slint (UI-library with Rust, C++, JavaScript, Python) https://slint.dev/
 - GTK-4 (UI-library with Rust, C++, Python and more) https://gtk-rs.org/gtk4-rs/stable/latest/book/
 - Tkinter (UI-library with Python) https://github.com/TomSchimansky/CustomTkinter
-- Electron (create cross-platform desktop app) https://www.electronjs.org/
+- Electron (Create cross-platform desktop app) https://www.electronjs.org/
 - Gitleaks https://github.com/gitleaks/gitleaks
 - GitGuardian https://www.gitguardian.com/state-of-secrets-sprawl-report-2023
 - Terraform https://developer.hashicorp.com/terraform/install https://developer.hashicorp.com/terraform/cli/install/apt
@@ -669,7 +669,7 @@ Update `pip` via: `python3 -m pip install --upgrade pip`
 
 ### Virtual Machine
 - [VirtualBox](https://www.virtualbox.org/wiki/Downloads) - `sudo apt install virtualbox`
-- [QEMU](https://www.christitus.com/vm-setup-in-linux), [second link](https://github.com/Tornado3P9/Linux-Console-Tools/blob/master/QEMU%20virtual%20manager.md) - Even faster than VirtualBox
+- [QEMU](https://www.qemu.org/) (Even faster than VirtualBox) - [christitus-tutorial](https://www.christitus.com/vm-setup-in-linux), [absprog-tutorial](https://absprog.com/post/qemu-kvm-ubuntu-24-04)
 
 ### Gaming
 - [Lutris](https://lutris.net/)
