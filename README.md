@@ -113,10 +113,10 @@ Installing drivers on Ubuntu is not necessary as Ubuntu detects the Video Card a
 AMD graphics card drivers for Linux are provided through the open-source AMDGPU driver, which is integrated into the Linux kernel. This driver supports most modern AMD Radeon graphics cards and is included by default in many Linux distributions, including Ubuntu. The AMDGPU driver is actively developed and regularly updated with new kernel releases.
 For users who require advanced features or the latest GPU support, AMD also provides the AMDGPU-PRO driver, which is a proprietary driver that includes additional features and optimizations. This driver is not included in the kernel and must be downloaded and installed separately from AMD's official website.
 
-If you unchecked the checkbox (automatically install proprietary software...) when installing the system, you can easily select another available nVidia driver at any time:
+If you unchecked the checkbox ("automatically install proprietary software...") when installing the system, you can easily select another available nVidia driver at any time:
 - open **![menu](https://docs.xubuntu.org/current/user/libs/images/icon_menu.png) → ![preferences](https://docs.xubuntu.org/current/user/libs/images/preferences-desktop.png) Settings Manager → Additional Drivers** and select a driver by klicking on the line, where it says *`proprietary, tested`*
 
-If there are problems, try an older version. To check which Nvidia packages are installed on the system, run the command `dpkg -l | grep -i nvidia` or `ubuntu-drivers list`. You can even do `sudo ubuntu-drivers autoinstall` to install the recommended driver automatically, but just stay with the graphical **Additional Drivers** menu and you're good.
+If there are problems, try an older version. To check which Nvidia packages are installed on the system, run the command `dpkg -l | grep -i nvidia` or `ubuntu-drivers list`. You can even do `sudo ubuntu-drivers autoinstall` to install the recommended driver automatically, but just stay with the graphical **"Additional Drivers"** menu and you're good.
 
 NVidea will install an additional configuration center "NVIDEA X SERVER SETTINGS" with a green icon in case you want to look for it inside the Settings Menu. You can also open it from the terminal with the command `nvidia-settings`. Only go there if you encounter any problems with the standard configuration. For example you could enable "Force Composition Pipeline" inside the "X SERVER DISPLAY CONFIGURATION" tab, then "apply" and "Save To X Configuration File" if you encounter things like "screen tearing". I myself have never encountered any problems with the standard configuration.
 
@@ -304,7 +304,7 @@ Unofficial Desktop client https://github.com/IsmaelMartinez/teams-for-linux/rele
 - Nextcloud Talk https://nextcloud.com/talk/
 - BigBlueButton https://bigbluebutton.org/
 - Discord https://discord.com/download?linux (or just use the web version)
-- Skype https://snapcraft.io/skype (you need snap enabled for this)
+- Skype https://snapcraft.io/skype (online or Snap)
 - Slack https://slack.com/downloads/linux (**.Deb**, Snap, or .RPM)
 - Signal https://signal.org/download/linux/
 - Telegram https://desktop.telegram.org/
