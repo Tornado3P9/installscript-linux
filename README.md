@@ -303,9 +303,9 @@ Unofficial Desktop client https://github.com/IsmaelMartinez/teams-for-linux/rele
 - Jami https://jami.net/
 - Nextcloud Talk https://nextcloud.com/talk/
 - BigBlueButton https://bigbluebutton.org/
-- Discord https://discord.com/download?linux (or just use the web version)
+- Discord https://discord.com/download?linux (online, .Deb, binary)
 - Skype https://snapcraft.io/skype (online or Snap)
-- Slack https://slack.com/downloads/linux (**.Deb**, Snap, or .RPM)
+- Slack https://slack.com/downloads/linux (.Deb, Snap, or .RPM)
 - Signal https://signal.org/download/linux/
 - Telegram https://desktop.telegram.org/
 - WhatsApp https://web.whatsapp.com/ . [how-to](https://itsfoss.com/whatsapp-linux-desktop/) (online)
