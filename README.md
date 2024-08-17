@@ -260,6 +260,8 @@ Applications that are not included in the repository or just not with the most r
 - JFLAP https://www.jflap.org/jflaptmp/ (start with: `java -jar JFLAP.jar`)
 - Periodic Table https://ptable.com/#Properties (online)
 - CrypTool https://www.cryptool.org/en/ educational cryptography tools
+- mailARS https://github.com/JoernLoviscach/mailARS
+- Xournal++ https://github.com/xournalpp/xournalpp (part of the repository: `sudo apt install xournalpp` )
 - printfriendly https://www.printfriendly.com/ (online)
 - Diagram Editor https://www.diagrameditor.com/ (online)
 - ExcaliDraw https://excalidraw.com/ (online)
@@ -303,7 +305,7 @@ Unofficial Desktop client https://github.com/IsmaelMartinez/teams-for-linux/rele
 - Jami https://jami.net/
 - Nextcloud Talk https://nextcloud.com/talk/
 - BigBlueButton https://bigbluebutton.org/
-- Discord https://discord.com/download?linux (online, .Deb, binary)
+- Discord https://discord.com/download?linux (online, .Deb, or binary)
 - Skype https://snapcraft.io/skype (online or Snap)
 - Slack https://slack.com/downloads/linux (.Deb, Snap, or .RPM)
 - Signal https://signal.org/download/linux/
@@ -313,9 +315,9 @@ Unofficial Desktop client https://github.com/IsmaelMartinez/teams-for-linux/rele
 
 #### Video Player
 - MPV Player https://mpv.io/ with [keyboard shortcuts](https://manpages.ubuntu.com/manpages/bionic/man1/mpv.1.html) (part of the repository: `sudo apt install mpv` )
+- VLC Media Player https://www.videolan.org/vlc/ (part of the repository: `sudo apt install vlc` )
 - Haruna Video Player https://haruna.kde.org/ (part of the repository: `sudo apt install haruna` )
 - SMPlayer https://www.smplayer.info/ (part of the repository: `sudo apt install smplayer` )
-- VLC Media Player https://www.videolan.org/vlc/ (part of the repository: `sudo apt install vlc` )
 - Parole https://docs.xfce.org/apps/parole/start (already preinstalled)
 
 #### Password Manager
@@ -423,6 +425,8 @@ Unofficial Desktop client https://github.com/IsmaelMartinez/teams-for-linux/rele
 - Gitleaks https://github.com/gitleaks/gitleaks
 - GitGuardian https://www.gitguardian.com/state-of-secrets-sprawl-report-2023
 - Terraform https://developer.hashicorp.com/terraform/install https://developer.hashicorp.com/terraform/cli/install/apt
+- Scilab Xcos https://www.scilab.org/software/xcos (part of the repository: `sudo apt install scilab`)
+- MATLAB Simulink https://www.mathworks.com/products/simulink.html
 
 #### Disk Usage Analyzer
 - Baobab https://apps.gnome.org/Baobab/ (part of the repository: `sudo apt install baobab`)
@@ -524,6 +528,8 @@ Security tip for using Firefox:
 - Type `about:preferences` into the *URL Search Bar* and go to **Privacy & Security**. Scroll down and choose `Enable HTTPS-Only Mode in all windows`.
 This way your browser will only allow save connections and will ask you for permission if the website does not support https.
 - Type `about:performance` into the *URL Search Bar* to see the Firefox **Task Manager**. There you can see which application or addon uses up too many resources.
+
+More privacy stuff: https://www.privacytools.io/
 
 How to disable Snaps and making sure it doesn’t automatically reinstall.
 The issue with Snaps is that they run 'root' and update automatically without your knowledge and without asking for permission.
