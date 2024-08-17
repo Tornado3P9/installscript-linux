@@ -298,7 +298,7 @@ Note: These kinds of workspace simplifyers might not always support every featur
 - TeleGuard https://teleguard.com/
 - Jitsi https://jitsi.org/
 - Element https://element.io/
-- Microsoft Teams https://www.microsoft.com/en-us/microsoft-teams/compare-microsoft-teams-home-options  
+- Microsoft Teams https://www.microsoft.com/en-us/microsoft-teams/compare-microsoft-teams-home-options (online)  
 Unofficial Desktop client https://github.com/IsmaelMartinez/teams-for-linux/releases
 - Jami https://jami.net/
 - Nextcloud Talk https://nextcloud.com/talk/
