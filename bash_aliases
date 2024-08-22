@@ -228,7 +228,8 @@ listarchive() {
 			*.tar) tar -tf $archive ;;
 			*.tbz2) tar -jtf $archive ;;
 			*.tgz) tar -tzf $archive ;;
-			*.zip) unzip -l $archive ;;
+#			*.zip) unzip -l $archive ;;
+			*.zip) zipinfo $archive ;;
 			*.Z) zcat $archive ;;
 			*.7z) 7z l $archive ;;
 			*.xz) xz --list $archive ;;
