@@ -384,6 +384,7 @@ Unofficial Desktop client https://github.com/IsmaelMartinez/teams-for-linux/rele
 
 #### Development
 - JetBrains WebStorm/Rider/IntelliJ/PyCharm IDE https://www.jetbrains.com/pycharm/download/#section=linux
+- Cursor https://www.cursor.com/ (.AppImage)
 - Sublime Text https://www.sublimetext.com/
 - Sublime Merge https://www.sublimemerge.com/
 - VSCodium https://vscodium.com/ does not contain telemetry/tracking but some extensions have to be added [manually](https://milicendev.netlify.app/article/install-vs-codium-and-integrate-vs-code-extensions/)
