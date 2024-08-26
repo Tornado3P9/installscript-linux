@@ -205,7 +205,7 @@ extract() {
 			*.Z) uncompress $archive ;;
 			*.7z) 7z x $archive ;;
 			*.tar.xz) tar xvf $archive ;;
-			*.xz) unxz --keep $archive ;;
+			*.xz) unxz $archive ;;
 			*) echo "don't know how to extract '$archive'..." ;;
 			esac
 		else
@@ -228,8 +228,8 @@ listarchive() {
 			*.tar) tar -tf $archive ;;
 			*.tbz2) tar -jtf $archive ;;
 			*.tgz) tar -tzf $archive ;;
-#			*.zip) unzip -l $archive ;;
-			*.zip) zipinfo $archive ;;
+ 			*.zip) unzip -l $archive ;;
+#			*.zip) zipinfo $archive ;;
 			*.Z) zcat $archive ;;
 			*.7z) 7z l $archive ;;
 			*.xz) xz --list $archive ;;
