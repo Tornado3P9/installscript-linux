@@ -19,7 +19,7 @@
 - [Incomplete list of applications](#incomplete-list-of-applications)
   - [Office/School](#officeschool)
   - [Video Calls](#video-calls)
-  - [Video Player](#video-player)
+  - [Media Player](#media-player)
   - [Password Manager](#password-manager)
   - [Screen Recording](#screen-recording)
   - [Video Editing](#video-editing)
@@ -313,12 +313,13 @@ Unofficial Desktop client https://github.com/IsmaelMartinez/teams-for-linux/rele
 - WhatsApp https://web.whatsapp.com/ . [how-to](https://itsfoss.com/whatsapp-linux-desktop/) (online)
   - Note: As of yet, WhatsApp Web does not support video calls. So keep your mobile device at hand.
 
-#### Video Player
+#### Media Player
 - MPV Player https://mpv.io/ with [keyboard shortcuts](https://manpages.ubuntu.com/manpages/bionic/man1/mpv.1.html) (part of the repository: `sudo apt install mpv` )
 - VLC Media Player https://www.videolan.org/vlc/ (part of the repository: `sudo apt install vlc` )
 - Haruna Video Player https://haruna.kde.org/ (part of the repository: `sudo apt install haruna` )
 - SMPlayer https://www.smplayer.info/ (part of the repository: `sudo apt install smplayer` )
 - Parole https://docs.xfce.org/apps/parole/start (already preinstalled)
+- Cider (iTunes on Linux) https://flathub.org/apps/sh.cider.Cider
 
 #### Password Manager
 - bitwarden (very professional online web service) https://bitwarden.com/
@@ -341,6 +342,7 @@ Unofficial Desktop client https://github.com/IsmaelMartinez/teams-for-linux/rele
 - Shotcut Video Editor https://www.shotcut.org/
 - Olive Video Editor https://www.olivevideoeditor.org/
 - Blender https://www.blender.org/features/video-editing/
+- Lightworks https://lwks.com/
 
 #### Sound Editing
 - Audacity https://www.audacityteam.org/ (part of the repository: `sudo apt install audacity` )
@@ -357,13 +359,16 @@ Unofficial Desktop client https://github.com/IsmaelMartinez/teams-for-linux/rele
 - MyPaint (good for working with a digital drawing tablet) http://mypaint.org/ `sudo apt install mypaint`
 - Inkscape (vector graphics) https://inkscape.org/ `sudo apt install inkscape`
 - Blender (2d drawing tool for working with a digital drawing tablet) https://www.blender.org/
-- Darktable (photography workflow application and raw developer) https://www.darktable.org/ `sudo apt install darktable`
+- Darktable (photography workflow application and raw developer, for photographers, by photographers) https://www.darktable.org/ `sudo apt install darktable`
+- RawTherapee (photography workflow application and raw developer) https://rawtherapee.com/ `sudo apt install rawtherapee`
 - Affinity (Windows Version using Wine) https://codeberg.org/Wanesty/affinity-wine-docs
 - Pinta (Pinta is a GTK clone of Paint.Net 3.0) https://www.pinta-project.com/ `sudo apt install pinta`
 - ExcaliDraw (online, very simple) https://excalidraw.com/
 - PIXLR (online) https://pixlr.com/
 - Photoflare https://photoflare.io/ `sudo apt install photoflare`
 - Hugin https://hugin.sourceforge.io/
+- Scribus (Adobe InDesign Alternative) https://www.scribus.net/ `sudo apt install scribus`
+  - Ghostscript https://www.ghostscript.com/releases/gsdnld.html `sudo apt install ghostscript`
 - (most adope applications don't work well on linux)[^6]
 
 #### Web Browser
@@ -855,6 +860,10 @@ Remember that actual battery life can be influenced by many factors, including s
 [Xubuntu - Configure dual monitors](https://youtu.be/O25rgXH3L7o)  
 [My biggest problems with Linux Desktop and How I fixed them](https://christitus.com/my-problems-with-linux/)  
 [everyone codes faster when they stop using their mouse](https://youtu.be/WkT8ZC4ncX8)  
+[Inkscape complete video course - YouTube Playlist](https://www.youtube.com/playlist?list=PLHl8nuacOfLL8DvbWVyMX_xaWfea3JbfN)  
+[Scribus complete video course - YouTube Playlist](https://www.youtube.com/playlist?list=PLHl8nuacOfLK709_hb3ViX3Nef9WchSQH)  
+[The Ultimate GIMP 2.10 Guide - YouTube Playlist](https://www.youtube.com/playlist?list=PLHl8nuacOfLKBWAYhgQ7gguAcTqnadSXx)  
+https://www.youtube.com/@GraphicdesignforFree/playlists  
 
 ### Deutscher Linux Support
 - https://www.linuxguides.de/linux-support/
@@ -881,5 +890,5 @@ apt-cache --generate pkgnames \
 [^2]:Firewall: https://github.com/Tornado3P9/Linux-Console-Tools/blob/master/admin%20tools/firewall_ufw.md
 [^4]:dd https://www.raspberrypi.com/documentation/computers/getting-started.html#installing-images-on-linux https://github.com/Tornado3P9/Linux-Console-Tools/blob/master/dd.md
 [^5]:VideoLAN libdvdcss: https://www.videolan.org/developers/libdvdcss.html, https://wiki.ubuntuusers.de/DVD-Wiedergabe/#Problembehebung
-[^6]:Photoshop: https://appdb.winehq.org/objectManager.php?sClass=application&iId=20, https://lutris.net/games/adobe-photoshop-cs6/
+[^6]:Photoshop: https://appdb.winehq.org/objectManager.php?sClass=application&iId=20, https://lutris.net/games/adobe-photoshop-cs6/, https://youtu.be/tDmipHok8oQ, https://tuxdigital.com/podcasts/destination-linux/dl-281/
 
