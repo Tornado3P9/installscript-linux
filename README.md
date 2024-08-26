@@ -443,24 +443,12 @@ Unofficial Desktop client https://github.com/IsmaelMartinez/teams-for-linux/rele
 - Disks https://apps.gnome.org/DiskUtility/ (already preinstalled: `sudo apt install gnome-disk-utility`)
 
 #### AppImage Programs that run on any Linux system
-- Audacity https://www.audacityteam.org/
-- KeePassXC https://keepassxc.org/
-- Krita https://krita.org/
-- Inkscape https://inkscape.org/
-- MyPaint http://mypaint.org/
-- Aseprite https://www.aseprite.org/
+- Aseprite (Animated sprite editor & pixel art tool) https://www.aseprite.org/
 - Stellarium http://stellarium.org/
 - Ultimaker Cura (3D printing + slicer) https://ultimaker.com/software/ultimaker-cura
 - MeshLab https://www.meshlab.net/
-- Obsidian https://obsidian.md/
 - BalenaEtcher https://www.balena.io/etcher/
 - Virtual MIDI Piano Keyboard (VMPK) https://vmpk.sourceforge.io/
-- Hugin Panorama Stitcher - Grafics Editor http://hugin.sourceforge.net/
-- Kdenlive Video Editor https://kdenlive.org/en/download/
-- OpenShot Video Editor https://www.openshot.org/
-- Shotcut Video Editor https://www.shotcut.org/
-- Olive Video Editor https://www.olivevideoeditor.org/
-- LMMS https://lmms.io/download#linux
 - OneNote (Unofficial Desktop App, actually an independent browser window for the online OneNote) https://github.com/patrikx3/onenote
 
 ### Installation and Setup of the downloaded Programs:
