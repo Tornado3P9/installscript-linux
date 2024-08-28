@@ -12,7 +12,7 @@ alias nThunarHistory='rm ~/.local/share/recently-used.xbel*'
 alias nthumbnails='rm -r ~/.cache/thumbnails/*'
 alias emptyTrash='rm -rf ~/.local/share/Trash/*'
 alias shutdown='shutdown -h now'  # reboot, poweroff, shutdown, halt
-alias renamehelp='echo rename \'\''s/#//\'\'' \*.m4a'
+alias renamehelp="echo 'rename '\''s/#//'\'' *.m4a' 'or show what a change of every occurrence(g) of multiple space(\s+) to single space looks(-n) like:' 'rename -n '\''s/\\s+/ /g'\'' *'"
 alias alarmclockhelp='echo "sleep 5m && mpv sound.mp3 --no-video --start=00:00:13 --loop"'
 alias aliases='less ~/.bash_aliases'
 alias c='clear'
