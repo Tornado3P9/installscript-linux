@@ -288,6 +288,8 @@ Applications that are not included in the repository or just not with the most r
 - Obsidian - like OneNote but private https://obsidian.md/download (**.Deb**, Snap or .AppImage)
 - Libre Workspace https://www.libre-workspace.org/ (online/local, language german)
 - Kleopatra https://www.openpgp.org/software/kleopatra/ (part of the repository: `sudo apt install kleopatra`)
+- KMail (KDE email client that integrates well with Kleopatra) https://apps.kde.org/kmail2/ (part of the repository: `sudo apt install kmail`)
+- Thunderbird (Popular email client) https://www.thunderbird.net/ (part of the repository: `sudo apt install thunderbird`)
 - Document Scanner https://gitlab.gnome.org/GNOME/simple-scan (best choice and part of the repository: `sudo apt install simple-scan`)
 - XSane https://help.ubuntu.com/community/XSane (part of the repository: `sudo apt install xsane`)
 - Messaging app for integrating WhatsApp, Facebook Messenger, Slack, Telegram, WeChat, Google Hangouts, Skype, Zendesk, Instagram, Discord, Teams and many more in a single application, thereby simplifying the workspace.  
@@ -394,7 +396,7 @@ Unofficial Desktop client https://github.com/IsmaelMartinez/teams-for-linux/rele
 - Eclipse IDE https://www.eclipse.org/
 - NetBeans IDE https://netbeans.apache.org/download/
 - LazyVim https://www.lazyvim.org/
-- Minisign https://jedisct1.github.io/minisign/
+- Minisign https://jedisct1.github.io/minisign/ https://github.com/jedisct1/minisign
 - Blender https://www.blender.org/download/ KeenTools https://keentools.io/ CAD Sketcher https://makertales.gumroad.com/l/CADsketcher?a=742446579
 - Onshape https://www.onshape.com/en/ (online)
 - Cascadeur https://cascadeur.com/download
