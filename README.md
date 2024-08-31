@@ -253,7 +253,8 @@ sudo apt install texlive texlive-lang-german texlive-lang-english texlive-latex-
 ```
 
 ### Incomplete list of applications
-Applications that are not included in the repository or just not with the most recent version:
+
+- https://wiki.archlinux.org/title/List_of_applications
 
 #### Office/School
 - GeoGebra https://www.geogebra.org/calculator / https://www.geogebra.org/classic (online)
