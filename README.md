@@ -731,8 +731,9 @@ and create a custom shortcut with the command **xfce4-popup-clipman** and your p
 
 #### A Clipboard Driver to paste information from console to clipboard so that it can be used together with the `Ctrl+V` shortcut or other console applications can be installed with:
 ```bash
-# on X11 it requires xclip
+# on X11 it requires xclip or xsel
 sudo apt install xclip
+sudo apt install xsel
 
 # on Wayland it requires wl-clipboard
 sudo apt install wl-clipboard
