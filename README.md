@@ -394,6 +394,7 @@ Unofficial Desktop client https://github.com/IsmaelMartinez/teams-for-linux/rele
 - VSCode https://code.visualstudio.com/ does contain additional telemetry/tracking
 - VSCode-Online https://vscode.dev/ (online)
 - Atom https://atom.io/
+- Micro https://micro-editor.github.io/ (part of the repository: `sudo apt install micro` )
 - Eclipse IDE https://www.eclipse.org/
 - NetBeans IDE https://netbeans.apache.org/download/
 - LazyVim https://www.lazyvim.org/
