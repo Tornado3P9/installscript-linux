@@ -786,7 +786,10 @@ For further instructions go to https://www.gnu.org/software/grub/manual/grub/gru
 https://wiki.winehq.org/Ubuntu
 ```bash
 sudo dpkg --add-architecture i386
-sudo apt update && sudo apt install wine
+sudo apt update && sudo apt install wine winetricks
+
+winetricks
+# Run winetricks in the console, and select “select the default wineprefix”. Install the “core” Microsoft fonts.
 
 wine --version
 
