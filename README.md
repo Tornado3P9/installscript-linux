@@ -435,6 +435,7 @@ Unofficial Desktop client https://github.com/IsmaelMartinez/teams-for-linux/rele
 - Electron (Create cross-platform desktop app) https://www.electronjs.org/
 - Gitleaks https://github.com/gitleaks/gitleaks
 - GitGuardian https://www.gitguardian.com/state-of-secrets-sprawl-report-2023
+- GitHub CLI https://cli.github.com/ https://cli.github.com/manual/gh_repo_create (part of the repository: `sudo apt install gh`)
 - Terraform https://developer.hashicorp.com/terraform/install https://developer.hashicorp.com/terraform/cli/install/apt
 - Scilab Xcos https://www.scilab.org/software/xcos (part of the repository: `sudo apt install scilab`)
 - MATLAB Simulink https://www.mathworks.com/products/simulink.html
