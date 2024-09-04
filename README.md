@@ -67,9 +67,9 @@ sudo apt update && sudo apt upgrade -y
 
 Install some additional codecs:[^3]
 ```bash
-sudo apt install ubuntu-restricted-extras rar
+sudo apt install ubuntu-restricted-extras rar unrar p7zip-full
 ```
-*ubuntu-restricted-extras* is a so called 'meta-package' which installs a number of other packages.  
+Note: *ubuntu-restricted-extras* is a so called 'meta-package' which installs a number of other packages.  
 The Microsoft Fonts for instance are not open source and therefore are not included in the ubuntu image.  
 Or you can try to do this manually. Some of the packages are:  
 *libavcodec-extra ttf-mscorefonts-installer gstreamer1.0-libav gstreamer1.0-plugins-ugly gstreamer1.0-vaapi unrar rar xz-utils*  
