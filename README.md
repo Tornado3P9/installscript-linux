@@ -298,7 +298,7 @@ Note: These kinds of workspace simplifyers might not always support every featur
   - Rambox https://rambox.app/download-linux/ (AppImage, .Deb, .RPM or Snap)
   - Franz https://meetfranz.com/ . [how-to](https://itsfoss.com/franz-messaging-app/) (AppImage, .Deb)
 - Typora (Distractions Free Writing) https://typora.io/
-- Flameshot (screenshot software with pixelating function) https://flameshot.org/ (part of the repository: `sudo apt install flameshot`)
+- Flameshot (good screenshot app) https://flameshot.org/ (part of the repository: `sudo apt install flameshot`) Also assign a keyboard shortcut for the command *`flameshot gui`*, such as `Windows key + Print`.
 
 #### Video Calls
 - Zoom https://zoom.us/download . [how-to](https://github.com/Tornado3P9/installscript-linux/blob/master/zoom.md)
@@ -434,7 +434,7 @@ Unofficial Desktop client https://github.com/IsmaelMartinez/teams-for-linux/rele
 - Slint (UI-library with Rust, C++, JavaScript, Python) https://slint.dev/
 - GTK-4 (UI-library with Rust, C++, Python and more) https://gtk-rs.org/gtk4-rs/stable/latest/book/
 - Tkinter (UI-library with Python) https://github.com/TomSchimansky/CustomTkinter
-- Electron (Create cross-platform desktop app) https://www.electronjs.org/
+- Electron (Create cross-platform desktop apps) https://www.electronjs.org/
 - Gitleaks https://github.com/gitleaks/gitleaks
 - GitGuardian https://www.gitguardian.com/state-of-secrets-sprawl-report-2023
 - GitHub CLI https://cli.github.com/ https://cli.github.com/manual/gh_repo_create (part of the repository: `sudo apt install gh`)
