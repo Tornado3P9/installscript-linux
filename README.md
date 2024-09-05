@@ -863,6 +863,8 @@ Remember that actual battery life can be influenced by many factors, including s
 [Scribus complete video course - YouTube Playlist](https://www.youtube.com/playlist?list=PLHl8nuacOfLK709_hb3ViX3Nef9WchSQH)  
 [The Ultimate GIMP 2.10 Guide - YouTube Playlist](https://www.youtube.com/playlist?list=PLHl8nuacOfLKBWAYhgQ7gguAcTqnadSXx)  
 https://www.youtube.com/@GraphicdesignforFree/playlists  
+[Why don't more people use Linux? - David Heinemeier Hansson](https://world.hey.com/dhh/why-don-t-more-people-use-linux-33b75f53)  
+https://omakub.org/  
 
 ### Deutscher Linux Support
 - https://www.linuxguides.de/linux-support/
