@@ -289,16 +289,16 @@ sudo apt install texlive texlive-lang-german texlive-lang-english texlive-latex-
 - Obsidian - like OneNote but private https://obsidian.md/download (**.Deb**, Snap or .AppImage)
 - Libre Workspace https://www.libre-workspace.org/ (online/local, language german)
 - Kleopatra https://www.openpgp.org/software/kleopatra/ (part of the repository: `sudo apt install kleopatra`)
-- KMail (KDE email client that integrates well with Kleopatra) https://apps.kde.org/kmail2/ (part of the repository: `sudo apt install kmail`)
-- Thunderbird (Popular email client) https://www.thunderbird.net/ (part of the repository: `sudo apt install thunderbird`)
+- KMail - KDE email client that integrates well with Kleopatra https://apps.kde.org/kmail2/ (part of the repository: `sudo apt install kmail`)
+- Thunderbird - Popular email client https://www.thunderbird.net/ (part of the repository: `sudo apt install thunderbird`)
 - Document Scanner https://gitlab.gnome.org/GNOME/simple-scan (best choice and part of the repository: `sudo apt install simple-scan`)
 - XSane https://help.ubuntu.com/community/XSane (part of the repository: `sudo apt install xsane`)
 - Messaging app for integrating WhatsApp, Facebook Messenger, Slack, Telegram, WeChat, Google Hangouts, Skype, Zendesk, Instagram, Discord, Teams and many more in a single application, thereby simplifying the workspace.  
 Note: These kinds of workspace simplifyers might not always support every feature of the individual application, and the messenger might run slower with many apps compared to just running one individual app:
   - Rambox https://rambox.app/download-linux/ (AppImage, .Deb, .RPM or Snap)
   - Franz https://meetfranz.com/ . [how-to](https://itsfoss.com/franz-messaging-app/) (AppImage, .Deb)
-- Typora (Distractions Free Writing) https://typora.io/
-- Flameshot (good screenshot app) https://flameshot.org/ (part of the repository: `sudo apt install flameshot`) Also assign a keyboard shortcut for the command *`flameshot gui`*, such as `Windows key + Print`.
+- Typora - Distractions Free Writing https://typora.io/
+- Flameshot - better screenshot app https://flameshot.org/ (part of the repository: `sudo apt install flameshot`) Also assign a keyboard shortcut for the command *`flameshot gui`*, such as `Windows key + Print`.
 
 #### Video Calls
 - Zoom https://zoom.us/download . [how-to](https://github.com/Tornado3P9/installscript-linux/blob/master/zoom.md)
