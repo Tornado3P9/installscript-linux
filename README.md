@@ -676,6 +676,7 @@ Update `pip` via: `python3 -m pip install --upgrade pip`
 ### Virtual Machine
 - [VirtualBox](https://www.virtualbox.org/wiki/Downloads) - `sudo apt install virtualbox`
 - [QEMU](https://www.qemu.org/) (Even faster than VirtualBox) - [christitus-tutorial](https://www.christitus.com/vm-setup-in-linux), [absprog-tutorial](https://absprog.com/post/qemu-kvm-ubuntu-24-04)
+- [Distrobox](https://wiki.archlinux.org/title/Distrobox)
 
 ### Gaming
 - [Lutris](https://lutris.net/)
