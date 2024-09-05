@@ -297,6 +297,8 @@ sudo apt install texlive texlive-lang-german texlive-lang-english texlive-latex-
 Note: These kinds of workspace simplifyers might not always support every feature of the individual application, and the messenger might run slower with many apps compared to just running one individual app:
   - Rambox https://rambox.app/download-linux/ (AppImage, .Deb, .RPM or Snap)
   - Franz https://meetfranz.com/ . [how-to](https://itsfoss.com/franz-messaging-app/) (AppImage, .Deb)
+- Typora (Distractions Free Writing) https://typora.io/
+- Flameshot (screenshot software with pixelating function) https://flameshot.org/ (part of the repository: `sudo apt install flameshot`)
 
 #### Video Calls
 - Zoom https://zoom.us/download . [how-to](https://github.com/Tornado3P9/installscript-linux/blob/master/zoom.md)
@@ -436,6 +438,7 @@ Unofficial Desktop client https://github.com/IsmaelMartinez/teams-for-linux/rele
 - Gitleaks https://github.com/gitleaks/gitleaks
 - GitGuardian https://www.gitguardian.com/state-of-secrets-sprawl-report-2023
 - GitHub CLI https://cli.github.com/ https://cli.github.com/manual/gh_repo_create (part of the repository: `sudo apt install gh`)
+- Lazygit https://github.com/jesseduffield/lazygit . https://git-how.com/
 - Terraform https://developer.hashicorp.com/terraform/install https://developer.hashicorp.com/terraform/cli/install/apt
 - Scilab Xcos https://www.scilab.org/software/xcos (part of the repository: `sudo apt install scilab`)
 - MATLAB Simulink https://www.mathworks.com/products/simulink.html
