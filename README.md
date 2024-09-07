@@ -445,7 +445,7 @@ Unofficial Desktop client https://github.com/IsmaelMartinez/teams-for-linux/rele
 - Terraform https://developer.hashicorp.com/terraform/install https://developer.hashicorp.com/terraform/cli/install/apt
 - Scilab Xcos https://www.scilab.org/software/xcos (part of the repository: `sudo apt install scilab`)
 - MATLAB Simulink https://www.mathworks.com/products/simulink.html
-- Alacritty - modern terminal emulator https://github.com/alacritty/alacritty
+- Alacritty - modern terminal emulator https://github.com/alacritty/alacritty (part of the repository: `sudo apt install alacritty`)
 
 #### Disk Usage Analyzer
 - Baobab https://apps.gnome.org/Baobab/ (part of the repository: `sudo apt install baobab`)
