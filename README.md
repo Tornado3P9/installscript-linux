@@ -189,6 +189,9 @@ sudo cp /etc/security/limits.conf /etc/security/limits.conf.backup
 echo "$USER  hard  nproc  2000" | sudo tee -a /etc/security/limits.conf
 ```
 
+Optionally use [Firejail](https://firejail.wordpress.com/) to restrict the access of applications to the system by sandboxing.  
+Install from the repository with `sudo apt install firejail`.
+
 ### One-time password (OTP) also known as 2-Factor authentication
 Probably more useful for server access..:
 ```bash
