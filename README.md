@@ -289,6 +289,7 @@ sudo apt install texlive texlive-lang-german texlive-lang-english texlive-latex-
 - PDFArranger (part of the repository: `sudo apt install pdfarranger`)
 - PDFsam https://pdfsam.org/
 - Stirling PDF https://stirlingpdf.io/ (online)
+- img2pdf - Lossless conversion using Terminal https://gitlab.mister-muffin.de/josch/img2pdf (part of the repository: `sudo apt install img2pdf`)
 - Calibre - ebook management https://calibre-ebook.com/download_linux (part of the repository: `sudo apt install calibre`)
 - Microsoft OneNote https://www.onenote.com/hrd (online)
 - Google Workspace - like OneNote https://workspace.google.com/ (online)
