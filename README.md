@@ -589,29 +589,47 @@ The configuration files, addons and bookmarks of firefox reside at `/home/$USER/
 
 ### Adding ShortCuts
 
-`xfce4-settings-manager` → Keyboard → Application Shortcuts  
-`xfce4-keyboard-settings`  
+*`xfce4-settings-manager`* → Keyboard → Application Shortcuts  
+*`xfce4-keyboard-settings`*  
 
 For setting Keyboard Shortcuts in your windows manager:  
-`xfce4-settings-manager` → Window Manager → Keyboard  
-`xfwm4-settings`  
+*`xfce4-settings-manager`* → Window Manager → Keyboard  
+*`xfwm4-settings`*  
 
-**Default:**  
-(Ctrl+Alt+Delete = xfce4-session-logout)  
-(Shift+Ctrl+Esc = xfce4-taskmanager)  
-(Alt+F2 = xfrun4)  
-(Super+L = xflock4)  
-(Super+W = exo-open --launch WebBrowser)  
-(Super+F = exo-open --launch FileManager)  
-(Super+D = Show Desktop (minimize windows) )  
-(Super+F1 = xfce4-find-cursor)  
-(Print = xfce4-screenshooter -f)  
-(Shift+Print = xfce4-screenshooter -r)  
-(Alt+Print  = xfce4-screenshooter -w)  
-(Ctrl+Esc = xfce4-popup-whiskermenu (Standard Menu) )  
-(Alt+F1 = xfce4-popup-applicationsmenu)  
+**Default Keyboard Shortcuts**  
+`Ctrl+Alt+Delete` = xfce4-session-logout  
+`Shift+Ctrl+Esc` = xfce4-taskmanager  
+`Alt+F2` = xfrun4  
+`Super+L` = xflock4  
+`Super+W` = exo-open --launch WebBrowser  
+`Super+F` = exo-open --launch FileManager  
+`Super+D` = Show Desktop (minimize windows)   
+`Super+T` = exo-open --launch TerminalEmulator  
+`Ctrl+Alt+T` = exo-open --launch TerminalEmulator  
+`Super+F1` = xfce4-find-cursor  
+`Print` = xfce4-screenshooter -f  
+`Shift+Print` = xfce4-screenshooter -r  
+`Alt+Print`  = xfce4-screenshooter -w  
+`Ctrl+Esc` = xfce4-popup-whiskermenu (Standard Menu)   
+`Alt+F1` = xfce4-popup-applicationsmenu  
 *Quite useful: killing the open window below the mouse pointer*  
-(Ctrl+Alt+Esc = xkill)  
+`Ctrl+Alt+Esc` = xkill  
+
+**Window Manager**  
+`Alt+Tab` = Cycle windows  
+`Shift+Alt+Tab` = Cycle windows (Reverse)  
+`Super+Tab` = Switch window for same application  
+`Super+Arrow Up` = Move Window Up  
+`Super+Arrow Down` = Move Window Down  
+`Super+Arrow Left` = Move Window Left  
+`Super+Arrow Right` = Move Window Right  
+`Super+Home` = Move Window Top Left  
+`Super+End` = Move Window Top Right  
+`Super+Page UP` = Move Window Bottom Left  
+`Super+Page Down` = Move Window Bottom Right  
+
+**Custom example:**  
+`Ctrl+Alt+T` = xfce4-terminal --hide-menubar --hide-toolbar --hide-scrollbar --maximize  
 
 ### Adding App launcher to the XFCE panel
 ![app launcher](pics/add_launcher.gif)
