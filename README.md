@@ -13,7 +13,7 @@
 - [Firewall](#firewall2)
 - [One-time password (OTP) also known as 2-Factor authentication](#one-time-password-otp-also-known-as-2-factor-authentication)
 - [Additional Themes](#additional-themes)
-- [Terminal behavior](#terminal-behavior)
+- [Terminal behaviour](#terminal-behaviour)
 - [Installing tldr (too long, didn't read) helper tool](#installing-tldr-too-long-didnt-read-helper-tool)
 - [Installing Texlive and Texmaker for writing LaTeX documents](#installing-texlive-and-texmaker-for-writing-latex-documents)
 - [Incomplete list of applications](#incomplete-list-of-applications)
@@ -134,7 +134,7 @@ You can start your *File Manager* with the shortcut **`Windows key + F`** or by 
 
 You can open any file by just clicking on it and the system will use the default application for that specific file type. You can change the default application by clicking on a file with the **Right Mouse Button** to open the "context menu" and by going to **Properties** → **General** → ***Open With***
 
-You can also use the command [**`xdg-open`**](https://github.com/Tornado3P9/Linux-Console-Tools/blob/master/xdg-open.md) to achieve the same behavior when using the terminal.
+You can also use the command [**`xdg-open`**](https://github.com/Tornado3P9/Linux-Console-Tools/blob/master/xdg-open.md) to achieve the same behaviour when using the terminal.
 
 ### Create a `.fonts` directory for your own Truetype (.ttf) fonts
 Just put all your favourite fonts into this folder. The System will automatically find them.
@@ -224,7 +224,7 @@ sudo apt install plank
 locate backdrops
 ```
 
-### Terminal behavior
+### Terminal behaviour
 ```bash
 # for displaying the date and time of the terminal history output, type the following line into your terminal:
 echo 'export HISTTIMEFORMAT="%F %T "' >> ~/.bashrc
