@@ -593,6 +593,7 @@ The configuration files, addons and bookmarks of firefox reside at `/home/$USER/
 `xfce4-keyboard-settings`  
 
 For setting Keyboard Shortcuts in your windows manager:  
+`xfce4-settings-manager` → Window Manager → Keyboard  
 `xfwm4-settings`  
 
 **Default:**  
