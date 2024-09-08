@@ -47,8 +47,18 @@ alias dumax='du -hsx * | sort -rh | head -10'
 #find which processes consume the most memory
 alias memax='ps -e -orss=,args= | sort -nr | head'
 
-#open in file manager
-alias open='thunar'
+#open stuff
+function open() {
+  if [ $# -eq 0 ]; then
+    # No arguments passed, open the current directory
+    xdg-open .
+  else
+    # Loop through all arguments and open each one
+    for arg in "$@"; do
+      xdg-open "$arg"
+    done
+  fi
+}
 
 #navigation
 alias Documents='cd ~/Documents'

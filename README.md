@@ -71,8 +71,7 @@ sudo apt install ubuntu-restricted-extras rar unrar p7zip-full
 ```
 Note: *ubuntu-restricted-extras* is a so called 'meta-package' which installs a number of other packages.  
 The Microsoft Fonts for instance are not open source and therefore are not included in the ubuntu image.  
-Or you can try to do this manually. Some of the packages are:  
-*libavcodec-extra ttf-mscorefonts-installer gstreamer1.0-libav gstreamer1.0-plugins-ugly gstreamer1.0-vaapi unrar rar xz-utils*  
+Or you can try to do this manually. Some of the packages are: *libavcodec-extra ttf-mscorefonts-installer gstreamer1.0-libav gstreamer1.0-plugins-ugly gstreamer1.0-vaapi unrar rar xz-utils* 
 The packages zip and unzip are also included. But making sure never hurts.  
 
 Install some useful programs (remove what lines you don't want, copy the whole command block, paste it into the terminal and press Enter):
@@ -80,7 +79,7 @@ Install some useful programs (remove what lines you don't want, copy the whole c
 sudo apt update && \
 sudo apt install \
 git gparted synaptic mtools \
-xsane simple-scan \
+simple-scan \
 pdfarranger img2pdf \
 gimp pinta gifsicle qrencode scrot zbar-tools \
 htop glances whowatch arp-scan nmap nethogs wireshark speedtest-cli traceroute mtr neofetch net-tools iperf3 ncdu \
@@ -132,6 +131,10 @@ You can find most configuration files in your home directory (**`cd /home/$USER/
 The names of hidden files or directories start with a dot, e.g. **`.config`**
 
 You can start your *File Manager* with the shortcut **`Windows key + F`** or by typing **`thunar`** into the terminal. You also can start your main web browser with the shortcut **`Windows key + W`** or by typing **`firefox`** into the terminal.
+
+You can open any file by just clicking on it and the system will use the default application for that specific file type. You can change the default application by clicking on a file with the **Right Mouse Button** to open the "context menu" and by going to **Properties** → **General** → ***Open With***
+
+You can also use the command [**`xdg-open`**](https://github.com/Tornado3P9/Linux-Console-Tools/blob/master/xdg-open.md) to achieve the same behavior when using the terminal.
 
 ### Create a `.fonts` directory for your own Truetype (.ttf) fonts
 Just put all your favourite fonts into this folder. The System will automatically find them.
@@ -596,6 +599,9 @@ For setting Keyboard Shortcuts in your windows manager:
 *`xfce4-settings-manager`* → Window Manager → Keyboard  
 *`xfwm4-settings`*  
 
+**Custom Example:**  
+`Ctrl+Alt+T` = *xfce4-terminal --hide-menubar --hide-toolbar --hide-scrollbar --maximize*
+
 **Default Keyboard Shortcuts** (`Super` is another name for the `Windows Key`)  
 `Ctrl+Alt+Delete` = xfce4-session-logout  
 `Shift+Ctrl+Esc` = xfce4-taskmanager  
@@ -644,9 +650,6 @@ For setting Keyboard Shortcuts in your windows manager:
 `Ctrl+Shift+C` = Copy to clipboard  
 `Ctrl+Shift+V` = Paste from clipboard  
 `Ctrl+Shift+Q` = Close terminal  
-
-**Custom example:**  
-`Ctrl+Alt+T` = xfce4-terminal --hide-menubar --hide-toolbar --hide-scrollbar --maximize  
 
 ### Adding App launcher to the XFCE panel
 ![app launcher](pics/add_launcher.gif)
