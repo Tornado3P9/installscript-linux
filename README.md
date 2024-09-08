@@ -634,7 +634,7 @@ For setting Keyboard Shortcuts in your windows manager:
 `Shift+Home` = Jump to top  
 `Shift+End` = Jump to bottom  
 `Shift+Page Up` = Jump one page up  
-`Shift+Home` = Jump one page down  
+`Shift+Page Down` = Jump one page down  
 `Shift+Arrow Up` = Scroll up  
 `Shift+Arrow Down` = Scroll down  
 `Ctrl+Shift+F` = Find  
