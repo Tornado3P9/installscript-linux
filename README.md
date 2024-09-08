@@ -596,7 +596,7 @@ For setting Keyboard Shortcuts in your windows manager:
 *`xfce4-settings-manager`* → Window Manager → Keyboard  
 *`xfwm4-settings`*  
 
-**Default Keyboard Shortcuts**  
+**Default Keyboard Shortcuts** (`Super` is another name for the `Windows Key`)  
 `Ctrl+Alt+Delete` = xfce4-session-logout  
 `Shift+Ctrl+Esc` = xfce4-taskmanager  
 `Alt+F2` = xfrun4  
