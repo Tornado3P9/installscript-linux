@@ -603,7 +603,6 @@ For setting Keyboard Shortcuts in your windows manager:
 `Super+L` = xflock4  
 `Super+W` = exo-open --launch WebBrowser  
 `Super+F` = exo-open --launch FileManager  
-`Super+D` = Show Desktop (minimize windows)   
 `Super+T` = exo-open --launch TerminalEmulator  
 `Ctrl+Alt+T` = exo-open --launch TerminalEmulator  
 `Super+F1` = xfce4-find-cursor  
@@ -614,6 +613,7 @@ For setting Keyboard Shortcuts in your windows manager:
 `Alt+F1` = xfce4-popup-applicationsmenu  
 *Quite useful: killing the open window below the mouse pointer*  
 `Ctrl+Alt+Esc` = xkill  
+`Ctrl+Q` / `Ctrl+W` = Close Application/Window  
 
 **Window Manager**  
 `Alt+Tab` = Cycle windows  
@@ -629,6 +629,7 @@ For setting Keyboard Shortcuts in your windows manager:
 `Super+Page Down` = Move Window Bottom Right  
 `Alt+F7` = Maximize  
 `Alt+F9` = Minimize  
+`Super+D` = Show Desktop (minimize windows)  
 
 **Terminal**  
 `Shift+Home` = Jump to top  
@@ -640,6 +641,9 @@ For setting Keyboard Shortcuts in your windows manager:
 `Ctrl+Shift+F` = Find  
 `Arrow Up` = Show previous command  
 `Arrow Down` = Show next command  
+`Ctrl+Shift+C` = Copy to clipboard  
+`Ctrl+Shift+V` = Paste from clipboard  
+`Ctrl+Shift+Q` = Close terminal  
 
 **Custom example:**  
 `Ctrl+Alt+T` = xfce4-terminal --hide-menubar --hide-toolbar --hide-scrollbar --maximize  
