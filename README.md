@@ -624,9 +624,22 @@ For setting Keyboard Shortcuts in your windows manager:
 `Super+Arrow Left` = Move Window Left  
 `Super+Arrow Right` = Move Window Right  
 `Super+Home` = Move Window Top Left  
-`Super+End` = Move Window Top Right  
-`Super+Page UP` = Move Window Bottom Left  
+`Super+End` = Move Window Bottom Left  
+`Super+Page UP` = Move Window Top Right  
 `Super+Page Down` = Move Window Bottom Right  
+`Alt+F7` = Maximize  
+`Alt+F9` = Minimize  
+
+**Terminal**  
+`Shift+Home` = Jump to top  
+`Shift+End` = Jump to bottom  
+`Shift+Page Up` = Jump one page up  
+`Shift+Home` = Jump one page down  
+`Shift+Arrow Up` = Scroll up  
+`Shift+Arrow Down` = Scroll down  
+`Ctrl+Shift+F` = Find  
+`Arrow Up` = Show previous command  
+`Arrow Down` = Show next command  
 
 **Custom example:**  
 `Ctrl+Alt+T` = xfce4-terminal --hide-menubar --hide-toolbar --hide-scrollbar --maximize  
