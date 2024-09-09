@@ -600,8 +600,8 @@ For setting Keyboard Shortcuts in your windows manager:
 *`xfce4-settings-manager`* → Window Manager → Keyboard  
 *`xfwm4-settings`*  
 
-**Custom Example:**  
-`Ctrl+Alt+T` = *xfce4-terminal --hide-menubar --hide-toolbar --hide-scrollbar --maximize*
+**Custom Keyboard Shortcut:**  
+`Ctrl+Alt+T` = xfce4-terminal --hide-menubar --hide-toolbar --hide-scrollbar --maximize
 
 **Default Keyboard Shortcuts** (`Super` is another name for the `Windows Key`)  
 `Ctrl+Alt+Delete` = xfce4-session-logout  
