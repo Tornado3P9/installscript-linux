@@ -336,6 +336,7 @@ Unofficial Desktop client https://github.com/IsmaelMartinez/teams-for-linux/rele
 #### Password Manager
 - bitwarden (very professional online web service) https://bitwarden.com/
 - KeePassXC (simple offline application) https://keepassxc.org/ `sudo apt install keepassxc`
+- Proton Pass (online) https://proton.me/pass
 
 #### Screen Recording
 - OBS Studio (by far the best option) https://obsproject.com/wiki/install-instructions#linux (part of the repository: `sudo apt install obs-studio` )  
