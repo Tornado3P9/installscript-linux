@@ -253,6 +253,8 @@ sudo make install   # install tldr
 tldr ls             # run tldr and explain with examples how the command 'ls' works
 ```
 
+In contrast to the information provided by `program_name --help`, the `tldr program_name` command typically offers more concise examples and explanations, albeit with less detail.
+
 ### Installing [Texlive](https://wiki.ubuntuusers.de/TeX_Live/) and [Texmaker](https://www.xm1math.net/texmaker/) for writing LaTeX documents
 ```bash
 sudo apt install texlive texlive-lang-german texlive-lang-english texlive-latex-extra texmaker
