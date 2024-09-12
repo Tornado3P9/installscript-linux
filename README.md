@@ -292,6 +292,7 @@ sudo apt install texlive texlive-lang-german texlive-lang-english texlive-latex-
 - PDFsam https://pdfsam.org/
 - Stirling PDF https://stirlingpdf.io/ (online)
 - img2pdf - Lossless conversion using Terminal https://gitlab.mister-muffin.de/josch/img2pdf (part of the repository: `sudo apt install img2pdf`)
+- Pandoc - a universal document converter https://pandoc.org/ (part of the repository: `sudo apt install pandoc`)
 - Calibre - ebook management https://calibre-ebook.com/download_linux (part of the repository: `sudo apt install calibre`)
 - Microsoft OneNote https://www.onenote.com/hrd (online)
 - Google Workspace - like OneNote https://workspace.google.com/ (online)
@@ -454,6 +455,8 @@ Unofficial Desktop client https://github.com/IsmaelMartinez/teams-for-linux/rele
 - Scilab Xcos https://www.scilab.org/software/xcos (part of the repository: `sudo apt install scilab`)
 - MATLAB Simulink https://www.mathworks.com/products/simulink.html
 - Alacritty - modern terminal emulator https://github.com/alacritty/alacritty (part of the repository: `sudo apt install alacritty`)
+- Code Beautify https://codebeautify.org/ (online)
+- Carbon - code to image https://carbon.now.sh/ (online)
 
 #### Disk Usage Analyzer
 - Baobab https://apps.gnome.org/Baobab/ (part of the repository: `sudo apt install baobab`)
