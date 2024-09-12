@@ -641,6 +641,8 @@ For setting Keyboard Shortcuts in your windows manager:
 `Super+End` = Move Window Bottom Left  
 `Super+Page UP` = Move Window Top Right  
 `Super+Page Down` = Move Window Bottom Right  
+`Alt+F5` = Scale Horizontal  
+`Alt+F6` = Scale Vertical  
 `Alt+F7` = Maximize  
 `Alt+F9` = Minimize  
 `Super+D` = Show Desktop (minimize windows)  
