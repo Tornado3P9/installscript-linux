@@ -537,6 +537,23 @@ Optionally you can extract the program directory into the /opt/ folder and..
 
 - or create a [Panel App Launcher](#adding-app-launcher-to-the-xfce-panel)
 
+- or create an **Application.desktop** file:
+   ```bash
+   # Either by directly copying the desktop file to the final location:
+   sudo cp blender.desktop /usr/share/applications/
+   # Or by letting a program handle the process for you:
+   sudo desktop-file-install blender.desktop
+
+   # Set correct permissions:
+   sudo chmod 644 /usr/share/applications/blender.desktop
+
+   # Check permissions:
+   ls -l /usr/share/applications/blender.desktop
+
+   # Update the desktop database:
+   sudo update-desktop-database
+   ```
+
 ### `Firefox` Web Browser
 
 https://support.mozilla.org/en-US/kb/install-firefox-linux
