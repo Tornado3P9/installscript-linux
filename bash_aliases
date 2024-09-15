@@ -26,8 +26,11 @@ alias f="find . | grep -i"
 #sort by modification time
 alias left='ls -t -1'
 
-#count files
+#count files (include -maxdepth 1 to only look in the current directory)
 alias count='find . -type f | wc -l'
+
+#count directories (include -maxdepth 1 to only look in the current directory)
+alias countd='find . -mindepth 1 -type d | wc -l'
 
 #list files
 alias lt='ls --human-readable --size -1 -S --classify'
