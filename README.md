@@ -166,6 +166,8 @@ Some Linux systems support the option to move applications around using the **`A
 - Open **![menu](https://docs.xubuntu.org/current/user/libs/images/icon_menu.png) → ![preferences](https://docs.xubuntu.org/current/user/libs/images/preferences-desktop.png) Settings Manager → Window Manager Tweaks → Accessibility** and change the *Key used to grab and move windows* to **None**
 - Press **Alt+F2** and type *xfce4-settings-manager*. Then go to **Window Manager Tweaks → Accessibility** and change the *Key used to grab and move windows* to **None**
 
+You can make things even better by setting the *Key used to grab and move windows* to the **Super** key, which is the intern name for the Windows key. This also makes it very easy to snap a window to a corner.
+
 ### You can change the keyboard key map
 - [**Kanata**](https://github.com/jtroo/kanata) - A cross-platform software keyboard remapper for Linux, macOS and Windows  
 Setup: https://github.com/jtroo/kanata/blob/main/docs/setup-linux.md  
@@ -652,18 +654,12 @@ For setting Keyboard Shortcuts in your windows manager:
 `Alt+Tab` = Cycle windows  
 `Shift+Alt+Tab` = Cycle windows (Reverse)  
 `Super+Tab` = Switch window for same application  
-`Super+Arrow Up` = Move Window Up  
-`Super+Arrow Down` = Move Window Down  
-`Super+Arrow Left` = Move Window Left  
-`Super+Arrow Right` = Move Window Right  
-`Super+Home` = Move Window Top Left  
-`Super+End` = Move Window Bottom Left  
-`Super+Page UP` = Move Window Top Right  
-`Super+Page Down` = Move Window Bottom Right  
+`Super+Arrow Up` = Maximize window  
+`Super+Arrow Down` = Hide window  
+`Super+Arrow Left` = Move/Tile Window Left  
+`Super+Arrow Right` = Move/Tile Window Right  
 `Alt+F5` = Scale Horizontal  
 `Alt+F6` = Scale Vertical  
-`Alt+F7` = Maximize  
-`Alt+F9` = Minimize  
 `Super+D` = Show Desktop (minimize windows)  
 
 **Terminal**  
