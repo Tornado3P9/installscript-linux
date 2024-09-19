@@ -55,6 +55,7 @@
 - [Managing power profiles / battery life](#managing-power-profiles--battery-life)
 - [some different topics list](#some-different-topics)
 - [Deutscher Linux Support](#deutscher-linux-support)
+- [List of working printers](#list-of-working-printers)
 
 ### First set up the base system
 https://xubuntu.org/ + [balenaEtcher](https://www.balena.io/etcher/) or [Rufus USB Writer](https://rufus.ie/en/) for Windows users
@@ -943,6 +944,9 @@ https://omakub.org/
 ### Deutscher Linux Support
 - https://www.linuxguides.de/linux-support/
 - https://www.b1-systems.de/
+
+### List of working printers
+- https://forum.linuxguides.de/core/index.php?article/4-liste-funktionierender-drucker/
 
 <!---
 ### Optional:
