@@ -47,7 +47,7 @@
 - [ShellGPT](#shellgpt)
 - [The Clipboard Manager](#the-clipboard-manager)
 - [A Clipboard Driver for the terminal](#a-clipboard-driver-to-paste-information-from-console-to-clipboard-so-that-it-can-be-used-together-with-the-ctrlv-shortcut-or-other-console-applications-can-be-installed-with)
-- [Tiling Window Desktop Environments](#tiling-window-desktop-environments)
+- [Tiling Window Manager](#tiling-window-manager)
 - [DVD](#dvd)
 - [Grub2 - boot menu](#grub2---boot-menu)
 - [Wine (run windows programs)](#wine-run-windows-programs)
@@ -813,7 +813,7 @@ sudo apt install xsel
 sudo apt install wl-clipboard
 ```
 
-### Tiling Window Desktop Environments
+### Tiling Window Manager
 - [i3](https://i3wm.org/) (part of the repository: `sudo apt install i3`)
 - [Hyprland](https://hyprland.org/) Example: https://youtu.be/wcHUQXMhhow
 
