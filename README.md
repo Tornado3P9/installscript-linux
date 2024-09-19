@@ -75,15 +75,14 @@ The Microsoft Fonts for instance are not open source and therefore are not inclu
 Or you can try to do this manually. Some of the packages are: *libavcodec-extra ttf-mscorefonts-installer gstreamer1.0-libav gstreamer1.0-plugins-ugly gstreamer1.0-vaapi unrar rar xz-utils* 
 The packages zip and unzip are also included. But making sure never hurts.  
 
-Install some useful programs (remove what lines you don't want, copy the whole command block, paste it into the terminal and press Enter):
+Install some useful programs (remove what lines you don't want, copy the whole command block, paste it into the terminal and press Enter). Don't forget to run **`sudo apt update`** before installing new packages:
 ```bash
-sudo apt update && \
 sudo apt install \
-git gparted synaptic mtools \
+git gparted synaptic mtools neofetch \
 simple-scan \
-pdfarranger img2pdf \
-gimp pinta gifsicle qrencode scrot zbar-tools \
-htop glances whowatch arp-scan nmap nethogs wireshark speedtest-cli traceroute mtr neofetch net-tools iperf3 ncdu \
+pdfarranger img2pdf gimp pinta gifsicle qrencode scrot zbar-tools \
+htop glances whowatch arp-scan nmap nethogs wireshark \
+speedtest-cli traceroute mtr net-tools iperf3 \
 libreoffice libreoffice-l10n-de libreoffice-help-de \
 mediainfo mediainfo-gui \
 mpv ffmpeg vlc audacity guvcview kazam handbrake \
@@ -92,16 +91,16 @@ libimage-exiftool-perl perl-doc \
 steam \
 xsensors \
 wget curl \
-tree autojump \
+ncdu autojump \
 ufw gufw \
 kleopatra \
 wireguard \
-jeex bless jq rename rg \
+jeex bless \
 usb-creator-gtk \
 python3-pip python3-venv python3-tk libopencv-dev python3-opencv python-is-python3 \
+tar tree multitail trash-cli unzip cmake make jq rename rg build-essential \
 docker.io \
-sqlite3 \
-trash-cli
+sqlite3
 ```
 
 ### System Update Settings
