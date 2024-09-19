@@ -30,7 +30,7 @@
   - [Disk Usage Analyzer](#disk-usage-analyzer)
   - [Appimage Programs that run on any Linux system](#appimage-programs-that-run-on-any-linux-system)
 - [Installation and Setup of the downloaded Programs](#installation-and-setup-of-the-downloaded-programs)
-- [`Firefox` Web Browser](#firefox-web-browser1)
+- [Firefox Web Browser](#firefox-web-browser)
 - [Adding ShortCuts](#adding-shortcuts)
 - [Adding App launcher to the XFCE panel](#adding-app-launcher-to-the-xfce-panel)
 - [Four ways to create a Linux Live System on a usb stick](#four-ways-to-create-a-linux-live-system-on-a-usb-stick)
@@ -556,7 +556,7 @@ Optionally you can extract the program directory into the /opt/ folder and..
    sudo update-desktop-database
    ```
 
-### `Firefox` Web Browser
+### Firefox Web Browser
 
 https://support.mozilla.org/en-US/kb/install-firefox-linux
 
