@@ -401,6 +401,9 @@ Unofficial Desktop client https://github.com/IsmaelMartinez/teams-for-linux/rele
 - Tor Browser https://www.torproject.org/download/
 - Safari (sudo apt install playonlinux -> and then install Safari from there)
 
+#### Torrent downloads
+- Transmission https://transmissionbt.com/ (already preinstalled)
+
 #### Development
 - JetBrains WebStorm/Rider/IntelliJ/PyCharm IDE https://www.jetbrains.com/pycharm/download/#section=linux
 - Cursor https://www.cursor.com/ (.AppImage)
