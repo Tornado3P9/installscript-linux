@@ -26,6 +26,7 @@
   - [Sound Editing](#sound-editing)
   - [Image Editing](#image-editing)
   - [Web Browser](#web-browser)
+  - [Torrent downloads](#torrent-downloads)
   - [Development](#development)
   - [Disk Usage Analyzer](#disk-usage-analyzer)
   - [Appimage Programs that run on any Linux system](#appimage-programs-that-run-on-any-linux-system)
