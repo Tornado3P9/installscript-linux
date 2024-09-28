@@ -32,6 +32,9 @@ alias count='find . -type f | wc -l'
 #count directories (include -maxdepth 1 to only look in the current directory)
 alias countd='find . -mindepth 1 -type d | wc -l'
 
+#Disk usage analyzer with an ncurses interface.
+alias ncdu='ncdu --color off'
+
 #list files
 alias lt='ls --human-readable --size -1 -S --classify'
 
