@@ -654,6 +654,7 @@ For setting Keyboard Shortcuts in your windows manager:
 `Ctrl+Q` / `Ctrl+W` = Close Application/Window  
 
 **Window Manager**  
+`Alt+Space` = Window operations menu  
 `Alt+Tab` = Cycle windows  
 `Shift+Alt+Tab` = Cycle windows (Reverse)  
 `Super+Tab` = Switch window for same application  
