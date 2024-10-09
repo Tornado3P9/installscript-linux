@@ -679,6 +679,7 @@ For setting Keyboard Shortcuts in your windows manager:
 `Arrow Down` = Show next command  
 `Ctrl+Shift+C` = Copy to clipboard  
 `Ctrl+Shift+V` = Paste from clipboard  
+`Ctrl+Shift+S` = Set Title...  
 `Ctrl+Shift+Q` = Close terminal  
 
 ### Adding App launcher to the XFCE panel
