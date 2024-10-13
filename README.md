@@ -104,6 +104,12 @@ docker.io \
 sqlite3
 ```
 
+#### Explanation for `sudo apt install ...`:
+- **`sudo`** = "Dear PC, do what I tell you now with admininstrator/owner rights!"  
+- **`apt`**  = That's the program that handles the whole installation or deinstallation processes on your PC and which we gave admin rights just now..  
+- **`install`** = That's the function that I want the program **`apt`** to do..  
+- **`mpv`** = That's the name of the program that I want to install (in this case the mpv-media-player).  
+
 ### System Update Settings
 - Open **![menu](https://docs.xubuntu.org/current/user/libs/images/icon_menu.png) → ![preferences](https://docs.xubuntu.org/current/user/libs/images/preferences-desktop.png) Settings Manager → Software & Updates** and go to the _Updates_ tab
 - Open **![menu](https://docs.xubuntu.org/current/user/libs/images/icon_menu.png) → Software → Software & Updates** and go to the _Updates_ tab
