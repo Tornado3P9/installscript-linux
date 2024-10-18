@@ -83,7 +83,7 @@ git gparted synaptic mtools neofetch \
 simple-scan \
 pdfarranger img2pdf gimp pinta gifsicle qrencode scrot zbar-tools \
 htop glances whowatch arp-scan nmap nethogs wireshark \
-speedtest-cli traceroute mtr net-tools iperf3 \
+speedtest-cli traceroute mtr net-tools iperf3 ipcalc \
 libreoffice libreoffice-l10n-de libreoffice-help-de \
 mediainfo mediainfo-gui \
 mpv ffmpeg vlc audacity guvcview kazam handbrake \
