@@ -573,12 +573,27 @@ Optionally you can extract the program directory into the /opt/ folder and..
 https://support.mozilla.org/en-US/kb/install-firefox-linux
 
 Security tip for using Firefox:
-- Type `about:config` into the *URL Search Bar* and then look for `pdfjs.enableScripting`. Set that to `false`.
-- Type `about:preferences` into the *URL Search Bar* and go to **Privacy & Security**. Scroll down and choose `Enable HTTPS-Only Mode in all windows`.
-This way your browser will only allow save connections and will ask you for permission if the website does not support https.
-- Type `about:performance` into the *URL Search Bar* to see the Firefox **Task Manager**. There you can see which application or addon uses up too many resources.
+- Type **`about:config`** into the *URL Search Bar* and then look for `pdfjs.enableScripting`. Set that to `false`.  
+Optionally you can harden your security by changing even more settings. Note: disabling hackable comfort functions may also reduce comfort.  
+  - `media.peerconnection.enabled` set that to `false` to disable WebRTC if you do not specifically need this feature.  
+  - `network.dnscacheExpiration` change the number down to `10`.  
+  - `network.dns.disableIPv6` leave that at `false`.  
+  - `dom.event.clipboardevents.enabled` set only to `false` if you don't use it (it's a nice feature though).  
+  - `geo.enabled` set that to `false`.  
+  - `privacy.trackingprotection.enabled` set that to `true`.  
+  - `network.http.sendRefererHeader` set that at `0`.  
+  - `webgl.disabled` leave that at `false`.  
+  - `browser.send_pings` leave that at `false`.  
+  - `network.prefetch-next` set that to `false`.  
+  - `browser.formfill.enable` set that to `false`.  
+  - `browser.cache.disk.enable` set that to `false`.  
+  - `browser.cache.memory.enable` set that to `false`.  
+  - `browser.cache.offline.enable` set that to `false`.  
+- Type **`about:preferences`** into the *URL Search Bar* and go to **Privacy & Security**. Scroll down and choose `Enable HTTPS-Only Mode in all windows`.
+This way your browser will only allow save connections and will ask you for permission if the website does not support https. Also `Enable DNS over HTTPS`.
+- Type **`about:performance`** into the *URL Search Bar* to see the Firefox **Task Manager**. There you can see which application or addon uses up too many resources.
 
-More privacy stuff: https://www.privacytools.io/
+More privacy stuff: https://www.privacytools.io/  
 
 How to disable Snaps and making sure it doesn’t automatically reinstall.
 The issue with Snaps is that they run 'root' and update automatically without your knowledge and without asking for permission.
