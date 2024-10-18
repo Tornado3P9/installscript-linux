@@ -294,7 +294,15 @@ function ipconfig() {
     ip_info=$(ip -o -f inet addr show $iface | awk '{print $4, $6}')
     IFS=' ' read -r ip_address broadcast <<< "$ip_info"
 
+    # subnet_mask=""
+    # if [[ $status == "Up" ]]; then
+    #   local cidr=${ip_address#*/}
+    #   local mask=$((0xffffffff << (32 - cidr)))
+    #   subnet_mask="$(( (mask >> 24) & 0xff )).$(( (mask >> 16) & 0xff )).$(( (mask >> 8) & 0xff )).$(( mask & 0xff ))"
+    # fi
+
     echo "   IPv4 Address . . . . . . . . : $ip_address"
+    # echo "   Subnet Mask. . . . . . . . . : $subnet_mask"
     echo "   Broadcast Address. . . . . . : $broadcast"
 
     # Get the IPv6 address and prefix
