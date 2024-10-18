@@ -1,3 +1,8 @@
+# If you want to change the behavior of an alias in a running terminal without making it a permanent change, just redefine it in the terminal like `alias gh='history|grep -i'`
+# If you want to change the behavior of a function, you might want to `unset -f name_of_the_function` the original function first and define it again by copying the function from here to your terminal.
+# You can test any of these aliases or functions without making them permanent on your system:
+#   - Define the alias or function, test it and then remove it by either 'unsetting' it or by closing the terminal window.
+
 # Old command prompt: echo $PS1
 #PS1="\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ "
 # New command prompt:
