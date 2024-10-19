@@ -410,7 +410,7 @@ Unofficial Desktop client https://github.com/IsmaelMartinez/teams-for-linux/rele
 - Safari (sudo apt install playonlinux -> and then install Safari from there)
 
 #### Torrent downloads
-- Transmission https://transmissionbt.com/ (already preinstalled)
+- Transmission https://transmissionbt.com/ (already preinstalled: `apt list transmission*`)
 
 #### Development
 - JetBrains WebStorm/Rider/IntelliJ/PyCharm IDE https://www.jetbrains.com/pycharm/download/#section=linux
@@ -470,6 +470,9 @@ Unofficial Desktop client https://github.com/IsmaelMartinez/teams-for-linux/rele
 - Alacritty - modern terminal emulator https://github.com/alacritty/alacritty (part of the repository: `sudo apt install alacritty`)
 - Code Beautify https://codebeautify.org/ (online)
 - Carbon - code to image https://carbon.now.sh/ (online)
+- xfreerdp - Remote Desktop Protocol Implementation https://www.freerdp.com/ (part of the repository: `sudo apt install lightdm-remote-session-freerdp2`)
+- SSH Client (already preinstalled: `apt list openssh-client`)
+- WireGuard https://www.wireguard.com/ (part of the repository: `sudo apt install wireguard`)
 
 #### Disk Usage Analyzer
 - Baobab https://apps.gnome.org/Baobab/ (part of the repository: `sudo apt install baobab`)
