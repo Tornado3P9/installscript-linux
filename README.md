@@ -471,6 +471,8 @@ Unofficial Desktop client https://github.com/IsmaelMartinez/teams-for-linux/rele
 - Code Beautify https://codebeautify.org/ (online)
 - Carbon - code to image https://carbon.now.sh/ (online)
 - xfreerdp - Remote Desktop Protocol Implementation https://www.freerdp.com/ (part of the repository: `sudo apt install lightdm-remote-session-freerdp2`)
+  - Mac: Microsoft Remote Desktop
+  - Android: Remote Desktop Mobile (Microsoft Remote Desktop)
 - SSH Client (already preinstalled: `apt list openssh-client`)
 - WireGuard https://www.wireguard.com/ (part of the repository: `sudo apt install wireguard`)
 
