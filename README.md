@@ -475,6 +475,7 @@ Unofficial Desktop client https://github.com/IsmaelMartinez/teams-for-linux/rele
   - Android: Remote Desktop Mobile (Microsoft Remote Desktop)
 - SSH Client (already preinstalled: `apt list openssh-client`)
 - WireGuard https://www.wireguard.com/ (part of the repository: `sudo apt install wireguard`)
+- Compiler Explorer https://godbolt.org/ (online)
 
 #### Disk Usage Analyzer
 - Baobab https://apps.gnome.org/Baobab/ (part of the repository: `sudo apt install baobab`)
@@ -706,6 +707,7 @@ For setting Keyboard Shortcuts in your windows manager:
 `Ctrl+Shift+C` = Copy to clipboard  
 `Ctrl+Shift+V` = Paste from clipboard  
 `Ctrl+Shift+S` = Set Title...  
+`Ctrl+L` = Clear the visible output on the screen (vs the `clear` command which also clears your buffer)  
 `Ctrl+Shift+Q` = Close terminal  
 
 ### Adding App launcher to the XFCE panel
