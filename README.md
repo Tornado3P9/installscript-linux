@@ -320,6 +320,7 @@ Note: These kinds of workspace simplifyers might not always support every featur
   - Franz https://meetfranz.com/ . [how-to](https://itsfoss.com/franz-messaging-app/) (AppImage, .Deb)
 - Typora - Distractions Free Writing https://typora.io/
 - Flameshot - better screenshot app https://flameshot.org/ (part of the repository: `sudo apt install flameshot`) Also assign a keyboard shortcut for the command *`flameshot gui`*, such as `Windows key + Print`.
+- Safe Eyes - reduce and prevent repetitive strain injury https://slgobinath.github.io/SafeEyes/ (part of the repository: `sudo apt install safeeyes`)
 
 #### Video Calls
 - Zoom https://zoom.us/download . [how-to](https://github.com/Tornado3P9/installscript-linux/blob/master/zoom.md)
@@ -970,6 +971,7 @@ Remember that actual battery life can be influenced by many factors, including s
 https://www.youtube.com/@GraphicdesignforFree/playlists  
 [Why don't more people use Linux? - David Heinemeier Hansson](https://world.hey.com/dhh/why-don-t-more-people-use-linux-33b75f53)  
 https://omakub.org/  
+[How to use Zenity dialog boxes with examples](https://youtu.be/TQQxKXQq_t0)  
 
 ### Deutscher Linux Support
 - https://www.linuxguides.de/linux-support/
