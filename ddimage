@@ -5,8 +5,8 @@ IFS=$'\n\t'
 
 HELP () {
   echo " "
-  echo ddimage [name_of_the_image] [path_to_the_usb_drive]
-  echo Example: sudo ddimage debian.iso /dev/sdc
+  echo "Usage: sudo ddimage [name_of_the_image] [path_to_the_usb_drive] [fast|slow]"
+  echo "Example: sudo ddimage debian.iso /dev/sdc slow"
   printf "\nDisplay Images:\n"
   ls -1v *.iso *.img 2>/dev/null
   printf "\nDisplay Drives:\n"
@@ -20,15 +20,30 @@ if [[ $EUID -ne 0 ]]; then
   HELP
   exit 1
 else
-  # check if number of parameter equals 2 and only allow 'Images' and 'ISOs'
+  # check if number of parameter equals 3 and only allow 'Images' and 'ISOs'
   # and only allow to write to drives which do not belong to the system!!
   # change (sda|sdb) to the drive names of your system.. (sda|nvme0|sde) or (sda) as an example..
-  if [[ $# -eq 2 && $1 =~ (\.img|\.iso)$ && ! $2 =~ (sda|sdb) ]]
+  if [[ $# -eq 3 && $1 =~ (\.img|\.iso)$ && ! $2 =~ (sda|sdb) ]]
   then
-    printf "dd if=$1 of=$2 bs=4M status=progress oflag=sync \n"
+    case $3 in
+      slow)
+        bs=4M
+        oflag=sync
+        ;;
+      fast)
+        bs=16M
+        oflag=direct
+        ;;
+      *)
+        echo "Invalid option: $3"
+        HELP
+        exit 1
+        ;;
+    esac
+    printf "dd if=$1 of=$2 bs=$bs status=progress oflag=$oflag \n"
     read -p "Accept? [Y/n]: " yn
     [ "$yn" = "n" ] && exit
-    dd if=$1 of=$2 bs=4M status=progress oflag=sync
+    dd if=$1 of=$2 bs=$bs status=progress oflag=$oflag
   else
     HELP
   fi
