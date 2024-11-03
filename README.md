@@ -432,7 +432,7 @@ Unofficial Desktop client https://github.com/IsmaelMartinez/teams-for-linux/rele
 - Cascadeur https://cascadeur.com/download
 - NormalMap https://www.smart-page.net/smartnormal/ (online)
 - magick https://imagemagick.org/script/download.php
-- .NET https://learn.microsoft.com/en-us/dotnet/core/install/linux-ubuntu
+- .NET https://learn.microsoft.com/en-us/dotnet/core/install/linux-ubuntu (part of the repository: `sudo apt install dotnet-sdk-8.0` )
 - mono https://www.mono-project.com/ (part of the repository: `sudo apt install mono-complete` )
 - gcolor2_colorpicker http://mirrors.edge.kernel.org/ubuntu/pool/universe/g/gcolor2/
 - SQL Developer / Universal Database Tool https://dbeaver.io/
