@@ -433,7 +433,7 @@ Unofficial Desktop client https://github.com/IsmaelMartinez/teams-for-linux/rele
 - NormalMap https://www.smart-page.net/smartnormal/ (online)
 - magick https://imagemagick.org/script/download.php
 - .NET https://learn.microsoft.com/en-us/dotnet/core/install/linux-ubuntu
-- mono https://www.mono-project.com/download/stable/
+- mono https://www.mono-project.com/
 - gcolor2_colorpicker http://mirrors.edge.kernel.org/ubuntu/pool/universe/g/gcolor2/
 - SQL Developer / Universal Database Tool https://dbeaver.io/
 - Oracle SQL Developer https://www.oracle.com/tools/downloads/sqldev-downloads.html
