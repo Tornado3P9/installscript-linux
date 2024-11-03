@@ -433,7 +433,7 @@ Unofficial Desktop client https://github.com/IsmaelMartinez/teams-for-linux/rele
 - NormalMap https://www.smart-page.net/smartnormal/ (online)
 - magick https://imagemagick.org/script/download.php
 - .NET https://learn.microsoft.com/en-us/dotnet/core/install/linux-ubuntu
-- mono https://www.mono-project.com/
+- mono https://www.mono-project.com/ (part of the repository: `sudo apt install mono-complete` )
 - gcolor2_colorpicker http://mirrors.edge.kernel.org/ubuntu/pool/universe/g/gcolor2/
 - SQL Developer / Universal Database Tool https://dbeaver.io/
 - Oracle SQL Developer https://www.oracle.com/tools/downloads/sqldev-downloads.html
@@ -445,12 +445,12 @@ Unofficial Desktop client https://github.com/IsmaelMartinez/teams-for-linux/rele
 - Unreal Engine https://www.unrealengine.com/
 - Unity https://unity.com/download
 - Gaupol Subtitle Editor https://otsaloma.io/gaupol/ (part of the repository: `sudo apt install gaupol` )
-- Sigil - EPUB Editor https://sigil-ebook.com/ (part of the repository: `sudo apt install sigil`)
+- Sigil - EPUB Editor https://sigil-ebook.com/ (part of the repository: `sudo apt install sigil` )
 - AWS CLI https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
 (part of the repository: `sudo apt install awscli`)
 - Google Cloud CLI https://cloud.google.com/sdk/docs/install#deb
 - Azure CLI https://learn.microsoft.com/en-us/cli/azure/install-azure-cli-linux?pivots=apt
-- FileZilla https://filezilla-project.org/download.php?type=client (part of the repository: `sudo apt install filezilla`)
+- FileZilla https://filezilla-project.org/download.php?type=client (part of the repository: `sudo apt install filezilla` )
 - Angry IP Scanner https://angryip.org/
 - Sparx Enterprise Architect https://sparxsystems.com/products/ea/16.1/sysreq.html
 - RStudio Desktop https://posit.co/download/rstudio-desktop/
@@ -461,22 +461,22 @@ Unofficial Desktop client https://github.com/IsmaelMartinez/teams-for-linux/rele
 - GTK-4 (UI-library with Rust, C++, Python and more) https://gtk-rs.org/gtk4-rs/stable/latest/book/
 - Tkinter (UI-library with Python) https://github.com/TomSchimansky/CustomTkinter
 - Electron (Create cross-platform desktop apps) https://www.electronjs.org/
-- Glade - A User Interface Designer https://infrastructure.pages.gitlab.gnome.org/glade-web/ , https://ultimate-gtk4-crystal-guide.geopjr.dev/ (part of the repository: `sudo apt install glade`)
+- Glade - A User Interface Designer https://infrastructure.pages.gitlab.gnome.org/glade-web/ , https://ultimate-gtk4-crystal-guide.geopjr.dev/ (part of the repository: `sudo apt install glade` )
 - Gitleaks https://github.com/gitleaks/gitleaks
 - GitGuardian https://www.gitguardian.com/state-of-secrets-sprawl-report-2023
-- GitHub CLI https://cli.github.com/ https://cli.github.com/manual/gh_repo_create (part of the repository: `sudo apt install gh`)
+- GitHub CLI https://cli.github.com/ https://cli.github.com/manual/gh_repo_create (part of the repository: `sudo apt install gh` )
 - Lazygit https://github.com/jesseduffield/lazygit . https://git-how.com/
 - Terraform https://developer.hashicorp.com/terraform/install https://developer.hashicorp.com/terraform/cli/install/apt
-- Scilab Xcos https://www.scilab.org/software/xcos (part of the repository: `sudo apt install scilab`)
+- Scilab Xcos https://www.scilab.org/software/xcos (part of the repository: `sudo apt install scilab` )
 - MATLAB Simulink https://www.mathworks.com/products/simulink.html
-- Alacritty - modern terminal emulator https://github.com/alacritty/alacritty (part of the repository: `sudo apt install alacritty`)
+- Alacritty - modern terminal emulator https://github.com/alacritty/alacritty (part of the repository: `sudo apt install alacritty` )
 - Code Beautify https://codebeautify.org/ (online)
 - Carbon - code to image https://carbon.now.sh/ (online)
-- xfreerdp - Remote Desktop Protocol Implementation https://www.freerdp.com/ (part of the repository: `sudo apt install lightdm-remote-session-freerdp2`)
+- xfreerdp - Remote Desktop Protocol Implementation https://www.freerdp.com/ (part of the repository: `sudo apt install lightdm-remote-session-freerdp2` )
   - Mac: Microsoft Remote Desktop
   - Android: Remote Desktop Mobile (Microsoft Remote Desktop)
-- SSH Client (already preinstalled: `apt list openssh-client`)
-- WireGuard https://www.wireguard.com/ (part of the repository: `sudo apt install wireguard`)
+- SSH Client (already preinstalled: `apt list openssh-client` )
+- WireGuard https://www.wireguard.com/ (part of the repository: `sudo apt install wireguard` )
 - Compiler Explorer https://godbolt.org/ (online)
 
 #### Disk Usage Analyzer
