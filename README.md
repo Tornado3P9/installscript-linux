@@ -462,6 +462,7 @@ Unofficial Desktop client https://github.com/IsmaelMartinez/teams-for-linux/rele
 - Tkinter (UI-library with Python) https://github.com/TomSchimansky/CustomTkinter
 - Electron (Create cross-platform desktop apps) https://www.electronjs.org/
 - Glade - A User Interface Designer https://infrastructure.pages.gitlab.gnome.org/glade-web/ , https://ultimate-gtk4-crystal-guide.geopjr.dev/en/first-app/ui-design.html (part of the repository: `sudo apt install glade`)
+- Cambalache - A User Interface Designer https://gitlab.gnome.org/jpu/cambalache
 - Gitleaks https://github.com/gitleaks/gitleaks
 - GitGuardian https://www.gitguardian.com/state-of-secrets-sprawl-report-2023
 - GitHub CLI https://cli.github.com/ https://cli.github.com/manual/gh_repo_create (part of the repository: `sudo apt install gh`)
