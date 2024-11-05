@@ -104,6 +104,18 @@ docker.io \
 sqlite3
 ```
 
+Configuring [Flatpak](https://flathub.org/setup/Ubuntu) for installing apps from https://flathub.org/:  
+```bash
+# Install Flatpak:
+sudo apt install flatpak
+
+# Add the Flathub repository:
+flatpak remote-add --user --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+
+# Install some program, e.g. https://flathub.org/apps/org.stellarium.Stellarium
+flatpak install --user flathub org.stellarium.Stellarium
+```
+
 #### Explanation for `sudo apt install ...`:
 - **`sudo`** = "Dear PC, do what I tell you now with admininstrator/owner rights!"  
 - **`apt`**  = That's the program that handles the whole installation or deinstallation processes on your PC and which we gave admin rights just now..  
@@ -462,7 +474,7 @@ Unofficial Desktop client https://github.com/IsmaelMartinez/teams-for-linux/rele
 - Tkinter (UI-library with Python) https://github.com/TomSchimansky/CustomTkinter
 - Electron (Create cross-platform desktop apps) https://www.electronjs.org/
 - Glade - A User Interface Designer https://infrastructure.pages.gitlab.gnome.org/glade-web/ , https://ultimate-gtk4-crystal-guide.geopjr.dev/en/first-app/ui-design.html (part of the repository: `sudo apt install glade`)
-- Cambalache - A User Interface Designer https://gitlab.gnome.org/jpu/cambalache
+- Cambalache - A User Interface Designer https://gitlab.gnome.org/jpu/cambalache (Flatpak)
 - Gitleaks https://github.com/gitleaks/gitleaks
 - GitGuardian https://www.gitguardian.com/state-of-secrets-sprawl-report-2023
 - GitHub CLI https://cli.github.com/ https://cli.github.com/manual/gh_repo_create (part of the repository: `sudo apt install gh`)
