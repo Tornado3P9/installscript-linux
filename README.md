@@ -114,6 +114,15 @@ flatpak remote-add --user --if-not-exists flathub https://flathub.org/repo/flath
 
 # Install some program, e.g. https://flathub.org/apps/org.stellarium.Stellarium
 flatpak install --user flathub org.stellarium.Stellarium
+
+# See, what programs were installed via flatpak:
+flatpak list
+
+# Uninstall a program via the 'Application ID':
+flatpak uninstall org.stellarium.Stellarium
+
+# Remove unused Flatpak runtimes to free up space:
+flatpak uninstall --unused
 ```
 
 #### Explanation for `sudo apt install ...`:
