@@ -450,7 +450,8 @@ Unofficial Desktop client https://github.com/IsmaelMartinez/teams-for-linux/rele
 - LazyVim https://www.lazyvim.org/
 - Minisign https://jedisct1.github.io/minisign/ https://github.com/jedisct1/minisign
 - Blender https://www.blender.org/download/ KeenTools https://keentools.io/ CAD Sketcher https://makertales.gumroad.com/l/CADsketcher?a=742446579
-- Onshape https://www.onshape.com/en/ (online)
+- Onshape - 3D CAD https://www.onshape.com/en/ (online)
+- FreeCAD - 3D CAD https://www.freecad.org/
 - Cascadeur https://cascadeur.com/download
 - NormalMap https://www.smart-page.net/smartnormal/ (online)
 - magick https://imagemagick.org/script/download.php
