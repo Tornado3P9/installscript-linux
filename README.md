@@ -449,9 +449,11 @@ Unofficial Desktop client https://github.com/IsmaelMartinez/teams-for-linux/rele
 - NetBeans IDE https://netbeans.apache.org/download/
 - LazyVim https://www.lazyvim.org/
 - Minisign https://jedisct1.github.io/minisign/ https://github.com/jedisct1/minisign
-- Blender https://www.blender.org/download/ KeenTools https://keentools.io/ CAD Sketcher https://makertales.gumroad.com/l/CADsketcher?a=742446579
+- Blender https://www.blender.org/download/ KeenTools https://keentools.io/ 3D CAD Sketcher https://makertales.gumroad.com/l/CADsketcher?a=742446579
 - Onshape - 3D CAD https://www.onshape.com/en/ (online)
 - FreeCAD - 3D CAD https://www.freecad.org/
+- Solid Edge - 3D CAD https://github.com/cryinkfly/Solid-Edge-for-Linux (only using Windows executable with Wine)
+- Autodesk Inventor ... Nope https://www.youtube.com/@Stolz3D/videos
 - Cascadeur https://cascadeur.com/download
 - NormalMap https://www.smart-page.net/smartnormal/ (online)
 - magick https://imagemagick.org/script/download.php
