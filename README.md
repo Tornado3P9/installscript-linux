@@ -453,7 +453,8 @@ Unofficial Desktop client https://github.com/IsmaelMartinez/teams-for-linux/rele
 - Onshape - 3D CAD https://www.onshape.com/en/ (online)
 - FreeCAD - 3D CAD https://www.freecad.org/
 - Solid Edge - 3D CAD https://github.com/cryinkfly/Solid-Edge-for-Linux (only using Windows executable with Wine)
-- Autodesk Inventor ... Nope https://www.youtube.com/@Stolz3D/videos
+- SolidWorks - 3D CAD https://github.com/cryinkfly/SOLIDWORKS-for-Linux (only using Windows executable with Wine)
+- Autodesk Inventor ... Nope
 - Cascadeur https://cascadeur.com/download
 - NormalMap https://www.smart-page.net/smartnormal/ (online)
 - magick https://imagemagick.org/script/download.php
