@@ -104,7 +104,15 @@ docker.io \
 sqlite3
 ```
 
-Configuring [Flatpak](https://flathub.org/setup/Ubuntu) for installing apps from https://flathub.org/:  
+#### Explanation for `sudo apt install ...`:
+- **`sudo`** = "Dear PC, do what I tell you now with admininstrator/owner rights!"  
+- **`apt`**  = That's the program that handles the whole installation or deinstallation processes on your PC and which we gave admin rights just now..  
+- **`install`** = That's the function that I want the program **`apt`** to do..  
+- **`mpv`** = That's the name of the program that I want to install (in this case the mpv-media-player).  
+
+
+### Configuring [Flatpak](https://flathub.org/setup/Ubuntu) for installing apps from https://flathub.org/:
+
 ```bash
 # Install Flatpak:
 sudo apt install flatpak
@@ -125,11 +133,6 @@ flatpak uninstall org.stellarium.Stellarium
 flatpak uninstall --unused
 ```
 
-#### Explanation for `sudo apt install ...`:
-- **`sudo`** = "Dear PC, do what I tell you now with admininstrator/owner rights!"  
-- **`apt`**  = That's the program that handles the whole installation or deinstallation processes on your PC and which we gave admin rights just now..  
-- **`install`** = That's the function that I want the program **`apt`** to do..  
-- **`mpv`** = That's the name of the program that I want to install (in this case the mpv-media-player).  
 
 ### System Update Settings
 - Open **![menu](https://docs.xubuntu.org/current/user/libs/images/icon_menu.png) → ![preferences](https://docs.xubuntu.org/current/user/libs/images/preferences-desktop.png) Settings Manager → Software & Updates** and go to the _Updates_ tab
@@ -252,6 +255,11 @@ sudo apt install plank
 
 # The standard desktop image folder is located at:
 locate backdrops
+
+ls /usr/share/xfce4/backdrops
+tree /usr/share/backgrounds
+
+sudo cp /usr/share/backgrounds/xfce/ /usr/share/xfce4/backdrops
 ```
 
 ### Terminal behaviour
@@ -342,7 +350,6 @@ Note: These kinds of workspace simplifyers might not always support every featur
 - Typora - Distractions Free Writing https://typora.io/
 - Flameshot - better screenshot app https://flameshot.org/ (part of the repository: `sudo apt install flameshot`) Also assign a keyboard shortcut for the command *`flameshot gui`*, such as `Windows key + Print`.
 - Safe Eyes - reduce and prevent repetitive strain injury https://slgobinath.github.io/SafeEyes/ (part of the repository: `sudo apt install safeeyes`)
-- WoeUSB - A Microsoft Windows® USB installation media preparer for GNU+Linux https://github.com/WoeUSB/WoeUSB (`chmod +x woeusb-5.2.4.bash && ./woeusb-5.2.4.bash --help`)
 
 #### Video Calls
 - Zoom https://zoom.us/download . [how-to](https://github.com/Tornado3P9/installscript-linux/blob/master/zoom.md)
@@ -515,6 +522,19 @@ Unofficial Desktop client https://github.com/IsmaelMartinez/teams-for-linux/rele
 - GParted (best known partition editor/formatter) https://gparted.org/ (part of the repository: `sudo apt install gparted`)
 - Disks https://apps.gnome.org/DiskUtility/ (already preinstalled: `sudo apt install gnome-disk-utility`)
 
+#### USB installation media creation tools
+- WoeUSB - A Microsoft Windows® USB installation media preparer https://github.com/WoeUSB/WoeUSB (`chmod +x woeusb-5.2.4.bash && ./woeusb-5.2.4.bash --help`)
+- Cubic (Custom Ubuntu ISO Creator) - A GUI wizard to create a customized Live ISO image for Ubuntu and Debian based distributions https://github.com/PJ-Singh-001/Cubic/wiki
+- Startup Disk Creator `sudo apt install usb-creator-gtk`
+- BalenaEtcher https://www.balena.io/etcher/
+- Raspberry Pi Imager https://www.raspberrypi.com/software/ [#advanced-options](https://www.raspberrypi.com/documentation/computers/getting-started.html#advanced-options)
+- ddimage script using dd[^4]
+```bash
+sudo wget https://raw.githubusercontent.com/Tornado3P9/installscript-linux/master/ddimage -O /usr/local/bin/ddimage
+sudo chmod a+rx /usr/local/bin/ddimage
+ddimage
+```
+
 #### AppImage Programs that run on any Linux system
 - Aseprite (Animated sprite editor & pixel art tool) https://www.aseprite.org/
 - Stellarium http://stellarium.org/
@@ -611,7 +631,10 @@ https://support.mozilla.org/en-US/kb/install-firefox-linux
 
 Security tip for using Firefox:
 - Type **`about:config`** into the *URL Search Bar* and then look for `pdfjs.enableScripting`. Set that to `false`.  
-Optionally you can harden your security by changing even more settings. Note: disabling hackable comfort functions may also reduce comfort.  
+- Type **`about:preferences`** into the *URL Search Bar* and go to **Privacy & Security**. Scroll down and choose `Enable HTTPS-Only Mode in all windows`.
+This way your browser will only allow save connections and will ask you for permission if the website does not support https. Also `Enable DNS over HTTPS`.
+- Type **`about:performance`** into the *URL Search Bar* to see the Firefox **Task Manager**. There you can see which application or addon uses up too many resources.
+**Optionally!** you can harden your security by changing even more settings. **Note: disabling hackable comfort functions may also reduce comfort.**  
   - `media.peerconnection.enabled` set that to `false` to disable WebRTC if you do not specifically need this feature.  
   - `network.dnscacheExpiration` change the number down to `10`.  
   - `network.dns.disableIPv6` leave that at `false`.  
@@ -626,9 +649,6 @@ Optionally you can harden your security by changing even more settings. Note: di
   - `browser.cache.disk.enable` set that to `false`.  
   - `browser.cache.memory.enable` set that to `false`.  
   - `browser.cache.offline.enable` set that to `false`.  
-- Type **`about:preferences`** into the *URL Search Bar* and go to **Privacy & Security**. Scroll down and choose `Enable HTTPS-Only Mode in all windows`.
-This way your browser will only allow save connections and will ask you for permission if the website does not support https. Also `Enable DNS over HTTPS`.
-- Type **`about:performance`** into the *URL Search Bar* to see the Firefox **Task Manager**. There you can see which application or addon uses up too many resources.
 
 More privacy stuff: https://www.privacytools.io/  
 
@@ -640,17 +660,17 @@ Snaps are certainly a promising idea, but because we can just create the debian 
 You can also use [Flatpaks](https://flathub.org/setup/Ubuntu) or [AppImages](https://itsfoss.com/use-appimage-linux/) if you have to. If you want to use [Snaps, then here](https://snapcraft.io/) is where to look for apps.
 
 ```bash
-# List and Uninstall Snaps
-snap list # This shows you what snaps are installed
-sudo snap remove firefox # Fill in all snaps listed above
-
-# Purge Snaps and Block Reinstall
-sudo apt purge snapd
+# List installed Snaps, Purge Snaps and Block Reinstall
+snap list
+sudo apt autoremove --purge snapd
 sudo apt-mark hold snapd
 
 # Verify Uninstall
 apt list --installed | grep -i snap
+```
 
+Example of how you can manually install firefox on your machine:  
+```bash
 # Download Firefox from https://www.mozilla.org/en-US/firefox/all/#product-desktop-release
 wget "https://download.mozilla.org/?product=firefox-latest-ssl&os=linux64&lang=en-US" -O firefox.tar.bz2
 
@@ -744,18 +764,6 @@ For setting Keyboard Shortcuts in your windows manager:
 ### Adding App launcher to the XFCE panel
 ![app launcher](pics/add_launcher.gif)
 
-### Four ways to create a Linux Live System on a usb stick
-1. Startup Disk Creator `sudo apt install usb-creator-gtk`
-2. [BalenaEtcher](https://www.balena.io/etcher/)
-3. [Raspberry Pi Imager](https://www.raspberrypi.com/software/) [#advanced-options](https://www.raspberrypi.com/documentation/computers/getting-started.html#advanced-options)
-4. ddimage script using dd[^4]
-```bash
-curl -sS https://raw.githubusercontent.com/Tornado3P9/installscript-linux/master/ddimage -O
-chmod +x ddimage
-sudo mv ddimage /usr/bin/
-ddimage
-```
-
 ### Some Programming languages
 ```bash
 # Ruby and the fpm utility (https://fpm.readthedocs.io/en/latest/index.html)
@@ -793,7 +801,7 @@ or in `./your_venv_name/bin/` if you used a virtual environment.
 Update `pip` via: `python3 -m pip install --upgrade pip`
 
 ### Backups
-- [Timeshift](https://linuxconfig.org/ubuntu-22-04-system-backup-and-restore) - `sudo apt install timeshift`
+- [Timeshift](https://github.com/linuxmint/timeshift) - `sudo apt install timeshift`
 - [Chezmoi - Easily moving Linux installs](https://christitus.com/chezmoi/)
 - [Déjà Dup Backups](https://snapcraft.io/deja-dup) - `sudo apt install deja-dup`
 - [Pika Backup](https://apps.gnome.org/PikaBackup/) - (you need flatpak enabled for this)
