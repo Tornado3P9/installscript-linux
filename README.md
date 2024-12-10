@@ -3,6 +3,7 @@
 ### Table of Contents
 - [First set up the base system](#first-set-up-the-base-system)
 - [Now you can make some first customizations to the new system](#now-you-can-make-some-first-customizations-to-the-new-system)
+- [Configure Flatpak for installing apps from Flathub](#configure-flatpak-for-installing-apps-from-httpsflathuborg)
 - [System Update Settings](#system-update-settings)
 - [Graphics Card Drivers](#graphics-card-drivers)
 - [Configuration Assistants are a great help](#configuration-assistants-are-a-great-help)
@@ -29,6 +30,7 @@
   - [Torrent downloads](#torrent-downloads)
   - [Development](#development)
   - [Disk Usage Analyzer](#disk-usage-analyzer)
+  - [USB installation media creation tools](#usb-installation-media-creation-tools)
   - [Appimage Programs that run on any Linux system](#appimage-programs-that-run-on-any-linux-system)
 - [Installation and Setup of the downloaded Programs](#installation-and-setup-of-the-downloaded-programs)
 - [Firefox Web Browser](#firefox-web-browser)
@@ -76,12 +78,15 @@ The Microsoft Fonts for instance are not open source and therefore are not inclu
 Or you can try to do this manually. Some of the packages are: *libavcodec-extra ttf-mscorefonts-installer gstreamer1.0-libav gstreamer1.0-plugins-ugly gstreamer1.0-vaapi unrar rar xz-utils* 
 The packages zip and unzip are also included. But making sure never hurts.  
 
-Install some useful programs (remove what lines you don't want, copy the whole command block, paste it into the terminal and press Enter). Don't forget to run **`sudo apt update`** before installing new packages:
+Install some useful programs (remove what lines you don't want, copy the whole command block, paste it into the terminal and press Enter). Also remember to run **`sudo apt update`** before installing new packages:
 ```bash
 sudo apt install \
-git gparted synaptic mtools neofetch \
+git \
+gparted gnome-disk-utility mtools \
+synaptic \
+neofetch \
 simple-scan \
-pdfarranger img2pdf gimp pinta gifsicle qrencode scrot zbar-tools \
+pdfarranger atril \
 htop glances whowatch arp-scan nmap nethogs wireshark \
 speedtest-cli traceroute mtr net-tools iperf3 ipcalc \
 libreoffice libreoffice-l10n-de libreoffice-help-de \
@@ -94,24 +99,26 @@ xsensors \
 wget curl \
 ncdu autojump \
 ufw gufw \
-kleopatra \
+kleopatra scdaemon \
 wireguard \
-jeex bless \
+ghex okteta jeex hexcurse xxd \
 usb-creator-gtk \
-python3-pip python3-venv python3-tk libopencv-dev python3-opencv python-is-python3 \
-tar tree multitail trash-cli unzip cmake make jq rename rg build-essential \
-docker.io \
-sqlite3
+python3-pip python3-venv python3-tk \
+tar tree multitail trash-cli \
+cmake \
+jq \
+rename \
+libgtk-4-dev build-essential
 ```
 
 #### Explanation for `sudo apt install ...`:
 - **`sudo`** = "Dear PC, do what I tell you now with admininstrator/owner rights!"  
 - **`apt`**  = That's the program that handles the whole installation or deinstallation processes on your PC and which we gave admin rights just now..  
 - **`install`** = That's the function that I want the program **`apt`** to do..  
-- **`mpv`** = That's the name of the program that I want to install (in this case the mpv-media-player).  
+- **`mpv`** = That's the name of the thing that I want to install (in this case the mpv-media-player).  
 
 
-### Configuring [Flatpak](https://flathub.org/setup/Ubuntu) for installing apps from https://flathub.org/:
+### Configure [Flatpak](https://flathub.org/setup/Ubuntu) for installing apps from https://flathub.org/:
 
 ```bash
 # Install Flatpak:
@@ -255,11 +262,8 @@ sudo apt install plank
 
 # The standard desktop image folder is located at:
 locate backdrops
-
 ls /usr/share/xfce4/backdrops
 tree /usr/share/backgrounds
-
-sudo cp /usr/share/backgrounds/xfce/ /usr/share/xfce4/backdrops
 ```
 
 ### Terminal behaviour
@@ -338,7 +342,7 @@ sudo apt install texlive texlive-lang-german texlive-lang-english texlive-latex-
 - Obsidian - like OneNote but private https://obsidian.md/download (**.Deb**, Snap or .AppImage)
 - Libre Workspace https://www.libre-workspace.org/ (online/local, language german)
 - Tresorit - cloud-based file synchronization and sharing service that focuses on enhanced security and data encryption https://tresorit.com/ (online)
-- Kleopatra https://www.openpgp.org/software/kleopatra/ (part of the repository: `sudo apt install kleopatra`)
+- Kleopatra https://www.openpgp.org/software/kleopatra/ (part of the repository: `sudo apt install kleopatra scdaemon`)
 - KMail - KDE email client that integrates well with Kleopatra https://apps.kde.org/kmail2/ (part of the repository: `sudo apt install kmail`)
 - Thunderbird - Popular email client https://www.thunderbird.net/ (part of the repository: `sudo apt install thunderbird`)
 - Document Scanner https://gitlab.gnome.org/GNOME/simple-scan (best choice and part of the repository: `sudo apt install simple-scan`)
