@@ -156,7 +156,8 @@ function giturl() {
 }
 
 # Toggle the git url between HTTPS and SSH
-toggle_git_url() {
+# Usage: toggle_git_url
+function toggle_git_url() {
   local current_url new_url
   current_url=$(git config --get remote.origin.url)
 
