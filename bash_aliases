@@ -324,4 +324,12 @@ function ipconfig() {
   echo "==================================================="
 }
 
+function youtube() {
+  if [ "$#" -ne 1 ]; then
+    echo 'Usage: youtube "https://www.youtube.com/watch?v=Y_YVkQaS6Uc"'
+    return 1
+  fi
+  mpv --script-opts=ytdl_hook-ytdl_path=yt-dlp --ytdl-format='bestvideo[height<=1080][fps<=30][vcodec!=vp9]+bestaudio/best' --fullscreen --screenshot-format=png --screenshot-directory="$HOME" "${1}"
+}
+
 #
