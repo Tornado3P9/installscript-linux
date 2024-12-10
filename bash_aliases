@@ -155,6 +155,28 @@ function giturl() {
   git config --get remote.origin.url
 }
 
+# Toggle the git url between HTTPS and SSH
+toggle_git_url() {
+  local current_url new_url
+  current_url=$(git config --get remote.origin.url)
+
+  if [[ $current_url == git@github.com:* ]]; then
+    new_url=${current_url/git@github.com:/https:\/\/github.com\/}
+  elif [[ $current_url == https://github.com/* ]]; then
+    new_url=${current_url/https:\/\/github.com\//git@github.com:}
+  else
+    echo "Current URL is not recognized as SSH or HTTPS."
+    return 1
+  fi
+
+  git remote set-url origin "$new_url"
+  echo "Remote URL changed to: $new_url"
+
+  # git config --list
+  # git config --get remote.origin.url
+  # git remote show origin
+}
+
 function remove_trailing_spaces() {
   # Check if a file name is provided as an argument
   if [ "$#" -ne 1 ]; then
