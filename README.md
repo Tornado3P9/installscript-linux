@@ -108,7 +108,7 @@ tar tree multitail trash-cli \
 cmake \
 jq \
 rename \
-libgtk-4-dev build-essential
+libgtk-4-dev build-essential libasound2-dev
 ```
 
 #### Explanation for `sudo apt install ...`:
