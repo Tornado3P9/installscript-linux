@@ -105,7 +105,7 @@ tar \
 trash-cli \
 jq \
 rename \
-cmake libgtk-4-dev build-essential libasound2-dev
+cmake libgtk-4-dev build-essential libasound2-dev libssl-dev
 ```
 
 #### Explanation for `sudo apt install ...`:
