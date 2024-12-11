@@ -84,31 +84,28 @@ sudo apt install \
 git \
 gparted gnome-disk-utility mtools \
 synaptic \
-neofetch \
 simple-scan \
 pdfarranger atril \
-htop glances whowatch arp-scan nmap nethogs wireshark \
-speedtest-cli traceroute mtr net-tools iperf3 ipcalc \
+neofetch htop glances whowatch arp-scan nethogs wireshark speedtest-cli traceroute mtr net-tools iperf3 ipcalc \
 libreoffice libreoffice-l10n-de libreoffice-help-de \
 mediainfo mediainfo-gui \
-mpv ffmpeg vlc audacity guvcview kazam handbrake \
+mpv ffmpeg audacity guvcview handbrake \
 lxsplit \
 libimage-exiftool-perl perl-doc \
 steam \
 xsensors \
 wget curl \
-ncdu autojump \
+tree multitail ncdu autojump \
 ufw gufw \
 kleopatra scdaemon \
-wireguard \
 ghex okteta jeex hexcurse xxd \
 usb-creator-gtk \
 python3-pip python3-venv python3-tk \
-tar tree multitail trash-cli \
-cmake \
+tar \
+trash-cli \
 jq \
 rename \
-libgtk-4-dev build-essential libasound2-dev
+cmake libgtk-4-dev build-essential libasound2-dev
 ```
 
 #### Explanation for `sudo apt install ...`:
