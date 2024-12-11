@@ -3,8 +3,8 @@
 ### Table of Contents
 - [First set up the base system](#first-set-up-the-base-system)
 - [Now you can make some first customizations to the new system](#now-you-can-make-some-first-customizations-to-the-new-system)
-- [Configure Flatpak for installing apps from Flathub](#configure-flatpak-for-installing-apps-from-httpsflathuborg)
 - [System Update Settings](#system-update-settings)
+- [Configure Flatpak for installing apps from Flathub](#configure-flatpak-for-installing-apps-from-httpsflathuborg)
 - [Graphics Card Drivers](#graphics-card-drivers)
 - [Configuration Assistants are a great help](#configuration-assistants-are-a-great-help)
 - [Create a `.fonts` directory for your own Truetype (.ttf) fonts](#create-a-fonts-directory-for-your-own-truetype-ttf-fonts)
@@ -116,6 +116,9 @@ rename \
 cmake libgtk-4-dev build-essential libasound2-dev libssl-dev
 ```
 
+### System Update Settings
+- Open **![menu](https://docs.xubuntu.org/current/user/libs/images/icon_menu.png) → ![preferences](https://docs.xubuntu.org/current/user/libs/images/preferences-desktop.png) Settings Manager → Software & Updates** and go to the _Updates_ tab
+- Open **![menu](https://docs.xubuntu.org/current/user/libs/images/icon_menu.png) → Software → Software & Updates** and go to the _Updates_ tab
 
 ### Configure [Flatpak](https://flathub.org/setup/Ubuntu) for installing apps from https://flathub.org/:
 
@@ -138,11 +141,6 @@ flatpak uninstall org.stellarium.Stellarium
 # Remove unused Flatpak runtimes to free up space:
 flatpak uninstall --unused
 ```
-
-
-### System Update Settings
-- Open **![menu](https://docs.xubuntu.org/current/user/libs/images/icon_menu.png) → ![preferences](https://docs.xubuntu.org/current/user/libs/images/preferences-desktop.png) Settings Manager → Software & Updates** and go to the _Updates_ tab
-- Open **![menu](https://docs.xubuntu.org/current/user/libs/images/icon_menu.png) → Software → Software & Updates** and go to the _Updates_ tab
 
 ### Graphics Card Drivers
 Installing drivers on Ubuntu is not necessary as Ubuntu detects the Video Card and automatically uses its own Nouveau Open Source driver for nVidia cards. But the proprietary nVidia driver does give a noticeable performance boost over the Nouveau driver, so it is still common to select the proprietary one.  
