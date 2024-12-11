@@ -78,7 +78,15 @@ The Microsoft Fonts for instance are not open source and therefore are not inclu
 Or you can try to do this manually. Some of the packages are: *libavcodec-extra ttf-mscorefonts-installer gstreamer1.0-libav gstreamer1.0-plugins-ugly gstreamer1.0-vaapi unrar rar xz-utils* 
 The packages zip and unzip are also included. But making sure never hurts.  
 
-Install some useful programs (remove what lines you don't want, copy the whole command block, paste it into the terminal and press Enter). Also remember to run **`sudo apt update`** before installing new packages:
+#### Explanation for `sudo apt install ...`:
+- **`sudo`** = "Dear PC, do what I tell you now with admininstrator/owner rights!"  
+- **`apt`**  = That's the program that handles the whole installation or deinstallation processes on your PC and which we gave admin rights just now..  
+- **`install`** = That's the function that I want the program **`apt`** to do..  
+- **`mpv`** = That's the name of the thing that I want to install (in this case the mpv-media-player).  
+
+#### Install some useful programs
+Remove what lines you don't want, copy the whole command block, paste it into the terminal and press Enter. Also remember to run **`sudo apt update`** before installing new packages:
+
 ```bash
 sudo apt install \
 git \
@@ -107,12 +115,6 @@ jq \
 rename \
 cmake libgtk-4-dev build-essential libasound2-dev libssl-dev
 ```
-
-#### Explanation for `sudo apt install ...`:
-- **`sudo`** = "Dear PC, do what I tell you now with admininstrator/owner rights!"  
-- **`apt`**  = That's the program that handles the whole installation or deinstallation processes on your PC and which we gave admin rights just now..  
-- **`install`** = That's the function that I want the program **`apt`** to do..  
-- **`mpv`** = That's the name of the thing that I want to install (in this case the mpv-media-player).  
 
 
 ### Configure [Flatpak](https://flathub.org/setup/Ubuntu) for installing apps from https://flathub.org/:
