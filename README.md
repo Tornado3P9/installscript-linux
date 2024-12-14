@@ -142,6 +142,8 @@ flatpak uninstall org.stellarium.Stellarium
 flatpak uninstall --unused
 ```
 
+If the app does not appear right away in the menu, just reboot your PC.
+
 ### Graphics Card Drivers
 Installing drivers on Ubuntu is not necessary as Ubuntu detects the Video Card and automatically uses its own Nouveau Open Source driver for nVidia cards. But the proprietary nVidia driver does give a noticeable performance boost over the Nouveau driver, so it is still common to select the proprietary one.  
 AMD graphics card drivers for Linux are provided through the open-source AMDGPU driver, which is integrated into the Linux kernel. This driver supports most modern AMD Radeon graphics cards and is included by default in many Linux distributions, including Ubuntu. The AMDGPU driver is actively developed and regularly updated with new kernel releases.
@@ -568,6 +570,11 @@ cd ~/Programs && sudo dpkg -i *.deb        # Version B
 If the .deb program does not install correctly, just try the `-f/--fix-broken` command ([fix-broken-packages-ubuntu](https://www.maketecheasier.com/fix-broken-packages-ubuntu/)):  
 ```bash
 sudo apt install -f
+```
+
+And if any app at all does not work correctly or has got an error, the fix might be as easy as reinstalling the affected app:  
+```bash
+sudo apt install --reinstall app_name
 ```
 
 **AppImage Packages**  
