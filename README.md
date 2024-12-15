@@ -827,7 +827,7 @@ Update `pip` via: `python3 -m pip install --upgrade pip`
 
 ### Virtual Machine
 - [VirtualBox](https://www.virtualbox.org/wiki/Downloads) - `sudo apt install virtualbox`
-- [QEMU](https://www.qemu.org/) (Even faster than VirtualBox) - [christitus-setup](https://www.christitus.com/vm-setup-in-linux), [absprog-setup](https://absprog.com/post/qemu-kvm-ubuntu-24-04), [christitus-windows-inside-linux](https://christitus.com/windows-inside-linux/)
+- [QEMU](https://www.qemu.org/) (Even faster than VirtualBox) - [christitus-setup](https://www.christitus.com/vm-setup-in-linux), [absprog-setup](https://absprog.com/post/qemu-kvm-ubuntu-24-04), [christitus-windows-inside-linux](https://christitus.com/windows-inside-linux/), [absprog-shared-folder](https://absprog.com/post/qemu-kvm-shared-folder)
 - [Distrobox](https://wiki.archlinux.org/title/Distrobox)
 
 ### Gaming
