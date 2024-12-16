@@ -517,6 +517,7 @@ Unofficial Desktop client https://github.com/IsmaelMartinez/teams-for-linux/rele
 - SSH Client (already preinstalled: `apt list openssh-client`)
 - WireGuard https://www.wireguard.com/ (part of the repository: `sudo apt install wireguard`)
 - Compiler Explorer https://godbolt.org/ (online)
+- UV - An extremely fast Python package and project manager, written in Rust. https://docs.astral.sh/uv/
 
 #### Disk Usage Analyzer
 - Baobab https://apps.gnome.org/Baobab/ (part of the repository: `sudo apt install baobab`)
