@@ -542,6 +542,7 @@ ddimage
 ```
 
 #### AppImage Programs that run on any Linux system
+- Kdenlive Video Editor https://kdenlive.org/en/download/
 - Aseprite (Animated sprite editor & pixel art tool) https://www.aseprite.org/
 - Stellarium http://stellarium.org/
 - Ultimaker Cura (3D printing + slicer) https://ultimaker.com/software/ultimaker-cura
