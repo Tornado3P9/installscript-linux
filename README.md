@@ -283,18 +283,20 @@ dpkg-reconfigure tzdata
 The linux terminal usually accepts `Ctrl+Shift+C` and `Ctrl+Shift+V` instead of the more common `Ctrl+C` and `Ctrl+V`. You can change that in the terminal by going to **Edit → Preferences → Shortcuts**. Still, it might be better to just get accustomed to the standard shortcuts as other people on forums will also be using those. That will make it easier for when you need to ask for help. Also remember that the shortcut for stopping a process `Ctrl+C` will not work anymore and might change to `Ctrl+Shift+C`.
 
 ### Installing tldr (too long, didn't read) helper tool
+
+The Ubuntu-Repository does have an older version of this program.
 ```bash
-git clone https://github.com/tldr-pages/tldr-c-client.git
-cd tldr-c-client
-
-sudo ./deps.sh      # install dependencies
-make                # build tldr
-sudo make install   # install tldr
-
-tldr ls             # run tldr and explain with examples how the command 'ls' works
+sudo apt install tldr
 ```
 
-In contrast to the information provided by `program_name --help`, the `tldr program_name` command typically offers more concise examples and explanations, albeit with less detail.
+Or you could choose one of multiple installation methods for a more recent version: 
+https://github.com/tldr-pages/tldr/blob/main/README.md
+
+- Python: https://github.com/tldr-pages/tldr-python-client
+- Node.js: https://github.com/tldr-pages/tldr-node-client
+- Rust: https://github.com/tldr-pages/tlrc
+
+In contrast to the information provided by `--help` or `man`, the `tldr` command typically offers more concise examples and explanations, albeit with less detail.
 
 ### Installing [Texlive](https://wiki.ubuntuusers.de/TeX_Live/) and [Texmaker](https://www.xm1math.net/texmaker/) for writing LaTeX documents
 ```bash
