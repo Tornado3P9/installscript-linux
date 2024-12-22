@@ -66,7 +66,7 @@ https://xubuntu.org/ + [balenaEtcher](https://www.balena.io/etcher/) or [Rufus U
 ### Now you can make some first customizations to the new system
 Bring your installation up to date (What is [apt](https://www.maketecheasier.com/ultimate-guide-apt-and-apt-get-commands/)?):
 ```bash
-sudo apt update && sudo apt upgrade -y
+sudo apt update && sudo apt upgrade -y && sudo apt autoremove
 ```
 
 Install some additional codecs:[^3]
@@ -709,6 +709,12 @@ sudo ln -sf /opt/firefox/firefox /usr/bin/firefox
 ```
 
 The configuration files, addons and bookmarks of firefox reside at `/home/$USER/.mozilla/`. Deleting the directory `.mozilla` gives you the experience of a "freshly installed firefox" without any customizations. Handle with care.  
+
+(Optional)  
+Firefox ESR (Extended Support Release) is a version of the Firefox web browser designed for organizations and users who need extended support for mass deployments. Unlike the regular version of Firefox, which receives updates every four weeks, Firefox ESR is updated with major releases approximately once a year. This provides a more stable environment with only security and stability updates in between major releases, making it ideal for enterprises, educational institutions, and other users who prioritize stability over having the latest features.  
+```bash
+sudo apt install firefox-esr
+```
 
 ### Adding ShortCuts
 
