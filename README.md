@@ -547,7 +547,7 @@ ddimage
 - Stellarium http://stellarium.org/
 - Ultimaker Cura (3D printing + slicer) https://ultimaker.com/software/ultimaker-cura
 - MeshLab https://www.meshlab.net/
-- BalenaEtcher https://www.balena.io/etcher/
+- BalenaEtcher https://github.com/balena-io/etcher/releases/
 - Virtual MIDI Piano Keyboard (VMPK) https://vmpk.sourceforge.io/
 - OneNote (Unofficial Desktop App, actually an independent browser window for the online OneNote) https://github.com/patrikx3/onenote
 
