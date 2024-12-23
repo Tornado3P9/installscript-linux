@@ -363,6 +363,7 @@ Note: These kinds of workspace simplifyers might not always support every featur
 - Element https://element.io/
 - Microsoft Teams https://www.microsoft.com/en-us/microsoft-teams/compare-microsoft-teams-home-options (online, the official desktop app for linux has been discontinued)  
 Unofficial Desktop client https://github.com/IsmaelMartinez/teams-for-linux/releases
+- Google Meet https://workspace.google.com/products/meet/
 - Jami https://jami.net/
 - Nextcloud Talk https://nextcloud.com/talk/
 - BigBlueButton https://bigbluebutton.org/
