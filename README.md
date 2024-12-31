@@ -190,6 +190,16 @@ https://www.math.union.edu/~dpvc/jsMath/download/jsMath-fonts.html
    mv ~/Downloads/*.ttf ~/.fonts/
    ```
 
+**Some additional notes:**  
+In order to use Microsoft-owned TrueType fonts, such as Arial, Times New Roman, and Verdana, on your Linux system, you can install the **`ttf-mscorefonts-installer`** package.
+Instead of putting your manually downloaded font files into the **`~/.fonts`** folder in the home directory, you can also put them into **`/usr/share/fonts/truetype`** for system-wide availability.
+After adding new fonts, you may need to run **`fc-cache -fv`** to refresh the font cache.
+To display all available fonts, you can use the **`fc-list`** command. You can filter the output for a specific font using the **`grep`** command:  
+```bash
+# Looking for the Garamond font:
+fc-list | grep -i garamond
+```
+
 ### Create a `Programs` folder for all the manually downloaded packages
 If you keep all the downloaded binaries and installation files together in this folder instead of deleting them, you will always know what you did to your system in the past. Very simple.
 ```bash
