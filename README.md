@@ -652,12 +652,21 @@ Optionally you can extract the program directory into the /opt/ folder and..
 
 https://support.mozilla.org/en-US/kb/install-firefox-linux
 
+The configuration files, addons and bookmarks of firefox reside at `/home/$USER/.mozilla/`. Deleting the directory `.mozilla` gives you the experience of a "freshly installed firefox" without any customizations. Handle with care.  
+
+(Optional)  
+Firefox ESR (Extended Support Release) is a version of the Firefox web browser designed for organizations and users who need extended support for mass deployments. Unlike the regular version of Firefox, which receives updates every four weeks, Firefox ESR is updated with major releases approximately once a year. This provides a more stable environment with only security and stability updates in between major releases, making it ideal for enterprises, educational institutions, and other users who prioritize stability over having the latest features.  
+```bash
+sudo apt install firefox-esr
+```
+
 Security tip for using Firefox:
 - Type **`about:config`** into the *URL Search Bar* and then look for `pdfjs.enableScripting`. Set that to `false`.  
 - Type **`about:preferences`** into the *URL Search Bar* and go to **Privacy & Security**. Scroll down and choose `Enable HTTPS-Only Mode in all windows`.
 This way your browser will only allow save connections and will ask you for permission if the website does not support https. Also `Enable DNS over HTTPS`.
 - Type **`about:performance`** into the *URL Search Bar* to see the Firefox **Task Manager**. There you can see which application or addon uses up too many resources.
-**Optionally!** you can harden your security by changing even more settings. **Note: disabling hackable comfort functions may also reduce comfort.**  
+- **Optionally!** you can harden your security by changing even more settings.  
+**Note: disabling hackable comfort functions may also reduce comfort.**  
   - `media.peerconnection.enabled` set that to `false` to disable WebRTC if you do not specifically need this feature.  
   - `network.dnscacheExpiration` change the number down to `10`.  
   - `network.dns.disableIPv6` leave that at `false`.  
@@ -674,61 +683,6 @@ This way your browser will only allow save connections and will ask you for perm
   - `browser.cache.offline.enable` set that to `false`.  
 
 More privacy stuff: https://www.privacytools.io/  
-
-How to disable Snaps and making sure it doesn’t automatically reinstall.
-The issue with Snaps is that they run 'root' and update automatically without your knowledge and without asking for permission.
-They are also terribly slow, especially at first startup, and will overflow your filesystem output with a lot of loopback devices.
-The desktop integration is not always perfect. The results can be wrong color schemes or unreadable texts. However, Snaps seem to be working well on server installations.
-Snaps are certainly a promising idea, but because we can just create the debian installation file ourselves if it doesn't exist, Snaps only worsen the overall experience.
-You can also use [Flatpaks](#configure-flatpak-for-installing-apps-from-httpsflathuborg) or [AppImages](https://itsfoss.com/use-appimage-linux/) if you have to. If you want to use [Snaps, then here](https://snapcraft.io/) is where to look for apps.
-
-```bash
-# List installed Snaps, Purge Snaps and Block Reinstall
-snap list
-sudo apt autoremove --purge snapd
-sudo apt-mark hold snapd
-
-# Verify Uninstall
-apt list --installed | grep -i snap
-```
-
-Example of how you can manually install firefox on your machine:  
-```bash
-# Download Firefox from https://www.mozilla.org/en-US/firefox/all/#product-desktop-release
-wget "https://download.mozilla.org/?product=firefox-latest-ssl&os=linux64&lang=en-US" -O firefox.tar.bz2
-
-# Extract it and Move the content to the /opt/ directory
-sudo tar xvjf firefox.tar.bz2 -C /opt/
-
-# Create a symbolic link to the Firefox in /usr/bin so that all users will be able to run it
-sudo ln -s /opt/firefox/firefox /usr/bin/firefox
-```
-
-Firefox will update itself from now on if you leave the download setting in the general settings section unchanged.
-But if you are someone who likes to do the update manually, here is a script that you can use:
-```bash
-#!/bin/bash
-# The file firefox.tar.bz2 will be overwritten automatically because of the '-O'
-wget "https://download.mozilla.org/?product=firefox-latest-ssl&os=linux64&lang=en-US" -O firefox.tar.bz2
-tar xjf firefox.tar.bz2
-tree firefox
-
-read -p "Are you OK with the download? [Y/n]: " yn
-[ "$yn" = "n" ] && exit
-
-[ -d /opt/firefox/ ] && sudo rm -rf /opt/firefox
-
-sudo mv firefox /opt/firefox
-sudo ln -sf /opt/firefox/firefox /usr/bin/firefox
-```
-
-The configuration files, addons and bookmarks of firefox reside at `/home/$USER/.mozilla/`. Deleting the directory `.mozilla` gives you the experience of a "freshly installed firefox" without any customizations. Handle with care.  
-
-(Optional)  
-Firefox ESR (Extended Support Release) is a version of the Firefox web browser designed for organizations and users who need extended support for mass deployments. Unlike the regular version of Firefox, which receives updates every four weeks, Firefox ESR is updated with major releases approximately once a year. This provides a more stable environment with only security and stability updates in between major releases, making it ideal for enterprises, educational institutions, and other users who prioritize stability over having the latest features.  
-```bash
-sudo apt install firefox-esr
-```
 
 ### Adding ShortCuts
 
