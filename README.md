@@ -64,7 +64,7 @@
 https://xubuntu.org/ + [balenaEtcher](https://www.balena.io/etcher/) or [Rufus USB Writer](https://rufus.ie/en/) for Windows users
 
 ### Now you can make some first customizations to the new system
-Bring your installation up to date (What is [apt](https://www.maketecheasier.com/ultimate-guide-apt-and-apt-get-commands/)?):
+Bring your installation [up to date](https://tecadmin.net/install-security-updates-ubuntu-debian/) (What is [apt](https://www.maketecheasier.com/ultimate-guide-apt-and-apt-get-commands/)?):
 ```bash
 sudo apt update && sudo apt upgrade -y && sudo apt autoremove
 ```
