@@ -60,8 +60,12 @@
 - [Deutscher Linux Support](#deutscher-linux-support)
 - [List of working printers](#list-of-working-printers)
 
+<br>
+
 ### First set up the base system
 https://xubuntu.org/ + [balenaEtcher](https://www.balena.io/etcher/) or [Rufus USB Writer](https://rufus.ie/en/) for Windows users
+
+<br>
 
 ### Now you can make some first customizations to the new system
 Bring your installation [up to date](https://tecadmin.net/install-security-updates-ubuntu-debian/) (What is [apt](https://www.maketecheasier.com/ultimate-guide-apt-and-apt-get-commands/)?):
@@ -116,9 +120,13 @@ rename \
 cmake libgtk-4-dev build-essential libasound2-dev libssl-dev
 ```
 
+<br>
+
 ### System Update Settings
 - Open **![menu](https://docs.xubuntu.org/current/user/libs/images/icon_menu.png) → ![preferences](https://docs.xubuntu.org/current/user/libs/images/preferences-desktop.png) Settings Manager → Software & Updates** and go to the _Updates_ tab
 - Open **![menu](https://docs.xubuntu.org/current/user/libs/images/icon_menu.png) → Software → Software & Updates** and go to the _Updates_ tab
+
+<br>
 
 ### Configure [Flatpak](https://flathub.org/setup/Ubuntu) for installing apps from https://flathub.org/:
 
@@ -144,6 +152,8 @@ flatpak uninstall --unused
 
 If the app does not appear right away in the menu, just reboot your PC.
 
+<br>
+
 ### Graphics Card Drivers
 Installing drivers on Ubuntu is not necessary as Ubuntu detects the Video Card and automatically uses its own Nouveau Open Source driver for nVidia cards. But the proprietary nVidia driver does give a noticeable performance boost over the Nouveau driver, so it is still common to select the proprietary one.  
 AMD graphics card drivers for Linux are provided through the open-source AMDGPU driver, which is integrated into the Linux kernel. This driver supports most modern AMD Radeon graphics cards and is included by default in many Linux distributions, including Ubuntu. The AMDGPU driver is actively developed and regularly updated with new kernel releases.
@@ -159,19 +169,24 @@ NVidea will install an additional configuration center "NVIDEA X SERVER SETTINGS
 To open the AMD Driver Configuration Center from the terminal, you would typically use the command for the specific tool provided by AMD for your graphics card. For many AMD graphics cards, this tool is called amdcccle, which stands for AMD Catalyst Control Center: Linux Edition. However, AMD has transitioned to the amdgpu driver and associated tools for newer cards.
 If you have the amdcccle installed, you can open it by running `amdcccle` or if you are using the newer amdgpu-pro driver, you might have a different tool, and you can try opening the Radeon Software for Linux with `radeon-settings`.
 
+<br>
+
 ### Configuration Assistants are a great help
 - https://www.linux-assistant.org/ Beginner friendly and with [Youtube-Tutorials](https://youtu.be/uW11Uu8vhqc)
 - https://github.com/ChrisTitusTech/linutil For Linux users
 - https://github.com/ChrisTitusTech/winutil For Windows users
 
 You can find most configuration files in your home directory (**`cd /home/$USER/`**). Use the shortcut **`Ctrl+H`** to display the hidden files in the *File Manager* or the commands **`ls -a`** or **`ls -la`** in the terminal.
-The names of hidden files or directories start with a dot, e.g. **`.config`**
+The names of hidden files or directories start with a dot, e.g. **`.config`**.
+System configuration is done in the **`/etc`** folder and User configuration is done in the **`/home/user/.config`** folder.
 
 You can start your *File Manager* with the shortcut **`Windows key + F`** or by typing **`thunar`** into the terminal. You also can start your main web browser with the shortcut **`Windows key + W`** or by typing **`firefox`** into the terminal.
 
 You can open any file by just clicking on it and the system will use the default application for that specific file type. You can change the default application by clicking on a file with the **Right Mouse Button** to open the "context menu" and by going to **Properties** → **General** → ***Open With***
 
 You can also use the command [**`xdg-open`**](https://github.com/Tornado3P9/Linux-Console-Tools/blob/master/xdg-open.md) to achieve the same behaviour when using the terminal.
+
+<br>
 
 ### Create a `.fonts` directory for your own Truetype (.ttf) fonts
 Just put all your favourite fonts into this folder. The System will automatically find them.
@@ -200,12 +215,16 @@ To display all available fonts, you can use the **`fc-list`** command. You can f
 fc-list | grep -i garamond
 ```
 
+<br>
+
 ### Create a `Programs` folder for all the manually downloaded packages
 If you keep all the downloaded binaries and installation files together in this folder instead of deleting them, you will always know what you did to your system in the past. Very simple.
 ```bash
 mkdir $HOME/Programs
 ```
 `$HOME/` and `~/` and `/home/$USER/` basically do the same thing.
+
+<br>
 
 ### The Alt key problem
 Some Linux systems support the option to move applications around using the **`Alt`** key. The problem is that a lot of programs that run on both Windows and Linux also make heavy usage of the Alt key. Therefore it might be necessary to remove the presetting on Linux.
@@ -214,12 +233,16 @@ Some Linux systems support the option to move applications around using the **`A
 
 You can make things even better by setting the *Key used to grab and move windows* to the **Super** key, which is the intern name for the Windows key. This also makes it very easy to snap a window to a corner.
 
+<br>
+
 ### You can change the keyboard key map
 - [**Kanata**](https://github.com/jtroo/kanata) - A cross-platform software keyboard remapper for Linux, macOS and Windows  
 Setup: https://github.com/jtroo/kanata/blob/main/docs/setup-linux.md  
 Example: https://github.com/dreamsofcode-io/escapecontrol/tree/main/linux/kanata
 - [caps2esc](https://gitlab.com/interception/linux/plugins/caps2esc) for Linux
 - [Karabiner-Elements](https://karabiner-elements.pqrs.org/) for macOS
+
+<br>
 
 ### Firewall[^2]
 
@@ -244,6 +267,8 @@ echo "$USER  hard  nproc  2000" | sudo tee -a /etc/security/limits.conf
 Optionally use [Firejail](https://firejail.wordpress.com/) to restrict the access of applications to the system by sandboxing.  
 Install from the repository with `sudo apt install firejail`.
 
+<br>
+
 ### One-time password (OTP) also known as 2-Factor authentication
 Probably more useful for server access..:
 ```bash
@@ -256,6 +281,8 @@ sudo apt install libpam-google-authenticator
 google-authenticator
 ```
 further details at: https://averagelinuxuser.com/otp-ubuntu/  
+
+<br>
 
 ### Additional Themes
 ```bash
@@ -275,6 +302,8 @@ ls /usr/share/xfce4/backdrops
 tree /usr/share/backgrounds
 ```
 
+<br>
+
 ### Terminal behaviour
 ```bash
 # for displaying the date and time of the terminal history output, type the following line into your terminal:
@@ -292,6 +321,8 @@ dpkg-reconfigure tzdata
 ```
 The linux terminal usually accepts `Ctrl+Shift+C` and `Ctrl+Shift+V` instead of the more common `Ctrl+C` and `Ctrl+V`. You can change that in the terminal by going to **Edit → Preferences → Shortcuts**. Still, it might be better to just get accustomed to the standard shortcuts as other people on forums will also be using those. That will make it easier for when you need to ask for help. Also remember that the shortcut for stopping a process `Ctrl+C` will not work anymore and might change to `Ctrl+Shift+C`.
 
+<br>
+
 ### Installing tldr (too long, didn't read) helper tool
 
 The Ubuntu-Repository does have an older version of this program.
@@ -308,10 +339,14 @@ https://github.com/tldr-pages/tldr/blob/main/README.md
 
 In contrast to the information provided by `--help` or `man`, the `tldr` command typically offers more concise examples and explanations, albeit with less detail.
 
+<br>
+
 ### Installing [Texlive](https://wiki.ubuntuusers.de/TeX_Live/) and [Texmaker](https://www.xm1math.net/texmaker/) for writing LaTeX documents
 ```bash
 sudo apt install texlive texlive-lang-german texlive-lang-english texlive-latex-extra texmaker
 ```
+
+<br>
 
 ### Incomplete list of applications
 
@@ -562,6 +597,8 @@ ddimage
 - Virtual MIDI Piano Keyboard (VMPK) https://vmpk.sourceforge.io/
 - OneNote (Unofficial Desktop App, actually an independent browser window for the online OneNote) https://github.com/patrikx3/onenote
 
+<br>
+
 ### Installation and Setup of the downloaded Programs:
 
 **You can also use `wget` or `curl` to download the programs**
@@ -648,6 +685,8 @@ Optionally you can extract the program directory into the /opt/ folder and..
    sudo update-desktop-database
    ```
 
+<br>
+
 ### Firefox Web Browser
 
 https://support.mozilla.org/en-US/kb/install-firefox-linux
@@ -683,6 +722,8 @@ This way your browser will only allow save connections and will ask you for perm
   - `browser.cache.offline.enable` set that to `false`.  
 
 More privacy stuff: https://www.privacytools.io/  
+
+<br>
 
 ### Adding ShortCuts
 
@@ -744,8 +785,12 @@ For setting Keyboard Shortcuts in your windows manager:
 `Ctrl+L` = Clear the visible output on the screen (vs the `clear` command which also clears your buffer)  
 `Ctrl+Shift+Q` = Close terminal  
 
+<br>
+
 ### Adding App launcher to the XFCE panel
 ![app launcher](pics/add_launcher.gif)
+
+<br>
 
 ### Some Programming languages
 ```bash
@@ -765,6 +810,8 @@ source ~/.profile && rustc --version
 sudo apt install r-base
 ```
 
+<br>
+
 ### pip install ...
 
 The pip version is always up to date and usually the better choice compared to the repository version of your operating system.
@@ -783,6 +830,8 @@ or in `./your_venv_name/bin/` if you used a virtual environment.
 
 Update `pip` via: `python3 -m pip install --upgrade pip`
 
+<br>
+
 ### Backups
 - [Timeshift](https://github.com/linuxmint/timeshift) - `sudo apt install timeshift`
 - [Chezmoi - Easily moving Linux installs](https://christitus.com/chezmoi/)
@@ -800,10 +849,14 @@ Update `pip` via: `python3 -m pip install --upgrade pip`
   - `md5sum testfile` → `echo "4311d1887f6d4ddf411b36df124dfde6  testfile" | md5sum -c`
   - `sha256sum testfile > checksums.txt` → `sha256sum -c checksums.txt`
 
+<br>
+
 ### Virtual Machine
 - [VirtualBox](https://www.virtualbox.org/wiki/Downloads) - `sudo apt install virtualbox`
 - [QEMU](https://www.qemu.org/) (Even faster than VirtualBox) - [christitus-setup](https://www.christitus.com/vm-setup-in-linux), [absprog-setup](https://absprog.com/post/qemu-kvm-ubuntu-24-04), [christitus-windows-inside-linux](https://christitus.com/windows-inside-linux/), [absprog-shared-folder](https://absprog.com/post/qemu-kvm-shared-folder)
 - [Distrobox](https://wiki.archlinux.org/title/Distrobox)
+
+<br>
 
 ### Gaming
 - [Lutris](https://lutris.net/)
@@ -818,6 +871,8 @@ Update `pip` via: `python3 -m pip install --upgrade pip`
 Many developers provide a Linux version of their game on Steam, like Shadow of Mordor or Witcher 2, for instance. But sometimes the Linux version only runs on an `NVIDIA graphics card`, e.g. Shadow of Mordor or Witcher 2. So be aware of that if sth. doesn't work. Steam also provides the feature to run Windows games with their own Wine version called Proton. That also solves the problem with specific graphics cards mentioned before (https://www.protondb.com/search?q=Middle-earth). Sometimes a Windows game runs better on Linux with Proton than on Windows (e.g. Elden Ring). Alternatively you might want to take a look onto the https://lutris.net/ platform where other linux gamers explain how to install some games. Often times there is a ready to go solution or a tutorial and there is also a forum to ask questions. But don't expect anything. Linux is not a gaming system. That's Window's speciality as the games are most of the time being made with Windows in mind! Not because Linux (or Mac for that matter) is a bad system for gaming, quite the contrary, but because as a developer you look for the biggest user base since making a game is always a bit of a gamble. Still, you will probably find a performance improvement in a lot of cases (e.g. Blender 3d rendering times, ..) just for using Linux.
 If the performance on your linux machine still does not work as well as you were hoping for, try to find out which linux system the developer of your program is using. The developer for Steam Proton, for instance, seems to have worked on Fedora Linux. So just switching to that system for gaming might solve some hard to guess problems. Or use a gaming system like https://nobaraproject.org/ which is a modified version of Fedora Linux with user-friendly fixes added to it, specifically for gaming and streaming. Equally so the https://bazzite.gg/ Linux System which seems to be very robust, even for very new users.
 
+<br>
+
 ### Game Engines
 - [Pygame](https://pypi.org/project/pygame/)
 - [Bevy](https://crates.io/crates/bevy)
@@ -825,21 +880,31 @@ If the performance on your linux machine still does not work as well as you were
 - [Unity](https://unity.com/download)
 - [Unreal Engine](https://www.unrealengine.com/)
 
+<br>
+
 ### Microsoft PowerShell
 - https://github.com/PowerShell/PowerShell
 - [Installing PowerShell on Ubuntu (Microsoft Tutorial)](https://learn.microsoft.com/en-us/powershell/scripting/install/install-ubuntu?view=powershell-7.3)
+
+<br>
 
 ### Decentralised Data Storage - IPFS
 - IPFS Desktop https://docs.ipfs.io/install/ipfs-desktop/
 - IPFS Companion browser add-on https://docs.ipfs.io/install/ipfs-companion/
 - host single-page website https://docs.ipfs.io/how-to/websites-on-ipfs/single-page-website/#linux
 
+<br>
+
 ### Converting RPM to DEB packages
 - FPM [fpm.readthedocs.io](https://fpm.readthedocs.io/en/latest/packages/rpm.html#arguments-when-used-as-input-type)
 - Alien [manpages.ubuntu.com](https://manpages.ubuntu.com/manpages/jammy/man1/alien.1p.html) [geeksforgeeks.com](https://www.geeksforgeeks.org/how-to-convert-rpm-package-to-deb-using-alien-package-converter/)
 
+<br>
+
 ### ShellGPT
 - https://github.com/TheR1D/shell_gpt#readme
+
+<br>
 
 ### The Clipboard Manager
 On Windows 10 and later versions, pressing the **`Windows key + V`** opens the clipboard history. This feature allows you to view a history of items you've copied to the clipboard, pin frequently used items, and choose which item to paste. However, this shortcut does not apply to Linux/Ubuntu systems, as they have different keyboard shortcuts and clipboard management tools.  
@@ -869,9 +934,13 @@ sudo apt install xsel
 sudo apt install wl-clipboard
 ```
 
+<br>
+
 ### Tiling Window Manager
 - [i3](https://i3wm.org/) (part of the repository: `sudo apt install i3`)
 - [Hyprland](https://hyprland.org/) Example: https://youtu.be/wcHUQXMhhow
+
+<br>
 
 ### DVD
 If your PC has got a DVD player, then you might want to install the missing library for playing commercial DVDs[^5]
@@ -883,6 +952,8 @@ sudo dpkg-reconfigure libdvd-pkg
 ```
 If there are problems with the video playback, then it might help to delete the hidden directory `rm -r ~/.dvdcss/` in order to force the program to create a new css key.
 You also might want to [disable Hardware-accelerated decoding](https://wiki.videolan.org/VLC_HowTo/Hardware_acceleration/) in your media player if the displayed output is flawed and you are using a AMD Radeon graphics card.
+
+<br>
 
 ### Grub2 - boot menu
 To make small changes to the configuration, just open this text file with the command `sudo nano /etc/default/grub`. You will then be presented with smth like this:
@@ -910,6 +981,8 @@ GRUB_CMDLINE_LINUX=""
 Changing the number from `GRUB_TIMEOUT` will change the number of seconds that the grub menu will be visible.  
 For further instructions go to https://www.gnu.org/software/grub/manual/grub/grub.html#Simple-configuration  
 
+<br>
+
 ### Wine (run windows programs)
 https://wiki.winehq.org/Ubuntu
 ```bash
@@ -927,6 +1000,8 @@ cd ~/Programs
 wine program.exe
 ```
 
+<br>
+
 ### External Hardware/Controller/Game Pad
 - Xboxdrv (driver package) `sudo apt install xboxdrv`  
   For most users, the Linux kernel built-in `xpad` driver should suffice for Xbox 360 and Xbox One controllers.
@@ -936,6 +1011,8 @@ wine program.exe
   Alternatively: `pip3 install pyserial` and test with `python3 -c "import serial"`
   Try `pyserial-miniterm` which comes with the PySerial library.
 - Devices are 'files' at `ls -l /dev/` (https://www.kernel.org/doc/Documentation/admin-guide/devices.txt)
+
+<br>
 
 ### Managing power profiles / battery life
 
@@ -971,6 +1048,8 @@ You can do **`sudo powertop`** or **`upower -i /org/freedesktop/UPower/devices/b
 
 Remember that actual battery life can be influenced by many factors, including screen brightness, running applications, and hardware efficiency.
 
+<br>
+
 ### some different topics:
 [Speedup Linux](https://christitus.com/speedup-linux/)  
 [Desktop and editor setup for Rust development](https://youtu.be/ycMiMDHopNc)  
@@ -994,9 +1073,13 @@ https://www.youtube.com/@GraphicdesignforFree/playlists
 https://omakub.org/  
 [How to use Zenity dialog boxes with examples](https://youtu.be/TQQxKXQq_t0)  
 
+<br>
+
 ### Deutscher Linux Support
 - https://www.linuxguides.de/linux-support/
 - https://www.b1-systems.de/
+
+<br>
 
 ### List of working printers
 - https://forum.linuxguides.de/core/index.php?article/4-liste-funktionierender-drucker/
