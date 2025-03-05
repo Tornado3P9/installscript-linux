@@ -49,8 +49,8 @@ alias mnt="mount | awk -F' ' '{ printf \"%s\t%s\n\",\$1,\$3; }' | column -t | eg
 #view the mount output formated with columns
 alias lsmount='mount | column -t'
 
-#search from history by word: gh bash
-alias gh='history|grep'  # same as: alias gh='history|rg'
+#search from history by word: hgrep bash
+alias hgrep='history|grep --ignore-case'
 
 #find the largest top 10 files and directories in human readable format (ignore hidden files)
 alias dumax='du -hsx * | sort -rh | head -10'
