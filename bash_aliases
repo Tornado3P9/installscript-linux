@@ -28,6 +28,9 @@ alias ports='netstat -tupan'
 #Search files in the current folder, e.g.: f "funny-clip"
 alias f="find . | grep -i"
 
+# Show only hidden files and folders (The -d option ensures that directories are not expanded into their contents)
+alias hidden='ls -d .*'
+
 #sort by modification time
 alias left='ls -t -1'
 
