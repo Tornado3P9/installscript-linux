@@ -82,8 +82,8 @@ alias pics='cd ~/Pictures'
 #alias nano='nano --linenumbers'
 
 #virtual environments workflow: python3 -m venv my-project-env && source my-project-env/bin/activate
-alias ve='python3 -m venv ./venv'
-alias ae='deactivate &> /dev/null; source ./venv/bin/activate'
+alias ve='python3 -m venv ./.venv'
+alias ae='deactivate &> /dev/null; source ./.venv/bin/activate'
 alias de='deactivate'
 
 #convert audio
