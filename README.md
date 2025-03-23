@@ -571,6 +571,7 @@ Unofficial Desktop client https://github.com/IsmaelMartinez/teams-for-linux/rele
 - WireGuard https://www.wireguard.com/ (part of the repository: `sudo apt install wireguard`)
 - Compiler Explorer https://godbolt.org/ (online)
 - UV - An extremely fast Python package and project manager, written in Rust. https://docs.astral.sh/uv/
+- Marimo - A reactive Python notebook (similar to jupyter) that's reproducible, git-friendly, and deployable as scripts or apps. https://docs.marimo.io/
 
 #### Disk Usage Analyzer
 - Baobab https://apps.gnome.org/Baobab/ (part of the repository: `sudo apt install baobab`)
