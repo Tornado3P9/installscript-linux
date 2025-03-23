@@ -218,11 +218,16 @@ fc-list | grep -i garamond
 <br>
 
 ### Create a `Programs` folder for all the manually downloaded packages
-If you keep all the downloaded binaries and installation files together in this folder instead of deleting them, you will always know what you did to your system in the past. Very simple.
+If you keep all the downloaded binaries and installation files together in this folder instead of deleting them, you will always know what you did to your system in the past. Very simple.  
 ```bash
 mkdir $HOME/Programs
 ```
 `$HOME/` and `~/` and `/home/$USER/` basically do the same thing.
+
+You can also create multiple directories in a more compact way using a single **`mkdir`** command with the **`-p`** option:  
+```bash
+mkdir -p $HOME/{Programs,.fonts,.icons,"Directory Name With Spaces"}
+```
 
 <br>
 
