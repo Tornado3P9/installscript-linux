@@ -405,6 +405,7 @@ Note: These kinds of workspace simplifyers might not always support every featur
 - Typora - Distractions Free Writing https://typora.io/
 - Flameshot - better screenshot app https://flameshot.org/ (part of the repository: `sudo apt install flameshot`) Also assign a keyboard shortcut for the command *`flameshot gui`*, such as `Windows key + Print`.
 - Safe Eyes - reduce and prevent repetitive strain injury https://slgobinath.github.io/SafeEyes/ (part of the repository: `sudo apt install safeeyes`)
+- Super Productivity https://super-productivity.com/
 
 #### Video Calls
 - Zoom https://zoom.us/download . [how-to](https://github.com/Tornado3P9/installscript-linux/blob/master/zoom.md)
