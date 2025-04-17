@@ -147,6 +147,12 @@ make_markdown_link_to_some_title_on_same_page() {
 
 # Usage: lzgit finally easy commits
 function lzgit() {
+    local username=$(git config user.name)
+    if [ -z "$username" ]; then
+        echo "Git user.name is not set."
+        return 1
+    fi
+
     local project_dir=".git_commit_tracker"
     local number_file="$project_dir/commit_number.txt"
     local number=1
@@ -162,7 +168,7 @@ function lzgit() {
 
     # Perform git operations
     git add .
-    git commit -m "$(date +%Y%m%d)-$number $*"
+    git commit -m "$(date +%Y%m%d)-${username}-${number} $*"
 }
 
 # Get the url for the Github remote repository (you have to be inside the project folder)
