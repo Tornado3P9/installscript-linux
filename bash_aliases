@@ -145,11 +145,24 @@ make_markdown_link_to_some_title_on_same_page() {
   echo "#$modified_string"
 }
 
-# lazy-git
-# Usage: lzgit "finally easy commits"
+# Usage: lzgit finally easy commits
 function lzgit() {
-  git add .
-  git commit -m "$1"
+    local project_dir=".git_commit_tracker"
+    local number_file="$project_dir/commit_number.txt"
+    local number=1
+
+    # Create the directory and file if they don't exist
+    mkdir -p "$project_dir"
+    if [[ -f "$number_file" ]]; then
+        number=$(<"$number_file")
+    fi
+
+    # Increment the number
+    echo $((number + 1)) > "$number_file"
+
+    # Perform git operations
+    git add .
+    git commit -m "$(date +%Y%m%d)-$number $*"
 }
 
 # Get the url for the Github remote repository (you have to be inside the project folder)
