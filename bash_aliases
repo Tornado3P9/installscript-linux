@@ -200,6 +200,25 @@ function toggle_git_url() {
   # git remote show origin
 }
 
+function create_github_release_tag_from_cargo_toml() {
+  # Extract version from Cargo.toml
+  version=$(grep '^version' Cargo.toml | sed 's/version = "\(.*\)"/\1/')
+
+  # Check if version was found
+  if [ -z "$version" ]; then
+    echo "Version not found in Cargo.toml"
+    exit 1
+  fi
+
+  # Create a git tag
+  # git tag "v$version"
+
+  # Push the tag to the remote repository
+  # git push origin "v$version"
+
+  echo "Tag v$version created and pushed successfully."
+}
+
 function remove_trailing_spaces() {
   # Check if a file name is provided as an argument
   if [ "$#" -ne 1 ]; then
