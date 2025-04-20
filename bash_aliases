@@ -210,11 +210,16 @@ function create_github_release_tag_from_cargo_toml() {
     exit 1
   fi
 
-  # Create a git tag
-  # git tag "v$version"
+  if [ "$1" == "release" ]; then
+    echo "Create a Release version tag"
+    # git tag -a "v$version" -m "Release version $version"  # uncomment
+  else
+    echo "Create a private tag"
+    # git tag "v$version"                                   # uncomment
+  fi
 
   # Push the tag to the remote repository
-  # git push origin "v$version"
+  # git push origin "v$version"                             # uncomment
 
   echo "Tag v$version created and pushed successfully."
 }
