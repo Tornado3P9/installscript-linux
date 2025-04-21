@@ -200,9 +200,9 @@ function toggle_git_url() {
   # git remote show origin
 }
 
-# Example: create_github_release_tag_from_cargo_toml
-# Example: create_github_release_tag_from_cargo_toml release
-function create_github_release_tag_from_cargo_toml() {
+# Example: create_github_tag_from_cargo_toml
+# Example: create_github_tag_from_cargo_toml release
+function create_github_tag_from_cargo_toml() {
   # Extract version from Cargo.toml
   version=$(grep '^version' Cargo.toml | sed 's/version = "\(.*\)"/\1/')
 
