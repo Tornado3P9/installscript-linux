@@ -145,7 +145,10 @@ make_markdown_link_to_some_title_on_same_page() {
   echo "#$modified_string"
 }
 
-# Usage: lzgit finally easy commits
+# Display the last 10 commits in short format:
+alias lol='git log --oneline -n 10'
+
+# Usage: lzgit finally lazy commits
 function lzgit() {
     local username=$(git config user.name)
     if [ -z "$username" ]; then
@@ -220,7 +223,7 @@ function create_github_tag_from_cargo_toml() {
     # git tag "v$version"                                   # uncomment
   fi
 
-  # Push the tag to the remote repository
+  echo "Push the tag to the remote repository"
   # git push origin "v$version"                             # uncomment
 
   echo "Tag v$version created and pushed successfully."
