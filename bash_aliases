@@ -203,30 +203,39 @@ function toggle_git_url() {
   # git remote show origin
 }
 
-# Example: create_github_tag_from_cargo_toml
-# Example: create_github_tag_from_cargo_toml release
-function create_github_tag_from_cargo_toml() {
+function create_git_tag_from_cargo_toml() {
+  # Check if an argument was provided
+  if [ "$#" -ne 1 ]; then
+    echo "No argument found. Please use 'release' or 'private'."
+    return 1
+  fi
+
   # Extract version from Cargo.toml
   version=$(grep '^version' Cargo.toml | sed 's/version = "\(.*\)"/\1/')
 
   # Check if version was found
   if [ -z "$version" ]; then
     echo "Version not found in Cargo.toml"
-    exit 1
+    return 1
   fi
 
   if [ "$1" == "release" ]; then
     echo "Create a Release version tag"
-    # git tag -a "v$version" -m "Release version $version"  # uncomment
-  else
+    git tag -a "v$version" -m "Release version $version"
+
+    echo "Push the tag to the remote repository"
+    git push origin "v$version"
+
+    echo "Tag v$version created and pushed successfully."
+  elif [ "$1" == "private" ]; then
     echo "Create a private tag"
-    # git tag "v$version"                                   # uncomment
+    git tag "v$version"
+
+    echo "Tag v$version created successfully."
+  else
+    echo "Invalid argument. Please use 'release' or 'private'."
+    return 1
   fi
-
-  echo "Push the tag to the remote repository"
-  # git push origin "v$version"                             # uncomment
-
-  echo "Tag v$version created and pushed successfully."
 }
 
 function remove_trailing_spaces() {
