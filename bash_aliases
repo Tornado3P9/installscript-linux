@@ -220,22 +220,29 @@ function create_git_tag_from_cargo_toml() {
   fi
 
   if [ "$1" == "release" ]; then
-    echo "Create a Release version tag"
+    echo "Creating a Release version tag"
     git tag -a "v$version" -m "Release version $version"
 
-    echo "Push the tag to the remote repository"
-    git push origin "v$version"
+    read -p "Also push the tag v$version to the remote repository? (y/n): " choice
+    case "$choice" in
+        y|Y )
+            echo "Pushing the tag to the remote repository"
+            git push origin "v$version"
+            ;;
+        * )
+            echo "Action canceled."
+            ;;
+    esac
 
-    echo "Tag v$version created and pushed successfully."
   elif [ "$1" == "private" ]; then
-    echo "Create a private tag"
+    echo "Creating a private tag"
     git tag "v$version"
-
-    echo "Tag v$version created successfully."
   else
     echo "Invalid argument. Please use 'release' or 'private'."
     return 1
   fi
+
+  echo "Tag v$version created."
 }
 
 function remove_trailing_spaces() {
