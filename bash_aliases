@@ -6,9 +6,9 @@
 # Old command prompt: echo $PS1
 #PS1="\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ "
 # New command prompt:
-PS1="\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]-->\[\033[00m\] \h: \[\033[01;34m\]\w\[\033[00m\]\$ "
+PS1="\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}:) \[\033[01;34m\]\w\[\033[00m\]\$ "
 
-# PS1="\[\e[32m\]\t \[\e[0m\]\$ "
+# PS1="\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\e[32m\]\t\[\e[0m\] \[\033[01;34m\]\w\[\033[00m\]\$ "
 # \[\e[32m\]: Sets the text color to green.
 # \t: Displays the current time in hh:mm:ss format.
 # \[\e[0m\]: Resets the text color.
