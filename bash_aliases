@@ -8,6 +8,12 @@
 # New command prompt:
 PS1="\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]-->\[\033[00m\] \h: \[\033[01;34m\]\w\[\033[00m\]\$ "
 
+# PS1="\[\e[32m\]\t \[\e[0m\]\$ "
+# \[\e[32m\]: Sets the text color to green.
+# \t: Displays the current time in hh:mm:ss format.
+# \[\e[0m\]: Resets the text color.
+# \$: Displays the prompt character ($ for regular users, # for root).
+
 # some more aliases
 alias update='sudo apt update && apt list --upgradeable'
 alias upgrade='sudo apt upgrade'
