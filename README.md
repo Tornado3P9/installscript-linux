@@ -552,6 +552,7 @@ Unofficial Desktop client https://github.com/IsmaelMartinez/teams-for-linux/rele
 - Slint (UI-library with Rust, C++, JavaScript, Python) https://slint.dev/
 - GTK-4 (UI-library with Rust, C++, Python and more) https://gtk-rs.org/gtk4-rs/stable/latest/book/
 - Tkinter (UI-library with Python) https://github.com/TomSchimansky/CustomTkinter
+- Dioxus (Rust framework for building fullstack web, desktop, and mobile apps) https://dioxuslabs.com/
 - Electron (Create cross-platform desktop apps) https://www.electronjs.org/
 - Glade - A User Interface Designer https://infrastructure.pages.gitlab.gnome.org/glade-web/ , https://ultimate-gtk4-crystal-guide.geopjr.dev/en/first-app/ui-design.html (part of the repository: `sudo apt install glade`)
 - Cambalache - A User Interface Designer https://gitlab.gnome.org/jpu/cambalache (Flatpak)
