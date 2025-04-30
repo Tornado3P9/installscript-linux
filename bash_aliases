@@ -49,6 +49,9 @@ alias countd='find . -mindepth 1 -type d | wc -l'
 #Disk usage analyzer with an ncurses interface.
 alias ncdu='ncdu --color off'
 
+# checkpermissions my_file.txt
+alias checkpermissions='stat -c "%a %U:%G"'
+
 #list files
 alias lt='ls --human-readable --size -1 -S --classify'
 
