@@ -1081,6 +1081,7 @@ https://www.youtube.com/@GraphicdesignforFree/playlists
 [Why don't more people use Linux? - David Heinemeier Hansson](https://world.hey.com/dhh/why-don-t-more-people-use-linux-33b75f53)  
 https://omakub.org/  
 [How to use Zenity dialog boxes with examples](https://youtu.be/TQQxKXQq_t0)  
+[I installed Linux (so should you) - PewDiePie](https://youtu.be/pVI_smLgTY0)  
 
 <br>
 
