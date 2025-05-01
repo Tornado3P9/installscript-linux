@@ -159,28 +159,33 @@ alias lol='git log --oneline -n 10'
 
 # Usage: lzgit finally lazy commits
 function lzgit() {
+    # Check if git repository
+    if [ ! -d ".git" ]; then
+        echo "Error: Make yourself a coffee, then do 'git init'"
+        return 1
+    fi
+
+    # Get the current date in YYYYMMDD format
+    local current_date=$(date +%Y%m%d)
+
     local username=$(git config user.name)
     if [ -z "$username" ]; then
         echo "Git user.name is not set."
         return 1
     fi
 
-    local project_dir=".git_commit_tracker"
-    local number_file="$project_dir/commit_number.txt"
-    local number=1
-
-    # Create the directory and file if they don't exist
-    mkdir -p "$project_dir"
-    if [[ -f "$number_file" ]]; then
-        number=$(<"$number_file")
-    fi
+    # Count the number of commits made today
+    local commit_count=$(git log --since=midnight --oneline | wc -l)
 
     # Increment the number
-    echo $((number + 1)) > "$number_file"
+    local commit_number=$((commit_count + 1))
 
-    # Perform git operations
+    # Create the commit message with the date and commit number
+    local commit_message="${current_date}-${username}-${commit_number} $*"
+
+    # Add all changes and commit
     git add .
-    git commit -m "$(date +%Y%m%d)-${username}-${number} $*"
+    git commit -m "$commit_message"
 }
 
 # Get the url for the Github remote repository (you have to be inside the project folder)
