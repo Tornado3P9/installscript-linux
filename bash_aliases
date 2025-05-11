@@ -160,10 +160,16 @@ alias lol='git log --oneline -n 10'
 
 # Usage: lzgit finally lazy commits
 function lzgit() {
-    # Check if git repository
-    if [ ! -d ".git" ]; then
-        echo "Error: Make yourself a coffee, then do 'git init'"
-        return 1
+    # # Check if git repository (assumes the script is run in the root of the repository)
+    # if [ ! -d ".git" ]; then
+    #     echo "Error: Make yourself a coffee, then do 'git init'"
+    #     return 1
+    # fi
+
+    # Check if inside a Git repository
+    if ! git rev-parse --is-inside-work-tree &>/dev/null; then
+      echo "Error: Not a Git repository."
+      return 1
     fi
 
     # Get the current date in YYYYMMDD format
