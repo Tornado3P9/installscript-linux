@@ -12,6 +12,7 @@ PS1="\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}:) \[\033[01;34m\]\w\
 # \[\e[32m\]: Sets the text color to green.
 # \t: Displays the current time in hh:mm:ss format.
 # \[\e[0m\]: Resets the text color.
+# \[\033[01;34m\]\w\[\033[00m\]: Colored directory path \w.
 # \$: Displays the prompt character ($ for regular users, # for root).
 
 # some more aliases
