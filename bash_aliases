@@ -306,69 +306,69 @@ alias untarxz='tar -xvf'
 
 # Extracts any archive(s) (if unp isn't installed): extract archive1.xz archive2.tar.gz
 extract() {
-	for archive in "$@"; do
-		if [ -f "$archive" ]; then
-			case $archive in
-			*.tar.bz2) tar xvjf $archive ;;
-			*.tar.gz) tar xvzf $archive ;;
-			*.bz2) bunzip2 $archive ;;
-			*.rar) rar x $archive ;;
-			*.gz) gunzip $archive ;;
-			*.tar) tar xvf $archive ;;
-			*.tbz2) tar xvjf $archive ;;
-			*.tgz) tar xvzf $archive ;;
-			*.zip) unzip $archive ;;
-			*.Z) uncompress $archive ;;
-			*.7z) 7z x $archive ;;
-			*.tar.xz) tar xvf $archive ;;
-			*.xz) unxz $archive ;;
-			*) echo "don't know how to extract '$archive'..." ;;
-			esac
-		else
-			echo "'$archive' is not a valid file!"
-		fi
-	done
+  for archive in "$@"; do
+    if [ -f "$archive" ]; then
+      case $archive in
+        *.tar.bz2) tar xvjf $archive ;;
+        *.tar.gz) tar xvzf $archive ;;
+        *.bz2) bunzip2 $archive ;;
+        *.rar) rar x $archive ;;
+        *.gz) gunzip $archive ;;
+        *.tar) tar xvf $archive ;;
+        *.tbz2) tar xvjf $archive ;;
+        *.tgz) tar xvzf $archive ;;
+        *.zip) unzip $archive ;;
+        *.Z) uncompress $archive ;;
+        *.7z) 7z x $archive ;;
+        *.tar.xz) tar xvf $archive ;;
+        *.xz) unxz $archive ;;
+        *) echo "don't know how to extract '$archive'..." ;;
+      esac
+    else
+      echo "'$archive' is not a valid file!"
+    fi
+  done
 }
 
 # List content of any archive(s)
 listarchive() {
-	for archive in "$@"; do
-		if [ -f "$archive" ]; then
-			case $archive in
-			*.tar.bz2) tar -tjf $archive ;;
-			*.tar.gz) tar -tzf $archive ;;
-			*.tar.xz) tar -tJf $archive ;;
-			*.bz2) bzcat $archive ;;
-			*.rar) unrar l $archive ;;
-			*.gz) gunzip -c $archive ;;
-			*.tar) tar -tf $archive ;;
-			*.tbz2) tar -jtf $archive ;;
-			*.tgz) tar -tzf $archive ;;
- 			*.zip) unzip -l $archive ;;
-#			*.zip) zipinfo $archive ;;
-			*.Z) zcat $archive ;;
-			*.7z) 7z l $archive ;;
-			*.xz) xz --list $archive ;;
-			*) echo "don't know how to list the content of '$archive'..." ;;
-			esac
-		else
-			echo "'$archive' is not a valid file!"
-		fi
-	done
+  for archive in "$@"; do
+    if [ -f "$archive" ]; then
+      case $archive in
+        *.tar.bz2) tar -tjf $archive ;;
+        *.tar.gz) tar -tzf $archive ;;
+        *.tar.xz) tar -tJf $archive ;;
+        *.bz2) bzcat $archive ;;
+        *.rar) unrar l $archive ;;
+        *.gz) gunzip -c $archive ;;
+        *.tar) tar -tf $archive ;;
+        *.tbz2) tar -jtf $archive ;;
+        *.tgz) tar -tzf $archive ;;
+        *.zip) unzip -l $archive ;;
+        # *.zip) zipinfo $archive ;;
+        *.Z) zcat $archive ;;
+        *.7z) 7z l $archive ;;
+        *.xz) xz --list $archive ;;
+        *) echo "don't know how to list the content of '$archive'..." ;;
+      esac
+    else
+      echo "'$archive' is not a valid file!"
+    fi
+  done
 }
 
 # IP address lookup
 alias whatismyip="whatsmyip"
 function whatsmyip ()
 {
-        # Internal IP Lookup.
-        echo -n "Internal IP: "
-        ifconfig | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*' | grep -v '127.0.0.1'
+  # Internal IP Lookup.
+  echo -n "Internal IP: "
+  ifconfig | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*' | grep -v '127.0.0.1'
 
-        # External IP Lookup
-        echo -n "External IP: "
-        curl -s ifconfig.me
-        echo ""
+  # External IP Lookup
+  echo -n "External IP: "
+  curl -s ifconfig.me
+  echo ""
 }
 
 function ipconfig() {
