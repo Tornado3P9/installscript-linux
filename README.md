@@ -406,6 +406,7 @@ Note: These kinds of workspace simplifyers might not always support every featur
 - Flameshot - better screenshot app https://flameshot.org/ (part of the repository: `sudo apt install flameshot`) Also assign a keyboard shortcut for the command *`flameshot gui`*, such as `Windows key + Print`.
 - Safe Eyes - reduce and prevent repetitive strain injury https://slgobinath.github.io/SafeEyes/ (part of the repository: `sudo apt install safeeyes`)
 - Super Productivity https://super-productivity.com/
+- Webcamize allows you to use [basically any modern camera](https://github.com/cowtoolz/webcamize/blob/master/assets/supported.md) as a webcam on Linux https://github.com/cowtoolz/webcamize
 
 #### Video Calls
 - Zoom https://zoom.us/download . [how-to](https://github.com/Tornado3P9/installscript-linux/blob/master/zoom.md)
@@ -582,6 +583,7 @@ Unofficial Desktop client https://github.com/IsmaelMartinez/teams-for-linux/rele
 - `du -h --max-depth=1 /path/to/directory` or `du -h --max-depth=1 .` for the current directory
 - GParted (best known partition editor/formatter) https://gparted.org/ (part of the repository: `sudo apt install gparted`)
 - Disks https://apps.gnome.org/DiskUtility/ (already preinstalled: `sudo apt install gnome-disk-utility`)
+- dysk - instead of df, listing your filesystems, previously known as lfs https://github.com/Canop/dysk
 
 #### USB installation media creation tools
 - WoeUSB - A Microsoft Windows® USB installation media preparer https://github.com/WoeUSB/WoeUSB (`chmod +x woeusb-5.2.4.bash && ./woeusb-5.2.4.bash --help`)
