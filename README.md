@@ -583,7 +583,7 @@ Unofficial Desktop client https://github.com/IsmaelMartinez/teams-for-linux/rele
 - `du -h --max-depth=1 /path/to/directory` or `du -h --max-depth=1 .` for the current directory
 - GParted (best known partition editor/formatter) https://gparted.org/ (part of the repository: `sudo apt install gparted`)
 - Disks https://apps.gnome.org/DiskUtility/ (already preinstalled: `sudo apt install gnome-disk-utility`)
-- dysk - instead of df, listing your filesystems, previously known as lfs https://github.com/Canop/dysk
+- dysk - instead of `df -h` for listing your filesystems, previously known as lfs https://github.com/Canop/dysk
 
 #### USB installation media creation tools
 - WoeUSB - A Microsoft Windows® USB installation media preparer https://github.com/WoeUSB/WoeUSB (`chmod +x woeusb-5.2.4.bash && ./woeusb-5.2.4.bash --help`)
