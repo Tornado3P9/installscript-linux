@@ -252,6 +252,7 @@ Example: https://github.com/dreamsofcode-io/escapecontrol/tree/main/linux/kanata
 ### Firewall[^2]
 
 - YouTube Tutorial: [Linux und Virenschutz - So nutzt Du Deinen Linux-Desktop-Rechner sicher!](https://youtu.be/Sb4_LKFT1Xo)
+- Uncomplicated Firewall: [https://wiki.archlinux.org/title/Uncomplicated_Firewall](https://wiki.archlinux.org/title/Uncomplicated_Firewall)
 
 ```bash
 # For Desktop Users: Enable User_Friendly_Firewall and verify status
