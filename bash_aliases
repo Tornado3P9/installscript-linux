@@ -50,6 +50,9 @@ alias countd='find . -mindepth 1 -type d | wc -l'
 #Disk usage analyzer with an ncurses interface.
 alias ncdu='ncdu --color off'
 
+#File size kib
+#du -kh file1.jpg file2.jpg file3.jpg | cut -f1
+
 # checkpermissions my_file.txt
 alias checkpermissions='stat -c "%a %U:%G"'
 

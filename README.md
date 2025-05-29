@@ -578,6 +578,8 @@ Unofficial Desktop client https://github.com/IsmaelMartinez/teams-for-linux/rele
 - UV - An extremely fast Python package and project manager, written in Rust. https://docs.astral.sh/uv/
 - Marimo - A reactive Python notebook (similar to jupyter) that's reproducible, git-friendly, and deployable as scripts or apps. https://docs.marimo.io/
 - gRPCurl https://github.com/fullstorydev/grpcurl/
+- gRPC UI https://github.com/fullstorydev/grpcui
+- Protobuf https://github.com/protocolbuffers/protobuf/releases/ (part of the repository: `sudo apt install -y protobuf-compiler libprotobuf-dev`)
 
 #### Disk Usage Analyzer
 - Baobab https://apps.gnome.org/Baobab/ (part of the repository: `sudo apt install baobab`)
