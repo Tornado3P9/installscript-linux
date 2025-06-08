@@ -580,6 +580,7 @@ Unofficial Desktop client https://github.com/IsmaelMartinez/teams-for-linux/rele
 - gRPCurl https://github.com/fullstorydev/grpcurl/
 - gRPC UI https://github.com/fullstorydev/grpcui
 - Protobuf https://github.com/protocolbuffers/protobuf/releases/ (part of the repository: `sudo apt install -y protobuf-compiler libprotobuf-dev`)
+- UPX compression reduces the size of a binary but adds a small decompression delay on startup (part of the repository: `sudo apt install upx`)
 
 #### Disk Usage Analyzer
 - Baobab https://apps.gnome.org/Baobab/ (part of the repository: `sudo apt install baobab`)

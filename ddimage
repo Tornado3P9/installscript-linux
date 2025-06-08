@@ -3,6 +3,8 @@ set -uo pipefail
 trap 's=$?; echo "$0: Error on line "$LINENO": $BASH_COMMAND"; exit $s' ERR
 IFS=$'\n\t'
 
+prohibited_drives="(sda|sdb)"
+
 HELP () {
   echo " "
   echo "Usage: sudo ddimage [name_of_the_image] [path_to_the_usb_drive] [fast|slow]"
@@ -11,7 +13,16 @@ HELP () {
   ls -1v *.iso *.img 2>/dev/null
   printf "\nDisplay Drives:\n"
   #lsblk -pdn -o NAME
-  ls -1 /dev/sd?
+  #ls -1 /dev/sd?
+
+  # List all drives and append 'x' to prohibited ones
+  for drive in /dev/sd?; do
+    if [[ $drive =~ $prohibited_drives ]]; then
+      echo "${drive} x"
+    else
+      echo "$drive"
+    fi
+  done
 }
 
 # Ensure we are root
@@ -22,8 +33,7 @@ if [[ $EUID -ne 0 ]]; then
 else
   # check if number of parameter equals 3 and only allow 'Images' and 'ISOs'
   # and only allow to write to drives which do not belong to the system!!
-  # change (sda|sdb) to the drive names of your system.. (sda|nvme0|sde) or (sda) as an example..
-  if [[ $# -eq 3 && $1 =~ (\.img|\.iso)$ && ! $2 =~ (sda|sdb) ]]
+  if [[ $# -eq 3 && $1 =~ (\.img|\.iso)$ && ! $2 =~ $prohibited_drives ]]
   then
     case $3 in
       slow)
