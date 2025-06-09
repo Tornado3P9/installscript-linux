@@ -18,9 +18,9 @@ HELP () {
   # List all drives and append 'x' to prohibited ones
   for drive in /dev/sd?; do
     if [[ $drive =~ $prohibited_drives ]]; then
-      echo "${drive} x"
+      echo -e "${drive} \u2716"
     else
-      echo "$drive"
+      echo -e "${drive} \u2714"
     fi
   done
 }
