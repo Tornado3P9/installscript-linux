@@ -490,7 +490,7 @@ Unofficial Desktop client https://github.com/IsmaelMartinez/teams-for-linux/rele
 #### Web Browser
 - Firefox https://support.mozilla.org/en-US/kb/install-firefox-linux (preinstalled as Snap, but also available as **.Deb**, Flatpak or Application Binary)
 - LibreWolf: An Open-Source Firefox Fork Without the Telemetry https://librewolf.net/
-- Floorp: A new Firefox based browser from Japan https://floorp.app/en
+- Floorp: A new Firefox based browser from Japan https://floorp.app/en-US
 - Chrome https://www.google.com/chrome/ (**.Deb** or .RPM)
 - Vivaldi https://vivaldi.com/download/
 - Brave https://brave.com/linux/#release-channel-installation
