@@ -52,6 +52,7 @@ alias ncdu='ncdu --color off'
 
 #File size kib
 #du -kh file1.jpg file2.jpg file3.jpg | cut -f1
+#ls -lh | cut -d ' ' -f 5
 
 # checkpermissions my_file.txt
 alias checkpermissions='stat -c "%a %U:%G"'
