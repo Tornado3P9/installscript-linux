@@ -513,7 +513,7 @@ Unofficial Desktop client https://github.com/IsmaelMartinez/teams-for-linux/rele
 - VSCode-Online https://vscode.dev/ (online)
 - Atom https://atom.io/
 - Micro https://micro-editor.github.io/ (part of the repository: `sudo apt install micro`)
-- Eclipse IDE https://www.eclipse.org/
+- Eclipse IDE https://www.eclipse.org/downloads/packages/
 - NetBeans IDE https://netbeans.apache.org/download/
 - LazyVim https://www.lazyvim.org/
 - Minisign https://jedisct1.github.io/minisign/ https://github.com/jedisct1/minisign
