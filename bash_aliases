@@ -440,7 +440,16 @@ function youtube() {
 
 #List only file names and link paths: ls-l /usr/local/bin/
 function ls-l() {
-  ls -l "$1" | awk 'NR>1 {for (i=9; i<=NF; i++) printf $i " "; print ""}'
+  if [ $# -eq 0 ]; then
+    # No arguments passed, open the current directory
+    ls -l . | awk 'NR>1 {for (i=9; i<=NF; i++) printf $i " "; print ""}'
+  else
+    # Loop through all arguments and list each one
+    for arg in "$@"; do
+      #ls -l "$arg" | grep -v '^total ' | awk '{for (i=9; i<=NF; i++) printf $i " "; print ""}'
+      ls -l "$arg" | awk '{for (i=9; i<=NF; i++) printf $i " "; print ""}'
+    done
+  fi
 }
 
 #
