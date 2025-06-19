@@ -437,4 +437,10 @@ function youtube() {
   mpv --script-opts=ytdl_hook-ytdl_path=yt-dlp --ytdl-format='bestvideo[height<=1080][fps<=30][vcodec!=vp9]+bestaudio/best' --fullscreen --screenshot-format=png --screenshot-directory="$HOME" "${1}"
 }
 
+
+#List only file names and link paths: ls-l /usr/local/bin/
+function ls-l() {
+  ls -l "$1" | awk 'NR>1 {for (i=9; i<=NF; i++) printf $i " "; print ""}'
+}
+
 #
