@@ -98,7 +98,7 @@ gparted gnome-disk-utility mtools \
 synaptic \
 simple-scan \
 pdfarranger atril \
-neofetch htop glances whowatch arp-scan nethogs wireshark speedtest-cli traceroute mtr net-tools iperf3 ipcalc \
+htop glances whowatch arp-scan nethogs wireshark speedtest-cli traceroute mtr net-tools iperf3 ipcalc \
 libreoffice libreoffice-l10n-de libreoffice-help-de \
 mediainfo mediainfo-gui \
 mpv ffmpeg audacity guvcview handbrake \
@@ -357,6 +357,7 @@ sudo apt install texlive texlive-lang-german texlive-lang-english texlive-latex-
 ### Incomplete list of applications
 
 - https://wiki.archlinux.org/title/List_of_applications
+- https://github.com/fastfetch-cli/fastfetch
 
 #### Office/School
 - GeoGebra https://www.geogebra.org/calculator / https://www.geogebra.org/classic (online)
