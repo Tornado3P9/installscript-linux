@@ -428,6 +428,8 @@ function ipconfig() {
   done
   echo "==================================================="
 }
+# nmcli device show
+# ipcalc
 
 function youtube() {
   if [ "$#" -ne 1 ]; then
