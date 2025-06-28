@@ -53,8 +53,8 @@ alias ncdu='ncdu --color off'
 alias lt='ls -ltrh'               # sort by date
 alias ll='ls -Fls'                # long listing format
 alias labc='ls -lap'              # alphabetical sort
-alias lf="ls -l | egrep -v '^d'"  # files only
-alias ldir="ls -l | egrep '^d'"   # directories only
+alias lf="ls -l | grep -Ev '^d'"  # files only
+alias ldir="ls -l | grep -E '^d'"   # directories only
 
 # Show all hidden files and folders (The -d option ensures that directories are not expanded into their contents)
 alias hidden='ls -d .*'
