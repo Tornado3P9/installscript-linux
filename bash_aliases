@@ -31,15 +31,10 @@ alias c='clear'
 alias cl='clear;ls'
 alias root='sudo su'
 alias ports='netstat -tupan'
+alias da='date "+%Y-%m-%d %A %T %Z"'
 
 #Search files in the current folder, e.g.: f "funny-clip"
 alias f="find . | grep -i"
-
-# Show only hidden files and folders (The -d option ensures that directories are not expanded into their contents)
-alias hidden='ls -d .*'
-
-#sort by modification time
-alias left='ls -t -1'
 
 #count files (include -maxdepth 1 to only look in the current directory)
 alias count='find . -type f | wc -l'
@@ -54,11 +49,15 @@ alias ncdu='ncdu --color off'
 #du -kh file1.jpg file2.jpg file3.jpg | cut -f1
 #ls -lh | cut -d ' ' -f 5
 
-# checkpermissions my_file.txt
-alias checkpermissions='stat -c "%a %U:%G"'
-
 #list files
-alias lt='ls --human-readable --size -1 -S --classify'
+alias lt='ls -ltrh'               # sort by date
+alias ll='ls -Fls'                # long listing format
+alias labc='ls -lap'              # alphabetical sort
+alias lf="ls -l | egrep -v '^d'"  # files only
+alias ldir="ls -l | egrep '^d'"   # directories only
+
+# Show all hidden files and folders (The -d option ensures that directories are not expanded into their contents)
+alias hidden='ls -d .*'
 
 #view only mounted drives
 alias mnt="mount | awk -F' ' '{ printf \"%s\t%s\n\",\$1,\$3; }' | column -t | egrep ^/dev/ | sort"
