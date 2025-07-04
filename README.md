@@ -409,6 +409,7 @@ Note: These kinds of workspace simplifyers might not always support every featur
 - Safe Eyes - reduce and prevent repetitive strain injury https://slgobinath.github.io/SafeEyes/ (part of the repository: `sudo apt install safeeyes`)
 - Super Productivity https://super-productivity.com/
 - Webcamize allows you to use [basically any modern camera](https://github.com/cowtoolz/webcamize/blob/master/assets/supported.md) as a webcam on Linux https://github.com/cowtoolz/webcamize
+- Gephi - The Open Graph Viz Platform https://gephi.org/
 
 #### Video Calls
 - Zoom https://zoom.us/download . [how-to](https://github.com/Tornado3P9/installscript-linux/blob/master/zoom.md)
