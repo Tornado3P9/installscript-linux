@@ -240,7 +240,11 @@ You can make things even better by setting the *Key used to grab and move window
 
 <br>
 
-### You can change the keyboard key map
+### You can change the keyboard key map (not advised)
+
+
+Show general keyboard status with `localectl status`.
+
 - [**Kanata**](https://github.com/jtroo/kanata) - A cross-platform software keyboard remapper for Linux, macOS and Windows  
 Setup: https://github.com/jtroo/kanata/blob/main/docs/setup-linux.md  
 Example: https://github.com/dreamsofcode-io/escapecontrol/tree/main/linux/kanata
@@ -547,7 +551,7 @@ Unofficial Desktop client https://github.com/IsmaelMartinez/teams-for-linux/rele
 - Google Cloud CLI https://cloud.google.com/sdk/docs/install#deb
 - Azure CLI https://learn.microsoft.com/en-us/cli/azure/install-azure-cli-linux?pivots=apt
 - FileZilla https://filezilla-project.org/download.php?type=client (part of the repository: `sudo apt install filezilla`)
-- Angry IP Scanner https://angryip.org/ (or just do `nmap -sP $mynetwork | grep report` with mynetwork=192.168.222.0/24 for example)
+- Angry IP Scanner https://angryip.org/ (or just do `nmap -sn $mynetwork | grep report` with mynetwork=192.168.222.0/24 for example)
 - Sparx Enterprise Architect https://sparxsystems.com/products/ea/16.1/sysreq.html
 - RStudio Desktop https://posit.co/download/rstudio-desktop/
 - IDA Free https://hex-rays.com/ida-free/
