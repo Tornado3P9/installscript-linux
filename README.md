@@ -98,7 +98,7 @@ gparted gnome-disk-utility mtools \
 synaptic \
 simple-scan \
 pdfarranger atril \
-htop glances whowatch arp-scan nethogs wireshark speedtest-cli traceroute mtr net-tools iperf3 ipcalc \
+htop glances whowatch arp-scan nmap nethogs wireshark speedtest-cli traceroute mtr net-tools iperf3 ipcalc \
 libreoffice libreoffice-l10n-de libreoffice-help-de \
 mediainfo mediainfo-gui \
 mpv ffmpeg audacity guvcview handbrake \
