@@ -964,7 +964,7 @@ sudo apt install wl-clipboard
 
 ### Tiling Window Manager
 - [i3](https://i3wm.org/) (part of the repository: `sudo apt install i3`)
-- [Hyprland](https://hyprland.org/) Example: https://youtu.be/wcHUQXMhhow
+- [Hyprland](https://hyprland.org/) Example: https://www.ml4w.com/, https://youtu.be/wcHUQXMhhow
 
 <br>
 
