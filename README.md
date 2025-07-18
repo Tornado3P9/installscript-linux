@@ -858,7 +858,8 @@ Update `pip` via: `python3 -m pip install --upgrade pip`
 <br>
 
 ### Backups
-- [Timeshift](https://github.com/linuxmint/timeshift) - `sudo apt install timeshift`
+- [Timeshift - Best for Desktop Users](https://github.com/linuxmint/timeshift) - `sudo apt install timeshift`
+- [Snapper - Best for Servers](http://snapper.io/) - `sudo apt install snapper`
 - [Chezmoi - Easily moving Linux installs](https://christitus.com/chezmoi/)
 - [Déjà Dup Backups](https://snapcraft.io/deja-dup) - `sudo apt install deja-dup`
 - [Pika Backup](https://apps.gnome.org/PikaBackup/) - (you need flatpak enabled for this)
