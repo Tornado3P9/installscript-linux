@@ -596,6 +596,8 @@ Unofficial Desktop client https://github.com/IsmaelMartinez/teams-for-linux/rele
 - GParted (best known partition editor/formatter) https://gparted.org/ (part of the repository: `sudo apt install gparted`)
 - Disks https://apps.gnome.org/DiskUtility/ (already preinstalled: `sudo apt install gnome-disk-utility`)
 - dysk - instead of `df -h` for listing your filesystems, previously known as lfs https://github.com/Canop/dysk
+- iotop - real-time, per-process view of disk read/write usage (part of the repository: `sudo apt install iotop` run with `sudo iotop -o`)
+- fatrace - file-level access monitoring in real-time (part of the repository: `sudo apt install fatrace` run with `sudo fatrace`)
 
 #### USB installation media creation tools
 - WoeUSB - A Microsoft Windows® USB installation media preparer https://github.com/WoeUSB/WoeUSB (`chmod +x woeusb-5.2.4.bash && ./woeusb-5.2.4.bash --help`)
