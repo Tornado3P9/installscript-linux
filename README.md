@@ -611,6 +611,8 @@ sudo wget https://raw.githubusercontent.com/Tornado3P9/installscript-linux/maste
 sudo chmod a+rx /usr/local/bin/ddimage
 ddimage
 ```
+- WinDiskWriter - Windows USB Disk Creator for macOS https://github.com/TechUnRestricted/windiskwriter
+- Rufus - USB Disk Creator for Windows https://rufus.ie/en/
 
 #### AppImage Programs that run on any Linux system
 - Kdenlive Video Editor https://kdenlive.org/en/download/
