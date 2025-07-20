@@ -588,6 +588,7 @@ Unofficial Desktop client https://github.com/IsmaelMartinez/teams-for-linux/rele
 - Protobuf https://github.com/protocolbuffers/protobuf/releases/ (part of the repository: `sudo apt install -y protobuf-compiler libprotobuf-dev`)
 - UPX compression reduces the size of a binary but adds a small decompression delay on startup (part of the repository: `sudo apt install upx`)
 - lazydocker https://github.com/jesseduffield/lazydocker
+- diffoscope - In-depth comparison of files, archives, and directories https://diffoscope.org/
 
 #### Disk Usage Analyzer
 - Baobab https://apps.gnome.org/Baobab/ (part of the repository: `sudo apt install baobab`)
