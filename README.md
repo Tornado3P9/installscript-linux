@@ -374,7 +374,7 @@ sudo apt install texlive texlive-lang-german texlive-lang-english texlive-latex-
 - Diagram Editor https://www.diagrameditor.com/ (online)
 - ExcaliDraw https://excalidraw.com/ (online)
 - Dia Diagram Editor http://dia-installer.de/download/linux.html (part of the repository: `sudo apt install dia` )
-- Camunda Modeler https://camunda.com/download/modeler/
+- Camunda Modeler https://camunda.com/download/modeler/ , [GitHub Releases](https://github.com/camunda/camunda-modeler/releases)
 - Mermaid Diagram Editor https://mermaid.live/ [about](https://mermaid-js.github.io/mermaid/#/) [video](https://youtu.be/JiQmpA474BY) (online)
 - Miro Board https://miro.com/ (online)
 - Trello Board https://trello.com/ (online)
