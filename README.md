@@ -530,6 +530,7 @@ Unofficial Desktop client https://github.com/IsmaelMartinez/teams-for-linux/rele
 - Solid Edge - 3D CAD https://github.com/cryinkfly/Solid-Edge-for-Linux (only using Windows executable with Wine)
 - SolidWorks - 3D CAD https://github.com/cryinkfly/SOLIDWORKS-for-Linux (only using Windows executable with Wine)
 - Autodesk Inventor ... Nope
+- Plasticity - 3D CAD https://www.plasticity.xyz/
 - Cascadeur https://cascadeur.com/download
 - NormalMap https://www.smart-page.net/smartnormal/ (online)
 - magick https://imagemagick.org/script/download.php
