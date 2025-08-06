@@ -158,6 +158,9 @@ make_markdown_link_to_some_title_on_same_page() {
   echo "#$modified_string"
 }
 
+# Display the email/user from the last commit:
+alias gitemail='git log --pretty=format:"%an <%ae>" -n 1'
+
 # Display the last 10 commits in short format:
 alias lol='git log --oneline -n 10'
 
