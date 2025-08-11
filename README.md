@@ -175,6 +175,7 @@ If you have the amdcccle installed, you can open it by running `amdcccle` or if 
 - https://www.linux-assistant.org/ Beginner friendly and with [Youtube-Tutorials](https://youtu.be/uW11Uu8vhqc)
 - https://github.com/ChrisTitusTech/linutil For Linux users
 - https://github.com/ChrisTitusTech/winutil For Windows users
+- https://github.com/ChrisTitusTech/macutil For Mac users
 
 You can find most configuration files in your home directory (**`cd /home/$USER/`**). Use the shortcut **`Ctrl+H`** to display the hidden files in the *File Manager* or the commands **`ls -a`** or **`ls -la`** in the terminal.
 The names of hidden files or directories start with a dot, e.g. **`.config`**.
