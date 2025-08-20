@@ -525,7 +525,7 @@ Unofficial Desktop client https://github.com/IsmaelMartinez/teams-for-linux/rele
 - NetBeans IDE https://netbeans.apache.org/download/
 - LazyVim https://www.lazyvim.org/
 - Minisign https://jedisct1.github.io/minisign/ https://github.com/jedisct1/minisign
-- Blender https://www.blender.org/download/ KeenTools https://keentools.io/ 3D CAD Sketcher https://makertales.gumroad.com/l/CADsketcher?a=742446579
+- Blender https://www.blender.org/download/ KeenTools https://keentools.io/ 3D CAD Sketcher https://www.cadsketcher.com/ https://makertales.gumroad.com/l/dpzwt
 - Onshape - 3D CAD https://www.onshape.com/en/ (online)
 - FreeCAD - 3D CAD https://www.freecad.org/
 - Solid Edge - 3D CAD https://github.com/cryinkfly/Solid-Edge-for-Linux (only using Windows executable with Wine)
