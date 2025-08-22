@@ -399,6 +399,7 @@ sudo apt install texlive texlive-lang-german texlive-lang-english texlive-latex-
 - Microsoft OneNote https://www.onenote.com/hrd (online)
 - Google Workspace - like OneNote https://workspace.google.com/ (online)
 - Obsidian - like OneNote but private https://obsidian.md/download (**.Deb**, Snap or .AppImage)
+- Dillinger https://dillinger.io/ (online)
 - Libre Workspace https://www.libre-workspace.org/ (online/local, language german)
 - Tresorit - cloud-based file synchronization and sharing service that focuses on enhanced security and data encryption https://tresorit.com/ (online)
 - Kleopatra https://www.openpgp.org/software/kleopatra/ (part of the repository: `sudo apt install kleopatra scdaemon`)
