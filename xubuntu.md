@@ -68,6 +68,7 @@ https://xubuntu.org/ + [balenaEtcher](https://www.balena.io/etcher/) or [Rufus U
 <br>
 
 ### Now you can make some first customizations to the new system
+
 Bring your installation [up to date](https://tecadmin.net/install-security-updates-ubuntu-debian/) (What is [apt](https://www.maketecheasier.com/ultimate-guide-apt-and-apt-get-commands/)?):
 ```bash
 sudo apt update && sudo apt upgrade -y && sudo apt autoremove
@@ -87,6 +88,8 @@ The packages zip and unzip are also included. But making sure never hurts.
 - **`apt`**  = That's the program that handles the whole installation or deinstallation processes on your PC and which we gave admin rights just now..  
 - **`install`** = That's the function that I want the program **`apt`** to do..  
 - **`mpv`** = That's the name of the thing that I want to install (in this case the mpv-media-player).  
+
+If you are curious about your XFCE-Desktop Environment, type `xfce4-about` into you terminal.
 
 #### Install some useful programs
 Remove what lines you don't want, copy the whole command block, paste it into the terminal and press Enter. Also remember to run **`sudo apt update`** before installing new packages:

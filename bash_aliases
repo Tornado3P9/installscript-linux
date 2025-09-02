@@ -44,6 +44,7 @@ alias countd='find . -mindepth 1 -type d | wc -l'
 
 #Disk usage analyzer with an ncurses interface.
 alias ncdu='ncdu --color off'
+alias d='du -sh'  # all files data together and human readable size format
 
 #File size kib
 #du -kh file1.jpg file2.jpg file3.jpg | cut -f1
@@ -377,9 +378,9 @@ function whatsmyip ()
   echo -n "Internal IP: "
   ifconfig | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*' | grep -v '127.0.0.1'
 
-  # External IP Lookup
+  # External IP Lookup (ident.me, ifconfig.me)
   echo -n "External IP: "
-  curl -s ifconfig.me
+  curl -s ident.me
   echo ""
 }
 
