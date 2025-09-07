@@ -392,6 +392,7 @@ sudo apt install texlive texlive-lang-german texlive-lang-english texlive-latex-
 - Microsoft Office 365 https://www.office.com/ (online)
 - Google Docs https://www.google.com/docs/about/ (online)
 - Proton Docs https://proton.me/drive/docs / https://proton.me/ (online)
+- CryptPad Office https://cryptpad.org/ (online)
 - Atril - PDF/ebook Viewer https://wiki.mate-desktop.org/mate-desktop/applications/atril/ (already preinstalled)
 - PDFArranger (part of the repository: `sudo apt install pdfarranger`)
 - PDFsam https://pdfsam.org/
