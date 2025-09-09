@@ -433,6 +433,7 @@ Unofficial Desktop client https://github.com/IsmaelMartinez/teams-for-linux/rele
 - Jami https://jami.net/
 - Nextcloud Talk https://nextcloud.com/talk/
 - BigBlueButton https://bigbluebutton.org/
+- OpenTalk https://opentalk.eu/
 - Discord https://discord.com/download?linux (online, .Deb, or binary)
 - Skype https://snapcraft.io/skype (online or Snap)
 - Slack https://slack.com/downloads/linux (.Deb, Snap, or .RPM)
