@@ -31,7 +31,18 @@ alias c='clear'
 alias cl='clear;ls'
 alias root='sudo su'
 alias ports='netstat -tupan'
-alias da='date "+%Y-%m-%d %A %T %Z"'
+
+# different time zones
+alias mytime='date "+%A %Y-%m-%d %T %Z (UTC%:z)"'
+alias chinatime='TZ="Asia/Shanghai" date +"%A %Y-%m-%d %T %Z (UTC%:z)"'
+alias germantime='TZ="Europe/Berlin" date +"%A %Y-%m-%d %T %Z (UTC%:z)"'
+alias austriantime='TZ="Europe/Vienna" date +"%A %Y-%m-%d %T %Z (UTC%:z)"'
+alias swisstime='TZ="Europe/Zurich" date +"%A %Y-%m-%d %T %Z (UTC%:z)"'
+alias taiwantime='TZ="Asia/Taipei" date +"%A %Y-%m-%d %T %Z (UTC%:z)"'
+alias portugaltime='TZ="Europe/Lisbon" date +"%A %Y-%m-%d %T %Z (UTC%:z)"'
+alias irelandtime='TZ="Europe/Dublin" date +"%A %Y-%m-%d %T %Z (UTC%:z)"'
+alias uktime='TZ="Europe/London" date +"%A %Y-%m-%d %T %Z (UTC%:z)"'
+#alias moretimezones='find /usr/share/zoneinfo -type f'
 
 #Search files in the current folder, e.g.: f "funny-clip"
 alias f="find . | grep -i"
