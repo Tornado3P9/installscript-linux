@@ -403,14 +403,13 @@ ip -o -f inet addr show | while read -r line; do
     
     # Split IP and CIDR
     ip=$(echo "$ip_cidr" | cut -d'/' -f1)
-    cidr=$(echo "$ip_cidr" | cut -d'/' -f2)
+    prefix_length=$(echo "$ip_cidr" | cut -d'/' -f2)
     
-    # Calculate subnet mask from CIDR
-    prefix=$cidr
-    subnet_mask=$(awk -v prefix="$prefix" 'BEGIN {
+    # Calculate subnet mask from prefix_length
+    subnet_mask=$(awk -v prefix_length="$prefix_length" 'BEGIN {
       for (i=0; i<4; i++) {
-          n = (prefix >= 8) ? 255 : (256 - 2^(8-prefix%8));
-          prefix -= 8;
+          n = (prefix_length >= 8) ? 255 : (256 - 2^(8-prefix_length%8));
+          prefix_length -= 8;
           printf "%s%s", n, (i<3 ? "." : "\n");
       }
     }')
@@ -434,7 +433,7 @@ ip -o -f inet addr show | while read -r line; do
     echo "Ethernet adapter $iface:"
     echo ""
     echo "   Status . . . . . . . . . . . : $status"
-    echo "   IPv4 Address . . . . . . . . : $ip/$prefix"
+    echo "   IPv4 Address . . . . . . . . : $ip/$prefix_length"
     echo "   Subnet Mask. . . . . . . . . : $subnet_mask"
     echo "   Broadcast Address. . . . . . : $broadcast"
     echo "   IPv6 Address . . . . . . . . : $ipv6_address"
