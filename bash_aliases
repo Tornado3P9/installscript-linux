@@ -397,6 +397,9 @@ function whatsmyip ()
 
 function ipconfig() {
 ip -o -f inet addr show | while read -r line; do
+    # Declare variables as local
+    local iface ip_cidr ip prefix_length subnet_mask status broadcast ipv6_info ipv6_address ipv6_prefix gateway ipv6_gateway
+
     # Extract interface name, IP address, and CIDR
     iface=$(echo "$line" | awk '{print $2}')
     ip_cidr=$(echo "$line" | awk '{print $4}')
@@ -407,11 +410,11 @@ ip -o -f inet addr show | while read -r line; do
     
     # Calculate subnet mask from prefix_length
     subnet_mask=$(awk -v prefix_length="$prefix_length" 'BEGIN {
-      for (i=0; i<4; i++) {
-          n = (prefix_length >= 8) ? 255 : (256 - 2^(8-prefix_length%8));
-          prefix_length -= 8;
-          printf "%s%s", n, (i<3 ? "." : "\n");
-      }
+        for (i=0; i<4; i++) {
+            n = (prefix_length >= 8) ? 255 : (256 - 2^(8-prefix_length%8));
+            prefix_length -= 8;
+            printf "%s%s", n, (i<3 ? "." : "\n");
+        }
     }')
     
     # Determine interface status
