@@ -55,18 +55,21 @@ alias countd='find . -mindepth 1 -type d | wc -l'
 
 #Disk usage analyzer with an ncurses interface.
 alias ncdu='ncdu --color off'
-alias d='du -sh'  # all files data together and human readable size format
-
-#File size kib
+alias d='du -sh'  # all files data together and human readable
 #du -kh file1.jpg file2.jpg file3.jpg | cut -f1
 #ls -lh | cut -d ' ' -f 5
 
+#display disk usage information for the current directory, listing the top 40 largest files and directories, and handles errors gracefully by providing an alternative output in MB if needed:
+alias diskcheck='(df -h .;echo; du -ahx $(pwd) --exclude=/proc | sort -rh 2>/dev/null | head -40 | sort -rh 2>/dev/null) || (echo "Angabe in MB" && du -amx $(pwd) --exclude=/proc | sort -rn | head -40)'
+
+#find which processes consume the most memory: ps aux --sort=-%mem | awk 'NR<=10{print $0}'
+alias memcheck='free -mh; echo; ps aux --sort=-%mem | awk '\''NR<=10{printf "%-30s %s\n", $11, $4}'\'''
+
 #list files
-alias lt='ls -ltrh'               # sort by date
+alias ldate='ls -ltrh'            # sort by date
 alias ll='ls -Fls'                # long listing format
-alias labc='ls -lap'              # alphabetical sort
 alias lf="ls -l | grep -Ev '^d'"  # files only
-alias ldir="ls -l | grep -E '^d'"   # directories only
+alias ldir="ls -l | grep -E '^d'" # directories only
 
 # Show all hidden files and folders (The -d option ensures that directories are not expanded into their contents)
 alias hidden='ls -d .*'
@@ -79,12 +82,6 @@ alias lsmount='mount | column -t'
 
 #search from history by word: hgrep bash
 alias hgrep='history|grep --ignore-case'
-
-#find the largest top 10 files and directories in human readable format (ignore hidden files)
-alias dumax='du -hsx * | sort -rh | head -10'
-
-#find which processes consume the most memory
-alias memax='ps -e -orss=,args= | sort -nr | head'
 
 #open stuff
 function open() {
