@@ -456,18 +456,34 @@ function youtube() {
 }
 
 
-#List only file names and link paths: ls-l /usr/local/bin/
-function ls-l() {
-  if [ $# -eq 0 ]; then
-    # No arguments passed, open the current directory
-    ls -l . | awk 'NR>1 {for (i=9; i<=NF; i++) printf $i " "; print ""}'
-  else
-    # Loop through all arguments and list each one
-    for arg in "$@"; do
-      #ls -l "$arg" | grep -v '^total ' | awk '{for (i=9; i<=NF; i++) printf $i " "; print ""}'
-      ls -l "$arg" | awk '{for (i=9; i<=NF; i++) printf $i " "; print ""}'
-    done
-  fi
-}
+# Usage: cdf <directory|file>
+function cdf() {
+    # Check if argument was provided
+    if [ $# -eq 0 ]; then
+        cd "$HOME"
+        return $?
+    fi
 
+    # Get absolute path of target
+    target="$1"
+
+    # If it's a directory, cd directly
+    if [ -d "$target" ]; then
+        cd "$target"
+        return $?
+    fi
+
+    # If it's a file, get its directory
+    if [ -f "$target" ]; then
+        dir=$(dirname "$(readlink -f "$target")")
+        cd "$dir"
+        return $?
+    fi
+
+    # If neither exists, show error
+    echo "Error: '$target' is neither a valid directory nor file"
+    return 1
+}
+# Create alias for the function
+#alias cd='cdf'
 #
