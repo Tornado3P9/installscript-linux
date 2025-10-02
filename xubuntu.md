@@ -110,6 +110,7 @@ libimage-exiftool-perl perl-doc \
 steam \
 xsensors \
 wget curl \
+tmux \
 tree multitail ncdu autojump \
 ufw gufw \
 kleopatra scdaemon \
