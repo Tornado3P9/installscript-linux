@@ -42,6 +42,7 @@
 - [Backups](#backups)
 - [Check File Integrity](#check-file-integrity)
 - [Virtual Machine](#virtual-machine)
+- [Wine](#wine)
 - [Gaming](#gaming)
 - [Game Engines](#game-engines)
 - [Microsoft PowerShell](#microsoft-powershell)
@@ -53,7 +54,6 @@
 - [Tiling Window Manager](#tiling-window-manager)
 - [DVD](#dvd)
 - [Grub2 - boot menu](#grub2---boot-menu)
-- [Wine (run windows programs)](#wine-run-windows-programs)
 - [External Hardware/Controller/Game Pad](#external-hardwarecontrollergame-pad)
 - [Managing power profiles / battery life](#managing-power-profiles--battery-life)
 - [some different topics list](#some-different-topics)
@@ -898,6 +898,25 @@ Update `pip` via: `python3 -m pip install --upgrade pip`
 
 <br>
 
+### Wine
+https://wiki.winehq.org/Ubuntu
+```bash
+sudo dpkg --add-architecture i386
+sudo apt update && sudo apt install wine winetricks
+
+winetricks
+# Run winetricks in the console, and select “select the default wineprefix”. Install the “core” Microsoft fonts.
+
+wine --version
+
+winecfg
+
+cd ~/Programs
+wine program.exe
+```
+
+<br>
+
 ### Gaming
 - [Lutris](https://lutris.net/)
 - [Steam](https://store.steampowered.com/about/) - optionally use `sudo apt install steam`  
@@ -1020,25 +1039,6 @@ GRUB_CMDLINE_LINUX=""
 ```
 Changing the number from `GRUB_TIMEOUT` will change the number of seconds that the grub menu will be visible.  
 For further instructions go to https://www.gnu.org/software/grub/manual/grub/grub.html#Simple-configuration  
-
-<br>
-
-### Wine (run windows programs)
-https://wiki.winehq.org/Ubuntu
-```bash
-sudo dpkg --add-architecture i386
-sudo apt update && sudo apt install wine winetricks
-
-winetricks
-# Run winetricks in the console, and select “select the default wineprefix”. Install the “core” Microsoft fonts.
-
-wine --version
-
-winecfg
-
-cd ~/Programs
-wine program.exe
-```
 
 <br>
 
