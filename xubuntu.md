@@ -500,7 +500,7 @@ Unofficial Desktop client https://github.com/IsmaelMartinez/teams-for-linux/rele
 - Hugin https://hugin.sourceforge.io/
 - Scribus (Adobe InDesign Alternative) https://www.scribus.net/ `sudo apt install scribus`
   - Ghostscript https://www.ghostscript.com/releases/gsdnld.html `sudo apt install ghostscript`
-- (most adope applications don't work well on linux)[^6]
+- (most adope applications don't work well on linux, but running them via [WinBoat](https://github.com/TibixDev/winboat) might be worth a try)[^6]
 
 #### Web Browser
 - Firefox https://support.mozilla.org/en-US/kb/install-firefox-linux (preinstalled as Snap, but also available as **.Deb**, Flatpak or Application Binary)
@@ -894,6 +894,7 @@ Update `pip` via: `python3 -m pip install --upgrade pip`
 - [VirtualBox](https://www.virtualbox.org/wiki/Downloads) - `sudo apt install virtualbox`
 - [QEMU](https://www.qemu.org/) (Even faster than VirtualBox) - [christitus-setup](https://www.christitus.com/vm-setup-in-linux), [absprog-setup](https://absprog.com/post/qemu-kvm-ubuntu-24-04), [christitus-windows-inside-linux](https://christitus.com/windows-inside-linux/), [absprog-shared-folder](https://absprog.com/post/qemu-kvm-shared-folder)
 - [Distrobox](https://wiki.archlinux.org/title/Distrobox)
+- [WinBoat](https://github.com/TibixDev/winboat)
 
 <br>
 
