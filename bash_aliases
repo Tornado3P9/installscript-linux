@@ -448,6 +448,10 @@ echo "==================================================="
 # ipcalc
 
 function youtube() {
+  if ! command -v mpv &> /dev/null; then
+    echo "mpv is not installed. Please install it first."
+    return 1
+  fi
   if [ "$#" -ne 1 ]; then
     echo 'Usage: youtube "https://www.youtube.com/watch?v=Y_YVkQaS6Uc"'
     return 1
