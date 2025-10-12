@@ -119,6 +119,13 @@ alias m4a2wav='for f in *.m4a; do ffmpeg -i "$f" "${f%.m4a}.wav"; done'
 alias flac2mp3='for f in *.flac; do ffmpeg -i "$f" -c:v copy -q:a 0 "${f%.flac}.mp3"; done'
 alias videosoundupmp4='for f in *.mp4; do ffmpeg -i "$f" -filter:a "volume=30dB" -codec:a aac -b:a 74k -c:v copy "_${f}"; done'
 
+#convert video
+webm2mp4() {
+  input_file="$1"
+  output_file="${input_file%.webm}.mp4"
+  ffmpeg -i "$input_file" -c:v libx264 -preset slow -crf 22 -c:a aac -b:a 192k "$output_file"
+}
+
 # Make a numbered list from the media files in the current directory and play the chosen file
 # Example: playline
 # Example: playline 6
@@ -302,7 +309,7 @@ function checksums() {
     return 1
   fi
   if [[ $1 == *.md5 ]]; then
-    md5sum -c $1 | grep --color=auto FAILED      # checksums.md5
+    md5sum -c $1 | grep FAILED      # checksums.md5
     #sha256sum -c $1 | grep --color=auto FAILED  # checksums.sha256
     return
   fi
@@ -312,18 +319,13 @@ function checksums() {
 
 # The following was partly copied from https://github.com/ChrisTitusTech/mybash/blob/main/.bashrc
 
-# Alias's for archives: mkgz archive.tar.gz file1 file2 file3
-alias mktar='tar -cvf'
-alias mkbz2='tar -cvjf'
-alias mkgz='tar -cvzf'
-alias untar='tar -xvf'
-alias unbz2='tar -xvjf'
-alias ungz='tar -xvzf'
+mktar() { tar -cvf "${1%/}.tar" "${1%/}"; }
+mktarbz2() { tar -cvjf "${1%/}.tar.bz2" "${1%/}"; }
+mktargz() { tar -cvzf "${1%/}.tar.gz" "${1%/}"; }
+mktarxz() { tar -cJf "${1%/}.tar.xz" "${1%/}"; }
 
 alias xz='/usr/bin/xz --keep'
 alias unxz='/usr/bin/unxz --keep'
-alias mktarxz='tar -cJf'
-alias untarxz='tar -xvf'
 
 # Extracts any archive(s) (if unp isn't installed): extract archive1.xz archive2.tar.gz
 extract() {
