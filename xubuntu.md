@@ -454,6 +454,7 @@ Unofficial Desktop client https://github.com/IsmaelMartinez/teams-for-linux/rele
 #### Password Manager
 - bitwarden (very professional online web service) https://bitwarden.com/
 - KeePassXC (simple offline application) https://keepassxc.org/ `sudo apt install keepassxc`
+- 1Password (online/local) https://1password.com/
 - Proton Pass (online) https://proton.me/pass
 
 #### Screen Recording
