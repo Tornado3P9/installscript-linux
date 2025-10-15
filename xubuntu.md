@@ -63,7 +63,7 @@
 <br>
 
 ### First set up the base system
-https://xubuntu.org/ + [balenaEtcher](https://www.balena.io/etcher/) or [Rufus USB Writer](https://rufus.ie/en/) for Windows users
+https://xubuntu.org/ + [Caligula Burning Tool](https://github.com/ifd3f/caligula) or [balenaEtcher](https://www.balena.io/etcher/) or [Rufus USB Writer](https://rufus.ie/en/) for Windows users
 
 <br>
 
@@ -615,6 +615,7 @@ Unofficial Desktop client https://github.com/IsmaelMartinez/teams-for-linux/rele
 - WoeUSB - A Microsoft Windows® USB installation media preparer https://github.com/WoeUSB/WoeUSB (`chmod +x woeusb-5.2.4.bash && ./woeusb-5.2.4.bash --help`)
 - Cubic (Custom Ubuntu ISO Creator) - A GUI wizard to create a customized Live ISO image for Ubuntu and Debian based distributions https://github.com/PJ-Singh-001/Cubic/wiki
 - Startup Disk Creator `sudo apt install usb-creator-gtk`
+- Caligula Burning Tool https://github.com/ifd3f/caligula
 - BalenaEtcher https://www.balena.io/etcher/
 - Raspberry Pi Imager https://www.raspberrypi.com/software/ [#advanced-options](https://www.raspberrypi.com/documentation/computers/getting-started.html#advanced-options)
 - ddimage script using dd[^4]
