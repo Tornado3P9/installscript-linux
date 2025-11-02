@@ -461,6 +461,11 @@ function youtube() {
   mpv --script-opts=ytdl_hook-ytdl_path=yt-dlp --ytdl-format='bestvideo[height<=1080][fps<=30][vcodec!=vp9]+bestaudio/best' --fullscreen --screenshot-format=png --screenshot-directory="$HOME" "${1}"
 }
 
+# get-from-playlist https://youtu.be/Qz9myXwR7Cc?list=PLhKnLRfabC1ZHGLdA4TBBmsyP6LVRX9w2 -> https://youtu.be/Qz9myXwR7Cc
+function getfromplaylist() {
+  echo "$1" | sed 's/\?.*//'
+}
+
 
 # Usage: cdf <directory|file>
 function cdf() {
