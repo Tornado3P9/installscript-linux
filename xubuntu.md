@@ -121,7 +121,8 @@ tar \
 trash-cli \
 jq \
 rename \
-cmake libgtk-4-dev build-essential autoconf libasound2-dev libssl-dev libpcap-dev
+cmake libgtk-4-dev build-essential autoconf libasound2-dev libssl-dev libpcap-dev \
+figlet
 ```
 
 <br>
