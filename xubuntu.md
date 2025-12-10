@@ -716,6 +716,8 @@ Optionally you can extract the program directory into the /opt/ folder and..
    # Or by letting a program handle the process for you:
    sudo desktop-file-install blender.desktop
 
+   # Also you might want to desktop-file-validate or desktop-file-edit your configuration.
+
    # Set correct permissions:
    sudo chmod 644 /usr/share/applications/blender.desktop
 
