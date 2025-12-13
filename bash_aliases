@@ -159,6 +159,11 @@ function lower() {
   echo "$1" | tr '[:upper:]' '[:lower:]';
 }
 
+count_string_length() {
+  local input_string="$1"
+  echo "${#input_string}"
+}
+
 # Function to remove special characters, leading and ending spaces, and multiple spaces (some editors like VSC do that automatically)
 # Usage: make_markdown_link_to_some_title_on_same_page "   Hello! This is a    Test String.   "
 # Returns: #hello-this-is-a-test-string
@@ -173,9 +178,6 @@ make_markdown_link_to_some_title_on_same_page() {
   modified_string=$(echo "$modified_string" | tr '[:upper:]' '[:lower:]')
   echo "#$modified_string"
 }
-
-# Display the email/user from the last commit:
-alias gitemail='git log --pretty=format:"%an <%ae>" -n 1'
 
 # Display the last 10 commits in short format:
 alias lol='git log --oneline -n 10'
@@ -217,14 +219,15 @@ function lzgit() {
     git commit -m "$commit_message"
 }
 
+# Display the email/user from the last commit:
+alias gitemail='git log --pretty=format:"%an <%ae>" -n 1'
+
 # Get the url for the Github remote repository (you have to be inside the project folder)
-# Usage: giturl
 function giturl() {
   git config --get remote.origin.url
 }
 
 # Toggle the git url between HTTPS and SSH
-# Usage: toggle_git_url
 function toggle_git_url() {
   local current_url new_url
   current_url=$(git config --get remote.origin.url)
@@ -466,6 +469,10 @@ function getfromplaylist() {
   echo "$1" | sed 's/\?.*//'
 }
 
+# divide_into_30_min_parts 24  # begin with output_024.m4a instead of output_000.m4a
+function divide_into_30_min_parts() {
+  ffmpeg -i input.m4a -f segment -segment_time 1800 -c copy -reset_timestamps $1 -segment_start_number 1 output_%03d.m4a
+}
 
 # Usage: cdf <directory|file>
 function cdf() {
