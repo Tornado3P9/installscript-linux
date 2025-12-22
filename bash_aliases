@@ -215,7 +215,8 @@ function lzgit() {
     local commit_message="${current_date}-${username}-${commit_number} $*"
 
     # Add all changes and commit
-    git add .
+    #git add .  # stage changes only in the current directory and its subdirectories
+    git add -A  # stage all changes in the repository
     git commit -m "$commit_message"
 }
 
