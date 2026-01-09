@@ -327,6 +327,7 @@ mktar() { tar -cvf "${1%/}.tar" "${1%/}"; }
 mktarbz2() { tar -cvjf "${1%/}.tar.bz2" "${1%/}"; }
 mktargz() { tar -cvzf "${1%/}.tar.gz" "${1%/}"; }
 mktarxz() { tar -cJf "${1%/}.tar.xz" "${1%/}"; }
+# Create a compressed archive of a directory or file.
 # The expression ${1%/} removes any trailing slash from the input argument.
 # This ensures that the archive name is consistent, whether or not the input ends with a slash.
 
