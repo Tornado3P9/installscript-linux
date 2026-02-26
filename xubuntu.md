@@ -619,6 +619,7 @@ Unofficial Desktop client https://github.com/IsmaelMartinez/teams-for-linux/rele
 - Startup Disk Creator `sudo apt install usb-creator-gtk`
 - Caligula Burning Tool https://github.com/ifd3f/caligula
 - BalenaEtcher https://www.balena.io/etcher/
+- Popsicle USB Flasher https://github.com/pop-os/popsicle/releases
 - Raspberry Pi Imager https://www.raspberrypi.com/software/ [#advanced-options](https://www.raspberrypi.com/documentation/computers/getting-started.html#advanced-options)
 - ddimage script using dd[^4]
 ```bash
