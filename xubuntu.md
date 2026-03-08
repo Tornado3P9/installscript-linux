@@ -186,7 +186,7 @@ You can find most configuration files in your home directory (**`cd /home/$USER/
 The names of hidden files or directories start with a dot, e.g. **`.config`**.
 System configuration is done in the **`/etc`** folder and User configuration is done in the **`/home/user/.config`** folder.
 
-You can start your *File Manager* with the shortcut **`Windows key + F`** or by typing **`thunar`** into the terminal. You also can start your main web browser with the shortcut **`Windows key + W`** or by typing **`firefox`** into the terminal.
+You can start your *File Manager* with the shortcut **`Windows key + F`** or by typing **`thunar`** into the terminal (btw. the **`F3`** key lets you split that file manager window in two and back). You also can start your main web browser with the shortcut **`Windows key + W`** or by typing **`firefox`** into the terminal.
 
 You can open any file by just clicking on it and the system will use the default application for that specific file type. You can change the default application by clicking on a file with the **Right Mouse Button** to open the "context menu" and by going to **Properties** → **General** → ***Open With***
 
