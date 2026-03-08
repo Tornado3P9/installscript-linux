@@ -1,2 +1,5 @@
 This repository is a curated collection of notes, originally crafted as responses to questions from university colleagues, family, and myself, some dating back a decade. I documented these answers for future reference. During my university years, I utilized GitHub to upload my notes, ensuring easy access from any university computer or workplace. If anyone else wishes to read my old notes, they are welcome to do so.
 For anyone curious about the commit messages, this was a requested feature. Check out [bash_aliases](https://github.com/Tornado3P9/installscript-linux/blob/master/bash_aliases#L186) for more details.
+
+For further information on Linux, be sure to visit https://thelinuxbook.com/.
+It provides a straightforward and concise description of any technical details you may wish to learn.
