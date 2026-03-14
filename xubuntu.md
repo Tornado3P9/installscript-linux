@@ -312,6 +312,8 @@ sudo apt install arc-theme moka-icon-theme numix-icon-theme numix-gtk-theme ligh
 # If Plank is not available in the default repository, just install from ppa:ricotz/docky (don't just trust PPAs)
 # (Press Ctrl+Right_Mouse_Button for the configuration menu. For the panel to appear at startup, you have to add it to the 'session and startup' programs list in the Xubuntu Settings.)
 sudo apt install plank
+# Another alternative is Cairo-Dock, which also has Wayland support.
+sudo apt install cairo-dock
 
 # The standard desktop image folder is located at:
 locate backdrops
