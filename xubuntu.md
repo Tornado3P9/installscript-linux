@@ -372,6 +372,7 @@ sudo apt install texlive texlive-lang-german texlive-lang-english texlive-latex-
 - https://wiki.archlinux.org/title/List_of_applications
 - https://github.com/fastfetch-cli/fastfetch
 - https://gitlab.com/mission-center-devs/mission-center
+- Clean Your System and Free Disk Space `sudo apt install bleachbit`
 
 #### Office/School
 - GeoGebra https://www.geogebra.org/calculator / https://www.geogebra.org/classic (online)
