@@ -428,6 +428,7 @@ Note: These kinds of workspace simplifyers might not always support every featur
 - Super Productivity https://super-productivity.com/
 - Webcamize allows you to use [basically any modern camera](https://github.com/cowtoolz/webcamize/blob/master/assets/supported.md) as a webcam on Linux https://github.com/cowtoolz/webcamize
 - Gephi - The Open Graph Viz Platform https://gephi.org/
+- NAPS2 - Scan Text from an Image https://www.naps2.com/ (tutorial [here](https://youtu.be/LzcoGR6I1yA))
 
 #### Video Calls
 - Zoom https://zoom.us/download . [how-to](https://github.com/Tornado3P9/installscript-linux/blob/master/zoom.md)
