@@ -67,6 +67,10 @@ https://xubuntu.org/ + [Caligula Burning Tool](https://github.com/ifd3f/caligula
 
 <br>
 
+If the text on the Screen is too small, you can change the font size in the settings and also the dpi. Another way is to use a zoom function. Many Applications, e.g. the terminal or web browsers, can be zoomed with by holding the `Ctrl` key and tapping the `+` or `-` key. Another way is to use the desktop zoom function by holding the `Windows_Key` and turning the `Mouse scroll wheel`. A third option is a small screen magnification tool that shows the position of the mouse pointer at two or three times its original size while the desktop stays the same `sudo apt install kmag`.
+
+<br>
+
 ### Now you can make some first customizations to the new system
 
 Bring your installation [up to date](https://tecadmin.net/install-security-updates-ubuntu-debian/) (What is [apt](https://www.maketecheasier.com/ultimate-guide-apt-and-apt-get-commands/)?):
