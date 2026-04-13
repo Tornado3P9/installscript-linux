@@ -1,14 +1,7 @@
-# If you want to change the behavior of an alias in a running terminal without making it a permanent change, just redefine it in the terminal like `alias gh='history|grep -i'`
-# If you want to change the behavior of a function, you might want to `unset -f name_of_the_function` the original function first and define it again by copying the function from here to your terminal.
-# You can test any of these aliases or functions without making them permanent on your system:
-#   - Define the alias or function, test it and then remove it by either 'unsetting' it or by closing the terminal window.
-
 # Old command prompt: echo $PS1
 #PS1="\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ "
 # New command prompt:
-PS1="\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}:) \[\033[01;34m\]\w\[\033[00m\]\$ "
-
-# PS1="\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\e[32m\]\t\[\e[0m\] \[\033[01;34m\]\w\[\033[00m\]\$ "
+PS1="\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\e[32m\]\t\[\e[0m\] \[\033[01;34m\]\w\[\033[00m\]\$ "
 # \[\e[32m\]: Sets the text color to green.
 # \t: Displays the current time in hh:mm:ss format.
 # \[\e[0m\]: Resets the text color.
@@ -27,16 +20,14 @@ alias shutdown='shutdown -h now'  # reboot, poweroff, shutdown, halt
 alias renamehelp="echo 'rename '\''s/#//'\'' *.m4a' 'or preview(-n) what a change of every occurrence(g) of multiple space(\s+) to single space looks like:' 'rename -n '\''s/\\s+/ /g'\'' *'"
 alias alarmclockhelp='echo "sleep 5m && mpv sound.mp3 --no-video --start=00:00:13 --loop"'
 alias aliases='less ~/.bash_aliases'
-alias c='clear'
 alias cl='clear;ls'
-alias root='sudo su'
-alias ports='ss -tupan'  # netstat -tupan
+alias ports='ss -tulpean'  # netstat -tupan
 
 # different time zones
 alias mytime='date "+%A %Y-%m-%d %T %Z (UTC%:z)"'
 alias chinatime='TZ="Asia/Shanghai" date +"%A %Y-%m-%d %T %Z (UTC%:z)"'
-alias germantime='TZ="Europe/Berlin" date +"%A %Y-%m-%d %T %Z (UTC%:z)"'
-alias austriantime='TZ="Europe/Vienna" date +"%A %Y-%m-%d %T %Z (UTC%:z)"'
+alias germanytime='TZ="Europe/Berlin" date +"%A %Y-%m-%d %T %Z (UTC%:z)"'
+alias austriatime='TZ="Europe/Vienna" date +"%A %Y-%m-%d %T %Z (UTC%:z)"'
 alias swisstime='TZ="Europe/Zurich" date +"%A %Y-%m-%d %T %Z (UTC%:z)"'
 alias taiwantime='TZ="Asia/Taipei" date +"%A %Y-%m-%d %T %Z (UTC%:z)"'
 alias portugaltime='TZ="Europe/Lisbon" date +"%A %Y-%m-%d %T %Z (UTC%:z)"'
@@ -96,13 +87,6 @@ function open() {
   fi
 }
 
-#navigation
-alias documents='cd ~/Documents'
-alias downloads='cd ~/Downloads'
-alias music='cd ~/Music'
-alias videos='cd ~/Videos'
-alias pics='cd ~/Pictures'
-
 #text editor (Alt+N = Turn line numbers on/off) (type '\nano' to use the default configuration of nano) (https://nano-editor.org/dist/latest/cheatsheet.html)
 #alias nano='nano --linenumbers'
 
@@ -110,21 +94,6 @@ alias pics='cd ~/Pictures'
 alias ve='python3 -m venv ./.venv'
 alias ae='deactivate &> /dev/null; source ./.venv/bin/activate'
 alias de='deactivate'
-
-#convert audio
-alias m4a2mp3='for f in *.m4a; do ffmpeg -i "$f" -acodec libmp3lame -ab 256k "${f%.m4a}.mp3"; done'
-alias wav2mp3='for f in *.wav; do ffmpeg -i "$f" -acodec libmp3lame -ab 256k -ar 48000 "${f%.wav}.mp3"; done'
-alias mp32wav='for f in *.mp3; do ffmpeg -i "$f" "${f%.mp3}.wav"; done'
-alias m4a2wav='for f in *.m4a; do ffmpeg -i "$f" "${f%.m4a}.wav"; done'
-alias flac2mp3='for f in *.flac; do ffmpeg -i "$f" -c:v copy -q:a 0 "${f%.flac}.mp3"; done'
-alias videosoundupmp4='for f in *.mp4; do ffmpeg -i "$f" -filter:a "volume=30dB" -codec:a aac -b:a 74k -c:v copy "_${f}"; done'
-
-#convert video
-webm2mp4() {
-  input_file="$1"
-  output_file="${input_file%.webm}.mp4"
-  ffmpeg -i "$input_file" -c:v libx264 -preset slow -crf 22 -c:a aac -b:a 192k "$output_file"
-}
 
 # Make a numbered list from the media files in the current directory and play the chosen file
 # Example: playline
@@ -138,18 +107,13 @@ function playline() {
   mpv "$n1";
 }
 
-# overwrite 'rm' with a function that moves the files to a bin instead of directly deleting it
-# OR use the `trash-cli` tool
-# OR create an alias rm='rm -i' for only deleting after asking for permission
-function rm(){
-  mkdir -p /tmp/trash
-  mv $@ /tmp/trash
-}
-
-# compile a c++ program and execute
-function c() {
-  g++ -o app $1 && ./app
-}
+# # overwrite 'rm' with a function that moves the files to a bin instead of directly deleting it
+# # OR use the `trash-cli` tool
+# # OR create an alias rm='rm -i' for only deleting after asking for permission
+# function rm(){
+#   mkdir -p /tmp/trash
+#   mv $@ /tmp/trash
+# }
 
 # change between lower and upper case string
 function upper() {
@@ -157,26 +121,6 @@ function upper() {
 }
 function lower() {
   echo "$1" | tr '[:upper:]' '[:lower:]';
-}
-
-count_string_length() {
-  local input_string="$1"
-  echo "${#input_string}"
-}
-
-# Function to remove special characters, leading and ending spaces, and multiple spaces (some editors like VSC do that automatically)
-# Usage: make_markdown_link_to_some_title_on_same_page "   Hello! This is a    Test String.   "
-# Returns: #hello-this-is-a-test-string
-make_markdown_link_to_some_title_on_same_page() {
-  # Remove special characters
-  modified_string=$(echo "$1" | sed 's/[^a-zA-Z0-9 ]//g')
-  # Remove leading and ending spaces
-  modified_string=$(echo "$modified_string" | sed 's/^[[:space:]]*//;s/[[:space:]]*$//')
-  # Remove multiple spaces and replace remaining single spaces with '-'
-  modified_string=$(echo "$modified_string" | tr -s ' ' | sed 's/ /-/g')
-  # Convert to lowercase
-  modified_string=$(echo "$modified_string" | tr '[:upper:]' '[:lower:]')
-  echo "#$modified_string"
 }
 
 # Display the last 10 commits in short format:
@@ -472,40 +416,3 @@ function youtube() {
 function getfromplaylist() {
   echo "$1" | sed 's/\?.*//'
 }
-
-# divide_into_30_min_parts 24  # begin with output_024.m4a instead of output_000.m4a
-function divide_into_30_min_parts() {
-  ffmpeg -i input.m4a -f segment -segment_time 1800 -c copy -reset_timestamps $1 -segment_start_number 1 output_%03d.m4a
-}
-
-# Usage: cdf <directory|file>
-function cdf() {
-    # Check if argument was provided
-    if [ $# -eq 0 ]; then
-        cd "$HOME"
-        return $?
-    fi
-
-    # Get absolute path of target
-    target="$1"
-
-    # If it's a directory, cd directly
-    if [ -d "$target" ]; then
-        cd "$target"
-        return $?
-    fi
-
-    # If it's a file, get its directory
-    if [ -f "$target" ]; then
-        dir=$(dirname "$(readlink -f "$target")")
-        cd "$dir"
-        return $?
-    fi
-
-    # If neither exists, show error
-    echo "Error: '$target' is neither a valid directory nor file"
-    return 1
-}
-# Create alias for the function
-#alias cd='cdf'
-#
