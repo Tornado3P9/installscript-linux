@@ -114,11 +114,11 @@ libimage-exiftool-perl perl-doc \
 steam \
 xsensors \
 wget curl \
-tmux \
+kcolorchooser \
 tree multitail ncdu autojump \
 ufw gufw \
 kleopatra scdaemon \
-ghex okteta jeex hexcurse xxd \
+ghex xxd \
 usb-creator-gtk \
 python3-pip python3-venv python3-tk \
 tar \
