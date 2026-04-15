@@ -37,6 +37,10 @@ sudo apt purge zoom
 
 (Optionally) If you also downloaded and imported the Public Key, you can verify the downloaded package before installing it:
 ```bash
+curl -fsSL 'https://zoom.us/linux/download/pubkey?version=6-7-5' | gpg --import
+# or
+curl -fsS -o zoom.pub 'https://zoom.us/linux/download/pubkey?version=6-7-5' && gpg --import zoom.pub
+
 gpg --verify zoom_amd64.deb
 ```
 
