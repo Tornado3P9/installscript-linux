@@ -545,6 +545,8 @@ Unofficial Desktop client https://github.com/IsmaelMartinez/teams-for-linux/rele
 - Eclipse IDE https://www.eclipse.org/downloads/packages/
 - NetBeans IDE https://netbeans.apache.org/download/
 - LazyVim https://www.lazyvim.org/
+- NeoVim https://neovim.io/
+- Zellij https://zellij.dev/
 - Minisign https://jedisct1.github.io/minisign/ https://github.com/jedisct1/minisign
 - Blender https://www.blender.org/download/ KeenTools https://keentools.io/ 3D CAD Sketcher https://www.cadsketcher.com/ https://makertales.gumroad.com/l/dpzwt
 - Onshape - 3D CAD https://www.onshape.com/en/ (online)
