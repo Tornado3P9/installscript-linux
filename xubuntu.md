@@ -488,6 +488,7 @@ Unofficial Desktop client https://github.com/IsmaelMartinez/teams-for-linux/rele
 - Olive Video Editor https://www.olivevideoeditor.org/
 - Blender https://www.blender.org/features/video-editing/
 - Lightworks https://lwks.com/
+- OpusClip https://www.opus.pro/ (online)
 
 #### Sound Editing
 - Audacity https://www.audacityteam.org/ (part of the repository: `sudo apt install audacity` )
