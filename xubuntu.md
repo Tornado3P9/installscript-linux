@@ -900,6 +900,8 @@ Update `pip` via: `python3 -m pip install --upgrade pip`
 - [Make a Full Disk Backup with DD](https://bdoga.com/full-disk-backup-with-dd/)
   - `dd if=/dev/sdc conv=sync,noerror status=progress bs=64K | gzip -c > backup_image.img.gz`
   - `gunzip -c backup_image.img.gz | dd of=/dev/sdc status=progress`
+- [Rescuezilla](https://rescuezilla.com/) - Tutorial: https://youtu.be/w8HsNI1I1cQ
+- [GParted Live on USB Stick](https://gparted.org/liveusb.php)
 
 - #### Check File Integrity
   - [Check File Integrity on Linux the Easy Way With GtkHash](https://www.makeuseof.com/check-file-integrity-on-linux-with-gtkhash/) - `sudo apt install gtkhash`
