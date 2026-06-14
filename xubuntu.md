@@ -502,6 +502,8 @@ Unofficial Desktop client https://github.com/IsmaelMartinez/teams-for-linux/rele
 - Gimp (very good image manipulation editor) https://www.gimp.org/ `sudo apt install gimp`
 - Photopea (online, good compatibility with Photoshop's text objects) https://www.photopea.com/
 - Krita (supports many different color codes -> good for printing tasks) https://krita.org/ `sudo apt install krita`
+- Fog Panther https://www.fogpanther.com/
+- Canva https://www.canva.com/
 - MyPaint (good for working with a digital drawing tablet) http://mypaint.org/ `sudo apt install mypaint`
 - Inkscape (vector graphics) https://inkscape.org/ `sudo apt install inkscape`
 - Blender (2d drawing tool for working with a digital drawing tablet) https://www.blender.org/
