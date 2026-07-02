@@ -480,7 +480,7 @@ Unofficial Desktop client https://github.com/IsmaelMartinez/teams-for-linux/rele
 - Terminal [how-to](https://github.com/Tornado3P9/Linux-Console-Tools/blob/master/media/screen_recording_using_the_terminal.md) . https://youtu.be/vWWSpDE7Gk4
 
 #### Video Editing
-- DaVinci Resolve https://www.blackmagicdesign.com/products/davinciresolve/ [setup_tips](https://youtu.be/oHsboGBxUuc)
+- DaVinci Resolve https://www.blackmagicdesign.com/products/davinciresolve/ . [setup_tips](https://christitus.com/resolve-in-arch-linux/)
 - HandBrake https://handbrake.fr/ a multithreaded video transcoder (part of the repository: `sudo apt install handbrake` )
 - Kdenlive Video Editor https://kdenlive.org/en/download/ (part of the repository: `sudo apt install kdenlive` )
 - OpenShot Video Editor https://www.openshot.org/
