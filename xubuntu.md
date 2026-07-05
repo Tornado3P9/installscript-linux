@@ -39,6 +39,7 @@
 - [Four ways to create a Linux Live System on a usb stick](#four-ways-to-create-a-linux-live-system-on-a-usb-stick)
 - [Some Programming languages](#some-programming-languages)
 - [pip install ...](#pip-install-)
+- [NFS](#nfs)
 - [Backups](#backups)
 - [Check File Integrity](#check-file-integrity)
 - [Virtual Machine](#virtual-machine)
@@ -897,6 +898,9 @@ or in `./your_venv_name/bin/` if you used a virtual environment.
 Update `pip` via: `python3 -m pip install --upgrade pip`
 
 <br>
+
+### NFS
+https://christitus.com/fix-nfs-network-drives/
 
 ### Backups
 - [Timeshift - Best for Desktop Users](https://github.com/linuxmint/timeshift) - `sudo apt install timeshift`
