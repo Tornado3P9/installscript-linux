@@ -41,7 +41,7 @@ else
         oflag=sync
         ;;
       fast)
-        bs=16M
+        bs=8M
         oflag=direct
         ;;
       *)
