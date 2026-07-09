@@ -35,26 +35,27 @@ else
   # and only allow to write to drives which do not belong to the system!!
   if [[ $# -eq 3 && $1 =~ (\.img|\.iso)$ && ! $2 =~ $prohibited_drives ]]; then
 
-    case $3 in
+    case "$3" in
       slow)
         bs=4M
-        oflag=sync
+        dd_flags=(oflag=sync)
         ;;
       fast)
         bs=8M
-        oflag=direct
+        dd_flags=(conv=fsync)
         ;;
       *)
-        echo "Invalid option: $3"
+        echo "Invalid option: $3" >&2
         HELP
         exit 1
         ;;
     esac
 
-    printf "dd if=$1 of=$2 bs=$bs status=progress oflag=$oflag \n"
-    read -p "Accept? [Y/n]: " yn
-    [ "$yn" = "n" ] && exit
-    dd if=$1 of=$2 bs=$bs status=progress oflag=$oflag
+    printf 'dd if="%s" of="%s" bs=%s status=progress %s\n' "$1" "$2" "$bs" "${dd_flags[*]}"
+    read -r -p "Accept? [Y/n]: " yn
+    [[ $yn == "n" || $yn == "N" ]] && exit 0
+
+    dd if="$1" of="$2" bs="$bs" status=progress "${dd_flags[@]}"
   else
     HELP
   fi
