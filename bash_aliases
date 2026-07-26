@@ -104,7 +104,7 @@ function playline() {
     return 0
   fi
   local n1=$(ls -1v | sed -n "$1 p");
-  mpv "$n1";
+  mpv --volume=80 "$n1";
 }
 
 # # overwrite 'rm' with a function that moves the files to a bin instead of directly deleting it
