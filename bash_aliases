@@ -87,6 +87,15 @@ function open() {
   fi
 }
 
+# display complete filepath, similar to `pwd` for directory
+# or just use `realpath -- *`
+pwf() {
+  [ $# -lt 1 ] && echo "pwf <argument>" && return 1
+  for f in "$@"; do
+    realpath -- "$f"
+  done
+}
+
 #text editor (Alt+N = Turn line numbers on/off) (type '\nano' to use the default configuration of nano) (https://nano-editor.org/dist/latest/cheatsheet.html)
 #alias nano='nano --linenumbers'
 
