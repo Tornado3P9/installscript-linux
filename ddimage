@@ -8,7 +8,7 @@ prohibited_drives="(sda|sdb)"
 HELP () {
   echo " "
   echo "Usage: sudo ddimage [name_of_the_image] [path_to_the_usb_drive] [fast|slow]"
-  echo "Example: sudo ddimage debian.iso /dev/sdc slow"
+  echo "Example: sudo ddimage debian.iso /dev/sdc fast"
   printf "\nDisplay Images:\n"
   ls -1v *.iso *.img 2>/dev/null
   printf "\nDisplay Drives:\n"
