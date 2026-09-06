@@ -22,6 +22,7 @@ alias alarmclockhelp='echo "sleep 5m && mpv sound.mp3 --no-video --start=00:00:1
 alias aliases='less ~/.bash_aliases'
 alias cl='clear;ls'
 alias ports='ss -tulpean'  # netstat -tupan
+alias lsblk-f='lsblk -o NAME,SIZE,FSTYPE,UUID,MOUNTPOINTS,MODEL'
 
 # different time zones
 alias mytime='date "+%A %Y-%m-%d %T %Z (UTC%:z)"'
