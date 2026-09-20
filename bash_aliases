@@ -133,6 +133,24 @@ function lower() {
   echo "$1" | tr '[:upper:]' '[:lower:]';
 }
 
+function check_for_github_updates() {
+  branch=$(git branch --show-current)
+  remote=$(git config --get "branch.$branch.remote")
+  remote=${remote:-origin}
+
+  local_commit=$(git rev-parse HEAD)
+  remote_commit=$(git ls-remote "$remote" "refs/heads/$branch" | cut -f1)
+
+  if [ "$local_commit" = "$remote_commit" ]; then
+    echo "Lokal ist up to date."
+  else
+    echo "Der Remote-Branch enthält einen anderen Stand."
+    echo "Lokal:  $local_commit"
+    echo "Remote: $remote_commit"
+  fi
+}
+# or use `git fetch --dry-run origin`
+
 # Display the last 10 commits in short format:
 alias lol='git log --oneline -n 10'
 
