@@ -428,7 +428,7 @@ sudo apt install texlive texlive-lang-german texlive-lang-english texlive-latex-
 Note: These kinds of workspace simplifyers might not always support every feature of the individual application, and the messenger might run slower with many apps compared to just running one individual app:
   - Rambox https://rambox.app/download-linux/ (AppImage, .Deb, .RPM or Snap)
   - Franz https://meetfranz.com/ . [how-to](https://itsfoss.com/franz-messaging-app/) (AppImage, .Deb)
-- Typora - Distractions Free Writing https://typora.io/
+- Typora - Distractions Free Writing (developed by Qiyun (Shanghai) Technology Ltd.) https://typora.io/
 - Flameshot - better screenshot app https://flameshot.org/ (part of the repository: `sudo apt install flameshot`) Also assign a keyboard shortcut for the command *`flameshot gui`*, such as `Windows key + Print`.
 - Safe Eyes - reduce and prevent repetitive strain injury https://slgobinath.github.io/SafeEyes/ (part of the repository: `sudo apt install safeeyes`)
 - Super Productivity https://super-productivity.com/
