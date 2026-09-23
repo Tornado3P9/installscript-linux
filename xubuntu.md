@@ -419,7 +419,7 @@ sudo apt install texlive texlive-lang-german texlive-lang-english texlive-latex-
 - Libre Workspace https://www.libre-workspace.org/ (online/local, language german)
 - Tresorit - cloud-based file synchronization and sharing service that focuses on enhanced security and data encryption https://tresorit.com/ (online)
 - Kleopatra https://www.openpgp.org/software/kleopatra/ (part of the repository: `sudo apt install kleopatra scdaemon`)
-- Passwords and Keys - Seahorse is a front end for GnuPG [tipp](https://howtoinstalls.com/ubuntu/seahorse.html#how-to-install-passwords-and-keys-in-ubuntu) (part of the repository: `sudo apt install seahorse`)
+- Passwords and Keys - A front end for GnuPG but less professional than kleopatra [tipp](https://howtoinstalls.com/ubuntu/seahorse.html#how-to-install-passwords-and-keys-in-ubuntu) (part of the repository: `sudo apt install seahorse`)
 - KMail - KDE email client that integrates well with Kleopatra https://apps.kde.org/kmail2/ (part of the repository: `sudo apt install kmail`)
 - Thunderbird - Popular email client https://www.thunderbird.net/ (part of the repository: `sudo apt install thunderbird`)
 - Document Scanner https://gitlab.gnome.org/GNOME/simple-scan (best choice and part of the repository: `sudo apt install simple-scan`)
