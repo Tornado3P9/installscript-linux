@@ -768,10 +768,11 @@ sudo apt install firefox-esr
 ```
 
 Security tip for using Firefox:
+- Type **`about:support`** and check your configuration.
 - Type **`about:config`** into the *URL Search Bar* and then look for `pdfjs.enableScripting`. Set that to `false`.  
 - Type **`about:preferences`** into the *URL Search Bar* and go to **Privacy & Security**. Scroll down and choose `Enable HTTPS-Only Mode in all windows`.
 This way your browser will only allow save connections and will ask you for permission if the website does not support https. Also `Enable DNS over HTTPS`.
-- Type **`about:performance`** into the *URL Search Bar* to see the Firefox **Task Manager**. There you can see which application or addon uses up too many resources.
+- Type **`about:processes`** into the *URL Search Bar* to see the Firefox **Task Manager**. There you can see which application or addon uses up too many resources.
 - **Optionally!** you can harden your security by changing even more settings.  
 **Note: disabling hackable comfort functions may also reduce comfort.**  
   - `media.peerconnection.enabled` set that to `false` to disable WebRTC if you do not specifically need this feature.  
