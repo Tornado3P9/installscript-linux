@@ -975,6 +975,7 @@ If the performance on your linux machine still does not work as well as you were
 - [SDL2](https://github.com/Tornado3P9/Linux-Console-Tools/blob/master/How-To-Install-SDL-On-Ubuntu.md)
 - [Unity](https://unity.com/download)
 - [Unreal Engine](https://www.unrealengine.com/)
+- [Brutal Engine](https://ahwoo.com/brutal)
 
 <br>
 
