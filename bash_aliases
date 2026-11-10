@@ -306,6 +306,20 @@ mktarxz() { tar -cJf "${1%/}.tar.xz" "${1%/}"; }
 alias xz='/usr/bin/xz --keep'
 alias unxz='/usr/bin/unxz --keep'
 
+# Create a password-protected 7z archive
+# Usage: 7zz backup file.exe file.md5
+7zz() {
+  if (( $# < 2 )); then
+    echo "Usage: 7zz ARCHIVE_NAME FILE..." >&2
+    return 2
+  fi
+
+  local archive_name=$1
+  shift
+
+  7z a -t7z -mhe=on -p "${archive_name%.7z}.7z" "$@"
+}
+
 # Extracts any archive(s) (if unp isn't installed): extract archive1.xz archive2.tar.gz
 extract() {
   for archive in "$@"; do
